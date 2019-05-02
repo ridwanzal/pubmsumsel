@@ -15,14 +15,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
   <div class="artikel">
     <div class="konten">
-      <h2 class="title">Contact Us</h2>
-      
-      <p style="text-align: center;"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.4256638888642!2d103.77722515982957!3d-3.6550789666388654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e39f6357ba7c49b%3A0x56c40cc246bc9212!2sDinas+Bina+Marga!5e0!3m2!1sid!2sid!4v1544771457196" width="700" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
-      <p style="padding-left: 30px;"><strong>Dinas Pekerjaan Umum &amp; Penataan Ruangan Kab. Muara Enim</strong></p>
-      <p class="padding-left:30px;" style="padding-left: 30px;">Jl. Mayor Tjik Agus Kiemas (Islamic Center) Muara Enim,</p>
-      <p class="padding-left:30px;" style="padding-left: 30px;">Kec. Muara Enim, Kab. Muara Enim,</p>
-      <p class="padding-left:30px;" style="padding-left: 30px;">Sumatera Selatan - 31313</p>
-      <p class="padding-left:30px;" style="padding-left: 30px;">Telp: (0734) 421099</p>
+      <p style="text-align: center;"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.4256638888642!2d103.77722515982957!3d-3.6550789666388654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e39f6357ba7c49b%3A0x56c40cc246bc9212!2sDinas+Bina+Marga!5e0!3m2!1sid!2sid!4v1544771457196" width="100%" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe></p>
+      <p><strong>Dinas Pekerjaan Umum &amp; Penataan Ruangan Kab. Muara Enim</strong></p>
+      <p>Jl. Mayor Tjik Agus Kiemas (Islamic Center) Muara Enim,</p>
+      <p>Kec. Muara Enim, Kab. Muara Enim,</p>
+      <p>Sumatera Selatan - 31313</p>
+      <p>Telp: (0734) 421099</p>
       
       <hr>
       <div class="row">
