@@ -3,7 +3,7 @@
 $general = array(
 
 		//Nama Server
-		"root_dir"=>"http://localhost/dpusumsel",
+		"root_dir"=>"http://pubmtrsumsel.scafol.id",
 	    "didalamSubDomain"=>false,
 
 	    /*
