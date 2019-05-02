@@ -159,7 +159,7 @@
 </div>
 <div class="container">
     <div class="row" style="margin-top:20px;margin-bottom:10px;text-align:center; cursor:text !important;">
-        <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('../../dpusumsel/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
+        <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('http://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
             <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
             <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
             <br/>
