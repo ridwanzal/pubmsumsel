@@ -7,7 +7,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 <nav class="navbar navbar-light bg-light">
   <span class=" mb-0 h3" style="color:black">Index Berita</span><br>
-  <span class=" mb-0 h5" style="color:black">Home</span>
 </nav>
 
 <!--
