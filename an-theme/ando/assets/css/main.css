@@ -1573,7 +1573,7 @@ textarea.form-control {
 }
 
 .container_bidang {
-    padding: 0px 15px 0px 15px;
+    /* padding: 0px 15px 0px 15px; */
 }
 
 .container_bidang > div{

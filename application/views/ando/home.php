@@ -212,55 +212,58 @@
                <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
+               <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
                <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
                <a href="<?php echo baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
             </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
-            </div>
         </div>
         <br/>
         <div class="row container_bidang">
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peraltan dan BMD</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
                 <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>Bidang Penataan Ruang</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD PJ3 Kabupaten Lahat</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD PJ3 Kabupaten Ogan Komering Ulu</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
             </div>
         </div>
         <br/>
         <div class="row container_bidang">
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD PJ3 Kabupaten Musi Banyuasin</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD PJ3 Kota Palembang</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD PJ3 Kabupaten Ogan Komering Ilir</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD PJ3 Kabupaten Musi Rawas</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
             </div>
         </div>
         <br/>
         <div class="row container_bidang">
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD PJ3 Kabupaten Muara Enim</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD PJ3 Kabupaten Oku Timur</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
             </div>
             <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD PJ3 Laboratorium Bahan Konstruksi</p></a>
+                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
+            </div>
+            <div class="col-lg-3 col-md-3 col-xs-12">
+                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
             </div>
         </div>
     <hr>

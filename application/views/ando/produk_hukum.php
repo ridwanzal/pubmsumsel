@@ -12,10 +12,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<div class="artikel">
 				<div class="konten">
-					<h2 class="title">Data Produk Hukum</h2>
-					<ul>
           <?php foreach ($get_produk_hukum as $produk_hukum): ?>
-              <li>
 								<h4 style="font-weight:600;">
 									<?php if (!empty($produk_hukum->file) && file_exists(FCPATH . $produk_hukum->file)): ?>
 									<a href="<?php echo site_url().$produk_hukum->file ?>"> <?= $produk_hukum->nama_file ?> [tahun : <?= $produk_hukum->tahun ?>] </a>
@@ -24,12 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<?php endif; ?>
 								</h4>
 								<p><?php echo $produk_hukum->keterangan ?></p>
-
-							</li>
           <?php endforeach; ?>
-        </ul>
-
-
 				</div>
 			</div>
 
