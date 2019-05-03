@@ -27,7 +27,7 @@ class All_page extends CI_Model {
 				$this->hasil.="<td>$value[page_edited]</td>";
 				$this->hasil.="<td>$url</td>";
 
-				$this->hasil.="<td><a href='".base_url()."admin/page/$value[page_id]'><i class='fa fa-edit btn-edit-page'></i></a> &nbsp; <i style='cursor:pointer;color:red' class='fa fa-times-circle hapus-page' id='$value[page_id]'></i></td>";
+				$this->hasil.="<td><a href='".base_url()."index.php/admin/page/$value[page_id]'><i class='fa fa-edit btn-edit-page'></i></a> &nbsp; <i style='cursor:pointer;color:red' class='fa fa-times-circle hapus-page' id='$value[page_id]'></i></td>";
 				$this->hasil.="</tr>";
 
 			}
