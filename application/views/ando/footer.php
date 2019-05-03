@@ -88,9 +88,10 @@ echo "</div>"; //.col-md-4
         <div class='container'>
             <div class="row">
                 <div class="col-md-3">
-                        <p class="text-footers-size">Jl. Ahmad Yani No.49, Ps. I Muara Enim, Kec. Muara Enim, Kab. Muara Enim, Sumatera Selatan - 31313</p>
+                        <p class="text-footers-size">
+                        Jl. Ade Irma Nasution No.10 Kota Palembang</p>
                         <br/>
-                        <p class="text-footers-size">Telp: (0734) 421099</p>
+                        <p class="text-footers-size">Telp: (0711) 321053</p>
                         <br/>
                         <div style="display:flex;">
                             <a class="link_socials"><span class='fa fa-facebook'></span></a>

@@ -145,8 +145,10 @@ echo "</div>"; //.col-md-4
         </div>
 
         <div class='col-md-6'>
-          <i class='fa fa-home'></i> Jl. Ahmad Yani No.49, Ps. I Muara Enim, Kec. Muara Enim, Kabupaten Muara Enim, Sumatera Selatan 31313 <br/>
-          <i class='fa fa-phone'></i><span class='angka'> (0734) 421099</span>
+          <i class='fa fa-home'></i> 
+          Jl. Ade Irma Nasution No.10 Kota Palembang
+          <br/>
+          <i class='fa fa-phone'></i><span class='angka'> (0711) 321053</span>
           <br/>
           <i class='fa fa-envelope'></i> sandrobrayen@gmail.com <br/>
 
