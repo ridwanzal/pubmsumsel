@@ -19,7 +19,7 @@ include(FCPATH."init.php");
 |
 */
 // $config['base_url'] ="http://pupr.muaraenimkab.go.id/";
-$config['base_url'] ="http://pubmtrsumsel.scafol.id";
+$config['base_url'] ="http://localhost/pubmsumsel";
 /*
 |--------------------------------------------------------------------------
 | Index File
