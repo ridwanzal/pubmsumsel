@@ -9,7 +9,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 		<div class='col-md-12 left-side'>
-
 			<div class="artikel">
 				<div class="konten">
           <?php foreach ($get_produk_hukum as $produk_hukum): ?>
@@ -24,5 +23,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <?php endforeach; ?>
 				</div>
 			</div>
-
 		</div>
