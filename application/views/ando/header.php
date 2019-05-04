@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 <!DOCTYPE html>
 <html lang="id-ID" prefix="og: http://ogp.me/ns#">
 <head>
-	<title>Dinas PU PR Kabupaten Muara Enim</title>
+	<title>Dinas PUBMTR Sumatera Selatan</title>
 
      <meta name="viewport" content="width=device-width, initial-scale=1" />
 
