@@ -3,7 +3,7 @@
 $general = array(
 
 		//Nama Server
-		"root_dir"=>"http://localhost/pubmsumsel/",
+		"root_dir"=>"http://pubmtrsumsel.scafol.id",
 	    "didalamSubDomain"=>false,
 
 	    /*
@@ -33,6 +33,6 @@ $general = array(
 		//pengaturan database
 		"DB_hostname"=>"localhost",
 		"DB_username"=>"root",
-		"DB_password"=>"12345",
+		"DB_password"=>"StkPlg123XX1",
 		"DB_database"=>"puprmuar_dpu"
 	);
