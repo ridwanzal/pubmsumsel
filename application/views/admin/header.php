@@ -210,12 +210,12 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
             <li class='<?php if($npage==21){ echo'active';} ?>'><a href="<?php echo base_url('admin/data_infastruktur'); ?>"><i class='fa fa-plus'></i><span>Data Infrastruktur</span></a></li>
             <li class='<?php if($npage==21){ echo'active';} ?>'><a href="<?php echo base_url('admin/produk_hukum'); ?>"><i class='fa fa-plus'></i><span>Produk Hukum</span></a></li>
 
-            <?php if($user_level=='1'){ ?>
-            <li class='treeview <?php if($npage==12 || $npage==13){ echo'active';} ?>'>
+            <?php if($user_level=='1'){ ?> 
+            <li class='treeview <?php if($npage==99 || $npage=='allbidang'){ echo'active';} ?>'>
               <a href='#'><i class='fa fa-file-text'></i><span>Bidang</span><i class="fa fa-angle-left pull-right"></i></a>
               <ul class='treeview-menu'>
-                <li class="<?php if($npage==13){ echo'active';} ?>"><a href="<?php echo $burl; ?>/all_bidang"><i class='fa fa-circle-o'></i><span>Semua Bidang</span></a></li>
-                <li class="<?php if($npage==12){ echo'active';} ?>"><a href="<?php echo $burl; ?>/bidang"><i class='fa fa-circle-o'></i><span>Buat Bidang</span></a></li>
+                <li class="<?php if($npage=='allbidang'){ echo'active';} ?>"><a href="<?php echo $burl; ?>/all_bidang"><i class='fa fa-circle-o'></i><span>Semua Bidang</span></a></li>
+                <li class="<?php if($npage==99){ echo'active';} ?>"><a href="<?php echo $burl; ?>/bidang"><i class='fa fa-circle-o'></i><span>Buat Bidang</span></a></li>
               </ul>
             </li>
             <?php } ?>

@@ -962,7 +962,7 @@ class AN_admin extends CI_Controller {
 					'title'=>"Semua Page",
 					'user'=>$this->name_user,
 					'user_level'=>$this->level_user,
-					'npage'=>13,
+					'npage'=>'allbidang',
 					'burl'=>base_url()."admin",
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman_bidang->hasil,

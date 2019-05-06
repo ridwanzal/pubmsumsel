@@ -1,4 +1,4 @@
-a:3:{s:4:"time";i:1557086471;s:3:"ttl";i:6000000;s:4:"data";a:2:{s:6:"jumlah";i:1;s:4:"data";a:8:{s:2:"id";s:1:"1";s:5:"judul";s:13:"Visi dan Misi";s:4:"slug";s:13:"visi-dan-misi";s:3:"isi";s:2781:"<p><strong>"TERWUJUDNYA INFRASTRUKTUR PEKERJAAN UMUM DAN PERUMAHAN RAKYAT YANG HANDAL</strong></p>
+a:3:{s:4:"time";i:1557086622;s:3:"ttl";i:6000000;s:4:"data";a:2:{s:6:"jumlah";i:1;s:4:"data";a:8:{s:2:"id";s:1:"1";s:5:"judul";s:13:"Visi dan Misi";s:4:"slug";s:13:"visi-dan-misi";s:3:"isi";s:2781:"<p><strong>"TERWUJUDNYA INFRASTRUKTUR PEKERJAAN UMUM DAN PERUMAHAN RAKYAT YANG HANDAL</strong></p>
 <p><strong>DALAM MENDUKUNG INDONESIA YANG BERDAULAT, MANDIRI, DAN BERKEPRIBADIAN</strong></p>
 <p><strong>BERLANDASKAN GOTONG ROYONG"</strong></p>
 <p> </p>
@@ -25,4 +25,4 @@ a:3:{s:4:"time";i:1557086471;s:3:"ttl";i:6000000;s:4:"data";a:2:{s:6:"jumlah";i:
 </div>
 </div>
 </div>
-<p> <br>  <br>  </p>";s:4:"foto";s:0:"";s:10:"javascript";s:0:"";s:13:"meta_keywords";s:0:"";s:16:"meta_description";s:0:"";}}}
+<p> <br>  <br>  </p>";s:4:"foto";s:90:"http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/pen-581881_1280.jpg";s:10:"javascript";s:0:"";s:13:"meta_keywords";s:0:"";s:16:"meta_description";s:0:"";}}}
