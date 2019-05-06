@@ -11,6 +11,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class='col-md-12 left-side'>
 			<div class="artikel">
 				<div class="konten">
+        <p>SK Gubernur Th. 2016</p>
+        <div title="SK Gubernur Th. 2016" style="background : #eee; padding: 10px 10px 10px 15px; margin-top:5px; margin-bottom:30px; border-radius:4px;s"><a href='<?=base_url();?>an-component/media/upload-galeri/sk_gub_2016.pdf'><span class="fa fa-file "></span>&nbsp;&nbsp;View Documents</a></div>
         <p>Fungsi Jaringan Jalan</p>
         <img src='<?=base_url();?>an-component/media/upload-galeri/fungsi_jaringan_jalan.jpg'>
         <p>Prasarana Jalan</p>
