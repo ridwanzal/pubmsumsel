@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div class='col-md-12' id="header-bidang">
       <div class="pu-title">
-			     <h1 style="color:white;"><span><?php echo $heading; ?></span></h1>
+			     <h1><span><?php echo $heading; ?></span></h1>
       </div>
 	</div>
 
@@ -71,7 +71,7 @@ foreach($ck as $ca):
 		</div>
 		<div class="col-md-12">
 			<div class="pu-title">
-				<h3 style="color:white">Tugas dan Fungsi</h3>
+				<h3 style="">Tugas dan Fungsi</h3>
 			</div>
 		</div>
 
@@ -94,7 +94,7 @@ foreach($ck as $ca):
 		<div class="col-md-12">
 
 	    <div class="pu-title">
-	      <h3 style="color:white">List Berita</h3>
+	      <h3 style="">List Berita</h3>
 	    </div>
 		</div>
 		<div class="col-md-12">
@@ -122,7 +122,7 @@ foreach($ck as $ca):
 		<div class="col-md-12">
 
 	  <div class="pu-title">
-      <h3 style="color:white">Galeri Foto</h3>
+      <h3 style="">Galeri Foto</h3>
     </div>
 
 	</div>
