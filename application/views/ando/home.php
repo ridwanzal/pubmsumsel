@@ -31,91 +31,449 @@
 	padding: 15px;
 }
 */
-    
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-prev,
-    .carousel-control .icon-next {
-        position: absolute;
-        top: 45%;
-        z-index: 5;
-        display: inline-block;
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-prev,
+.carousel-control .icon-next {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    display: inline-block;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+    left: 0;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+    right: 0;
+}
+
+.carousel-control.left span,
+.carousel-control.right span {
+    background-color: #000;
+}
+
+.carousel-control.left span:hover,
+.carousel-control.right span:hover {
+    opacity: .7;
+    filter: alpha(opacity=70);
+}
+/* Carousel Header Styles */
+
+.header-text {
+    position: absolute;
+    top: 20%;
+    left: 1.8%;
+    right: auto;
+    width: 96.66666666666666%;
+    color: #fff;
+}
+
+.header-text h2 {
+    font-size: 50px;
+}
+
+.header-text h2 span {
+    -webkit-text-stroke: 1px black;
+    color: #f9af4a;
+    text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.header-text h3 span {
+    padding: 15px;
+    font-size: 40px;
+    color: #03a9f4;
+    -webkit-text-stroke: 0.2px white;
+}
+
+.btn-min-block {
+    min-width: 170px;
+    line-height: 26px;
+}
+
+.btn-theme {
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    margin-right: 15px;
+}
+
+.btn-theme:hover {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+
+/*
+
+All grid code is placed in a 'supports' rule (feature query) at the bottom of the CSS (Line 310). 
+        
+The 'supports' rule will only run if your browser supports CSS grid.
+
+Flexbox and floats are used as a fallback so that browsers which don't support grid will still recieve a similar layout.
+
+*/
+
+/* Base Styles */
+
+
+img {
+    display: block;
+}
+
+
+.btn {
+    display: inline-block;
+    font: inherit;
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: 0.5rem auto #4d90fe;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Profile Section */
+
+.profile {
+    padding: 5rem 0;
+}
+
+.profile::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.profile-image {
+    float: left;
+    width: calc(33.333% - 1rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.profile-image img {
+    border-radius: 50%;
+}
+
+.profile-user-settings,
+.profile-stats,
+.profile-bio {
+    float: left;
+    width: calc(66.666% - 2rem);
+}
+
+.profile-user-settings {
+    margin-top: 1.1rem;
+}
+
+.profile-user-name {
+    display: inline-block;
+    font-size: 3.2rem;
+    font-weight: 300;
+}
+
+.profile-edit-btn {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    border: 0.1rem solid #dbdbdb;
+    border-radius: 0.3rem;
+    padding: 0 2.4rem;
+    margin-left: 2rem;
+}
+
+.profile-settings-btn {
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+
+.profile-stats {
+    margin-top: 2.3rem;
+}
+
+.profile-stats li {
+    display: inline-block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.profile-stats li:last-of-type {
+    margin-right: 0;
+}
+
+.profile-bio {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 2.3rem;
+}
+
+.profile-real-name,
+.profile-stat-count,
+.profile-edit-btn {
+    font-weight: 600;
+}
+
+/* Gallery Section */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1rem -1rem;
+    padding-bottom: 3rem;
+}
+
+.gallery-item {
+    position: relative;
+    flex: 1 0 22rem;
+    margin: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery-item:hover .gallery-item-info,
+.gallery-item:focus .gallery-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+    display: none;
+}
+
+.gallery-item-info li {
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.gallery-item-likes {
+    margin-right: 2.2rem;
+}
+
+.gallery-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+.fa-clone,
+.fa-comment {
+    transform: rotateY(180deg);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Loader */
+
+.loader {
+    width: 5rem;
+    height: 5rem;
+    border: 0.6rem solid #999;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    margin: 0 auto;
+    animation: loader 500ms linear infinite;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 40rem) {
+    .profile {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 4rem 0;
     }
-    
-    .carousel-control .glyphicon-chevron-left,
-    .carousel-control .icon-prev {
-        left: 0;
+
+    .profile::after {
+        display: none;
     }
-    
-    .carousel-control .glyphicon-chevron-right,
-    .carousel-control .icon-next {
-        right: 0;
+
+    .profile-image,
+    .profile-user-settings,
+    .profile-bio,
+    .profile-stats {
+        float: none;
+        width: auto;
     }
-    
-    .carousel-control.left span,
-    .carousel-control.right span {
-        background-color: #000;
+
+    .profile-image img {
+        width: 7.7rem;
     }
-    
-    .carousel-control.left span:hover,
-    .carousel-control.right span:hover {
-        opacity: .7;
-        filter: alpha(opacity=70);
+
+    .profile-user-settings {
+        flex-basis: calc(100% - 10.7rem);
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1rem;
     }
-    /* Carousel Header Styles */
-    
-    .header-text {
-        position: absolute;
-        top: 20%;
-        left: 1.8%;
-        right: auto;
-        width: 96.66666666666666%;
-        color: #fff;
+
+    .profile-user-name {
+        font-size: 2.2rem;
     }
-    
-    .header-text h2 {
-        font-size: 50px;
+
+    .profile-edit-btn {
+        order: 1;
+        padding: 0;
+        text-align: center;
+        margin-top: 1rem;
     }
-    
-    .header-text h2 span {
-        -webkit-text-stroke: 1px black;
-        color: #f9af4a;
-        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+
+    .profile-edit-btn {
+        margin-left: 0;
     }
-    
-    .header-text h3 span {
-        padding: 15px;
-        font-size: 40px;
-        color: #03a9f4;
-        -webkit-text-stroke: 0.2px white;
+
+    .profile-bio {
+        font-size: 1.4rem;
+        margin-top: 1.5rem;
     }
-    
-    .btn-min-block {
-        min-width: 170px;
-        line-height: 26px;
+
+    .profile-edit-btn,
+    .profile-bio,
+    .profile-stats {
+        flex-basis: 100%;
     }
-    
-    .btn-theme {
-        color: #fff;
-        background-color: transparent;
-        border: 2px solid #fff;
-        margin-right: 15px;
+
+    .profile-stats {
+        order: 1;
+        margin-top: 1.5rem;
     }
-    
-    .btn-theme:hover {
-        color: #000;
-        background-color: #fff;
-        border-color: #fff;
+
+    .profile-stats ul {
+        display: flex;
+        text-align: center;
+        padding: 1.2rem 0;
+        border-top: 0.1rem solid #dadada;
+        border-bottom: 0.1rem solid #dadada;
     }
+
+    .profile-stats li {
+        font-size: 1.4rem;
+        flex: 1;
+        margin: 0;
+    }
+
+    .profile-stat-count {
+        display: block;
+    }
+}
+
+/* Spinner Animation */
+
+@keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/*
+
+The following code will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox & floated styling. 
+
+*/
+
+@supports (display: grid) {
+    .profile {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 3rem;
+        align-items: center;
+    }
+
+    .profile-image {
+        grid-row: 1 / -1;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+        grid-gap: 2rem;
+    }
+
+    .profile-image,
+    .profile-user-settings,
+    .profile-stats,
+    .profile-bio,
+    .gallery-item,
+ /*   .gallery {
+        width: auto;
+        margin: 0;
+        }*/
+
+        @media (max-width: 40rem) {
+            .profile {
+                grid-template-columns: auto 1fr;
+                grid-row-gap: 1.5rem;
+            }
+
+            .profile-image {
+                grid-row: 1 / 2;
+            }
+
+            .profile-user-settings {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                grid-gap: 1rem;
+            }
+
+            .profile-edit-btn,
+            .profile-stats,
+            .profile-bio {
+                grid-column: 1 / -1;
+            }
+
+            .profile-user-settings,
+            .profile-edit-btn,
+            .profile-settings-btn,
+            .profile-bio,
+            .profile-stats {
+                margin: 0;
+            }
+        }
+    }
+
 </style>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" width="100%;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        <?php  $no=0; foreach ($banner_depan as $key => $value) { $no++; ?>
+            <li data-target="#carousel-example-generic" data-slide-to="<?= $no; ?>" class="active"></li>
+        <?php } ?>
     </ol>
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
@@ -127,102 +485,102 @@
                 <div class="header-text hidden-xs">
                     <div class="col-md-12 text-center">
                         <h2>
-                            	<span><?= $value['header']; ?></span>
-                            </h2>
-                        <br>
-                        <div class="col-lg-8 col-md-8">
-                            <p style="bottom:0px ; font-size: 39px; letter-spacing: 0.5px; text-align:left; line-height:40px; left: -29px !important; float:left; color : #fff; position: relative; top:235px; font-weight:bold;">
-                                <?= $value['caption']; ?>
-                            </p>
-                        </div>
+                           <span><?= $value['header']; ?></span>
+                       </h2>
+                       <br>
+                       <div class="col-lg-8 col-md-8">
+                        <p style="bottom:0px ; font-size: 39px; letter-spacing: 0.5px; text-align:left; line-height:40px; left: -29px !important; float:left; color : #fff; position: relative; top:235px; font-weight:bold;">
+                            <?= $value['caption']; ?>
+                        </p>
+                    </div>
                         <!--<div class="">
-                                <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div> -->
+                            <a class="btn btn-theme btn-sm btn-min-block" href="#">Login</a><a class="btn btn-theme btn-sm btn-min-block" href="#">Register</a></div> -->
+                        </div>
                     </div>
                 </div>
-            </div>
             <?php } ?>
+        </div>
+        <!-- Controls -->
+        <a title="Slide Sebelumnya" class="left carousel-control" style="padding:5px;" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" style="background: transparent; left: 25px;"></span>
+        </a>
+        <a title="Slide Sesudahnya" class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" style="background: transparent; right: 25px;"></span>
+            <span>Next</span>
+        </a>
     </div>
-    <!-- Controls -->
-    <a title="Slide Sebelumnya" class="left carousel-control" style="padding:5px;" href="#carousel-example-generic" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" style="background: transparent; left: 25px;"></span>
-    </a>
-    <a title="Slide Sesudahnya" class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" style="background: transparent; right: 25px;"></span>
-        <span>Next</span>
-    </a>
-</div>
-<!-- /carousel -->
-<div style="background: #fad605; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
-    <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
-    </span>&nbsp;&nbsp;Pengumuman : <?php print_r($artikel_pengumuman[0]['judul']) ?>,&nbsp;&nbsp;<span><?php echo format_tanggal($artikel_pengumuman[0]['tanggal']) ?></span>
-    <a href=""><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
-</div>
-<div class="container">
-    <div class="row" style="margin-top:20px;margin-bottom:10px;text-align:center; cursor:text !important;">
-        <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('http://localhost/pubmsumsel/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
-            <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
-            <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
-            <br/>
-            <span style="display:flex;">
-                <img width="50" height="50" src="<?php echo assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
-                <span style="margin-left: 10px;">
-                    <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Jaya</p>
-                    <p style="font-size:14px; color: #999;">Gubernur & Wakil Gubernur Provinsi Sumatera Selatan</p>
-                </span>
-            </span>
+    <!-- /carousel -->
+    <div style="background: #fad605; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
+        <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
+        </span>&nbsp;&nbsp;Berita : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><?php print_r($artikel_berita[0]['judul']) ?>,</a>&nbsp;&nbsp;<span><?php echo format_tanggal($artikel_berita[0]['tanggal']) ?></span>
+        <a href=""><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
         </div>
-    </div>  
-    <hr>
-    <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
-        <div class="col-lg-3 col-md-4 col-xs-12 rows_data ">
-            <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:0px;" class="img-w img img-responsive">
-            <p style="text-align:left;">
-                Keadaan dimana terwujudnya pembangunan daerah yang berwawasan lingkungan atau pembangunan
-                berkelanjutan dan pembangunan maritim yang merata dan berkeadilan, dimana hasil-hasil pembangunannya
-                dinikmati seluruh anggota masyarakat
-            </p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
-            <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-            <p style="text-align:left;">
-                Kondisi dimana meningkatnya kualitas SDM yang menjunjung tinggi nilai-nilai keimanan, ketaqwaan, kejujuran
-                integritas dan kearifan lokal, disamping terpenuhinya hak-hak dasar masyarakat dengan dukungan dan anggaran
-                pro-rakyat, pro-lingkungan dan pro-gender yang transparan dan akuntabel.
-            </p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
-            <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-            <p style="text-align:left;">
-                Kondisi tercapainya pelayanan publik yang baik dengan dukungan pemerintahan daerah yang bersih dan bebas KKN, 
-                serta meningkatnya partisipasi masyarakat dalam proses penentuan kebijakan pembangunan yang menyangkut hajat hidup banyak orang.
-            </p>
-        </div>
-        <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
-            <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-            <p style="text-align:left;">
-                Terwujudnya rasa aman dan nyaman bagi kehidupan masyarakat sehingga anggota menjalankan aktivitas keagamaan, 
-                terciptanya kehidupan masyarakat yang menghargai perbedaan dan masyarakat dapat menikmati kesenian yang bermutu
-                di pusat-pusat kebudayaan.
-            </p>
-        </div>
-    </div>
-    <hr/>
-    <div class="row container_bidang">
-            <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
-               <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
+        <div class="container">
+            <div class="row" style="margin-top:20px;margin-bottom:10px;text-align:center; cursor:text !important;">
+                <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('http://localhost/pubmsumsel/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
+                    <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
+                    <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
+                    <br/>
+                    <span style="display:flex;">
+                        <img width="50" height="50" src="<?php echo assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
+                        <span style="margin-left: 10px;">
+                            <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Jaya</p>
+                            <p style="font-size:14px; color: #999;">Gubernur & Wakil Gubernur Provinsi Sumatera Selatan</p>
+                        </span>
+                    </span>
+                </div>
+            </div>  
+            <hr>
+            <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
+                <div class="col-lg-3 col-md-4 col-xs-12 rows_data ">
+                    <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:0px;" class="img-w img img-responsive">
+                    <p style="text-align:left;">
+                        Keadaan dimana terwujudnya pembangunan daerah yang berwawasan lingkungan atau pembangunan
+                        berkelanjutan dan pembangunan maritim yang merata dan berkeadilan, dimana hasil-hasil pembangunannya
+                        dinikmati seluruh anggota masyarakat
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                    <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
+                    <p style="text-align:left;">
+                        Kondisi dimana meningkatnya kualitas SDM yang menjunjung tinggi nilai-nilai keimanan, ketaqwaan, kejujuran
+                        integritas dan kearifan lokal, disamping terpenuhinya hak-hak dasar masyarakat dengan dukungan dan anggaran
+                        pro-rakyat, pro-lingkungan dan pro-gender yang transparan dan akuntabel.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                    <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
+                    <p style="text-align:left;">
+                        Kondisi tercapainya pelayanan publik yang baik dengan dukungan pemerintahan daerah yang bersih dan bebas KKN, 
+                        serta meningkatnya partisipasi masyarakat dalam proses penentuan kebijakan pembangunan yang menyangkut hajat hidup banyak orang.
+                    </p>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                    <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
+                    <p style="text-align:left;">
+                        Terwujudnya rasa aman dan nyaman bagi kehidupan masyarakat sehingga anggota menjalankan aktivitas keagamaan, 
+                        terciptanya kehidupan masyarakat yang menghargai perbedaan dan masyarakat dapat menikmati kesenian yang bermutu
+                        di pusat-pusat kebudayaan.
+                    </p>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-               <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-               <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-               <a href="<?php echo baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
-            </div>
-        </div>
-        <br/>
-        <div class="row container_bidang">
+            <hr/>
+            <div class="row container_bidang">
+                <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
+                 <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
+             </div>
+             <div class="col-lg-3 col-md-3 col-xs-12">
+                 <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
+             </div>
+             <div class="col-lg-3 col-md-3 col-xs-12">
+                 <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
+             </div>
+             <div class="col-lg-3 col-md-3 col-xs-12">
+                 <a href="<?php echo baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
+             </div>
+         </div>
+         <br/>
+         <div class="row container_bidang">
             <div class="col-lg-3 col-md-3 col-xs-12">
                 <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
             </div>
@@ -266,75 +624,128 @@
                 <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
             </div>
         </div>
-    <hr>
-    <!-- start section  berita  -->
-    <div class="section section-berita">
-                <div class="row">
-                    <div class="col-md-8">
-                                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
-                                <?php foreach ($artikel_berita as $aka): ?>
-                                    <div class="col-md-6">
-                                        <div class="row">
-                                            <div style="width:100%;height:auto;">
-                                                <?php echo "<img class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><p class='news_header_text'> ".potong_text($aka['judul'],36)."</p></a>"; ?>
-                                                <p class="posted_text">posted by
-                                                    <?php echo $aka['nama_admin'] ?>
-                                                        <?php echo format_tanggal($aka['tanggal']) ?>
-                                                </p>
-                                                <br>
-                                        </div>
-                                    </div>
-                                    <?php endforeach; ?>
-                    </div>
+        <hr>
+        <!-- start section  berita  -->
+        <div class="section section-berita">
+            <div class="row">
+                <div class="col-md-8">
+                    <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
+                    <?php foreach ($artikel_berita as $aka): ?>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div style="width:100%;height:auto;">
+                                    <?php echo "<img class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><p class='news_header_text'> ".potong_text($aka['judul'],36)."</p></a>"; ?>
+                                <p class="posted_text">posted by
+                                    <?php echo $aka['nama_admin'] ?>
+                                    <?php echo format_tanggal($aka['tanggal']) ?>
+                                </p>
+                                <br>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
 
-                    <div class="col-md-4">
-                        <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">Pengumuman</a></span>
+                <div class="col-md-4">
+                    <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">FOLLOW ON INSTAGRAM</a></span>
                         <div class="announce_cont">
-                                        <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
+                            <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
                             <div class="pu_list_berita">
                                 <div class="tab-content">
                                     <div class="tab-pane active text-style" id="tab1">
-                                        <ul style="position: relative; left:-20px; margin-top:20px;">
-                                            <?php foreach ($artikel_pengumuman as $pengumuman){ ?>
-                                                <li style="list-style:none;">
-                                                    <?php echo "<a href='".artikel_url($pengumuman['id'],$pengumuman['slug'])."'>".potong_text($pengumuman['judul'],35)."</a></h4>"; ?>
-                                                        <p class="posted_text">posted by
-                                                            <?php echo $pengumuman['nama_admin'] ?>
-                                                            <?php echo format_tanggal($pengumuman['tanggal']) ?> 
-                                                        </p>
-                                                        <hr>
-                                                </li>
-                                                <?php } ?>
-                                        </ul>
+
+                                        <div class="col-md-4" tabindex="0">
+                                            <div class="gallery-item" tabindex="0">
+                                                <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                                   <!--  <div class="gallery-item-info">
+                                                        <ul>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" tabindex="0">
+                                                <div class="gallery-item" tabindex="0">
+                                                    <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                                   <!--  <div class="gallery-item-info">
+                                                        <ul>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 56</li>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4" tabindex="0">
+                                                <div class="gallery-item" tabindex="0">
+                                                    <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                                   <!--  <div class="gallery-item-info">
+                                                        <ul>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4" tabindex="0">
+                                                <div class="gallery-item" tabindex="0">
+                                                    <img src="https://images.unsplash.com/photo-1515814472071-4d632dbc5d4a?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                                   <!--  <div class="gallery-item-info">
+                                                        <ul>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4" tabindex="0">
+                                                <div class="gallery-item" tabindex="0">
+                                                    <img src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                                   <!--  <div class="gallery-item-info">
+                                                        <ul>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-4" tabindex="0">
+                                                <div class="gallery-item" tabindex="0">
+                                                    <img src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                                   <!--  <div class="gallery-item-info">
+                                                        <ul>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                        </ul>
+                                                    </div> -->
+                                                </div>
+                                            </div>
+
+
+                                        </div>
                                     </div>
-                                    <!--
-													<div class="tab-pane text-style" id="tab2">
-														<ul>
-															<?php foreach ($artikel_agenda as $agenda){ ?>
-																	<?php echo "<a href='".artikel_url($agenda['id'],$agenda['slug'])."'>".potong_text($agenda['judul'],40)."</a>"; ?>
-																	<p>posted by <?php echo $agenda['nama_admin'] ?> <?php format_tanggal($agenda['tanggal']) ?></p>
-															<?php } ?>
-														</ul>
-												</div>
-												-->
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-        <!-- end section berita -->
-        <!-- srat section galeri -->
-        <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
-    </div>
-    <hr/>
-    <div class="section section-berita">
-        <p style="">Galeri Foto</p>
-        <div class="row">
+                    <!-- end section berita -->
+                    <!-- srat section galeri -->
+                    <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
+                </div>
+                <hr/>
+                <div class="section section-berita">
+                    <p style="">Galeri Foto</p>
+                    <div class="row">
                 <!-- <div class="col-md-4">
                     <div style="width:100%;height:auto;background-color:#77848e;">
                         <a href="<?php echo galeri_url($galeri_rand->id,$galeri_rand->slug) ?>">
@@ -342,22 +753,22 @@
                         </a>
                     </div>
                 </div> -->
-                    <?php $i = 0; ?>
-                        <?php foreach ($get_galeri as $galeri): ?>
-                            <?php if ($i<6): ?>
-                                <div class="col-lg-3 col-md-3" style="margin-top:10px;margin-bottom:80px;">
-                                    <div style="width:100%;height:120px;background-color:#77848e;">
-                                        <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' /></a>";  ?>
-                                    </div>
-                                </div>
+                <?php $i = 0; ?>
+                <?php foreach ($get_galeri as $galeri): ?>
+                    <?php if ($i<6): ?>
+                        <div class="col-lg-3 col-md-3" style="margin-top:10px;margin-bottom:80px;">
+                            <div style="width:100%;height:120px;background-color:#77848e;">
+                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' /></a>";  ?>
+                            </div>
+                        </div>
 
-                                <?php endif; ?>
-                                    <?php $i++; ?>
-                                        <?php endforeach; ?>
+                    <?php endif; ?>
+                    <?php $i++; ?>
+                <?php endforeach; ?>
+            </div>
+
         </div>
-
-    </div>
-    <!-- end section galeri -->
+        <!-- end section galeri -->
 
     <!-- <div class="section" id="about">
                 <div class="video-background-container">
@@ -432,7 +843,7 @@
             </div>
 
          </div>
- -->
+     -->
 
     <!-- <div id="specialist" class="parallax section" style="padding:0;background-image: url(<?php echo $informasi['featured_image'] ?>);">
             <div class='overlay'>
@@ -540,6 +951,6 @@
                 </div>
             </div>
 
-         </div> -->
+        </div> -->
 
-</div>
+    </div>
