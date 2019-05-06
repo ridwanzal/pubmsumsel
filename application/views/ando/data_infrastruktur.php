@@ -9,19 +9,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	</div>
 
 		<div class='col-md-12 left-side'>
-
 			<div class="artikel">
 				<div class="konten">
-				    
-				    
-				    
-				    
-				    
-				    
-				    
-				    
-				    
-<div class="panel-group" id="accordion">
+        <p>Fungsi Jaringan Jalan</p>
+        <img src='<?=base_url();?>an-component/media/upload-galeri/fungsi_jaringan_jalan.jpg'>
+        <p>Prasarana Jalan</p>
+        <img src='<?=base_url();?>an-component/media/upload-galeri/prasarana_jalan_A3.jpg'>
+<!-- <div class="panel-group" id="accordion">
     <?php foreach($get_year_infra as $i) :?>
     <div class="panel panel-default">
       <div class="panel-heading">
@@ -77,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <?php endforeach; ?>
     
-  </div>
+  </div> -->
 				    
 				    
 				    

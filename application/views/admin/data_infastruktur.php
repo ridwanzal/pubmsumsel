@@ -12,7 +12,6 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
           </h1>
           <ol class="breadcrumb">
             <li><a href="<?php echo $burl; ?>/"><i class="fa fa-dashboard"></i> Halaman Utama</a></li><li class="active">Semua Page</li>
-
           </ol>
         </section>
 
