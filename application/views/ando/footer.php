@@ -121,9 +121,9 @@ echo "</div>"; //.col-md-4
                   <p style="font-size:20px;font-weight:bold;visibility:hidden;">Tautan</p>
                   <br/>
                   <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Sumatera Selatan</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >Kabar Muara</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >CAPIL Kab. Muara Enim</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >DISPERINDAG Kab. Muara Enim</p></a>
+                  <a href="http://bkd.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BKD Sumatera Selatan</p></a>
+                  <a href="#" class="text-footers"><p class="text-footers" >Kominfo Sumatera Selatan</p></a>
+                  <a href="#" class="text-footers"><p class="text-footers" >Dinas PU Pengairan Sumatera Selatan</p></a>
                 </div>
                 <div class="col-md-3" style="display:none;">
                 <?php
