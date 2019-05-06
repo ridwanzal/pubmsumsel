@@ -24,7 +24,6 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
      <meta property="article:publisher" content="<?php echo $informasi['article-publisher']; ?>" />
      <meta property="article:published_time" content="<?php echo $informasi['article-published_time']; ?>" />
 <?php } ?>
-
 	<link rel="icon" type="image/ico" href="<?php echo assets_url('img/pu.png') ?>" />
 	<!-- <link rel='shortcut icon' href='<?php echo $informasi['favicon'] ?>' /> -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css' />

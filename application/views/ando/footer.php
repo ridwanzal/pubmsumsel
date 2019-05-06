@@ -89,6 +89,7 @@ echo "</div>"; //.col-md-4
             <div class="row">
                 <div class="col-md-3">
                         <p class="text-footers-size">
+                        Dinas PUBMTR Sumatera Selatan<br/>
                         Jl. Ade Irma Nasution No.10 Kota Palembang</p>
                         <br/>
                         <p class="text-footers-size">Telp: (0711) 321053</p>
@@ -103,17 +104,17 @@ echo "</div>"; //.col-md-4
                 <div class="col-md-3">
                     <p style="font-size:20px;font-weight:bold; letter-spacing:1px;">Tautan</p>
                     <br/>
-                  <a href="#" class="text-footers"><p class="text-footers" >Kabupaten Muara Enim</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >LPSE Muara Enim</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >Lingkungan Hidup</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >Dinas Kehutanan</p></a>
+                  <a href="http://sumselprov.go.id" class="text-footers"><p class="text-footers" >Pemerintah Provinsi Sumatera Selatan</p></a>
+                  <a href="http://lpse.sumselprov.go.id" class="text-footers"><p class="text-footers" >LPSE Sumatera Selatan</p></a>
+                  <a href="http://dlhp.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Dinas LH dan Pertanahan</p></a>
+                  <a href="https://www.dishutsumsel.go.id/" class="text-footers"><p class="text-footers" >Dinas Kehutanan Sumatera Selatan</p></a>
                 </div>
                 <div class="col-md-3">
                   <p style="font-size:20px;font-weight:bold; visibility:hidden;">Tautan</p>
                   <br/>
-                  <a href="#" class="text-footers"><p class="text-footers" >BAPPEDA Muara Enim</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >BKPSDM</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >Dinas Sosial Kab. Muara Enim</p></a>
+                  <a href="http://bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Sumatera Selatan</p></a>
+                  <a href="http://www.bkpsdm.palembang.go.id/" class="text-footers"><p class="text-footers" >BKPSDM Palembang</p></a>
+                  <a href="http://dinsos.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Dinas Sosial Sumatera Selatan</p></a>
                   <a href="#" class="text-footers"><p class="text-footers" >JDIH Kab. Muara Enim</p></a>
                 </div>
                 <div class="col-md-3">
@@ -177,10 +178,10 @@ echo "</div>"; //.col-md-4
   </main>
 <div style="background:#1c4a90; color:#fff; overflow-x:hidden; padding:10px;">
   <div class="row">
-    <div class="col-lg-5 col-md-5 col-xs-12">
-        <span style="padding-left:96px;"><img width="18" src="<?php echo assets_url('img/footer_logo.svg') ?>">&nbsp;&nbsp;&nbsp;<span style="font-size:14px;">All Site Content Copyright 2019 Dinas PUPR Muara Enim</span></span>
+    <div class="col-lg-6 col-md-6 col-xs-12">
+        <span style="padding-left:96px;"><img width="18" src="<?php echo assets_url('img/footer_logo.svg') ?>">&nbsp;&nbsp;&nbsp;<span style="font-size:14px;">All Site Content Copyright 2019 Dinas PUBMTR Provinsi Sumatera Selatan</span></span>
     </div>
-    <div class="col-lg-7 col-md-7 col-xs-12 text-right" style="padding-right:120px; font-size:12px;">
+    <div class="col-lg-6 col-md-6 col-xs-12 text-right" style="padding-right:120px; font-size:12px;">
         <span>
             Online : <?= $pengunjungonline;?>
         </span>
@@ -404,8 +405,7 @@ echo "</div>"; //.col-md-4
         });
 
         $("#share").jsSocials({
-            shares: ["facebook", "twitter", "googleplus", "whatsapp"],
-
+            shares: ["twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
         });
 
         <?php echo $informasi['custom_javascript']; ?>

@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<div class="artikel">
 
-			<?php //if($page["foto"]!=""){
+			<!-- <?php //if($page["foto"]!=""){
 			//	echo "<img class='img-responsive' alt='$page[judul]' src='$page[foto]' />";
 		//	} 
 
@@ -36,13 +36,13 @@ foreach($so as $cb):
  NIP : <?= $cb['so_nip']; ?>   
 </div>
 </div>
-<?php endforeach; ?>
+<?php endforeach; ?> -->
 
 
 
 
 
-		<img class='img-responsive' src="<?= base_url(); ?>/uploads/bidang/strukturfoto.jpg" />	
+		<img class='img-responsive' src="<?= base_url(); ?>/uploads/bidang/struktur_org.svg" />	
 		
 		 <div class='konten'>
 			<div class="isi">
