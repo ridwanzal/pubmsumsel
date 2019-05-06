@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<div class='col-md-12' id="header-bidang">
       <div class="pu-title">
-			     <h1><span><?php echo $heading; ?></span></h1>
+			     <h3 style="color:#111;"><span><?php echo $heading; ?></span></h3>
       </div>
 	</div>
 
