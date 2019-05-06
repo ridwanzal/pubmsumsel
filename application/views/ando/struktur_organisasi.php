@@ -42,9 +42,8 @@ foreach($so as $cb):
 
 
 
-		<img class='img-responsive' src='http://localhost/pubmsumsel/uploads/bidang/strukturfoto.jpg' />	
+		<img class='img-responsive' src="<?= base_url(); ?>/uploads/bidang/strukturfoto.jpg" />	
 		
-			
 		 <div class='konten'>
 			<div class="isi">
 				<?php // echo reversequote($page['isi'],'all'); ?>

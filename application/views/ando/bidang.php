@@ -13,8 +13,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
 	</div>
 
-
-
 	<div class='col-md-12 left-side'>
 
 		<div class="col-md-12">
@@ -26,8 +24,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					 
 <?php  
 echo "&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-
-
 
 if($bidang['id'] == '2783'){
     $jkel='1';
