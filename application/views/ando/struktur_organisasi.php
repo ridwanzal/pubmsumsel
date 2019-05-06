@@ -42,7 +42,7 @@ foreach($so as $cb):
 
 
 
-		<img class='img-responsive' src='uploads/bidang/strukturfoto.jpg' />	
+		<img class='img-responsive' src='http://localhost/pubmsumsel/uploads/bidang/strukturfoto.jpg' />	
 		
 			
 		 <div class='konten'>

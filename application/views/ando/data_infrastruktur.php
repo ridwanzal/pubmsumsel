@@ -14,9 +14,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <p>SK Gubernur Th. 2016</p>
         <div title="SK Gubernur Th. 2016" style="background : #eee; padding: 10px 10px 10px 15px; margin-top:5px; margin-bottom:30px; border-radius:4px;s"><a href='<?=base_url();?>an-component/media/upload-galeri/sk_gub_2016.pdf'><span class="fa fa-file "></span>&nbsp;&nbsp;View Documents</a></div>
         <p>Fungsi Jaringan Jalan</p>
-        <img src='<?=base_url();?>an-component/media/upload-galeri/fungsi_jaringan_jalan.jpg'>
+        <img style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;" src='<?=base_url();?>an-component/media/upload-galeri/fungsi_jaringan_jalan.jpg'>
+        <br/>
+        <br/>
         <p>Prasarana Jalan</p>
-        <img src='<?=base_url();?>an-component/media/upload-galeri/prasarana_jalan_A3.jpg'>
+        <img style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;"  src='<?=base_url();?>an-component/media/upload-galeri/prasarana_jalan_A3.jpg'>
 <!-- <div class="panel-group" id="accordion">
     <?php foreach($get_year_infra as $i) :?>
     <div class="panel panel-default">
