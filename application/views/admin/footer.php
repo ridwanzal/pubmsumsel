@@ -3325,7 +3325,6 @@ if($artikel_status==false){
           success: function(a){
             if(a=="ok"){
               $(".menu-belum-active").remove();
-
             } else {
               error_alert("internal error","terjadi kesalahan internal <br>Error: "+a);
             }

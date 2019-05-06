@@ -115,12 +115,12 @@ echo "</div>"; //.col-md-4
                   <a href="http://bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Sumatera Selatan</p></a>
                   <a href="http://www.bkpsdm.palembang.go.id/" class="text-footers"><p class="text-footers" >BKPSDM Palembang</p></a>
                   <a href="http://dinsos.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Dinas Sosial Sumatera Selatan</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >JDIH Kab. Muara Enim</p></a>
+                  <a href="http://jdih.sumselprov.go.id" class="text-footers"><p class="text-footers" >JDIH Sumatera Selatan</p></a>
                 </div>
                 <div class="col-md-3">
                   <p style="font-size:20px;font-weight:bold;visibility:hidden;">Tautan</p>
                   <br/>
-                  <a href="#" class="text-footers"><p class="text-footers" >BPKAD Kab. Muara Enim</p></a>
+                  <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Sumatera Selatan</p></a>
                   <a href="#" class="text-footers"><p class="text-footers" >Kabar Muara</p></a>
                   <a href="#" class="text-footers"><p class="text-footers" >CAPIL Kab. Muara Enim</p></a>
                   <a href="#" class="text-footers"><p class="text-footers" >DISPERINDAG Kab. Muara Enim</p></a>
