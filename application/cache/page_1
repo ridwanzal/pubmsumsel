@@ -1,7 +1,7 @@
-a:3:{s:4:"time";i:1557154494;s:3:"ttl";i:6000000;s:4:"data";a:2:{s:6:"jumlah";i:1;s:4:"data";a:8:{s:2:"id";s:1:"1";s:5:"judul";s:13:"Visi dan Misi";s:4:"slug";s:13:"visi-dan-misi";s:3:"isi";s:6183:"<p style="text-align: center; padding-left: 30px;"><img src="http://localhost/an-component/media/upload-gambar-pendukung/bapak.png" alt=""> </p>
+a:3:{s:4:"time";i:1557175796;s:3:"ttl";i:6000000;s:4:"data";a:2:{s:6:"jumlah";i:1;s:4:"data";a:8:{s:2:"id";s:1:"1";s:5:"judul";s:13:"Visi dan Misi";s:4:"slug";s:13:"visi-dan-misi";s:3:"isi";s:6106:"<p style="text-align: center; padding-left: 30px;"><img src="http://localhost/an-component/media/upload-gambar-pendukung/default.png" alt=""> </p>
 <div class="row">
 <div class="">
-<div class="col-md-2" style="padding-left: 30px;"><img src="http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/bapak.png">
+<div class="col-md-2" style="padding-left: 30px;"><img src="http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/default.png">
 <p align="justify"><span style="color: #323233;"><span style="font-family: 'Open sans', sans-serif;"><span style="font-size: small;">H. Darma Budhi, S.H., S.T., M.T</span></span></span></p>
 <p class="western" lang="x-none"><span style="color: #323233;"><span style="font-family: 'Open sans', sans-serif;"><span style="font-size: xx-small;">Kepala Dinas PUBMTR Sumatera Selatan</span></span></span></p>
 <p style="text-align: center;"> </p>
@@ -35,7 +35,6 @@ a:3:{s:4:"time";i:1557154494;s:3:"ttl";i:6000000;s:4:"data";a:2:{s:6:"jumlah";i:
 <p class="western" lang="x-none"><span style="font-family: Lato;"><span style="font-size: medium;">Untuk mewujudkan visi diatas, maka Dinas Pekerjaan Umum Bina Marga dan Tata Ruang Provinsi Sumatera Selatan mempunyai misi yang harus diemban, yaitu :</span></span></p>
 <p class="western" lang="x-none"> </p>
 <p align="justify"><span style="color: #000000;">“<span style="font-family: Lato;"><span style="font-size: medium;"><span lang="en-ID"><em><strong>Membangun dan meningkatkan kualitas dan kuantitas infrastruktur termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman dan perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah”</strong></em></span></span><em><strong>.</strong></em></span></span></p>
-<p class="western" lang="x-none"><span style="font-family: Lato;"><span style="font-size: medium;"> </span></span></p>
 </div>
 </div>
 </div>";s:4:"foto";s:0:"";s:10:"javascript";s:0:"";s:13:"meta_keywords";s:0:"";s:16:"meta_description";s:0:"";}}}
