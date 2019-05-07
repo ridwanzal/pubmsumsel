@@ -18,50 +18,100 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="col-md-12">
 				<div class="artikel">
 					<div class="konten">
-						<div class="isi">
-							
-							
-						<!-- 	
-							<?php  
-							echo "&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-
-							if($bidang['id'] == '2783'){
-								$jkel='1';
-							} else if($bidang['id'] == '3899'){
-								$jkel='2';
-							} else if($bidang['id'] == '4454'){
-								$jkel='3';
-							} else if($bidang['id'] == '3187'){
-								$jkel='4';
-							} else if($bidang['id'] == '2750'){
-								$jkel='5';
-							} else if($bidang['id'] == '7549'){
-								$jkel='6';
-							} else if($bidang['id'] == '7822'){
-								$jkel='7';
-							} else {
-								$jkel='0';
-							}
 
 
+						<div class="row">
+							<div class="col-md-10 col-md-offset-1">
+								<div class="col-lg-12">
 
-							$ck = $this->db->query("SELECT * FROM struktur_organisasi inner join jabatan on struktur_organisasi.jabatan_id = jabatan.jabatan_id && jabatan.jabatan_kelompok='$jkel'")->result_array();
-							foreach($ck as $ca): 
-								?>
-								
-								<img src="<?=base_url();?>uploads/bidang/<?= $ca['so_foto']; ?>"  class="bd_img_<?= $ca['jabatan_kd'];?>">
 
-								<div class="bd_<?= $ca['jabatan_kd']; ?>">
-									<p><?= $ca['so_nama']; ?><br></p>  
-									<div class="ca">
-										NIP : <?= $ca['so_nip']; ?>   
+									<div class="row pt-md text-center">
+
+
+										<?php  
+										echo "&ensp;&ensp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+
+										if($bidang['id'] == '2783'){
+											$jkel='1';
+										} else if($bidang['id'] == '7822'){
+											$jkel='3';
+										} else if($bidang['id'] == '7549'){
+											$jkel='4';
+										} else if($bidang['id'] == '3899'){
+											$jkel='6';
+										} else if($bidang['id'] == '2750'){
+											$jkel='2';
+										} else if($bidang['id'] == '4454'){
+											$jkel='5';
+										} else if($bidang['id'] == '2941'){
+											$jkel='14';
+										} else if($bidang['id'] == '5041'){
+											$jkel='15';
+										} else if($bidang['id'] == '3187'){
+											$jkel='7';
+										} else if($bidang['id'] == '2094'){
+											$jkel='13';
+										} else if($bidang['id'] == '1691'){
+											$jkel='9';
+										} else if($bidang['id'] == '6358'){
+											$jkel='12';
+										} else if($bidang['id'] == '2586'){
+											$jkel='11';
+										} else if($bidang['id'] == '194'){
+											$jkel='8';
+										} else if($bidang['id'] == '1796'){
+											$jkel='10';
+										} else {
+											$jkel='0';
+										}
+
+										$ck = $this->db->query("SELECT * FROM struktur_organisasi inner join jabatan on struktur_organisasi.jabatan_id = jabatan.jabatan_id && jabatan.jabatan_kelompok='$jkel'")->result_array();
+
+										foreach($ck as $ca): 
+
+											if($ca['jabatan_jenis']=='kepala'){
+												?>
+												<div class="row pt-md text-center">
+
+													<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 profile  col-sm-12 col-xs-12">
+														<div class="img-box">
+															<p class="text-center">
+																<img src="<?= base_url('uploads/struktur_organisasi/man.png')?>" class="img-responsive">
+															</p>
+															<ul class="text-center">
+																<a href="#"><li><i class="fa fa-facebook"></i></li></a>
+																<a href="#"><li><i class="fa fa-twitter"></i></li></a>
+																<a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+															</ul>
+														</div>
+														<h1><?= $ca['so_nama']; ?></h1>
+														<h2><?= $ca['jabatan_nama']; ?>  </h2>
+													</div>
+												</div>
+											<?php	} else { ?>
+												<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 profile">
+													<div class="img-box">
+														<img src="<?=base_url();?>uploads/struktur_organisasi/<?= $ca['so_foto']; ?>" class="img-responsive">
+														<ul class="text-center">
+															<a href="#"><li><i class="fa fa-facebook"></i></li></a>
+															<a href="#"><li><i class="fa fa-twitter"></i></li></a>
+															<a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+														</ul>
+													</div>
+													<h1><?= $ca['so_nama']; ?></h1>
+													<h2><?= $ca['jabatan_nama']; ?>  </h2>
+												</div>
+											<?php } endforeach; 	 ?>
+
+										</div>
+
 									</div>
 								</div>
-							<?php endforeach; 	 ?>
-							
-							
-							<img src="<?php echo site_url().$bidang['foto'] ?>" alt=""> -->
+							</div>
 						</div>
+
+
+
 					</div>
 				</div>
 			</div>
@@ -77,10 +127,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<div class='konten'>
 						<div class="isi" style="margin:20px;">
 							<div class="row">
-							<!-- 	<h4 style="font-weight:600;font-style:bold;">Tugas</h4>
-								<?php echo html_entity_decode($bidang['tugas']) ?> <br>
-								<h4 style="font-weight:600;font-style:bold;">Fungsi</h4>
-								<?php echo html_entity_decode($bidang['fungsi']) ?> -->
+								<?php 
+								if($bidang['tugas']==null || $bidang['tugas']=='') { ?>
+									<?php
+								} else {
+									?>
+									<h4 style="font-weight:600;font-style:bold;">Tugas</h4>
+									<?php echo html_entity_decode($bidang['tugas']) ?> <br>
+								<?php } 
+
+								if($bidang['fungsi']==null || $bidang['fungsi']=='') {} else {
+									?>
+									<h4 style="font-weight:600;font-style:bold;">Fungsi</h4>
+									<?php echo html_entity_decode($bidang['fungsi']) ?>
+
+								<?php } ?>
 							</div>
 						</div>
 
