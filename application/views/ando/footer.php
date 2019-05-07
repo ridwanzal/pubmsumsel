@@ -178,10 +178,7 @@ echo "</div>"; //.col-md-4
   </main>
 <div style="background:#1c4a90; color:#fff; overflow-x:hidden; padding:10px;">
   <div class="row">
-    <div class="col-lg-6 col-md-6 col-xs-12">
-        <span style="padding-left:96px;"><img width="18" src="<?php echo assets_url('img/footer_logo.svg') ?>">&nbsp;&nbsp;&nbsp;<span style="font-size:14px;">All Site Content Copyright 2019 Dinas PUBMTR Provinsi Sumatera Selatan</span></span>
-    </div>
-    <div class="col-lg-6 col-md-6 col-xs-12 text-right" style="padding-right:120px; font-size:12px;">
+    <div class="col-lg-12 col-md-12 col-xs-12 text-left" style="padding-left:110px;font-size:12px;">
         <span>
             Online : <?= $pengunjungonline;?>
         </span>
