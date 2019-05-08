@@ -532,134 +532,133 @@ Remove or comment-out the code block below to see how the browser will fall-back
             </div>  
             <hr>
             <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
-                <div class="col-lg-3 col-md-4 col-xs-12 rows_data ">
-                    <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:0px;" class="img-w img img-responsive">
-                    <p style="text-align:left;">
-                        Keadaan dimana terwujudnya pembangunan daerah yang berwawasan lingkungan atau pembangunan
-                        berkelanjutan dan pembangunan maritim yang merata dan berkeadilan, dimana hasil-hasil pembangunannya
-                        dinikmati seluruh anggota masyarakat
-                    </p>
-                </div>
                 <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
                     <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;">
-                        Kondisi dimana meningkatnya kualitas SDM yang menjunjung tinggi nilai-nilai keimanan, ketaqwaan, kejujuran
-                        integritas dan kearifan lokal, disamping terpenuhinya hak-hak dasar masyarakat dengan dukungan dan anggaran
-                        pro-rakyat, pro-lingkungan dan pro-gender yang transparan dan akuntabel.
+                    <p style="text-align:left;font-size: 10px;">
+                        Membangun Sumsel berbasis ekonomi kerakyatan, yang didukung sektor pertanian, industri, dan UMKM yang tangguh untuk mengatasi pengangguran dan kemiskinan baik di perkotaan maupun di perdesaan
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                <div class="col-lg-2 col-md-4 col-xs-12 rows_data">
                     <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;">
-                        Kondisi tercapainya pelayanan publik yang baik dengan dukungan pemerintahan daerah yang bersih dan bebas KKN, 
-                        serta meningkatnya partisipasi masyarakat dalam proses penentuan kebijakan pembangunan yang menyangkut hajat hidup banyak orang.
+                    <p style="text-align:left;font-size: 10px;">
+                        Membangun Sumsel berbasis ekonomi kerakyatan, yang didukung sektor pertanian, industri, dan UMKM yang tangguh untuk mengatasi pengangguran dan kemiskinan baik di perkotaan maupun di perdesaan
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                <div class="col-lg-2 col-md-4 col-xs-12 rows_data">
                     <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;">
-                        Terwujudnya rasa aman dan nyaman bagi kehidupan masyarakat sehingga anggota menjalankan aktivitas keagamaan, 
-                        terciptanya kehidupan masyarakat yang menghargai perbedaan dan masyarakat dapat menikmati kesenian yang bermutu
-                        di pusat-pusat kebudayaan.
+                    <p style="text-align:left;font-size: 10px;">
+                        Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilit yang didukung aparatur pemerintahan yang jujur berintegritas, profesional, dan responsif.
                     </p>
                 </div>
+                <div class="col-lg-2 col-md-4 col-xs-12 rows_data ">
+                    <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:0px;" class="img-w img img-responsive">
+                    <p style="text-align:left;font-size: 10px;">
+                     Membangun dan meningkatkan kualitas dan kuantitas infrastruktur, termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman & perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah.
+                 </p>
+             </div>
+             <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
+                    <p style="text-align:left;font-size: 10px;">
+                    Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
+                </p>
             </div>
-            <hr/>
-            <div class="row container_bidang">
-                <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
-                 <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
-             </div>
-             <div class="col-lg-3 col-md-3 col-xs-12">
-                 <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
-             </div>
-             <div class="col-lg-3 col-md-3 col-xs-12">
-                 <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
-             </div>
-             <div class="col-lg-3 col-md-3 col-xs-12">
-                 <a href="<?php echo baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
-             </div>
+        </div>
+        <hr/>
+        <div class="row container_bidang">
+            <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
+             <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
          </div>
-         <br/>
-         <div class="row container_bidang">
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>Bidang Penataan Ruang</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
-            </div>
+         <div class="col-lg-3 col-md-3 col-xs-12">
+             <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
+         </div>
+         <div class="col-lg-3 col-md-3 col-xs-12">
+             <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
+         </div>
+         <div class="col-lg-3 col-md-3 col-xs-12">
+             <a href="<?php echo baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
+         </div>
+     </div>
+     <br/>
+     <div class="row container_bidang">
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
         </div>
-        <br/>
-        <div class="row container_bidang">
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
-            </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
         </div>
-        <br/>
-        <div class="row container_bidang">
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
-            </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>Bidang Penataan Ruang</p></a>
         </div>
-        <hr>
-        <!-- start section  berita  -->
-        <div class="section section-berita">
-            <div class="row">
-                <div class="col-md-8">
-                    <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
-                    <?php foreach ($artikel_berita as $aka): ?>
-                        <div class="col-md-6">
-                            <div class="row">
-                                <div style="width:100%;height:auto;">
-                                    <?php echo "<img class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><p class='news_header_text'> ".potong_text($aka['judul'],36)."</p></a>"; ?>
-                                <p class="posted_text">posted by
-                                    <?php echo $aka['nama_admin'] ?>
-                                    <?php echo format_tanggal($aka['tanggal']) ?>
-                                </p>
-                                <br>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
+        </div>
+    </div>
+    <br/>
+    <div class="row container_bidang">
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
+        </div>
+    </div>
+    <br/>
+    <div class="row container_bidang">
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
+        </div>
+        <div class="col-lg-3 col-md-3 col-xs-12">
+            <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
+        </div>
+    </div>
+    <hr>
+    <!-- start section  berita  -->
+    <div class="section section-berita">
+        <div class="row">
+            <div class="col-md-8">
+                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
+                <?php foreach ($artikel_berita as $aka): ?>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div style="width:100%;height:auto;">
+                                <?php echo "<img class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
                             </div>
                         </div>
-                    <?php endforeach; ?>
-                </div>
+                        <div class="row">
+                            <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><p class='news_header_text'> ".potong_text($aka['judul'],36)."</p></a>"; ?>
+                            <p class="posted_text">posted by
+                                <?php echo $aka['nama_admin'] ?>
+                                <?php echo format_tanggal($aka['tanggal']) ?>
+                            </p>
+                            <br>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
 
-                <div class="col-md-4">
-                    <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">FOLLOW ON INSTAGRAM</a></span>
-                        <div class="announce_cont">
-                            <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
-                            <div class="pu_list_berita">
-                                <div class="tab-content">
-                                    <div class="tab-pane active text-style" id="tab1">
+            <div class="col-md-4">
+                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">FOLLOW ON INSTAGRAM</a></span>
+                    <div class="announce_cont">
+                        <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
+                        <div class="pu_list_berita">
+                            <div class="tab-content">
+                                <div class="tab-pane active text-style" id="tab1">
 
-                                        <div class="col-md-4" tabindex="0">
-                                            <div class="gallery-item" tabindex="0">
-                                                <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
+                                    <div class="col-md-4" tabindex="0">
+                                        <div class="gallery-item" tabindex="0">
+                                            <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
                                                    <!--  <div class="gallery-item-info">
                                                         <ul>
                                                             <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
@@ -755,10 +754,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </div> -->
                 <?php $i = 0; ?>
                 <?php foreach ($get_galeri as $galeri): ?>
-                    <?php if ($i<6): ?>
+                    <?php if ($i<8): ?>
                         <div class="col-lg-3 col-md-3" style="margin-top:10px;margin-bottom:80px;">
                             <div style="width:100%;height:120px;background-color:#77848e;">
-                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' /></a>";  ?>
+                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:120px;text-align:center'; /></a>";  ?>
                             </div>
                         </div>
 

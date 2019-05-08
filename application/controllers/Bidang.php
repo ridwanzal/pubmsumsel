@@ -18,11 +18,14 @@ class Bidang extends AN_Apricot
 
 		$data=$this->public_data;
 		$kategori = $bidang["kategori"];
+		$kategori_galeri = $bidang["kategori_galeri"];
+		$tag_id = $bidang["tag_id"];
 
-		$data["artikel_kategori"]=$this->artikel->artikel_kategori($kategori);
-		$data['get_galeri'] = $this->galeri->get_galeri_by_kategori($kategori);
+		$data["artikel_kategori"]=$this->artikel->get_all_limit();
+		$data['get_galeri'] = $this->galeri->get_galeri_by_kategori($kategori_galeri);
 		$data["informasi"]["title"]="judul";
 		$data["kategori"]=$kategori;
+		$data["tag_id"]=$tag_id;
 		$data["informasi"]["current_bidang"]="bidang";
 		$data["informasi"]["uniqueid"]="bidang_".$id;
 		$data["informasi"]["custom_javascript"]=$bidang["javascript"];

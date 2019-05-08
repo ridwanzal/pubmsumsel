@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 07, 2019 at 08:42 PM
+-- Generation Time: May 08, 2019 at 07:22 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -78,20 +78,18 @@ CREATE TABLE `artikel` (
 --
 
 INSERT INTO `artikel` (`artikel_id`, `artikel_judul`, `artikel_isi`, `artikel_kategori`, `artikel_tags`, `artikel_foto`, `artikel_sbg_headline`, `artikel_tgl_posting`, `artikel_id_user`, `artikel_tgl_last_edit`, `artikel_editable`, `artikel_id_user_last_edit`, `artikel_seo_url`, `artikel_meta_description`, `artikel_meta_author`, `artikel_meta_keyword`, `artikel_og_image`, `artikel_og_title`, `artikel_og_description`, `artikel_in_draft`, `artikel_aktif`, `artikel_terhapus`, `artikel_status`, `artikel_was_published`, `artikel_sesi_id`, `artikel_dibaca`) VALUES
-(1, 'Petani Kopi Audensi Dengan LPHD', '<p>Muara Enim Tim News Room Kominfo. Warga Semende Kabupaten Muara Enim yang sebagian besar bekerja sebagai petani kopi sebagai matapencarian  berasal dari 14 desa melakukan evaluasi dan audiensi dengan Lembaga Pengawas Hutan Desa (LPHD) di Ruang Rapat Bappeda Muara Enim. Rabu (14/9/2016). Audiensi yang dimotori Pilar Nusantara Pinus Sumsel. dihadiri Wakil Bupati Muara Enim, H. Nurul Aman, SH. Yang didampingi oleh Kepala Dinas Kehutanan Muara Enim, Ir. Rustam Effendi dan undangan lainnya. Wakil Bupati Muara Enim, H. Nurul Aman, SH. menyampaikan persoalan hutan kawasan lindung masih sering di lakukan penebangan oleh masyarakat ada juga yang menambah luas areal perkebunan tanpa menggunakan izin. melalui Audiensi ini diharapkan ada solusi terbaik yang dapat dipahami oleh masyarakat khususnya 14 desa diwilayah Semende dan Masyarakat dapat mengelola hasil perkebunan tanpa dituding sebagai pengerusak hutan.</p>\n<p>Kepala Dinas Kehutanan Muara Enim, Ir. Rustam Effendi mengatakan kawasan hutan lindung di Kecamatan Semende Kabupaten Muara Enim yang menanam kopi dan ada pula melakukan perluasan. Dalam posisi hutan lindung mereka akan mendapat hak pengelola. Sesuai Aturan P 89 Menhut II/ 2014 tentang Peran hutan desa adalah hutan negara yang belum dibebani izin hak yang dikelola oleh desa dan dimanfaatkan untuk kesejehteraan desa. Untuk itu masyarakat boleh menanam dikawasan hutan tetapi tak boleh ditebang. Direktur Pinus Sumsel Rabin Ibnu Zainal menjelaskan , ada 42 persen kawasan hutan produksi yang dikelola oleh perusahaan besar namun hanya sebagian kecil yang dikelola oleh masyarakat melalui LHKD. Ketergantungan masyarakat terhadap hutan masih sangat tinggi. Bahwa saat ini ada 60 desa yang berada dan tergantung dengan memanfaatkan sekitar kawasan hutan, bagaimana masyarakat dapat memanfaatkan kawasan hutan. Sesuai dengan Nawacita dengan kemandirian ekonomi berbasis kerakyatan. Saat ini masyarakat kerap dikatakan sebagai perambah sementara masyarakat sendiri tinggal dilokasi tempat tinggalnya sekitar hutan. Faktanya saat ini baru sekitar 18.390 Ha realisasi perhutanan Sosial. Sementara potensi Hutan di Muara Enim ada183.093,24 Ha Potensi Perhutanan sosial. Semoga jumlah ini dapat segera diusulkan ke pemerintah pusat dan dapat dikelola oleh masyarakat.</p>\n<p> </p>', 8, '13,11', '', 'Y', '2016-04-14 02:59:20', 1, '2018-12-14 11:16:02', 'Y', 5, 'petani-kopi-audensi-dengan-lphd', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '34340131604', 47),
-(2, 'Bupati Buka Kegiatan TMMD', '<p>Muara Enim Tim News Room Kominfo. Bupati Muara Enim Ir. H. Muzakir Sai Sohar membuka pelaksanaan kegiatan Tentara Manunggal Membangun Desa (TMMD) ke 97 Kabupaten Muara Enim tahun 2016 di Desa Harapan Jaya Kecamatan Muara Enim. Selasa, (20/9/2016. Kegiatan TMMD ini dengan tema Dengan semangat kemanunggalan serta kerjasama lintas sektoral dan lintas komponen Bangsa kita tingkatkan percepatan pembangunan di Daerah guna meningkatkan kesejahteraan rakyat. Pada kesempatan tersebut Bupati Muara Enim memeriksa pasukan upacara. Bupati Muara Enim, Ir. H. Muzakir Sai Sohar dalam sambutannya mengatakan pelaksanaan TMMD merupakan program operasi bakti TNI bertujuan untuk mewujudkan Kemanunggalan TNI Rakyat dalam pelaksanaan kegiatan bantuan kemanusiaan dan bakti sosial kemasyarakatan, dalam rangka membantu otoritas sipil untuk menciptakan suasana yang kondusif bagi terwujudnya ketahanan dan keamanan dalam negeri serta kesejahteraan masyarakat. program ini sekaligus untuk menumbuh kembangkan semangat kegotong royongan, persatuan dan kesatuan, serta memantapkan wawasan kebangsaan bagi masyarakat Negara Kesatuan Republik Indonesia (NKRI) yang kita cintai ini.</p>\n<p>Bupati juga menghimbau dan mengajak semua pihak untuk berpartisipasi, memberikan dukungan dan bantuannya, sehingga program ini dapat terlaksanan dan mencapai hasil yang optimal. Kegiatan TMMD ini akan dilaksanakan selama satu bulan penuh, mulai tanggal 20 September sampai dengan 19 Oktober 2016. difokuskan pada kegiatan fisik berupa pembangunan sarana perhubungan meliputi pembuatan jalan dari Desa Harapan Jaya Kecamatan Muara Enim menuju Desa Bangun Sari Kecamatan Gunung Megang sepanjang 10,8 Km lebar 8 meter, pembuatan plat duiker 2 unit, pembuatan gorong-gorong 1 unit, pembuatan box culvet 1 unit, dan pembangunan sarana sosial meliputi rehab Musholla 1 unit, rehap TPA 1 unit, pembuatan MCK 11 unit, pembuatan Pos Kamling 13 unit dan pembuatan sumur bor 2 unit. Sedangkan kegiatan non fisik diantaranya berupa penyuluhan sadar bernegara dan bela negara, penyuluhan hukum, penyuluhan anti narkoba, penyuluhan dan pelayanan kesehatan, penyuluhan dan pelayanan KB, penyuluhan koperasi, penyuluhan budi daya peternakan dan penyuluhan perkebunan karet rakyat. hadir pada kegiatan ini yaitu Danrindam II/Swj, Aslog Kasdam II/Swj, Dandim 0404/Muara Enim, Pasi Bhakti TNI Siterrem 044/Gapo, Kakanmivet Muara Enim, para Danramil Dim 0404/Muara Enim, Kapolsek, FKPD Muara Enim dan perwakilan dari PTPN dan PTBA.</p>\n<p> </p>', 8, '13', '', 'Y', '2016-04-14 03:18:19', 1, '2018-12-03 11:19:49', 'Y', 1, 'bupati-buka-kegiatan-tmmd', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '63108131604', 29),
-(4, 'DPRD Muara Enim Menerima APBD Perubahan 2016', '<p>Muara Enim Tim News Room Kominfo. Dewan Perwakilan Rakyat Daerah Kabupaten Muara Enim menerima dan menyetujui APBD Perubahan Muara Enim hal ini ditandai dengan penandatanganan naskah APBD perubahan T.A 2016 Oleh Wakil Bupati Muara Enim, H. Nurul Aman, SH. Bersama Ketua DPRD Muara Enim, Aries,HB.SE. Disaksikan oleh Wakil – Wakil Ketua DPRD Muara Enim. Pemerintah Kabupaten Muara Enim, Dewan Perwakilan Rakyat Daerah (DPRD) Muara Enim mengadakan rapat Paripurna ke XI, yang dilaksanakan diruang Sidang Paripurna Gedung DPRD Muara Enim, Selasa (27/9). Rapat Paripurna ke-XI yang dipimpin Ketua DPRD Muara Enim Aries HB mengatakan penetapan Anggaran Perubahan Kabupaten Muara Enim TA. 2016 telah disetujui oleh para Anggota DPRD dengan memberikan catatan dan masukan penting yang harus diperhatikan demi tercapainya kesejahteraan masyarakat sehingga visi dan misi Kabupaten muara Enim Sehat , Mandiri, Agamis dan Sejahtera dapat terwujud merata diseluruh wilayah Kabupaten Muara Enim. Ia jelaskan, beberpa yang perlu diperhatikan dan ditindak lanjuti oleh Pemerintah Kabupaten Muara Enim diantaranya memperhatikan batas wilayah, Koordinasi dalam perangi penyalahgunaan Narkoba serta perlunya SKPD pemungut pajak dan retribusi Daerah untuk membuat database agar pendapatan Daerah dapat tercapai dengan maksimal.</p>\n<p>Sementara itu Wakil Bupati Muara Enim, H. Nurul Aman mengatakan akan berusaha dengan maksimal mewujudkan aspirasi masyarakat melalui para anggota dewan yang nantinya akan di tindak lanjuti melalui SKPD terkait, sehingga sesuai dengan harapkan demi terwujudnya kesejahteraan masyarakat di Bumi Serasan Sekundang dan pihak Pemerintah Kabupaten Muara Enim akan selalu berusaha memaksimalkan pendapatan Asli Daerah melaui berbagai sektor diantara program CSR dan Komdev BUMN, BUMD dan BUMS yang ada diwilayah Kabupaten Muara Enim untuk turut serta mendukung pembangunan dimasyarakat. Rapat Paripurna ke-XI tersebut dihadiri oleh seluruh anggota DPRD Muara Enim, Wakil Bupati Muara Enim, unsur Pimpinan Daerah Muara Enim, Kepala Dinas Instasi dan Camat se-Kabupaten Muara Enim serta perwakilan Perusahaan BUMN/ BUMD dan BUMS dan undangan lainnya.</p>\n<p> </p>', 7, '12', '', 'Y', '2016-04-14 03:38:45', 1, '2018-12-03 11:19:22', 'Y', 1, 'dprd-muara-enim-menerima-apbd-perubahan-2016', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '6363131604', 21),
-(5, 'BNNK MUARA ENIM AUDENSI DENGAN BUPATI', '<p>Muara Enim Tim News Room Kominfo.Kepala Badan Narkotika Nasional Kabupaten Muara Enim, Ika Wahyu Hindarti, SKM.M.Si beserta jajarannya melakukan Audensi dengan Bupati Muara Enim, Ir. H. Muzakir Sai Sohar . Audensi ini berlangsung di ruang rapat Bupati Muara Enim dihadiri oleh Assisten I Setda Muara Enim, H. Bulgani Hasan, Kadin Kesehatan Muara Enim, dr. Yan Riadi, Kabag Kesra Setda Muara Enim dan undangan lainnya. Rabu, (21/9/2016).</p>\n<p>Bupati Muara Enim, Ir. H. Muzakir Sai Sohar dalam arahannya mengatakan Pegawai Negeri Sipil yang ada di wilayah Kabupaten Muara Enim Harus Bebas dari Narkoba hal ini menjadi harga mati Bupati Muara Enim, Ir. H. Muzakir Sai Sohar. Dari dulu sampai sekarang saya sangat membenci narkoba. Apabila ada PNS yang terlibat narkoba akan langsung saya pecat. Bupati mengajak BNNK Muara Enim agar selalu bersinergi dalam memerangi narkoba di Kabupaten Muara Enim. Sehingga Muara Enim Sehat dapat terwujud sesuai dengan visi dan misi Kabupaten Muara Enim SMAS ‘ ( Sehat, Mandiri, Agamis dan Sejahtera).</p>\n<p> </p>', 7, '8', '', 'Y', '2016-04-14 03:46:53', 1, '2018-12-03 11:19:00', 'Y', 1, 'bnnk-muara-enim-audensi-dengan-bupati', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '456131604', 14),
-(6, 'PU Binamarga kembali membuka lelang periode januari 2015', '<p><span style=\"font-size: small;\">PU Binamarga kembali membuka lelang periode januari 2015</span></p>', 7, '9', '', 'Y', '2018-11-26 10:39:25', 1, '2018-12-03 11:18:37', 'Y', 1, 'pu-binamarga-kembali-membuka-lelang-periode-januari-2015', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '11195141811', 63),
-(13, 'Jelang Mudik Natal 2018, Menteri Basuki Akan Cek Kesiapan Tol Trans Jawa ', '<div class=\"content\">\n<p>Jakarta - Menteri Pekerjaan Umum dan Perumahan Rakyat (PUPR) Basuki Hadimuljono mengatakan Tol Trans Jawa dari Merak hingga Surabaya (870 Km) ditargetkan  akan tersambung dan dapat digunakan pada libur Natal 2018 dan Tahun Baru 2019. Untuk memastikan kesiapannya, Menteri Basuki akan meninjau kesiapan tol Trans Jawa, terutama 4 ruas Tol sepanjang 180 km yang akan diresmikan oleh Presiden Joko Widodo pada Desember 2018 ini. Keempat ruas tol tersebut yakni Tol Pemalang - Batang (33 Km), Batang - Semarang (75 Km), Salatiga - Solo (33 Km) dan Wilangan - Kertosono (39 Km).</p>\n<p>“Progres pembangunan ruas tol Pemalang - Batang, Batang - Semarang, Salatiga - Solo sudah mencapai 99%. Sementara itu, ruas Wilangan - Kertosono sudah mencapai 95 persen. Tinggal penyelesaian pekerjaan yang kecil-kecil, seperti median concrete barrier. Minggu depan saya akan ke sana,\" kata Menteri Basuki usai melakukan pengukuhan Asosiasi Jalan Tol Indonesia (ATI) dan membuka Fokus Grup Diskusi dengan tema “Revitalisasi Industri Jalan Tol :  Menyongsong Konektivitas Jalan Tol Trans Jawa dan Sumatera” di Gedung Auditorium Kementerian PUPR Jakarta, Rabu (5/12/2018).</p>\n<p>Sebelumnya Menteri Basuki mengukuhkan Pengurus ATI periode 2018-2023 dengan Ketua Umum Desi Arryani yang juga Direktur Utama PT Jasa Marga. Dalam sambutannya, Menteri Basuki menyampaikan keberadaan  ATI menjadi mitra kerja yang strategis bagi Kementerian PUPR.</p>\n<p>“Saling mendukung dalam merumuskan kebijakan publik terkait pelayanan bagi para pengguna jalan tol. Pasti akan lebih sempurna apabila sudah didiskusikan (kebijakan tersebut) antara Pemerintah dengan ATI sebagai mitra,” kata Menteri Basuki. Salah satunya adalah dalam pembahasan mengenai perhitungan besaran tarif tol Trans Jawa dari Jakarta-Surabaya yang akan tersambung pada Desember 2018.</p>\n<p>Menteri Basuki juga mengatakan dengan usianya yang mencapai 20 tahun, ATI juga perlu melakukan revitalisasi terhadap organisasinya sesuai dengan perkembangan investasi jalan tol saat ini.</p>\n<p>Sementara  Direktur Utama PT. Jasa Marga (Persero) Tbk yang juga Ketua Umum ATI Desi Arryani dalam sambutannya menyampaikan, para pelaku industri jalan tol sejauh ini terus berupaya untuk menyelesaikan proyek yang tengah digarap. Hal ini sejalan dengan keinginan pemerintah dalam mendorong percepatan pembangunan infrastruktur di Tanah Air.</p>\n<p>Pada sesi Fokus Grup Diskusi dihadiri oleh narasumber Dirjen Bina Marga Sugiyartanto, Direktur Angkutan dan Multimoda Ditjen Perhubungan Darat Cucu Mulyana, Kepala BPJT Hery T. Zuna, Sekjen ATI Kris Ade Sudiyono, serta Kasubdit Wal &amp; PJR DitGakkum Korlantas Polri Kombes Pol Bambang Sentot Widodo.</p>\n<p>Dirjen Bina Marga Sugiyartanto mengatakan  ATI memiliki tiga peran utama yang diharapkan mendukung pengembangan jalan tol di Indonesia. Pertama, mendorong terciptanya industri jalan tol yang sehat dan berdaya saing. Kedua, mendukung pengusahaan jalan tol melalui pengembangan inovasi dan penerapan teknologi yang memperhatikan kualitas, keamanan dan berwawasan lingkungan.</p>\n<p>Ketiga, melalui pelaksanaan skema Kerjasama Pemerintah-Badan Usaha (KPBU), ATI dapat menjadi wadah bagi BUJT bersinergi dan membantu Pemerintah mengatasi backlog pembiayaan infrastruktur. ATI merupakan asosiasi yang mewadahi 56 BUJT di Indonesia. (Iwn)</p>\n<p>Biro Komunikasi Publik<br>Kementerian PUPR</p>\n<p>Facebook: Kementerian Pekerjaan Umum dan Perumahan Rakyat<br>Twitter: @kemenpu<br>Instagram: kemenpupr<br>Youtube: kemenpu</p>\n<p>#PUPRsiapmelayani<br>#InfrastrukturUntukIndonesiaMaju<br>#PUPRSigapMembangunNegeri</p>\n</div>', 7, '6', '', 'Y', '2018-12-13 09:34:53', 5, '2018-12-13 09:34:53', 'Y', 5, 'jelang-mudik-natal-2018-menteri-basuki-akan-cek-kesiapan-tol-trans-jawa', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '20453131812', 16),
-(29, 'BPSDM Kementerian PUPR Menerima Tiga Sertifikat Akreditasi dari LAN ', '<div class=\"content\">\n<p>Jakarta – Kementerian Pekerjaan Umum dan Perumahan Rakyat terus melakukan peningkatan kualitas Sumber Daya Manusia (SDM) aparaturnya melalui penyelenggaraan pendidikan dan pelatihan secara berkala. Oleh karenanya kualitas dari lembaga penyelenggara Diklat turut berperan dalam peningkatan kompetensi dan profesionalisme SDM dalam pembangunan infrastruktur yang handal.</p>\n<p>Kualitas penyelenggaraan Diklat oleh Kementerian PUPR melalui Badan Pengembangan SDM (BPSDM) mendapatkan penilaian akreditasi dari Lembaga Administrasi Negara (LAN). Hasilnya BPSDM Kementerian PUPR mendapatkan 3 setifikat akreditasi dari dua kategori. Penyerahan sertifikat akreditasi dilakukan oleh Kepala LAN Adi Suryanto kepada Kepala BPSDM Kementerian PUPR Lolly Martina Martief, di Gedung LAN, Jakarta, pada 4 Desember 2018.</p>\n<p>“Hasil penilaian akreditasi merupakan suatu kepercayaan LAN kepada Kementerian PUPR yang dianggap mampu untuk penyelenggaraan kediklatan. Hal itu menjadi tanggung jawab kami agar lembaga Diklat PUPR terus dapat meningkatkan kualitasnya sehingga SDM semakin kompeten di bidangnya,” ungkap Kepala BPSDM Lolly Martina Martief.</p>\n<p>Kepala LAN Adi Suryanto dalam sambutannya mengingatkan dengan adanya UU No. 5 Tahun 2014 tentang Aparatur Sipil Negara (ASN) dan PP No. 11 Tahun 2017 tentang Manajemen ASN, perlu ada perubahan cara pandang dengan memperluas tidak hanya diklat, tapi lebih bervariasi agar PNS bisa mengembangkan kompetensi. “Sebanyak 20 Jam Pelajaran (JP) per tahunnya merupakan hak dari PNS untuk mengikuti Diklat menjadi tantangan bisa dipenuhi oleh penyelenggara diklat. Oleh karena itu perlu diciptakan inovasi-inovasi agar hak tersebut bisa terpenuhi,’ jelas Adi Suryanto.</p>\n<p>Sertifikat yang diterima adalah pertama, Sertifikat Akreditasi kepada BPSDM Kementerian PUPR sebagai Instansi Pengakreditasi Diklat Teknis untuk Diklat Teknis Bidang Pekerjaan Umum dan Perumahan Rakyat di bawah lingkungan Kementerian Pekerjaan Umum dan Perumahan Rakyat dan Lembaga Diklat Pemerintah Lainnya yang berlaku 5 (lima) tahun.  Dengan akreditasi ini, BPSDM diberikan kewenangan untuk melakukan penilaian dan mengeluarkan sertifikat akreditasi kepada Lembaga Diklat Kementerian/Lembaga lainnya dan Pemerintah Daerah yang menyelenggarakan Diklat bidang PUPR.</p>\n<p>Kedua, diberikan kepada Balai Pendidikan dan Pelatihan Pekerjaan Umum dan Perumahan Rakyat Wilayah III Jakarta sebagai Lembaga Pendidikan dan Pelatihan Pemerintah Terakreditasi untuk menyelenggarakan Program: (1) Pelatihan Kepemimpinan Tingkat IV dengan Kategori Akreditasi B untuk masa berlaku 3 (tiga) tahun, dan (2) Pelatihan Kepemimpinan Tingkat III dengan Kategori Akreditasi B yang berlaku 3 (tiga) tahun.</p>\n<p>Ketiga, diberikan kepada Balai Pendidikan dan Pelatihan Pekerjaan Umum dan Perumahan Rakyat Wilayah IV Bandung sebagai Lembaga Pendidikan dan Pelatihan Pemerintah Terakreditasi untuk menyelenggarakan Program Pelatihan Kepemimpinan Tingkat IV dengan Kategori Akreditasi A yang berlaku 5 (lima) tahun. (Robby)</p>\n</div>', 0, '', '', 'Y', '0000-00-00 00:00:00', 5, '0000-00-00 00:00:00', 'Y', 0, 'bpsdm-kementerian-pupr-menerima-tiga-sertifikat-akreditasi-dari-lan', '', '', '', '', '', '', 'N', 'Y', 'N', 'draft', 'N', '51376131812', 0),
-(38, 'Pemprov Sumsel Ingatkan Perangkat Daerah Selesaikan Proyek', '<p><strong>Bisnis.com</strong>, PALEMBANG – Pemerintah Provinsi Sumatra Selatan menegaskan instansi Dinas Pekerjaan Umum Bina Marga, PU Cipta Karya dan PU Pengairan untuk mempercepat penyelesaian proyek yang ada di bawah wewenang instansi tersebut.</p>\n<p>Wakil Gubernur Sumsel Ishak Mekki mengatakan pihaknya mengingatkan kepada setiap kepala dinas karena waktu untuk penyelesaian dan persiapan akhir tahun kurang dari satu bulan lagi.</p>\n<p>“Harus diupayakan bagaimana caranya supaya proyek yang ditangani, harus selesai tepat waktu dan sesuai perencanaan,” katanya, Kamis (3/12/2015).</p>\n<p>Dia mengatakan pihaknya meminta agar petugas-petugas lapangan PU yang menangani beragam proyek pekerjaan di Sumsel untuk meningkatkan dan mempercepat pengerjaannya.</p>\n<p>Mekki juga menekankan jangan sampai habis tahun ini, namun masih ditemukan pekerjaan yang belum tuntas.</p>\n<p>“Jangan ada ditemukan kekurangan di sana sini. Jangan sampai diperiksa BPK dan BPKP menjadi temuan, semuanya harus sempurna,” katanya.</p>\n<p>Tak hanya pekerjaan yang harus selesai, Mekki menegaskan, semua urusan administrasi, berita acara pembayaran, laporan harian dan mingguan serta bulanan atau tahunan harus lengkap.</p>\n<p>“Akibatnya sering ditemukan dana pembayaran ditahan dan diblokir. Ini kan biasa ditemukan, dan mengundang kecurigaan. Harusnya kalau tidak selesai, harus putus kontrak dan denda,” ujarnya.</p>\n<p>Sementara itu, Kepala Dinas PU Pengairan Syamsul Bahri mengatakan, sampai saat ini penyerapan anggaran APBD Sumsel sudah mencapai 95%.</p>\n<p>“Sisanya kami kejar pada Desember ini. Kita yakin bisa selesai semua penyerapan pada akhir tahun. Tahun ini kami mendapat anggaran sekitar Rp139 miliar,” ujarnya.</p>\n<p>Syamsul mengatakan pihaknya akan membangun satu bendungan pada tahun depan, yakni bendungan Tiga Dihaji di  Kabupaten OKU Selatan.</p>\n<p>Bendungan tersebut merupakan salah satu bendungan yang masuk dalam perencanaan secara nasional.</p>', 7, '13', '', 'Y', '2018-12-13 11:54:17', 5, '2018-12-14 11:12:07', 'Y', 5, 'pemprov-sumsel-ingatkan-perangkat-daerah-selesaikan-proyek', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '82440131812', 38),
 (39, 'Muara Enim Peringati HAKI 2018', '<p><strong>Tim News Room Muara Enim Diskominfo.</strong></p>\n<p>Ribuan suara lantang berikrar bersatu melawan korupsi diteriakkan oleh seluruh elemen lapisan masyarakat Kabupaten Muara Enim di Pelataran Tugu Adipura, Kamis (13/12) sekitar pikul 07.00 pagi. Ini merupakan bagian dari peringatan Hari Anti Korupsi Internasional (HAKI) yang bertema “Melangkah Pasti, Junjung Tinggi Integritas, Lawan Korupsi” kegiatan ini diawali dengan senam Sehat bersama.</p>\n<p>Ikrar ANTIKORUPSI dibacakan Plt. Kajari Muara Enim Muhamad Husaini, SH., MH yang diikuti oleh Bupati Muara Enim, Unsur FKPD Kabupaten Muara Enim, Kepala Perangkat Daerah Lingkup Pemerintah Kabupaten Muara Enim, Pimpinan BUMD/N/S Muara Enim, dan Tamu undangan lainnya.</p>\n<p>Selantunya Muhamad Husaini, SH., MH langsung menyampaikan sambutannya yang intinya mengatakan bahwa pada tangggal 9 Desember 2018, seluruh Dunia melaksanakan peringatan HAKI. Hari Anti Korupsi Internasional Ini sebagai sarana untuk melakukan interopeksi, evaluasi memperbaiki kualitas individu dan pemberantasan korupsi yaitu  terciptanya Indonesia bersih dan bebas korupsi.</p>\n<p>Ia berharap dengan adanya ikrar ini bisa membangun niat baik kita untuk melawan Korupsi Kolusi dan Nepotisme (KKN) demi terwujudnya pambangunan di Kabupaten Muara Enim yang kita cintai ini.</p>\n<p>Dalam sambutannya Bupati Muara Enim Ir. H. Ahamd Yani, MM mengatakan, Hari ini Kamis 13 Desember 2018, kita berkumpul disini dalam rangka memperingati Hari anti Korupsi Sedunia, sekaligus pembacaan ikrar bagi kita semua sebagai perwakilan dari unsur Pemerintah baik Pusat maupun Daerah, Eksekutif, Legislatif dan Yudikatif, perwakilan dari Masyarakat., Organisasi Pemuda, Organisasi Wanita, Tokoh Masyarakat, Tokoh Agama, Tokoh Adat yang berada di wilayah Pemerintah Kabupaten Muara Enim.</p>\n<p>Acara ini merupakan bentuk dari dukungan Pemerintah Kabupaten Muara Enim dalam upaya pencagahan korupsi disamping juga upaya penegakan hukum tentunya, sebab secara sadar memahami bahwa korupsi terbukti telah membawa ketidakadilan, ketimpangan dan keterbelakangan karena itulah sebabnya korupsi menjadi musuh bersama bagi Bangsa-Bangsa di Dunia, Ujar Bupati.</p>\n<p>Bupati menambahkan, korupsi hanya bisa dilawan bila dilakukan secara bersama-sama kerja sama bahu mebahu antar lembaga penegak hukum, sinergi antar Eksekutif, Legislatif dan Yudikatif.</p>\n<p>Semoga dengan peringatan HAKI ini dapat menjadi momentum untuk mewujudkan Pemerintah Kabupaten Muara Enim yang bersih bebas dari Korupsi Kolusi dan Nepotisme sehingga pada akhirnya bisa mewujudkan Kabupaten Muara Enim yang Agamis, Berdaya Saing, Mandiri, Sehat dan Sejahtera, Pungkas Bupati.</p>', 6, '', '', 'Y', '2018-12-13 11:55:00', 5, '2018-12-14 11:13:23', 'Y', 5, 'muara-enim-peringati-haki-2018', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '39450131812', 4),
 (40, 'DISKOMINFO adakan kegiatan Training Sosial Audit di IV Dapil', '<p><strong>Tim News Room Muara Enim Diskominfo.</strong></p>\n<p>Pemerintah Kabupaten Muara Enim melalui Dinas Komunikasi dan Informatika mengadakan kegiatan Training Sosial Audit di Empat (IV) Dapil yang telah dilaksanakan sejak tanggal 13 November 2018 (Kec. Ujan Mas), 27 November 2018 (Kec. Rambang Dangku), 05 Desember 2018  (Kec. Tanjung Agung) dan terakhir 11 Desember 2018 (Kec. Gelumbang). Dengan Narasumber Suhermansyah, ST.M. Eng (Inspektur Pembantu Wilayah IV), Yetti, S.Sos ( Auditor Madya Inspektorat) Baharudin. S.Sos. M.Si. (Kabid. Keuangan &amp; Aset Desa) Dinas Pemberdayaan Masyarakat Desa dan Triana Rantini, S.Si., M.Si (Kasi Infrastruktur TIK Diskominfo). peserta terdiri dari Tokoh Masyarakat, Perangkat Desa dan Kelompok Informasi Masyarakat (KIM) setempat.</p>\n<p>Sosial Audit yaitu sebuah proses yang mendorong sebuah organisasi/ lembaga/ kelompok masyarakat untuk menilai dan menunjukan manfaat sosial, ekonomi dan lingkungan serta sebuah proses dimana masyarakat bersama pemerintah melakukan monitoring dan evaluasi terhadap perencanaan dan pelaksanaan pembangunan.</p>\n<p>Kadin Kominfo Ardian Arifanardi, AP., M.Si yang dalam hal ini diwakili oleh Plt. Sekretaris Diskominfo Khairul B, Sos menyampaikan, Kegiatan ini merupakan  tindaklanjut Rencana Aksi Program Pemberantasan Korupsi Terintegrasi Pemerintah Kabupaten Muara Enim Provinsi Sumatera Selatan Tahun 2018, yang mengharapkan partisipasi publik dan masyarakat dalam mengontrol proses pembangunan di wilayah masing-masing. dan bertujuan  agar masyarakat dapat mengawasi dan mengevaluasi hasil pembangunan yang dilaksanakan.</p>\n<p>Mudah-mudahan program pembangunan yang dilaksanakan dapat bermanfaat bagi masyarakat dalam mewujudkan Visi Kabupaten Muara Enim 2018-2023. Muara Enim Untuk Rakyat yang Agamis, Berdaya Saing Mandiri, Sehat dan Sejahtera, Pungkas Khairul.</p>', 6, '', '', 'Y', '2018-12-14 11:14:32', 5, '2018-12-14 11:14:32', 'Y', 5, 'diskominfo-adakan-kegiatan-training-sosial-audit-di-iv-dapil', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '7490131812', 15),
 (41, 'Kabupaten Muara Enim Sambut Tim Penilai Penghargaan Pembangunan Daerah Tahun 2019', '<p><strong>Tim News Room Muara Enim Diskominfo.</strong></p>\n<p>Bupati Muara Enim menghadiri Kegiatan Verifikasi dan Kunjungan Lapangan Tim Penilaian Penghargaan Pembangunan Daerah Tahun 2019 terhadap Proses Perencanaan Kabupaten Muara Enim tahun 2019 di Ruang Rapat Bappeda, Kamis (11/04).</p>\n<p>Dalam acara tersebut hadir Bupati Muara Enim Ir. H. Ahmad Yani, MM , Wakil Ketua DPRD Muara Enim Dwi Windarti, SH, M.Hum, Tim Penilai Pusat Suprayoga Hadi, Avianti Fontana, Andi Setyo Pambudi dan Yosi anandis Putri, Kepala Bappeda Sumsel yang diwakili oleh Ardhie Martadhiwira, Asisten II, Asisten III, Kepala Perangkat Daerah Kabupaten Muara Enim, Perwakilan BUMN/BUMD, Baznas Muara Enim, Camat serta Organisasi Masyarakat.</p>\n<p>Penilaian ini merupakan penilaian lanjutan dari tahap I-V yang telah dilalui Pemerintah beberapa waktu yang lalu. “Kesempatan ini nerupakan kebanggan sekaligus media belajar bagi Pemerintah Kabupaten Muara Enim dalam rangka meningkatkan kinerja pelayanan kepada masyarakat” kata Ahmad Yani dalam sambutannya.</p>\n<p>Ahmad Yani menambahkan, dengan adanya acara ini mengharapkan adanya masukan dari Tim Penilai.”Melalui verifikasi dan kunjungan ini, Tim Penilai meninjau dan melihat langsung pencapaian pembangunan dan inovasi di Kabupaten Muara Enim. Untuk itu, kami berharap masukan guna perbaikan serta peningkatan kinerja pelayanan kepada masyarakat”.</p>\n<p>Dalam acara tersebut Kepala Bapedda, Ramlan Suryadi memaparkan inovasi yang ada di Muara Enim untuk diajukan kepada Tim Penilai Pusat. Adapun inovasi yang dipaparkan adalah Amnesti Tangki Septik Bocor, CSR Berkah, Rumah UMKMK Gerbang Serasan dan Nissa Sabyan-ku (Inisiasi Desa Swasembada Sayur Andalan Karya Umak-Umak). Dari keempat inovasi tersebut terpilihlah inovasi UMKMK Gerbang Serasan untuk dibawa ke pusat.</p>', 6, '', '', 'Y', '2019-04-12 01:38:27', 6, '2019-04-12 01:38:27', 'Y', 6, 'kabupaten-muara-enim-sambut-tim-penilai-penghargaan-pembangunan-daerah-tahun-2019', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '13386111904', 1),
 (42, 'Bupati Buka Pelatihan Pengembangan Kepribadian Organisasi Wanita Se-Muara Enim', '<p><strong>Tim News Room Muara Enim Diskominfo</strong></p>\n<p>Pemerintah Kabupaten Muara Enim melalui Dinas Pemberdayaan Perempuan dan Perlingdungan Anak menggelar Pelatihan Pengembangan Kepribadian di Hotel Griya Serasan Sekundang Muara Enim, Kamis (11/04).<br><br>Pelatihan yang berlangsung sehari dibuka langsung oleh Bupati Muara Enim Ir. H. Ahmad Yani, MM. Acara tersebut dihadiri oleh Ketua TP PKK Kabupaten Muara Enim Ir. H. Sumarni, M.Si, Kepala Dinas PPPA Drs. Helman, MM, Ketua Dharmawanita Linda Hasanudin, Ketua Dharmayakti Karini Dina Ahmad Markowi dan para peserta pelatihan dari organisasi wanita se-kabupaten Muara Enim.</p>\n<p>Ahmad Yani dalam sambutannya mengatakan bahwa peran perempuan sangat penting. “Kaum perempuan saat ini dituntut berperan ganda dalam keberlangsungan segala hal, disatu sisi sebagai ibu rumah tangga, disisi lain juga berperan aktif dalam pembangunan bangsa dan negara, untuk itu diharapkan para perempuan atau ibu-ibu yang tergabung dalam organisasi wanita secara bertahap perlu diberikan pembinaan dalam berbagai bidang”. Ujar Ahmad Yani</p>\n<p>Tujuan dari acara ini disampaikan Ahmad Yani adalah untuk perkembangan kepribadian ibu-ibu. “Pengembangan Kepribadian adalah suatu proses mengenalkan sifat-sifat baik pada seseorang seperti sikap hidup, cara berfikir, berpenampilan, dan tingkah laku yang dapat mewujudkan kepribadian yang mampu berkomunikasi dan membawa diri secara baik dan benar”. Tambahnya</p>\n<p> </p>', 6, '', '', 'Y', '2019-04-12 01:54:03', 6, '0000-00-00 00:00:00', 'Y', 0, 'bupati-buka-pelatihan-pengembangan-kepribadian-organisasi-wanita-se-muara-enim', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '53496111904', 1),
 (43, 'Asisten I : Kita Mampu Bersaing di Kancah Nasional maupun Internasional', '<p><strong>Tim News Room Muara Enim Diskominfo.</strong></p>\n<p>SMA Negeri 1 Unggulan Muara Enim mengadakan acara Pelepasan Siswa/i kelas XII Tahun 2018-2019. Krgiatan ini dihadiri Sekretaris Daerah sekaligus Ketua Komite Ir. H. Hasanudin, M.Si dan Asisten I Drs. M. Teguh jaya, MM di Gedung Kesenian Putri Dayang Rindu, Rabu (10/04).</p>\n<p>Kepala SMAN 1, Darmadi, S.Pd, M.Si dalam sambutannya mengucapkan terima kasih kepada Pemerintah Kabupaten Muara Enim. “Terima kasih atas <em>support</em> nya selama ini dari Pemerintah Kabupaten Muara Enim, keberhasilan ini tidak terlepas dari <em>stakeholder</em> yang ada”. Katanya</p>\n<p>Kepada siswa/i yang resmi dilepas, Darmadi mengucapkan pesan agar jangan kendor berlajar dan tetap semangat, harumkan almamater SMA. Ganungkan cita-cita sesuai dengan ikhtiar kalian.</p>\n<p>Pada kesempatan yang sama Sekda Muara Enim sekaligus Ketua Komite, Hasanudin mengucapkan terima kasih kepada Kepala sekolah, Staf Guru, serta Staf Tata Usaha SMAN 1 Unggulan yang telah memberikan pendidikan yang baik kepada anak murid khusunya kelas XII.</p>\n<p>Selanjutnya, Asisten I Teguh Jaya yang hadir mewakili Bupati Muara Enim mengatakan bahwa Pemkab Muara enim bangga dengan SMA negeri 1 Unggulan Muara Enim. “Pemkab Muara Enim bangga kepada SMAN 1 karena termasuk dalam 30 sekolah unggul di Sumsel dan mempunyai prestasi yang unggul”. Ucapnya</p>\n<p>“Pemkab mengapresiasi program sekolah unggulan karena mendukung visi Pemkab Muara Enim yaitu merakyat, agamis dan berdaya saing. Dengan adanya sekolah unggulan dapat meningkatkan daya saing kita”. Tambahnya</p>\n<p>Dalam acara tersebut diumumkan pula bahwa terdapat 21 siswa/I yang lulus SNMPTN tanpa tes di beberapa Universitas negeri yang tersebar di Indonesia dan 3 orang siswa yang mendapatkan Beasiswa untuk belajar ke salah satu Universitas di Tiongkok.</p>\n<p>Dengan adanya siswa yang lulus tanpa tes dan mendapat beasiswa di Tingkok, Teguh Jaya mengatakan ini merupakan wujud keberhasilan karena kita sudah mampu bersaing di Nasional maupun Internasional.</p>\n<p>Pesan Bupati, Asisten I mengingatkan kepada para siswa - siswi yang audah berusia 17 tahun, pada Rabu 17 April 2019 nanti jangan lupa untuk menggunakan hak pilihnya.\"Dengan memilih berarti ada hak suara yang disalurkan berarti sudah ikut berperan dalam membangun negara, orang tua murid juga jangan lupa ikut berpartisipasi mencoblos pada Rabu 17 April 2019 nanti. Kalo ada potensi keributan segera laporkan ke Polisi menuju Pemilu serentak yang damai,\" Pungkasnya.</p>', 6, '', '', 'Y', '0000-00-00 00:00:00', 6, '0000-00-00 00:00:00', 'Y', 0, 'asisten-i-kita-mampu-bersaing-di-kancah-nasional-maupun-internasional', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'N', '100139111904', 1),
-(44, 'Bupati Berharap PWRI Bersinergi Dengan Pemkab', '<p><strong>Tim News Room Muara Enim Diskominfo</strong><br>Bupati Muara Enim, Ir. H. Ahmad Yani, MM menghadiri pelantikan Persatuan Wredatama Republik Indonesia (PWRI) Kecamatan Lawang Kidul, Rabu (10/04) di Aula Kecamatan Lawang Kidul.<br>Usai dilantiknya PWRI Lawang Kidul ini, Bupati menyambut baik keberadaan PWRI Lawang Kidul dan orang nomor satu di Bumi Serasan Sekundang ini berharap adanya sinergitas dengan Pemerintah Kabupaten (Pemkab) Muara Enim dalam hal program - program yang digalakan Pemkab Muara Enim, seperti bantuan untuk lansia, santunan kematian, dan program lainnya.<br>Bahkan program Pemkab Muara Enim saat ini, mengurus masyarakat mulai dari lahir sampai mati. Banyak dana APBD Pemkab Muara Enim yang dikembalikan ke masyarakat Muara Enim.<br>Kedepan, Bupati berharap juga eksistensi dan posisi PWRI Lawang Kidul semakin kokoh dan berkarya.<br>\"Jaga terus kesehatan dan terus berkarya, karena seperti orang tua sendiri, saya tidak sanggup memberikan nasehat,\"ujar Bupati.<br>Sementara itu, Ketua PWRI Lawang Kidul, Fajeri Erham, yang langsung dilantik Ketua PWRI Kabupaten Muara Enim, H.Zulkifli HS, SH,mengucapkan terima kasih atas terlaksananya pelantikan ini.<br>Fajeri mengatakan dalam usia pensiun ini sudah kewajiban PWRI Lawang Kidul mendukung Pemkab Muara Enum melalui program yang sudah dicanangkan. \"Usia boleh tua, tapi semangat untuk berkarya akan tetap bergelora,\" tegas Fajeri.</p>', 6, '', '', 'Y', '2019-04-12 01:56:15', 6, '0000-00-00 00:00:00', 'Y', 0, 'bupati-berharap-pwri-bersinergi-dengan-pemkab', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '891111904', 4);
+(44, 'Bupati Berharap PWRI Bersinergi Dengan Pemkab', '<p><strong>Tim News Room Muara Enim Diskominfo</strong><br>Bupati Muara Enim, Ir. H. Ahmad Yani, MM menghadiri pelantikan Persatuan Wredatama Republik Indonesia (PWRI) Kecamatan Lawang Kidul, Rabu (10/04) di Aula Kecamatan Lawang Kidul.<br>Usai dilantiknya PWRI Lawang Kidul ini, Bupati menyambut baik keberadaan PWRI Lawang Kidul dan orang nomor satu di Bumi Serasan Sekundang ini berharap adanya sinergitas dengan Pemerintah Kabupaten (Pemkab) Muara Enim dalam hal program - program yang digalakan Pemkab Muara Enim, seperti bantuan untuk lansia, santunan kematian, dan program lainnya.<br>Bahkan program Pemkab Muara Enim saat ini, mengurus masyarakat mulai dari lahir sampai mati. Banyak dana APBD Pemkab Muara Enim yang dikembalikan ke masyarakat Muara Enim.<br>Kedepan, Bupati berharap juga eksistensi dan posisi PWRI Lawang Kidul semakin kokoh dan berkarya.<br>\"Jaga terus kesehatan dan terus berkarya, karena seperti orang tua sendiri, saya tidak sanggup memberikan nasehat,\"ujar Bupati.<br>Sementara itu, Ketua PWRI Lawang Kidul, Fajeri Erham, yang langsung dilantik Ketua PWRI Kabupaten Muara Enim, H.Zulkifli HS, SH,mengucapkan terima kasih atas terlaksananya pelantikan ini.<br>Fajeri mengatakan dalam usia pensiun ini sudah kewajiban PWRI Lawang Kidul mendukung Pemkab Muara Enum melalui program yang sudah dicanangkan. \"Usia boleh tua, tapi semangat untuk berkarya akan tetap bergelora,\" tegas Fajeri.</p>', 6, '', '', 'Y', '2019-04-12 01:56:15', 6, '0000-00-00 00:00:00', 'Y', 0, 'bupati-berharap-pwri-bersinergi-dengan-pemkab', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '891111904', 4),
+(45, 'Target H-5 Lebaran Sebagian Jalan Rusak Berat di Sumsel Tuntas', '<div class=\"td-post-featured-image\">\n<figure style=\"text-align: center;\">\n<figcaption class=\"wp-caption-text\">Plt Kepala Dinas PUBM-TR Provinsi Sumsel, Dharma Budhy saat diwawancarai awak media, Senin (6/5)</figcaption>\n<figcaption class=\"wp-caption-text\"></figcaption>\n<figcaption class=\"wp-caption-text\"></figcaption>\n<figcaption class=\"wp-caption-text\"></figcaption>\n</figure>\n</div>\n<p><strong>Palembang, Detik Sumsel- </strong>Jalan rusak berat di beberapa ruas jalan Provinsi Sumsel khususnya di daerah OI, OKU, dan OKU Timur akhirnya mulai diperbaiki. Tercatat, ada sebanyak 15 paket pengerjaan peningkatan jalan yang mulai dikerjakan Dinas Pekerjaan Umum Bina Marga dan Tata Ruang (PUBM-TR) Provinsi Sumsel dan ditargetkan H-5 lebaran sudah tuntas.</p>\n<p>“Ada 15 paket pengerjaan paket jalan yang rusak berat kita prioritaskan dengan menggelontorkan dana sebesar Rp364 miliar,” ungkap Plt Kepala Dinas Pekerjaan Umum Bina Marga dan Tata Ruang (PUBM-TR) Provinsi Sumsel, Darma Budhy, Senin (6/5)</p>\n<p>Dijelaskan, adapun 15 paket pengerjaan peningkatan jalan tersebut yakni diantaranya peningkatan jalan SP Kepuh-Kurungan Nyawa, peningkatan jalan Kurungan Nyawa-Gumawang, peningkatan Kurungan Nyawa-Gumawang (DAK), peningkatan jalan Gumawang-Petanggan, pemeliharaan berkala BTS OKI-SP Kepuh, pemeliharaan berkala Kurungan Nyawa-Martapura, peningkatan jalan Batas Kabupaten OI-Lubuk Batang, peningkatan jalan Muara Dua-Kota Batu-Batas Provinsi Lampung.</p>\n<p>Kemudian, peningkatan dan pelebaran jalan Sekayu-Batas Muara Enim, peningkatan jalan Tanjung Raja-SP Tambang Rambang, peningkatan jalan SP Tambang Rambang-Batas OKU, peningkatan jalan SP Sugi Rawas-Batas Lahat, peningkatan jalan Muara Siban-SP Embacang, peningkatan jalan SP Periuk-Tugumulyo-Terawas, peningkatan jalan Terawas-Taba Tinggi-Maur.</p>\n<p>“15 paket jalan ini sudah layak nantinya untuk dilalui sebelum lebaran, memang untuk pengaspalan belum dilakukan sebelum lebaran nanti kemungkinan baru dilakukan setelah lebaran. Intinya, sebelum lebaran bisa layak dilalui saja dan tidak menyebabkan kemacetan arus mudik,” ulasnya. Saat ini, lanjut Darma Budhy progress pengerjaan sudah mencapai 10 persen untuk 15 paket pengerjaan tersebut.(tet)</p>\n<p> </p>\n<p>sumber: <a href=\"https://www.detiksumsel.com/target-h-5-lebaran-sebagian-jalan-rusak-berat-di-sumsel-tuntas/\">https://www.detiksumsel.com/target-h-5-lebaran-sebagian-jalan-rusak-berat-di-sumsel-tuntas/</a></p>', 6, '26,24,22,21,16,6', '', 'Y', '2019-05-08 20:01:52', 6, '2019-05-08 20:04:16', 'Y', 6, 'target-h-5-lebaran-sebagian-jalan-rusak-berat-di-sumsel-tuntas', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '9306081905', 10),
+(46, 'Gubernur Herman Deru Jawab Keluhan Netizen Perbaikan Banyak Jalan Rusak di Sumsel', '<p>FOTO Ilustrasi : Lubang besar tertutup genangan air dan jalan retak di Jalan Mayor zen Sungai Selayur Palembang, sering membahayakan pengendara, Minggu (17/2/2019) </p>\n<p><br><br>Artikel ini telah tayang di <a href=\"http://localhost/pubmsumsel/admin/http:\">Tribunsumsel.com</a> dengan judul Gubernur Herman Deru Jawab Keluhan Netizen Perbaikan Banyak Jalan Rusak di Sumsel, <a href=\"http://sumsel.tribunnews.com/2019/05/03/gubernur-herman-deru-jawab-keluhannetizenperbaikan-banyak-jalan-rusak-di-sumsel\">http://sumsel.tribunnews.com/2019/05/03/gubernur-herman-deru-jawab-keluhannetizenperbaikan-banyak-jalan-rusak-di-sumsel</a>.<br>Penulis: Wawan Perdana <br>Editor: Wawan Perdana</p>\n<p><strong>TRIBUNSUMSEL.COM, PALEMBANG-</strong>Kerusakan di sejumlah ruas jalan di Sumsel semakin parah selama musim hujan.</p>\n<p>Warga banyak mengungkapkan keluhan itu di media sosial instagram dan facebook. <br>Bahkan berapa waktu lalu ada yang menggunakan cara unik menjadikan jalan rusak sebagai lokasi foto model.</p>\n<p>Gubernur Sumsel Herman Deru menjawab semua keluhan itu melalui akun instagram terverifikasi @hermanderu67.</p>\n<figure class=\"op-interactive\"><iframe class=\"bor1\" src=\"https://sosmed.tribunnews.com/socmed.php?instagram=https://www.instagram.com/p/Bw_O4qQgOjo/?utm_source=ig_web_copy_link&amp;capck=no\" width=\"500.02083400000004\" height=\"741.0208339999999\" frameborder=\"0\" scrolling=\"no\"></iframe></figure>\n<div id=\"ompk-BsOaz6OSEcOIB4exB86NF8e2B82YA8iLDs9\" class=\"\" data-google-query-id=\"COy5t-X_i-ICFa5jFQgdbb4PmQ\"> </div>\n<p><em>\"Kepada yg terhormat para netizen, menanggapi banyaknya pertanyaan tentang perbaikan jalan kapan akan di perbaiki khususnya jalan yang berada dibawah wewenang pemerintahan provinsi.\"</em></p>\n<p><em>\"Perlu saya sampaikan bahwa ruas-ruas jalan provinsi se-Sumatra Selatan sudah di anggarkan pada tahun ini, sebagian ruas sudah di mulai perbaikan nya sebagian lagi masih dalam proses tahapan lelang.\"</em></p>\n<p><em>\"Untuk itu saya juga menginformasikan bahwa jalan adalah anggaran negara yang memiliki aturan, tidak bisa semena-mena dibelanjakan begitu saja. Harus melalui proses lelang.\"</em></p>\n<p><em>\"Pemerintah provinsi dalam menggunakan anggaran tidak dapat semena-mena, namun harus dengan cara menggikuti tata kelola keuangan yg benar dan akuntabel. \"</em></p>\n<p><em>\"Mohon doa semoga dalam beberapa minggu lagi untuk ruas-ruas jalan yang berada dibawah tanggung jawab pemerintahan provinsi yang mengalami kerusakan sudah dapat di mulai perbaikannya, demikian untuk dapat di maklumi.\"</em></p>\n<p><strong>Lelang 15 Proyek</strong> </p>\n<p>Dinas Pekerjaan Umum Bina Marga dan Tata Ruang (PUBM-TR) Provinsi Sumatera Selatan telah melelang 15 pekerjaan proyek perbaikan jalan.</p>\n<p>Nilai dari keseluruhan proyek sebesar Rp 300 Miliar.</p>\n<p>Plt Kepala Dinas PUBM-TR Provinsi Sumsel Darma Budhy mengatakan, dari 15 proyek perbaikan jalan itu, beberapa sudah masuk tanda tangan kontrak.</p>\n<p>\"Targetnya dalam sebulan ke depan, seluruh kegiatan sudah masuk proses kontrak. Sehingga, pemenang lelang bisa segera mengerjakan proses perbaikan jalan,\" ujarnya, Kamis (18/4/2019).</p>\n<div id=\"div-Inside-MediumRectangle\"> </div>\n<p>Lebih lanjut ia mengatakan, targetnya sekitar 15 Mei, semuanya sudah kontrak. <br>Tapi, dari tanggal 10 April lalu, sudah ada beberapa kegiatan yang sudah jalan.</p>\n<p>Jalan yang diperbaiki mayoritas berada di Kabupaten OKU Timur. Mulai dari Simpang Penyandingan, Simpang Kebo-Kurungan Nyawa, Gumawang-Kurungan Nyawa-Petanggan.</p>\n<p>\"Ada satu juga di Kabupaten Muba sampai dengan Batas Kabupaten Muara Enim,\". katanya.</p>\n<p>Perbaikan jalan merupakan salah satu program yang menjadi prioritas Gubernur Sumsel Herman Deru.</p>\n<p>Sehingga, pihaknya berusaha untuk mempercepat proses kegiatan.</p>\n<p>\"Tidak hanya itu, percepatan perbaikan jalan juga sebagai persiapan menghadapi arus mudik Lebaran. Lebih cepat diperbaiki, lebih bagus. Sehingga Lebaran nanti sudah bisa dilintasi dengan nyaman,\" ujarnya.</p>\n<p><br>sumber: <a href=\"http://sumsel.tribunnews.com/2019/05/03/gubernur-herman-deru-jawab-keluhannetizenperbaikan-banyak-jalan-rusak-di-sumsel\">http://sumsel.tribunnews.com/2019/05/03/gubernur-herman-deru-jawab-keluhannetizenperbaikan-banyak-jalan-rusak-di-sumsel</a></p>', 6, '24,16', '', 'Y', '2019-05-08 20:09:29', 6, '0000-00-00 00:00:00', 'Y', 0, 'gubernur-herman-deru-jawab-keluhan-netizen-perbaikan-banyak-jalan-rusak-di-sumsel', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '16400081905', 0),
+(47, 'Kelola Kedisplinan Pegawai, Sekda Sumsel Lanjutkan Sidak ke OPD', '<p><strong>Palembang, sumselprov.go.id</strong> -- Sekda Prov Sumsel Nasrun Umar melanjutkan inspeksi mendadak (sidak) kedisplinan pegawai di hari kedua Ramadhan. Di hari kedua ini Dinas PU dan Dinas Perumahan dan Pemukiman menjadi sasaran, Selasa (7/5) pagi.</p>\n<p>OPD yang pertama kali disisir rombongan Sekda, BKD dan Inspektorat dan Kasat Pol PP ini adalah Dinas Perumahan dan Pemukiman Provinsi Sumsel. Sambil menunggu daftar absensi dikumpulkan, Sekda melakukan sosialisasi kepada ASN. </p>\n<p>Sesuai edaran Gubernur jelasnya sudah dipaparkan bahwa jam kerja ASN saat bulan puasa mengalami sedikit perubahan dibandingkan hari biasa. Jadwal tersebut yakni Hari Senin-Kamis semua pegawai wajib masuk pukul 08.00 wib-15.00 wib (waktu istirahat pukul 12.00 wib-13.00 wib). Sedangkan untuk hari Jumat waktu kerja mulai pukul 08.00 wib-15.30 wib ( waktu istirahat 11.30 wib- 12.30 wib).</p>\n<p>Tak hanya membahas soal jam kerja ASN, kesempatan itu juga dimanfaatkan oleh Sekda untuk mengecek kelengkapan seragam ASN. Menurutnya kelengkapan ini penting sebagai bentuk intergritas dan identitas ASN.</p>\n<p>\"Kemarin masih saya toleransi. Tapi hari ini tidak. Saya tidak akan toleransi lagi. Siapa yang tidak masuk tanpa alasan akan kita sanksi. Ini sesuai arahan Gubernur,\" jelasnya.</p>\n<p>Dikatakannya, disiplin pegawai telah diatur dalam PP 53. Dan sesuai arahan gubernur dirinya, kata Sekda, sebagai pejabat yang berwenang harus mengelola kedisplinan para ASN.</p>\n<p>\"Secara tegas dan konsekuen ini berlaku di semua OPD yang saya kunjungi. Ini bukan tidak berdasar karena di pusat pun demikian,\" tandasnya seperti dikutif dari GlobalPlanet.News</p>\n<p>Dari hasil dua hari sidak yang dilakukannya diakui Nasrun masih ada beberapa pegawai yang ditemukan datang tidak sesuai jam kerja. Namun diakuinya pada sidak hari kedua di Dinas Perkim dan Dinas PU Bina Marga tingkat kehadiran pegawai sudah sangat bagus.</p>\n<p>\"Masih ada yang seperti itu (belum menaati aturan) tapi kalau melihat yang dua (Dinas Perkim dan PU) ini bagus absensinya. Yang belum itu mungkin  karena ketidaktahuan mereka. Nah ini perlu saya tekankan sekali lagi pada BKD. Saya ingin surat edaran itu betul-betul diketahui ASN yang lain seluruh sampai level terendah sekalipun,\" jelasnya.</p>\n<p>Jika mereka tahu ada aturan hari kerja dan pegawai masih saja tidak mentaati aturan, menurut Sekda dirinya tak segan menerapkan sanksi yang berlaku.</p>\n<p>Untuk diketahui pada sidak hari kedua bulan Ramadan 1440 Hijriah itu Sekda menyisir sejumlah OPD yang berada di sekitar lingkungan Setda Provinsi Sumsel. Dinas pertama yang disambangi rombongan ini adalah Dinas PU Perumahan dan Pemukiman (Perkim), kemudian berlanjut ke Dinas PU Bina Marga, lalu ke Dinas Sosial, Disdukcapil, Badan Kesbangpol hingga Dinas Perhubungan Provinsi Sumsel.</p>\n<p>sumber: <a href=\"http://www.sumselprov.go.id/mobile/index.php?module=newsdetail&amp;id=5641\">http://www.sumselprov.go.id/mobile/index.php?module=newsdetail&amp;id=5641</a></p>', 6, '24,6', '', 'Y', '2019-05-08 20:10:58', 6, '2019-05-08 20:11:07', 'Y', 6, 'kelola-kedisplinan-pegawai-sekda-sumsel-lanjutkan-sidak-ke-opd', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '5678081905', 0),
+(48, 'Jembatan Musi VI Ditarget Rampung Tahun 2020', '<p>KBRN, Palembang : Pemerintah Provinsi Sumatera Selatan melalui Dinas PU Bina Marga dan Tata Ruang terus berupaya melanjutkan penyelesaian pembangunan jembatan Musi VI yang menghubungkan  kawasan 32 Ilir dan kawasan Seberang Ulu 1 Palembang.</p>\n<p>Keberadaan jembatan ini nantinya diyakini akan mampu mengurangi beban lalu lintas angkutan di jembatan Ampera. Disamping dapat  mengurai kemacetan lalu lintas serta penumpukan kendaraan di sejumlah titik di kota Palembang.</p>\n<p>Gubernur Sumsel H. Herman Deru saat meninjau pembangunan jembatan Musi VI dan penyerahan sertifikat tanah program Pendaftaran Sistematis Lengkap menyebutkan proses pengerjaan pembangunan jembatan Musi VI  saat ini masih berjalan dan ditargetkan akan rampung tahun 2020 mendatang.</p>\n<p>\"Kita targetkan jembatan musi  enam ini bisa dilalui untuk kendaraan. Begitu juga dengan  taman dan fasilitas umum disekitarnya. Pembebasan lahannya secepatnya kita rampungkan,\" tegas Herman Deru.</p>\n<p>Lebih lanjut, Herman Deru menambahkan penyelesaian pembangunan jembatan Musi VI adalah bentuk tanggung jawab Pemerintah Provinsi kepada masyarakat. Untuk itu, mantan Bupati Oku Timur dua periode tersebut mengharapkan dukungan dan kerjasama dari semua pihak yaitu terutama Pemerintah kota Palembang berikut seluruh OPD dan masyarakatnya.</p>\n<p>\"Selesainya pembangunan jembatan Musi VI ini membutuhkan dukungan dari semua pihak. Bersama- sama kita selesaikan ini, baik dibagian seberang Ilir maupun di seberang Ulu,\" tambahnya.</p>\n<p>Terkait pembebasan lahan, Herman Deru memastikan  untuk di wilayah seberang Ulu sudah tidak ada kendala lagi. Sedangkan pembebasan bidang tanah yang masih belum terlaksana, Gubernur mengharapkan dukungan dari para tokoh setempat.  Mengingat pembangunan jembatan Musi VI tidak hanya menekankan keindahan dan fisik jembatannya saja, melainkan juga keindahan di wilayah sekitar jembatan, baik di Ilir maupun di bagian  Ulu.</p>\n<p>\"Akses menuju jembatan musi enam ini  akan ditingkatkan seperti ketersediaan fasilitas umum. Hingga nantinya jembatan ini  dapat menjadi obyek wisata baru bagi masyarakat,\" tambahnya.</p>\n<p>Selain meninjau kelanjutan pembangunan jembatan Musi VI, dikesempatan yang sama  Gubernur H. Herman Deru juga secara simbolis menyerahkan sertifikat tanah program PTSL kepada warga seberang Ulu. Dalam pembuatan sertifikat tanah Herman Deru menjamin tidak ada pungutan.</p>\n<p>Di lain pihak, Plt Kepala Dinas PU Bina Marga dan Tata Ruang Sumsel Darma Budhi mengatakan kontrak pembangunan jembatan Musi VI dimulai pertama kali pada tahun 2015 menggunakan dana APBD provinsi Sumsel.</p>\n<p>Tahap pertama pembangunan jembatan Musi VI tahun kontrak 2015, dengan jenis kontrak tahun jamak dengan masa pelaksanaan 756 hari kerja, nilai kontrak Rp. 344. 320.772. 000, 00.</p>\n<p>Kemudian untuk pembangunan tahap kedua juga bersumber dari APBD Provinsi Sumsel, tahun anggaran 2018, jenis kontrak tahun jamak, nilai kontrak Rp.219. 677. 000.000, 00 dengan masa pelaksanaan 360 hari kerja, dan masa pemeliharaan 360 hari kerja dengan kontraktor pelaksana PT Nindya Karya.</p>\n<p>Sementara itu, untuk realisasi dan sisa kebutuhan anggaran proyek jembatan Musi VI, Darma Budhi menjelaskan , kontrak tahap pertama nilai kontrak awal sebesar Rp.344. 320. 772. 000, 00. dan nilai final amandemen Rp. 344. 320. 772. 000, 00 ( bobot terhadap keseluruhan 60, 4%). Kemudian untuk tahap kedua, nilai kontrak awal Rp. 219. 677. 000. 000, 00 dan nilai final amandemen Rp. 135. 315. 850.334, 10 ( bobot terhadap keseluruhan 24%).</p>\n<p>\"Dengan demikian total nilai untuk tahap pertama dan kedua adalah Rp. 469.636.622. 344, - (84, 4%).  Jumlah dana yang dibutuhkan untuk penyelesaian pembangunan jembatan Musi VI senilai Rp. 87 milyar\", pungkasnya.</p>\n<p> </p>\n<p>sumber: <a href=\"http://rri.co.id/palembang/post/berita/662235/daerah/jembatan_musi_vi_ditarget_rampung_tahun_2020.html\">http://rri.co.id/palembang/post/berita/662235/daerah/jembatan_musi_vi_ditarget_rampung_tahun_2020.html</a></p>', 6, '24,17', '', 'Y', '2019-05-08 20:12:28', 6, '2019-05-08 20:12:44', 'Y', 6, 'jembatan-musi-vi-ditarget-rampung-tahun-2020', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '2137081905', 0),
+(49, 'Tahun 2020 Jembatan Musi VI Rampung ', '<p><strong>Divianews.com | Palembang</strong> — Pemerintah terus berupaya agara penyelesaian pembangunan jembatan Musi VI yang menghubungkan kawasan 32 Ilir dan kawasan Seberang Ulu 1 Palembang, bisa terealisasi secepatnya. Sebab jembatan tersebut diharapkan mampu mengurangi beban lalu lintas angkutan di jembatan yang ada di Kota Palembang,</p>\n<p>Dikonfirmasi ulang mengenai hal tersebut diatas,  Kepala Dinas PU Bina Marga dan Tata Ruang Sumsel Darma Budhi kembali menjelaskan secara rinci terkait tahapan kontrak pembangunan jembatan Musi VI dimulai pertama kali pada tahun 2015 menggunakan dana APBD provinsi Sumsel.</p>\n<p>Tahap pertama pembangunan jembatan Musi VI tahun kontrak 2015, dengan jenis kontrak tahun jamak dengan masa pelaksanaan 756 hari kerja, nilai kontrak Rp. 344. 320.772. 000, 00.</p>\n<p>Kemudian untuk pembangunan tahap kedua juga bersumber dari APBD Provinsi Sumsel, tahun anggaran 2018, jenis kontrak tahun jamak, nilai kontrak Rp.219. 677. 000.000, 00 dengan masa pelaksanaan 360 hari kerja, dan masa pemeliharaan 360 hari kerja dengan kontraktor pelaksana PT Nindya Karya.</p>\n<p>Sementara itu, untuk realisasi dan sisa kebutuhan anggaran proyek jembatan Musi VI, Darma Budhi menjelaskan , kontrak tahap pertama nilai kontrak awal sebesar Rp.344. 320. 772. 000, 00. dan nilai final amandemen Rp. 344. 320. 772. 000, 00 ( bobot terhadap keseluruhan 60, 4%). Kemudian untuk tahap kedua, nilai kontrak awal Rp. 219. 677. 000. 000, 00 dan nilai final amandemen Rp. 135. 315. 850.334, 10 ( bobot terhadap keseluruhan 24%).</p>\n<p>“Dengan demikian total nilai untuk tahap pertama dan kedua adalah Rp. 469.636.622. 344, – (84, 4%). Jumlah dana yang dibutuhkan untuk penyelesaian pembangunan jembatan Musi VI senilai Rp. 87 milyar”, jelasnya, selasa (16/04/2019).</p>\n<p>Untuk itu diharapakan secepatnya jembatan yang tinggal beberapa persen tersebut, bisa rampung pada tahun 2020 mendatang.</p>\n<p> </p>\n<p>Sebelumnya Gubernur Sumsel Herman Deru juga telah memantau langsung progres jembatan dan meminta agar jembatan tersebut selesai secepatnya untuk mengurai kemacetan yang ada saat ini. (adi)</p>\n<p> </p>\n<p>sumber:<a href=\"http://divianews.com/2019/04/16/tahun-2020-jembatan-musi-vi-rampung/\">http://divianews.com/2019/04/16/tahun-2020-jembatan-musi-vi-rampung/</a></p>', 6, '17,24', '', 'Y', '2019-05-08 20:14:30', 6, '0000-00-00 00:00:00', 'Y', 0, 'tahun-2020-jembatan-musi-vi-rampung', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '4373081905', 0),
+(50, 'Gurbernur Sumsel Pastikan Proyek Musi VI Rampung Tahun Depan', '<p>PALEMBANG-KRSumsel.com-.Pemerintah Provinsi Sumatera Selatan melalui Dinas PU Bina Marga dan Tata Ruang terus berupaya melanjutkan penyelesain pembangunan Jembatan Musi VI yang menghubungkan kawasan 32 Ilir dan kawasan Seberang Ulu I Palembang.<br><br><br>Keberadaan jembatan ini nantinya diyakini akan mampu mengurangi beban lalu lintas angkutan di jembatan ampera. Disamping dapat  mengurai kemacetan lalu lintas serta penumpukan kendaraan di sejumlah titik di kota Palembang.<br><br><br>Gubernur Sumsel H. Herman Deru saat meninjau pembangunan jembatan Musi VI dan penyerahan sertifikat tanah program Pendaftaran Sistematis Lengkap (PTSL) di Palembang, Sabtu (13/4) menyebutkan proses pengerjaan pembangunan jembatan Musi VI  saat ini masih berjalan dan ditargetkan akan rampung tahun 2020 mendatang.<br><br>\"Kita targetkan jembatan Musi  VI ini bisa dilalui untuk kendaraan. Begitu juga dengan  taman dan fasilitas umum disekitarnya. Pembebasan lahannya secepatnya kita rampungkan,\" tegas Herman Deru.<br><br>Lebih lanjut, Herman Deru menambahkan penyelesaian pembangunan jembatan Musi VI adalah bentuk tanggung jawab Pemerintah Provinsi kepada masyarakat.<br><br>Untuk itu, mantan Bupati Oku Timur dua periode tersebut mengharapkan dukungan dan kerjasama dari semua pihak yaitu terutama Pemerintah kota Palembang berikut seluruh OPD dan masyarakatnya.<br><br>\"Selesainya pembangunan jembatan Musi VI ini membutuhkan dukungan dari semua pihak. Bersama- sama kita selesaikan ini, baik dibagian seberang Ilir maupun di seberang Ulu,\" tambahnya.<br><br>Terkait pembebasan lahan, Herman Deru memastikan  untuk di wilayah seberang Ulu sudah tidak ada kendala lagi. Sedangkan pembebasan bidang tanah yang masih belum terlaksana, Gubernur mengharapkan dukungan dari para tokoh setempat.  Mengingat pembangunan jembatan Musi VI tidak hanya menekankan keindahan dan fisik jembatannya saja, melainkan juga keindahan di wilayah sekitar jembatan, baik di Ilir maupun di bagian  Ulu.<br><br>\"Akses menuju jembatan musi enam ini  akan ditingkatkan seperti ketersediaan fasilitas umum. Hingga nantinya jembatan ini  dapat menjadi obyek wisata baru bagi masyarakat,\" tambahnya.<br><br>Selain meninjau kelanjutan pembangunan jembatan Musi VI, dikesempatan yang sama  Gubernur H. Herman Deru juga secara simbolis menyerahkan sertifikat tanah program PTSL kepada warga seberang Ulu. Dalam pembuatan sertifikat tanah Herman Deru menjamin tidak ada pungutan.<br><br>Sementara Plt Kepala Dinas PU Bina Marga dan Tata Ruang Sumsel Darma Budhi mengatakan kontrak pembangunan jembatan Musi VI dimulai pertama kali pada tahun 2015 menggunakan dana APBD Provinsi Sumsel.<br><br>Tahap pertama pembangunan jembatan Musi VI tahun kontrak 2015, dengan jenis kontrak tahun jamak dengan masa pelaksanaan 756 hari kerja, nilai kontrak Rp. 344. 320.772. 000, 00.<br><br>Kemudian untuk pembangunan tahap kedua juga bersumber dari APBD Provinsi Sumsel, tahun anggaran 2018, jenis kontrak tahun jamak, nilai kontrak Rp.219. 677. 000.000, 00 dengan masa pelaksanaan 360 hari kerja, dan masa pemeliharaan 360 hari kerja dengan kontraktor pelaksana PT Nindya Karya.<br><br>Sementara itu, untuk realisasi dan sisa kebutuhan anggaran proyek jembatan Musi VI, Darma Budhi menjelaskan , kontrak tahap pertama nilai kontrak awal sebesar Rp.344. 320. 772. 000, 00. dan nilai final amandemen Rp. 344. 320. 772. 000, 00 (bobot terhadap keseluruhan 60, 4%). Kemudian untuk tahap kedua, nilai kontrak awal Rp. 219. 677. 000. 000, 00 dan nilai final amandemen Rp. 135. 315. 850.334, 10 ( bobot terhadap keseluruhan 24%).</p>\n<p><br>\"Dengan demikian total nilai untuk tahap pertama dan kedua adalah Rp. 469.636.622. 344, - (84, 4%).  Jumlah dana yang dibutuhkan untuk penyelesaian pembangunan jembatan Musi VI senilai Rp. 87 milyar\", pungkasnya.</p>\n<p> </p>\n<p>sumber: <a href=\"http://www.krsumsel.com/2019/04/gubernur-sumsel-pastikan-proyek-musi-vi.html\">http://www.krsumsel.com/2019/04/gubernur-sumsel-pastikan-proyek-musi-vi.html</a></p>', 6, '24,17', '', 'Y', '2019-05-08 20:15:19', 6, '2019-05-08 20:18:52', 'Y', 6, 'gurbernur-sumsel-pastikan-proyek-musi-vi-rampung-tahun-depan', '', '', '', '', '', '', 'N', 'Y', 'N', 'publish', 'Y', '81464081905', 5);
 
 -- --------------------------------------------------------
 
@@ -113,9 +111,6 @@ CREATE TABLE `banner_depan` (
 --
 
 INSERT INTO `banner_depan` (`id`, `gambar`, `header`, `caption`, `link_href`, `link_text`) VALUES
-(7, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/musi4.jpg', '', 'Jembatan Musi 4 Palembang', '', ''),
-(8, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/musi2.jpg', '', 'Jembatan Musi 2 Palembang', '', ''),
-(9, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/musi1.jpg', '', 'Jembatan Musi 1 Palembang', '', ''),
 (10, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/pupr6.png', '', 'Indahnya Ramadhan', '', ''),
 (11, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/pupr7.png', '', 'Indahnya Ramadhan', '', '');
 
@@ -153,6 +148,8 @@ INSERT INTO `banner_item` (`id`, `id_group`, `gambar`, `alttext`, `header`, `cap
 CREATE TABLE `bidang` (
   `bidang_id` bigint(20) NOT NULL,
   `kategori_id` bigint(20) NOT NULL,
+  `galeri_kategori_id` int(11) DEFAULT NULL,
+  `tag_id` int(11) DEFAULT NULL,
   `bidang_judul` varchar(500) COLLATE utf8mb4_unicode_ci NOT NULL,
   `bidang_tugas` text COLLATE utf8mb4_unicode_ci NOT NULL,
   `bidang_fungsi` text COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -173,22 +170,22 @@ CREATE TABLE `bidang` (
 -- Dumping data for table `bidang`
 --
 
-INSERT INTO `bidang` (`bidang_id`, `kategori_id`, `bidang_judul`, `bidang_tugas`, `bidang_fungsi`, `bidang_url`, `bidang_isi`, `bidang_foto`, `bidang_javascript`, `bidang_status`, `bidang_id_user`, `bidang_id_edit`, `bidang_created`, `bidang_edited`, `bidang_meta_keywords`, `bidang_meta_description`) VALUES
-(194, 0, 'UPTD PJ3 Kabupaten Ogan Komering Ulu', '', '', 'http://localhost/pubmsumsel/bidang/194-UPTD-PJ3-Kabupaten-Ogan-Komering', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(1691, 0, 'UPTD PJ3 Kabupaten Musi Banyuasin', '', '', 'http://localhost/pubmsumsel/bidang/1691-UPTD-PJ3-Kabupaten-Musi', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(1796, 0, 'UPTD PJ3 Kota Palembang', '', '', 'http://localhost/pubmsumsel/bidang/1796-UPTD-PJ3-Kota', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(2094, 0, 'UPTD PJ3 Kabupaten Muara Enim', '', '', 'http://localhost/pubmsumsel/bidang/2094-UPTD-PJ3-Kabupaten-Muara', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(2586, 0, 'UPTD PJ3 Kabupaten Ogan Komering Ilir', '', '', 'http://localhost/pubmsumsel/bidang/2586-UPTD-PJ3-Kabupaten-Ogan-Komering', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(2750, 0, 'Bidang Pengembangan Jaringan Jalan', '', '', 'http://localhost/pubmsumsel/bidang/2750-Bidang-Pengembangan-Jaringan', '', 'uploads/bidang/struktur 5 - bid air minum-01.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(2783, 0, 'Sekretariat', '', '', 'http://localhost/pubmsumsel/bidang/2783-', '', 'uploads/bidang/struktur 01 - sekretariat.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(2941, 0, 'UPTD Jalan dan Jembatan Kab Oku Timur', '', '', 'http://localhost/pubmsumsel/bidang/2941-UPTD-Jalan-dan-Jembatan-Kab-Oku', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(3187, 0, 'UPTD PJ3 Kabupaten Lahat', '', '', 'http://localhost/pubmsumsel/bidang/3187-UPTD-PJ3-Kabupaten', '', 'uploads/bidang/struktur 4 - tata bangunan.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(3899, 0, 'Bidang Penataan Ruang', '', '', 'http://localhost/pubmsumsel/bidang/3899-Bidang-Penataan', '', 'uploads/bidang/struktur 02 - bid pemb jalan jembatan.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(4454, 0, 'Bidang Pengujian Peralatan dan BMD', '', '', 'http://localhost/pubmsumsel/bidang/4454-Bidang-Pengujian-Peralatan-dan', '', 'uploads/bidang/struktur 3 - preservasi jalan jemb.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(5041, 0, 'UPTD Laboratorium Bahan Kontruksi', '', '', 'http://localhost/pubmsumsel/bidang/5041-UPTD-Laboratorium-Bahan', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(6358, 0, 'UPTD PJ3 Kabupaten Musi Rawas', '', '', 'http://localhost/pubmsumsel/bidang/6358-UPTD-PJ3-Kabupaten-Musi', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(7549, 0, 'Bidang Jembatan', '', '', 'http://localhost/pubmsumsel/bidang/7549-Bidang', '', 'uploads/bidang/struktur 6 - sumber daya air-01.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
-(7822, 0, 'Bidang Jalan', '', '', 'http://localhost/pubmsumsel/bidang/7822-Bidang', '', 'uploads/bidang/struktur 7 - bid tata ruang-01.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', '');
+INSERT INTO `bidang` (`bidang_id`, `kategori_id`, `galeri_kategori_id`, `tag_id`, `bidang_judul`, `bidang_tugas`, `bidang_fungsi`, `bidang_url`, `bidang_isi`, `bidang_foto`, `bidang_javascript`, `bidang_status`, `bidang_id_user`, `bidang_id_edit`, `bidang_created`, `bidang_edited`, `bidang_meta_keywords`, `bidang_meta_description`) VALUES
+(194, 0, 15, 26, 'UPTD PJ3 Kabupaten Ogan Komering Ulu', '', '', 'http://localhost/pubmsumsel/bidang/194-UPTD-PJ3-Kabupaten-Ogan-Komering', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(1691, 0, 14, 25, 'UPTD PJ3 Kabupaten Musi Banyuasin', '', '', 'http://localhost/pubmsumsel/bidang/1691-UPTD-PJ3-Kabupaten-Musi', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(1796, 0, 13, 24, 'UPTD PJ3 Kota Palembang', '', '', 'http://localhost/pubmsumsel/bidang/1796-UPTD-PJ3-Kota', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(2094, 0, 12, 23, 'UPTD PJ3 Kabupaten Muara Enim', '', '', 'http://localhost/pubmsumsel/bidang/2094-UPTD-PJ3-Kabupaten-Muara', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(2586, 0, 11, 22, 'UPTD PJ3 Kabupaten Ogan Komering Ilir', '', '', 'http://localhost/pubmsumsel/bidang/2586-UPTD-PJ3-Kabupaten-Ogan-Komering', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(2750, 0, 9, 15, 'Bidang Pengembangan Jaringan Jalan', '', '', 'http://localhost/pubmsumsel/bidang/2750-Bidang-Pengembangan-Jaringan', '', 'uploads/bidang/struktur 5 - bid air minum-01.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(2783, 0, 10, 14, 'Sekretariat', '', '', 'http://localhost/pubmsumsel/bidang/2783-', '', 'uploads/bidang/struktur 01 - sekretariat.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(2941, 0, 3, 21, 'UPTD Jalan dan Jembatan Kab Oku Timur', '', '', 'http://localhost/pubmsumsel/bidang/2941-UPTD-Jalan-dan-Jembatan-Kab-Oku', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(3187, 0, 4, 20, 'UPTD PJ3 Kabupaten Lahat', '', '', 'http://localhost/pubmsumsel/bidang/3187-UPTD-PJ3-Kabupaten', '', 'uploads/bidang/struktur 4 - tata bangunan.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(3899, 0, 5, 19, 'Bidang Penataan Ruang', '', '', 'http://localhost/pubmsumsel/bidang/3899-Bidang-Penataan', '', 'uploads/bidang/struktur 02 - bid pemb jalan jembatan.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(4454, 0, 6, 18, 'Bidang Pengujian Peralatan dan BMD', '', '', 'http://localhost/pubmsumsel/bidang/4454-Bidang-Pengujian-Peralatan-dan', '', 'uploads/bidang/struktur 3 - preservasi jalan jemb.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(5041, 0, 17, 28, 'UPTD Laboratorium Bahan Kontruksi', '', '', 'http://localhost/pubmsumsel/bidang/5041-UPTD-Laboratorium-Bahan', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(6358, 0, 16, 27, 'UPTD PJ3 Kabupaten Musi Rawas', '', '', 'http://localhost/pubmsumsel/bidang/6358-UPTD-PJ3-Kabupaten-Musi', '', '', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(7549, 0, 7, 17, 'Bidang Jembatan', '', '', 'http://localhost/pubmsumsel/bidang/7549-Bidang', '', 'uploads/bidang/struktur 6 - sumber daya air-01.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', ''),
+(7822, 0, 8, 16, 'Bidang Jalan', '', '', 'http://localhost/pubmsumsel/bidang/7822-Bidang', '', 'uploads/bidang/struktur 7 - bid tata ruang-01.jpg', '', 'published', 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '', '');
 
 -- --------------------------------------------------------
 
@@ -295,20 +292,6 @@ CREATE TABLE `foto_artikel` (
 --
 
 INSERT INTO `foto_artikel` (`id_foto`, `id_artikel`, `nama_foto`, `featured`, `token_foto`) VALUES
-(4, 2, 'fruit-4.jpg', 'N', ''),
-(5, 2, 'fruit-3.jpg', 'Y', ''),
-(6, 2, 'fruit-2.jpg', 'N', ''),
-(7, 2, 'fruit-1.jpg', 'N', ''),
-(12, 4, 'cat-3.jpg', 'N', ''),
-(13, 4, 'cat-4.jpg', 'N', ''),
-(14, 4, 'cat-2.jpg', 'N', ''),
-(15, 4, 'cat-1.jpg', 'N', ''),
-(20, 5, 'e1b98a673c81488445bcace96e3cf18b_14354995_159699914478040_1499585311944882136_n.jpg', 'N', '0.6933620484203296'),
-(21, 4, 'b6e27faa88e45fa8afedef314cc7e137_14453954_1131135600308102_1032412490_o.jpg', 'Y', '0.06723115049950112'),
-(23, 2, 'f3feba580c1435b9f8ef0fa55890c035_3-1-735x400.jpg', 'N', '0.04402219405959218'),
-(24, 1, '135556e7a323c509d9d8b75620c6e680_IMG20160914092950-660x400.jpg', 'Y', '0.8998090613732903'),
-(25, 6, 'logo1.jpg', 'N', '0.4590857619395776'),
-(27, 13, 'Screenshot_2018-12-13_Jelang_Mudik_Natal_2018,_Menteri_Basuki_Akan_Cek_Kesiapan_Tol_Trans_Jawa2.png', 'N', '0.256200154456129'),
 (38, 0, '0f050fb938257f539cc72fffd9c5777a_(1)16.jpg', 'N', '0.06969781340578418'),
 (39, 0, '97ec7d0f6fab283b9a57f2aa715129348db5e8c1.jpg', 'N', '0.4670726669679284'),
 (40, 0, 'misi.png', 'N', '0.694354319383836'),
@@ -316,13 +299,18 @@ INSERT INTO `foto_artikel` (`id_foto`, `id_artikel`, `nama_foto`, `featured`, `t
 (43, 0, '0f050fb938257f539cc72fffd9c5777a_(1)7.jpg', 'N', '0.7160635721922584'),
 (45, 0, '0f050fb938257f539cc72fffd9c5777a_(1)11.jpg', 'N', '0.8391668677766666'),
 (47, 0, '0f050fb938257f539cc72fffd9c5777a_(1)17.jpg', 'N', '0.043018707985382765'),
-(50, 38, 'proyek.jpg', 'N', '0.901476429462126'),
 (51, 39, '4121d4c91e11eaa58b19eec4a153f9ee_uload_haki.jpg', 'N', '0.752056066412484'),
 (52, 40, '7ee8c6867c9f964342d2aaadee2ddb5b_upload_sosial.jpeg', 'N', '0.01648668258865893'),
 (54, 41, 'Untitled.png', 'Y', ''),
 (55, 42, '44d7a0a3f056f47fdc5292f73ac0de40_pelatihan_pengembangan_kepribadian.jpg', 'N', ''),
 (56, 43, 'asa.png', 'N', ''),
-(57, 44, '14aac50cc06a9660dff92248a114c73b_upload_pwri.jpg', 'N', '');
+(57, 44, '14aac50cc06a9660dff92248a114c73b_upload_pwri.jpg', 'N', ''),
+(59, 45, '20190506_150916.jpg', 'Y', '0.8535045494657196'),
+(60, 46, 'jalan-rusak-di-mayor-zen.jpg', 'N', ''),
+(61, 47, '20190508111043_Sidak1.jpg', 'Y', ''),
+(62, 48, 'berita_662235_800x600_IMG-20190416-WA0015.jpg', 'Y', ''),
+(63, 49, 'IMG_20190416_152855.jpg', 'N', ''),
+(64, 50, 'IMG-20190416-WA0070.jpg', 'Y', '');
 
 -- --------------------------------------------------------
 
@@ -357,15 +345,42 @@ CREATE TABLE `foto_galeri` (
 --
 
 INSERT INTO `foto_galeri` (`id_foto`, `id_galeri`, `nama_foto`, `token_foto`, `deskripsi_foto`) VALUES
-(16, 3, 'Kementerian_PUPR_Peroleh_Dua_Penghargaan_dari_PR_INDONESIA.jpg', '', ''),
-(17, 3, 'empat_tahun_jokowi-jk.jpg', '', ''),
-(18, 4, 'e1b98a673c81488445bcace96e3cf18b_14354995_159699914478040_1499585311944882136_n.jpg', '', ''),
-(19, 4, 'Anggaran_Kementerian_PUPR_TA_20181.jpg', '', ''),
-(20, 5, '135556e7a323c509d9d8b75620c6e680_IMG20160914092950-660x400.jpg', '', ''),
-(21, 5, 'Masih-Beresiko-Dinas-PU-Segera-Kerahkan-Alat-Berat-Untuk-Angkat-Sendimen-dan-Tumpukan-Sampah-di-Banjir-Kanal-Timur.jpg', '', ''),
-(22, 6, 'gedung-kantor-upt-dinas-pu-riau-di-kampar_20160329_190132.jpg', '', ''),
-(23, 6, 'Masih-Beresiko-Dinas-PU-Segera-Kerahkan-Alat-Berat-Untuk-Angkat-Sendimen-dan-Tumpukan-Sampah-di-Banjir-Kanal-Timur1.jpg', '', ''),
-(25, 8, 'empat_tahun_jokowi-jk.jpg', '', '');
+(26, 9, '1.jpeg', '', 'Press converence di ruang rapat kadin'),
+(27, 10, '22.jpeg', '', ''),
+(28, 11, '3.jpeg', '', ''),
+(55, 13, 'WhatsApp_Image_2019-05-08_at_19_15_06.jpeg', '', ''),
+(56, 14, 'WhatsApp_Image_2019-05-08_at_19_15_07.jpeg', '', ''),
+(57, 15, 'WhatsApp_Image_2019-05-08_at_19_15_08.jpeg', '', ''),
+(58, 16, 'WhatsApp_Image_2019-05-08_at_19_15_08(1).jpeg', '', ''),
+(59, 17, 'WhatsApp_Image_2019-05-08_at_19_15_09.jpeg', '', ''),
+(60, 18, 'WhatsApp_Image_2019-05-08_at_19_15_09(1).jpeg', '', ''),
+(61, 19, 'WhatsApp_Image_2019-05-08_at_19_15_10.jpeg', '', ''),
+(62, 20, 'WhatsApp_Image_2019-05-08_at_19_15_11.jpeg', '', ''),
+(71, 21, '29.jpeg', '', ''),
+(72, 21, '28.jpeg', '', ''),
+(73, 21, '27.jpeg', '', ''),
+(74, 21, '26.jpeg', '', ''),
+(75, 21, '25.jpeg', '', ''),
+(76, 21, '24.jpeg', '', ''),
+(77, 21, '23.jpeg', '', ''),
+(78, 21, '221.jpeg', '', ''),
+(79, 21, '211.jpeg', '', ''),
+(80, 21, '20.jpeg', '', ''),
+(81, 21, '18.jpeg', '', ''),
+(82, 21, '17.jpeg', '', ''),
+(83, 21, '16.jpeg', '', ''),
+(84, 21, '15.jpeg', '', ''),
+(85, 21, '14.jpeg', '', ''),
+(86, 21, '13.jpeg', '', ''),
+(87, 21, '12.jpeg', '', ''),
+(88, 21, '10.jpeg', '', ''),
+(89, 21, '9.jpeg', '', ''),
+(90, 21, '8.jpeg', '', ''),
+(91, 21, '7.jpeg', '', ''),
+(92, 21, '6.jpeg', '', ''),
+(93, 21, '4.jpeg', '', ''),
+(94, 21, '5.jpeg', '', ''),
+(95, 21, '19.jpeg', '', '');
 
 -- --------------------------------------------------------
 
@@ -385,7 +400,9 @@ CREATE TABLE `foto_galeri_temp` (
 --
 
 INSERT INTO `foto_galeri_temp` (`id_foto`, `nama_foto`, `token_foto`, `sesi_form`) VALUES
-(1, 'cover.jpg', '0.738971008688023', '20334131812');
+(1, 'cover.jpg', '0.738971008688023', '20334131812'),
+(3, '2.jpeg', '0.5955624387761087', '35350081905'),
+(4, '21.jpeg', '0.482805599835465', '22125081905');
 
 -- --------------------------------------------------------
 
@@ -437,11 +454,18 @@ CREATE TABLE `galeri` (
 --
 
 INSERT INTO `galeri` (`galeri_id`, `kategori_id`, `galeri_nama`, `galeri_deskripsi`, `galeri_feature_img`, `galeri_url`, `galeri_meta_keyword`, `galeri_meta_deskripsi`, `galeri_og_image`, `galeri_og_deskripsi`, `galeri_date`, `galeri_date_edit`, `galeri_user`, `galeri_user_edit`, `galeri_status`) VALUES
-(3, 7, 'Kegiatan PU', '', '', 'kegiatan-pu', '', '', '', '', '2018-12-03 11:14:08', '0000-00-00 00:00:00', 1, 1, 'publish'),
-(4, 7, 'Galeri Kegiatan Hari Jadi Kabupaten Muara Enim', '', 'perbaikan-tambal-sulam_20160622_221029.jpg', 'galeri-kegiatan-hari-jadi-kabupaten-muara-enim', '', '', '', '', '2018-12-03 11:14:33', '0000-00-00 00:00:00', 1, 1, 'publish'),
-(5, 0, 'Peresmian Lelang Proyek Kab Muara Enim', '', 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/perbaikan-tambal-sulam_20160622_221029.jpg', 'peresmian-lelang-proyek-kab-muara-enim', '', '', '', '', '2018-12-14 12:31:48', '0000-00-00 00:00:00', 1, 5, 'publish'),
-(6, 10, 'Perbaikan Jembatan', '', 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/perbaikan-tambal-sulam_20160622_221029.jpgperbaikan-tambal-sulam_20160622_221029.jpg', 'perbaikan-jembatan', '', '', '', '', '2018-12-03 20:04:43', '0000-00-00 00:00:00', 1, 1, 'publish'),
-(8, 0, 'Perbaikan Jalan', '<p>Menghadapi arus mudik lebaran tahun 2016 mendatang, Pemerintah Pusat mulai melakukan perbaikan jalan milik negara. Sayangnya perbaikan tersebut tidak secara keseluruhan namun hanya tambal sulam, di Jalan SMB II Muaraenim, Rabu (22/6/2016).</p>\n<p>Dari pengamatan di lapangan, perbaikan jalan SMB II Muaraenim yang melintas di tengah kota Muaraenim, menggunakan metode tambal sulam yakni hanya memperbaiki dan menambal jalan yang rusak dan berlobang saja.</p>\n<p>Hal ini dilakukan diduga akibat keterbatasan dana sehingga tidak dilakukan perbaikan dan pengaspalan secara keseluruhan.</p>\n<div id=\"ihhk-7nGat1GS-XGI7zWx73yN_3W273uY63aL9n1\" class=\"\" data-google-query-id=\"CNrSlqe8nt8CFdeo7QodRrQO8A\"> </div>\n<p>Bahkan beberapa box culvert yang rusak dan jebol, belum dilakukan perbaikan. Sedangkan untuk jalan lintas negara terutama yang terancam longsor baru sebagian yang sedang diperbaiki, sedangkan sebagian lagi hanya diberikan rambu-rambu dan garis polisi.</p>\n<p>Diperkirakan pada lebaran tahun ini, jalan yang longsor tersebut belum bisa dilakukan perbaikan karena medannya yang cukup sulit yang rata-rata seperti jurang dan di pinggir bibir sungai Enim dan Lematang.</p>\n<p>Menurut Rudi (40) pengawas lapangan SMB II Muaraenim, pihaknya sesuai perintah hanya melakukan perbaikan di ruas jalan SMB II Muaraenim. Namun jenis perbaikan bukan dilakukan dengan cara pengaspalan secara keseluruhan, tetapi hanya menambal jalan yang rusak dan berlobang saja (tambal sulam).</p>\n<p>Pihaknya menargetkan sebelum H-7, kondisi jalan di ruas jalan SMB II Muaraenim, tidak ada lagi yang berlobang.</p>\n<p>Namun ketika ditanya masalah ada jalan yang berlobang di jalan SMB II Muaraenim, akibat box culvertnya jebol, Rudi, mengatakan ia kurang tahu masalah tersebut, sebab tidak termasuk dalam RAB pekerjaannya.</p>\n<p>Pihaknya akan bekerja sesuai RAB yang ada. Sedangkan untuk ruas jalan yang lain, itu ada penanggungjawabnya masing-masing.</p>\n<p>\"Kita ini bekerja sesuai petunjuknya, jadi meskipun ada jalan yang rusak didekat pekerjannya jika tidak masuk dalam tanggungjawabnya, kami tidak bisa memperbaikinya,\" tukas Rudi.</p>\n<p>Sementara itu Kepala Dinas PU Bina Marga Kabupaten Muaraenim Ir A Yani MT, membenarkan jika sedang ada perbaikan beberapa ruas jalan lintas sumatera di dalam wilayah Kabupaten Muaraenim. Karena status jalan tersebut adalah jalan negara maka kewenangannya adalah pusat (APBN) yang dikerjakan oleh PU BM Sumsel.</p>\n<p>Untuk itu ia berharap, perbaikan tersebut bisa selesai sebelum H-7. Dan kepada masyarakat untuk kerjasamanya yang baik sehingga perbaikan tersebut berjalan lancar dan aman.</p>\n<p> </p>', 'perbaikan-tambal-sulam_20160622_221029.jpg', 'perbaikan-jalan', '', '', '', '', '2018-12-14 12:31:05', '0000-00-00 00:00:00', 5, 5, 'publish');
+(9, 8, 'Press converence di ruang rapat kadin', '', '', 'press-converence-di-ruang-rapat-kadin', '', '', '', '', '2019-05-08 20:27:39', '0000-00-00 00:00:00', 6, 6, 'publish'),
+(10, 8, 'Perbaikan jalan mayor Zen', '', '', 'perbaikan-jalan-mayor-zen', '', '', '', '', '2019-05-08 21:47:15', '0000-00-00 00:00:00', 6, 6, 'publish'),
+(11, 12, 'Perbaikan jalan sp.priuk-tugu Mulyo - terawas (kab.mura)', '', '', 'perbaikan-jalan-sp-priuk-tugu-mulyo-terawas-kab-mura', '', '', '', '', '2019-05-08 21:47:05', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(13, 3, 'Perbaikan jalan gumawang-petanggan (kab.oku timur)', '', '', 'perbaikan-jalan-gumawang-petanggan-kab-oku-timur', '', '', '', '', '2019-05-08 22:43:57', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(14, 11, 'Perbaikan jalan sp.penyandingan-bts.okut (kab.oki)', '', '', 'perbaikan-jalan-sp-penyandingan-bts-okut-kab-oki', '', '', '', '', '2019-05-08 22:44:23', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(15, 7, 'Rapat Musyawarah Camat  / Kades dan Warga Lahan Jembatan Air Kelingi Linggau', '', '', 'rapat-musyawarah-camat-kades-dan-warga-lahan-jembatan-air-kelingi-linggau', '', '', '', '', '2019-05-08 22:47:21', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(16, 3, 'Perbaikan jalan BTS.oki - sp.kepuh (Oku timur)', '', '', 'perbaikan-jalan-bts-oki-sp-kepuh-oku-timur', '', '', '', '', '2019-05-08 22:47:42', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(17, 18, 'Rakorgub 2019 se sumatera', '', '', 'rakorgub-2019-se-sumatera', '', '', '', '', '2019-05-08 22:48:20', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(18, 10, 'Validasi Evaluasi Jabatan Perangkat Daerah Provinsi Sumatera Selatan', '', '', 'validasi-evaluasi-jabatan-perangkat-daerah-provinsi-sumatera-selatan', '', '', '', '', '2019-05-08 22:49:14', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(19, 18, 'Musrenbang RKPD Prov. Sumsel Tahun 2019', '', '', 'musrenbang-rkpd-prov-sumsel-tahun-2019', '', '', '', '', '2019-05-08 22:49:59', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(20, 15, 'Perbaikan ruas jalan oi - lubuk Batang (kab.oku)', '', '', 'perbaikan-ruas-jalan-oi-lubuk-batang-kab-oku', '', '', '', '', '2019-05-08 22:50:30', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(21, 18, 'Pembangunan Jembatan Musi 6', '', '', 'pembangunan-jembatan-musi-6', '', '', '', '', '2019-05-08 23:02:06', '0000-00-00 00:00:00', 6, 0, 'publish');
 
 -- --------------------------------------------------------
 
@@ -641,22 +665,9 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `slug_kategori`, `id_parent`, `aktif`, `terhapus`) VALUES
-(1, 'Sains', 'sains', 0, 'Y', 'Y'),
-(2, 'Kuliner', 'kuliner', 0, 'Y', 'Y'),
-(3, 'Olah Raga', 'olah-raga', 0, 'Y', 'Y'),
-(4, 'Pariwisata', 'pariwisata', 0, 'Y', 'Y'),
-(5, 'Budaya', 'budaya', 0, 'N', 'Y'),
 (6, 'Berita', 'berita', 0, 'Y', 'N'),
 (7, 'pengumuman', 'pengumuman', 0, 'Y', 'N'),
-(8, 'agenda', 'agenda', 0, 'Y', 'N'),
-(9, 'Dinas tata ruang', 'dinas-tata-ruang', 0, 'Y', 'Y'),
-(10, 'Dinas Penataan Ruang', 'dinas-penataan-ruang', 0, 'Y', 'Y'),
-(11, 'Dinas Pengujian Peralatan dan BMD', 'dinas-pengujian-peralatan-dan-bmd', 0, 'Y', 'Y'),
-(12, 'Dinas Jembatan', 'dinas-jembatan', 0, 'Y', 'Y'),
-(13, 'Dinas Jalan', 'dinas-jalan', 0, 'Y', 'Y'),
-(14, 'Dinas Pengembangan jaringan Jalan', 'dinas-pengembangan-jaringan-jalan', 0, 'Y', 'Y'),
-(15, 'sekretariat', 'sekretariat', 0, 'Y', 'Y'),
-(16, 'a', 'a', 0, 'Y', 'Y');
+(8, 'agenda', 'agenda', 0, 'Y', 'N');
 
 -- --------------------------------------------------------
 
@@ -665,7 +676,7 @@ INSERT INTO `kategori` (`id_kategori`, `nama_kategori`, `slug_kategori`, `id_par
 --
 
 CREATE TABLE `kategori_galeri` (
-  `id` bigint(20) NOT NULL,
+  `id` int(11) NOT NULL,
   `nama_kategori` varchar(60) COLLATE utf8mb4_unicode_ci NOT NULL,
   `slug_kategori` varchar(90) COLLATE utf8mb4_unicode_ci NOT NULL,
   `aktif` enum('Y','N') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'Y',
@@ -677,16 +688,22 @@ CREATE TABLE `kategori_galeri` (
 --
 
 INSERT INTO `kategori_galeri` (`id`, `nama_kategori`, `slug_kategori`, `aktif`, `terhapus`) VALUES
-(1, 'Wedding', 'wedding', 'Y', 'Y'),
-(2, 'Pre- wedding ', 'pre-wedding', 'Y', 'Y'),
-(3, 'berita', 'berita', 'Y', 'N'),
-(4, 'agenda', 'agenda', 'Y', 'N'),
-(5, 'dinas tata ruang', 'dinas-tata-ruang', 'Y', 'N'),
-(6, 'dinas sumber daya air', 'dinas-sumber-daya-air', 'Y', 'N'),
-(7, 'dinas air minum dan plp', 'dinas-air-minum-dan-plp', 'Y', 'N'),
-(8, 'dinas 	tata bangunan dan jasa konstruksi', 'dinas-tata-bangunan-dan-jasa-konstruksi', 'Y', 'N'),
-(9, 'dinas pembangunan jalan jembatan', 'dinas-pembangunan-jalan-jembatan', 'Y', 'N'),
-(10, 'dinas 	preservasi jembatan jalan', 'dinas-preservasi-jembatan-jalan', 'Y', 'N');
+(3, 'UPTD Jalan dan Jembatan Kab. Oku Timur', 'uptd-jalan-dan-jembatan-kab-oku-timur', 'Y', 'N'),
+(4, 'UPTD PJ3 Kabupaten Lahat', 'uptd-pj3-kabupaten-lahat', 'Y', 'N'),
+(5, 'Bidang Penataan Ruang', 'bidang-penataan-ruang', 'Y', 'N'),
+(6, 'Bidang Pengujian Peralatan dan BMD', 'bidang-pengujian-peralatan-dan-bmd', 'Y', 'N'),
+(7, 'Bidang Jembatan', 'bidang-jembatan', 'Y', 'N'),
+(8, 'Bidang Jalan', 'bidang-jalan', 'Y', 'N'),
+(9, 'Bidang Pengembangan Jaringan Jalan', 'bidang-pengembangan-jaringan-jalan', 'Y', 'N'),
+(10, 'Sekretariat', 'sekretariat', 'Y', 'N'),
+(11, 'UPTD PJ3 Kabupaten Ogan Komering Ilir', 'uptd-pj3-kabupaten-ogan-komering-ilir', 'Y', 'N'),
+(12, 'UPTD PJ3 Kabupaten Muara Enim', 'uptd-pj3-kabupaten-muara-enim', 'Y', 'N'),
+(13, 'UPTD PJ3 Kota Palembang', 'uptd-pj3-kota-palembang', 'Y', 'N'),
+(14, 'UPTD PJ3 Kabupaten Musi Banyuasin', 'uptd-pj3-kabupaten-musi-banyuasin', 'Y', 'N'),
+(15, 'UPTD PJ3 Kabupaten Ogan Komering Ulu', 'uptd-pj3-kabupaten-ogan-komering-ulu', 'Y', 'N'),
+(16, 'UPTD PJ3 Kabupaten Musi Rawas', 'uptd-pj3-kabupaten-musi-rawas', 'Y', 'N'),
+(17, 'UPTD Laboratorium Bahan Kontruksi', 'uptd-laboratorium-bahan-kontruksi', 'Y', 'N'),
+(18, 'All', 'all', 'Y', 'N');
 
 -- --------------------------------------------------------
 
@@ -948,7 +965,8 @@ CREATE TABLE `produk_hukum` (
 --
 
 INSERT INTO `produk_hukum` (`id_produk_hukum`, `nama_file`, `file`, `tahun`, `keterangan`, `date`) VALUES
-('99776', 'PERATURAN BUPATI MUARA ENIM', 'uploads/produkhukum/PERBUP_SUSUNAN_ORGANISASI,_TRUKTUR_DAN_FUNG_DINAS_DAN_BADAN_DAERAH_2016_FINAL.docx', '2016', 'SUSUNAN, KEDUDUKAN, TUGAS FUNGSI DAN STRUKTUR  ORGANISASI INSPEKTORAT, SATUAN POLISI PAMONG PRAJA,  DINAS, BADAN, KECAMATAN DAN KELURAHAN \r\n', '2018-12-14');
+('99776', 'PERATURAN GUBERNUR SUMATERA SELATAN NOMOR 46', 'uploads/produkhukum/PERBUP_SUSUNAN_ORGANISASI,_TRUKTUR_DAN_FUNG_DINAS_DAN_BADAN_DAERAH_2016_FINAL.docx', '2016', 'SUSUNAN ORGANISASI, URAIAN, TUGAS DAN FUNGSI DINAS PEKERJAAN UMUM BINA MARGA DAN TATA RUANG PROVINSI SUMATERA SELATA', '2019-05-08'),
+('10302', 'PERATURAN GUBERNUR SUMATERA SELATAN NOMOR 14', '', '2016', 'PEMBENTUKAN DAN SUSUNAN PERANGKAT DAERAH SUMATERA SELATAN', '2019-05-08');
 
 -- --------------------------------------------------------
 
@@ -1014,30 +1032,30 @@ CREATE TABLE `struktur_organisasi` (
 INSERT INTO `struktur_organisasi` (`so_id`, `jabatan_id`, `so_nip`, `so_nama`, `so_foto`) VALUES
 (39, 1, '196201101988111001', 'H. Darma Budhy, SH, ST, MT', 'man.png'),
 (40, 2, '197712041997032004', 'Dr. HJ. MEGAWATY, ST, MT', 'sekertaris.png'),
-(41, 3, '196205151983031017', 'Drs. H. Eddy Manhar, MM', 'man.png'),
+(41, 3, '196205151983031017', 'Drs. H. Eddy Manhar, MM', 'Edy Manhar.png'),
 (42, 4, '197907132002122004', 'Rina Anggraini, ST', 'man.png'),
-(43, 5, '196201031988031004', 'H. Husnan, SE, MM', 'man.png'),
+(43, 5, '196201031988031004', 'H. Husnan, SE, MM', 'Husnan .png'),
 (44, 6, '196612151995031003', 'Ir. Ridwan, M.M', 'Kabid Jaringan Jalan.png'),
 (45, 7, '196207281988111002', 'Ir. Muchtar. MA', 'man.png'),
 (46, 8, '1970212301992031002', 'Muhammad Affandi, ST, Msc', 'Kabid Jembatan.png'),
 (47, 9, '196607171988031004', 'Tendy Jumat, ST, M.Si', 'Bidang Pengujian Peralatan BMD.png'),
 (48, 10, '197401081995101001', 'Faustino Do Carmo, ST', 'Penataan Ruang.png'),
-(49, 11, '196706121990031002', 'Dru Wismawan, SE, MT', 'man.png'),
-(50, 12, '196412241999031003', 'Ir. Indra Muliawan, M.Si', 'man.png'),
-(51, 13, '1973012219980031005', 'Dedu Hendra, S.T.', 'man.png'),
-(52, 14, '198005232002121002', 'Ricky Meiza, ST, MM', 'man.png'),
+(49, 11, '196706121990031002', 'Dru Wismawan, SE, MT', 'DRU Wismawan.png'),
+(50, 12, '196412241999031003', 'Ir. Indra Muliawan, M.Si', 'Indra Muliawan.png'),
+(51, 13, '1973012219980031005', 'Dedu Hendra, S.T.', 'Dedi Hendra.png'),
+(52, 14, '198005232002121002', 'Ricky Meiza, ST, MM', 'Riki.png'),
 (53, 15, '197401081995101001', 'Faustino Do Carmo, ST', 'Penataan Ruang.png'),
-(54, 16, '198202232005022001', 'Ida Febriani ST, MT', 'man.png'),
-(55, 17, '197302051999031007', 'Ramaly, ST., M.T', 'man.png'),
+(54, 16, '198202232005022001', 'Ida Febriani ST, MT', 'Ida Febrianti.png'),
+(55, 17, '197302051999031007', 'Ramaly, ST., M.T', 'Ramaly.png'),
 (56, 18, '198301272008011002', 'Popo Hartopo, ST', 'man.png'),
 (57, 19, '196407111990032003', 'Ir. Nyayu Yulita', 'UPTD Laboratorium Bahan Konstruksi.png'),
-(58, 20, '197609172011011002', 'Andri Wahyudi, ST', 'man.png'),
-(59, 21, '198204292011011005', 'MA. Rizky Irfian, S.T.', 'man.png'),
-(60, 22, '197612312005012019', 'Delly Puspita, S.T.', 'man.png'),
-(61, 23, '197505252008011006', 'Rizal Hermansyah, ST, MT', 'man.png'),
-(62, 24, '198409182010011014', 'Anton Satria, SH', 'man.png'),
-(63, 25, '196608081998031004', 'Ir. Agustiono, MM', 'man.png'),
-(64, 26, '197109281993031001', 'Hendry Wijaya, ST, MM', 'man.png'),
+(58, 20, '197609172011011002', 'Andri Wahyudi, ST', 'Andri Wahyudi.png'),
+(59, 21, '198204292011011005', 'MA. Rizky Irfian, S.T.', 'Rizki irvian.png'),
+(60, 22, '197612312005012019', 'Delly Puspita, S.T.', 'Delly.png'),
+(61, 23, '197505252008011006', 'Rizal Hermansyah, ST, MT', 'Rizal Firmasyah.png'),
+(62, 24, '198409182010011014', 'Anton Satria, SH', 'Anton.png'),
+(63, 25, '196608081998031004', 'Ir. Agustiono, MM', 'Agustino.png'),
+(64, 26, '197109281993031001', 'Hendry Wijaya, ST, MM', 'Hendry Wijaya.png'),
 (65, 27, '196505031990031008', 'Indra Asmi Muharam, ST', 'UPTD Ogan Komering Ulu dan UPTD Jalan Jembatan OKU.png'),
 (66, 28, '196309101990031006', 'Ir. Tarmisi, MM, M.SI', 'man.png'),
 (67, 29, '196309151990031007', 'Ir. Arlan, M.T.', 'UPTD Kota Palembang.png'),
@@ -1046,31 +1064,31 @@ INSERT INTO `struktur_organisasi` (`so_id`, `jabatan_id`, `so_nip`, `so_nama`, `
 (70, 32, '196305171991031004', 'Nurudin Hanafia, ST, MT', 'UPTD Muara Enim.png'),
 (71, 33, '196505031990031008', 'Indra Asmi Muharam, ST', 'UPTD Ogan Komering Ulu dan UPTD Jalan Jembatan OKU.png'),
 (72, 34, '196407111990032003', 'Ir. Nyayu Yulita', 'UPTD Laboratorium Bahan Konstruksi.png'),
-(73, 35, '197904282007011014', 'Aredho Hadianata Imron, S.T.', 'man.png'),
-(74, 36, '1976112009011010', 'Mahmud, ST', 'man.png'),
+(73, 35, '197904282007011014', 'Aredho Hadianata Imron, S.T.', 'Aredho Hadinata.png'),
+(74, 36, '1976112009011010', 'Mahmud, ST', 'Mahmud.png'),
 (75, 37, '196211111986091001', 'Eddy Sabani, ST, MM', 'man.png'),
-(76, 38, '19810022009021007', 'Tedi Suryadharma Putra, ST', 'man.png'),
+(76, 38, '19810022009021007', 'Tedi Suryadharma Putra, ST', 'Tedy Suryadharma Putra.png'),
 (77, 39, '-', '-', 'man.png'),
-(78, 40, '1970090031998031004', 'Firgani Arief, S.T., M.T.', 'man.png'),
-(79, 41, '196801011992031011', 'Hermalan, ST', 'man.png'),
-(80, 42, '196912231996031003', 'Zulkarnain, S.T.', 'man.png'),
-(81, 43, '197111101997032004', 'Poppy Savutri, S.T., M.Si', 'man.png'),
-(82, 44, '197809272008011004', 'Endang Supriyadi, ST', 'man.png'),
+(78, 40, '1970090031998031004', 'Firgani Arief, S.T., M.T.', 'Firgani Arief.png'),
+(79, 41, '196801011992031011', 'Hermalan, ST', 'Hermalan.png'),
+(80, 42, '196912231996031003', 'Zulkarnain, S.T.', 'Zulkarnain.png'),
+(81, 43, '197111101997032004', 'Poppy Savutri, S.T., M.Si', 'Poppy Savitri.png'),
+(82, 44, '197809272008011004', 'Endang Supriyadi, ST', 'endang Supriyadi.png'),
 (83, 45, '196908101999031007', 'Saifuddin Hasibuan, ST, MM', 'man.png'),
 (84, 46, '196308061991031007', 'Muhammad Nurman, S.IP, ST', 'man.png'),
-(85, 47, '196206261994031005', 'Ir. Fauzi, MM', 'man.png'),
-(86, 48, '196211101982121001', 'Muhammad Zarbani, ST, M.Si', 'man.png'),
-(87, 49, '197704162007011001', 'Apriansyah Rustami, ST', 'man.png'),
-(88, 50, '197110221994031002', 'Rudy Susilo, ST, M.Si', 'man.png'),
+(85, 47, '196206261994031005', 'Ir. Fauzi, MM', 'Fauzi .png'),
+(86, 48, '196211101982121001', 'Muhammad Zarbani, ST, M.Si', 'M. Zarbani.png'),
+(87, 49, '197704162007011001', 'Apriansyah Rustami, ST', 'Apriansyah Rustami.png'),
+(88, 50, '197110221994031002', 'Rudy Susilo, ST, M.Si', 'Rudi Susilo.png'),
 (89, 51, '-', '-', 'man.png'),
 (90, 52, '-', '-', 'man.png'),
-(91, 53, '198201212008011003', 'Eko Widiyanto, SE, ST', 'man.png'),
+(91, 53, '198201212008011003', 'Eko Widiyanto, SE, ST', 'Eko Widiyanto.png'),
 (92, 54, '-', '-', 'man.png'),
 (93, 55, '196707121992031011', 'M. Iqbal Dewanto, ST, MM', 'man.png'),
-(94, 56, '196605021996031003', 'Erwin Aduman, ST, MM', 'man.png'),
-(95, 57, '196301181991021002', 'Jon Fahlevi, ST', 'man.png'),
-(96, 58, '196210291991021001', 'Ir. Bayazi', 'man.png'),
-(97, 59, '197805082007012007', 'Nukky Meiliana, ST, M.Eng', 'man.png'),
+(94, 56, '196605021996031003', 'Erwin Aduman, ST, MM', 'Erwin Aduman.png'),
+(95, 57, '196301181991021002', 'Jon Fahlevi, ST', 'Jhon Fahlevi.png'),
+(96, 58, '196210291991021001', 'Ir. Bayazi', 'Bayazi.png'),
+(97, 59, '197805082007012007', 'Nukky Meiliana, ST, M.Eng', 'Nukki.png'),
 (98, 60, '196306021998031002', 'Ir. Mgs. Hidayatullah, M.M.', 'man.png'),
 (99, 61, '-', '-', 'man.png');
 
@@ -1081,7 +1099,7 @@ INSERT INTO `struktur_organisasi` (`so_id`, `jabatan_id`, `so_nip`, `so_nama`, `
 --
 
 CREATE TABLE `tags` (
-  `id_tag` bigint(20) UNSIGNED NOT NULL,
+  `id_tag` int(11) NOT NULL,
   `nama_tag` varchar(30) COLLATE utf8mb4_unicode_ci NOT NULL,
   `slug_tag` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `user_posting` bigint(20) NOT NULL,
@@ -1094,13 +1112,21 @@ CREATE TABLE `tags` (
 
 INSERT INTO `tags` (`id_tag`, `nama_tag`, `slug_tag`, `user_posting`, `user_update`) VALUES
 (6, 'dinaspu', 'dinaspu', 1, 0),
-(8, 'preservasi jembatan jalan', 'preservasi-jembatan-jalan', 1, 0),
-(9, 'pembangunan jalan jembatan', 'pembangunan-jalan-jembatan', 1, 0),
-(10, 'tata bangunan dan jasa konstru', 'tata-bangunan-dan-jasa-konstruksi', 1, 0),
-(11, 'air minum dan plp', 'air-minum-dan-plp', 1, 0),
-(12, 'sumber daya air', 'sumber-daya-air', 1, 0),
-(13, 'tata ruang', 'tata-ruang', 1, 0),
-(14, 'sekretariat', 'sekretariat', 5, 0);
+(14, 'sekretariat', 'sekretariat', 5, 0),
+(15, 'Bidang Pengembangan Jaringan J', 'bidang-pengembangan-jaringan-jalan', 6, 0),
+(16, 'Bidang Jalan', 'bidang-jalan', 6, 0),
+(17, 'Bidang Jembatan', 'bidang-jembatan', 6, 0),
+(18, 'Bidang Pengujian Peralatan dan', 'bidang-pengujian-peralatan-dan-bmd', 6, 0),
+(19, 'Bidang Penataan Ruang', 'bidang-penataan-ruang', 6, 0),
+(20, 'UPTD PJ3 Kabupaten Lahat', 'uptd-pj3-kabupaten-lahat', 6, 0),
+(21, 'UPTD Jalan dan Jembatan Oku Ti', 'uptd-jalan-dan-jembatan-oku-timur', 6, 0),
+(22, 'UPTD PJ3 Kabupaten OKI', 'uptd-pj3-kabupaten-oki', 6, 0),
+(23, 'UPTD PJ3 Kabupaten Muara Enim', 'uptd-pj3-kabupaten-muara-enim', 6, 0),
+(24, 'UPTD PJ3 Kota Palembang', 'uptd-pj3-kota-palembang', 6, 0),
+(25, 'UPTD PJ3 Kabupaten Musi Banyua', 'uptd-pj3-kabupaten-musi-banyuasin', 6, 0),
+(26, 'UPTD PJ3 Kabupaten OKU', 'uptd-pj3-kabupaten-oku', 6, 0),
+(27, 'UPTD PJ3 Kabupaten Musi Rawas', 'uptd-pj3-kabupaten-musi-rawas', 6, 0),
+(28, 'UPTD Laboratorium Bahan Kontru', 'uptd-laboratorium-bahan-kontruksi', 6, 0);
 
 -- --------------------------------------------------------
 
@@ -1479,7 +1505,8 @@ INSERT INTO `visitor` (`visitor_id`, `visitor_ip`, `visitor_tanggal`, `visitor_p
 (306, '::1', '2019-04-29', 'Chrome', 1, 1556503288),
 (307, '::1', '2019-05-05', 'Chrome', 1, 1557088597),
 (308, '::1', '2019-05-06', 'Chrome', 1, 1557177300),
-(309, '::1', '2019-05-07', 'Chrome', 1, 1557254545);
+(309, '::1', '2019-05-07', 'Chrome', 1, 1557262585),
+(310, '::1', '2019-05-08', 'Chrome', 1, 1557332848);
 
 --
 -- Indexes for dumped tables
@@ -1514,7 +1541,9 @@ ALTER TABLE `banner_item`
 -- Indexes for table `bidang`
 --
 ALTER TABLE `bidang`
-  ADD PRIMARY KEY (`bidang_id`);
+  ADD PRIMARY KEY (`bidang_id`),
+  ADD KEY `galeri_kategori_id` (`galeri_kategori_id`),
+  ADD KEY `tag_id` (`tag_id`);
 
 --
 -- Indexes for table `biodata`
@@ -1730,7 +1759,7 @@ ALTER TABLE `agenda`
 -- AUTO_INCREMENT for table `artikel`
 --
 ALTER TABLE `artikel`
-  MODIFY `artikel_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `artikel_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `banner_depan`
@@ -1784,25 +1813,25 @@ ALTER TABLE `faq`
 -- AUTO_INCREMENT for table `foto_artikel`
 --
 ALTER TABLE `foto_artikel`
-  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=65;
 
 --
 -- AUTO_INCREMENT for table `foto_artikel_temp`
 --
 ALTER TABLE `foto_artikel_temp`
-  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `foto_galeri`
 --
 ALTER TABLE `foto_galeri`
-  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
 
 --
 -- AUTO_INCREMENT for table `foto_galeri_temp`
 --
 ALTER TABLE `foto_galeri_temp`
-  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
 
 --
 -- AUTO_INCREMENT for table `foto_user_tmp`
@@ -1814,7 +1843,7 @@ ALTER TABLE `foto_user_tmp`
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `galeri_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `galeri_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `group_banner`
@@ -1838,7 +1867,7 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT for table `kategori_galeri`
 --
 ALTER TABLE `kategori_galeri`
-  MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `kategori_produk`
@@ -1868,7 +1897,7 @@ ALTER TABLE `menu`
 -- AUTO_INCREMENT for table `menu_child`
 --
 ALTER TABLE `menu_child`
-  MODIFY `menu_child_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `menu_child_id` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `news_ticker`
@@ -1910,7 +1939,7 @@ ALTER TABLE `struktur_organisasi`
 -- AUTO_INCREMENT for table `tags`
 --
 ALTER TABLE `tags`
-  MODIFY `id_tag` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_tag` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `tema`
@@ -1928,11 +1957,18 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `visitor`
 --
 ALTER TABLE `visitor`
-  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=310;
+  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=311;
 
 --
 -- Constraints for dumped tables
 --
+
+--
+-- Constraints for table `bidang`
+--
+ALTER TABLE `bidang`
+  ADD CONSTRAINT `bidang_ibfk_1` FOREIGN KEY (`galeri_kategori_id`) REFERENCES `kategori_galeri` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `bidang_ibfk_2` FOREIGN KEY (`tag_id`) REFERENCES `tags` (`id_tag`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Constraints for table `struktur_organisasi`

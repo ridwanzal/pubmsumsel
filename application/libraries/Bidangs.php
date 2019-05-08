@@ -15,6 +15,8 @@ class Bidangs {
 		$data=$this->CI->db->query("SELECT bidang_id AS id,
 			bidang_judul AS judul,
 			kategori_id AS kategori,
+			galeri_kategori_id AS kategori_galeri,
+			tag_id AS tag_id,
 			bidang_tugas AS tugas,
 			 bidang_fungsi AS fungsi,
 			 bidang_url AS slug,

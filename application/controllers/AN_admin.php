@@ -1000,7 +1000,7 @@ class AN_admin extends CI_Controller {
 					'id_user'=>$this->id_user,
 					'data'=>$this->galeri_foto->hasil,
 					'foto'=>($cek_gambar==true)?$this->galeri_foto->photos:false,
-					'kategori'=>$this->galeri_foto->ambil_kategori_umum()
+					'kategori'=>$this->galeri_foto->ambil_kategori()
 					);
 
 				$this->load->view("admin/header",$data);

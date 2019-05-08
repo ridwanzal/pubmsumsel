@@ -94,6 +94,38 @@ public function artikel_kategori($id_kategori)
 	return $data;
 
 }
+
+
+public function artikel_tag($tag_id)
+{
+	$max = 5;
+	$data=$this->CI->db->query("SELECT artikel.artikel_id AS id,
+	 artikel.artikel_judul AS judul,
+	 artikel.artikel_isi AS isi,
+	 artikel.artikel_tgl_posting AS tanggal,
+	 artikel.artikel_tags as tags,
+	 artikel.artikel_dibaca AS dibaca,
+	 artikel.artikel_seo_url AS slug,
+	 kategori.nama_kategori,
+	 kategori.id_kategori as kategori,
+	 user.nama_lengkap AS nama_admin,
+	 user.id_user AS id_admin,
+	 foto_artikel.nama_foto AS foto
+	 FROM artikel,kategori,user,foto_artikel, tags
+	 WHERE bidang.tag_id=$tag_id AND artikel.artikel_status='publish' AND kategori.aktif='Y' AND kategori.terhapus='N' AND user.status_user='Y' AND user.terhapus='N' AND artikel.artikel_id_user=user.id_user AND artikel.artikel_kategori=kategori.id_kategori AND foto_artikel.id_foto=(SELECT CASE  foto_artikel.featured WHEN 'Y' THEN id_foto WHEN 'N' THEN id_foto END AS 'id_foto'  FROM foto_artikel WHERE foto_artikel.id_artikel=artikel.artikel_id ORDER BY featured ASC LIMIT 1) ORDER BY artikel.artikel_id DESC LIMIT $max
+	 ");
+	$data=$data->result_array();
+	return $data;
+}
+
+
+public function get_all_limit(){
+	$data = $this->CI->db->query("SELECT * FROM artikel left join user on artikel.artikel_id_user=user.id_user order by artikel_tgl_posting desc limit 5")->result_array();
+	return $data;
+}
+
+
+
 public function artikel_berita($id_kategori)
 {
 	$max = 6;

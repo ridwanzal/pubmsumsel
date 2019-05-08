@@ -76,7 +76,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 													<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 profile  col-sm-12 col-xs-12">
 														<div class="img-box">
 															<p class="text-center">
-																<img src="<?= base_url('uploads/struktur_organisasi/man.png')?>" class="img-responsive">
+																<img src="<?=base_url();?>uploads/struktur_organisasi/<?= $ca['so_foto']; ?>" class="img-responsive">
 															</p>
 															<ul class="text-center">
 																<a href="#"><li><i class="fa fa-facebook"></i></li></a>
@@ -162,12 +162,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 							<div class="row list-berita">
 								<ul>
-									<?php foreach ($artikel_kategori as $kategori){ ?>
-										<li>
-											<?php echo "<h4><a href='".artikel_url($kategori['id'],$kategori['slug'])."'>".$kategori['judul']."</a></h4>"; ?>
-											<p>posted by <?php echo $kategori['nama_admin'] ?> <?php format_tanggal($kategori['tanggal']) ?></p>
-										</li>
-									<?php } ?>
+									<?php foreach ($artikel_kategori as $kategori){ 
+										if($kategori['artikel_tags'] !== null or $kategori['artikel_tags'] !== ''){
+											$gimplode = explode(",",$kategori['artikel_tags']);
+											if (in_array($tag_id,$gimplode)) {
+												?>
+												<li>
+													<?php echo "<h4><a href='".artikel_url($kategori['artikel_id'],$kategori['artikel_seo_url'])."'>".$kategori['artikel_judul']."</a></h4>"; ?>
+													<p>posted by <?php echo $kategori['nama_lengkap'] ?> <?php format_tanggal($kategori['artikel_tgl_posting']) ?></p>
+												</li>
+												<?php 
+											}
+										}
+									}
+									?>
 								</ul>
 							</div>
 						</div>
@@ -193,7 +201,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 								<div class="col-md-4" style="margin-top:10px;">
 									<div style="width:100%;height:auto;background-color:#77848e;">
-										<?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' /></a>";  ?>
+										<?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'>
+										<img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='max-height:150px;width:100%;'/></a>";  ?>
 
 									</div>
 								</div>
@@ -205,5 +214,4 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-
 		</div>
