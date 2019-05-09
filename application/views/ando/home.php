@@ -558,7 +558,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
              </div>
              <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
                 <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;font-size: 10px;">
+                <p style="text-align:left;font-size: 10px;">
                     Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
                 </p>
             </div>
@@ -656,95 +656,37 @@ Remove or comment-out the code block below to see how the browser will fall-back
                             <div class="tab-content">
                                 <div class="tab-pane active text-style" id="tab1">
 
-                                    <div class="col-md-4" tabindex="0">
-                                        <div class="gallery-item" tabindex="0">
-                                            <img src="https://images.unsplash.com/photo-1511765224389-37f0e77cf0eb?w=500&h=500&fit=crop" class="gallery-image" alt="">
-                                                   <!--  <div class="gallery-item-info">
-                                                        <ul>
-                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
-                                                        </ul>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4" tabindex="0">
+                                    <?php foreach ($ig as $key ) : ?>
+                                        <div class="col-md-6" tabindex="0">
+                                            <a href="<?= $key['link'] ?>" target="_blank">
                                                 <div class="gallery-item" tabindex="0">
-                                                    <img src="https://images.unsplash.com/photo-1515023115689-589c33041d3c?w=500&h=500&fit=crop" class="gallery-image" alt="">
-                                                   <!--  <div class="gallery-item-info">
+                                                    <img src="<?= $key['images']['standard_resolution']['url'] ?>" class="gallery-image" alt="">
+                                                    <div class="gallery-item-info">
                                                         <ul>
-                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> 56</li>
-                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
+                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> <?= $key['likes']['count'] ?></li><br>
+                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> <?= $key['comments']['count'] ?></li>
                                                         </ul>
-                                                    </div> -->
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="col-md-4" tabindex="0">
-                                                <div class="gallery-item" tabindex="0">
-                                                    <img src="https://images.unsplash.com/photo-1504214208698-ea1916a2195a?w=500&h=500&fit=crop" class="gallery-image" alt="">
-                                                   <!--  <div class="gallery-item-info">
-                                                        <ul>
-                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
-                                                        </ul>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-4" tabindex="0">
-                                                <div class="gallery-item" tabindex="0">
-                                                    <img src="https://images.unsplash.com/photo-1515814472071-4d632dbc5d4a?w=500&h=500&fit=crop" class="gallery-image" alt="">
-                                                   <!--  <div class="gallery-item-info">
-                                                        <ul>
-                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
-                                                        </ul>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-4" tabindex="0">
-                                                <div class="gallery-item" tabindex="0">
-                                                    <img src="https://images.unsplash.com/photo-1511407397940-d57f68e81203?w=500&h=500&fit=crop" class="gallery-image" alt="">
-                                                   <!--  <div class="gallery-item-info">
-                                                        <ul>
-                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
-                                                        </ul>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-md-4" tabindex="0">
-                                                <div class="gallery-item" tabindex="0">
-                                                    <img src="https://images.unsplash.com/photo-1518481612222-68bbe828ecd1?w=500&h=500&fit=crop" class="gallery-image" alt="">
-                                                   <!--  <div class="gallery-item-info">
-                                                        <ul>
-                                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fas fa-heart" aria-hidden="true"></i> 56</li>
-                                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fas fa-comment" aria-hidden="true"></i> 2</li>
-                                                        </ul>
-                                                    </div> -->
-                                                </div>
-                                            </div>
-
-
+                                            </a>
                                         </div>
-                                    </div>
+                                    <?php endforeach; ?>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- end section berita -->
-                    <!-- srat section galeri -->
-                    <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
                 </div>
-                <hr/>
-                <div class="section section-berita">
-                    <p style="">Galeri Foto</p>
-                    <div class="row">
+            </div>
+
+            <!-- end section berita -->
+            <!-- srat section galeri -->
+            <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
+        </div>
+        <hr/>
+        <div class="section section-berita">
+            <p style="">Galeri Foto</p>
+            <div class="row">
                 <!-- <div class="col-md-4">
                     <div style="width:100%;height:auto;background-color:#77848e;">
                         <a href="<?php echo galeri_url($galeri_rand->id,$galeri_rand->slug) ?>">
