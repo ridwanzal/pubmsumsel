@@ -39,32 +39,16 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
                             <form class="" method="post">
                               <table class="table table-bordered">
                                 <tr>
-                                  <td>Nama Kegiatan</td>
-                                  <td><input class="form-control" name="nama_kegiatan"></td>
+                                  <td>Nomor Ruas</td>
+                                  <td><input class="form-control" name="no_ruas"></td>
                                 </tr>
                                 <tr>
-                                  <td>Anggaran</td>
-                                  <td><input class="form-control" name="anggaran"></td>
+                                  <td>Nama Ruas</td>
+                                  <td><input class="form-control" name="nama_ruas"></td>
                                 </tr>
                                 <tr>
-                                  <td>Nilai Kontrak</td>
-                                  <td><input class="form-control" name="nilai_kontrak"></td>
-                                </tr>
-                                <tr>
-                                  <td>Realisasi Pekerjaan</td>
-                                  <td><input class="form-control" name="progres"></td>
-                                </tr>
-                                <tr>
-                                  <td>PPK</td>
-                                  <td><input class="form-control" name="ppk"></td>
-                                </tr>
-                                <tr>
-                                  <td>Nama Pelaksana</td>
-                                  <td><input class="form-control" name="nama_pelaksana"></td>
-                                </tr>
-                                <tr>
-                                  <td>Tahun</td>
-                                  <td><input class="form-control" name="tahun"></td>
+                                  <td>Panjang Ruas Jalan</td>
+                                  <td><input class="form-control" name="panjang_ruas"></td>
                                 </tr>
                                 <tr>
                                   <td colspan="2"><input type="submit" name="submit" value="Submit" class="btn btn-primary" /></td>
@@ -84,13 +68,9 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
                 <table class="slug-table table table-bordered table-striped dt-responsive">
                   <thead>
                   <tr>
-                    <th>Nama Kegiatan</th>
-                    <th>Anggaran</th>
-                    <th>Nilai Kontrak</th>
-                    <th>Realisasi Pekerjaan</th>
-                    <th>PPK</th>
-                    <th>Nama Pelaksana</th>
-                    <th>Tahun</th>
+                    <th>Nomor Ruas</th>
+                    <th>Nama Ruas</th>
+                    <th>Panjang Ruas Jalan</th>
                     <th>Action</th>
                   </tr>
                   </thead>
@@ -98,13 +78,9 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
                     <?php $k=0; ?>
                   <?php foreach ($get_infrastruktur as $infrastruktur): ?>
                     <tr>
-                      <td><?php echo $infrastruktur->nama_kegiatan ?></td>
-                      <td><?php echo $infrastruktur->anggaran ?></td>
-                      <td><?php echo $infrastruktur->nilai_kontrak ?></td>
-                      <td><?php echo $infrastruktur->progres ?></td>
-                      <td><?php echo $infrastruktur->ppk ?></td>
-                      <td><?php echo $infrastruktur->nama_pelaksana ?></td>
-                      <td><?php echo $infrastruktur->tahun ?></td>
+                      <td><?php echo $infrastruktur->no_ruas ?></td>
+                      <td><?php echo $infrastruktur->nama_ruas ?></td>
+                      <td><?php echo $infrastruktur->panjang_ruas ?></td>
                       <td>
                         <a href="<?php echo base_url() ?>admin/edit_data_infrastruktur/<?php echo $infrastruktur->id_infrastruktur ?>" class="btn btn-warning"><i class="fa fa-edit"></i>&nbspEdit</a>
                         <a href="<?php echo base_url() ?>admin/del_data_infrastruktur/<?php echo $infrastruktur->id_infrastruktur ?>" class="btn btn-danger"><i class="fa fa-trash"></i>&nbspHapus</a>

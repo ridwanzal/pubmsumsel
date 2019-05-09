@@ -541,21 +541,13 @@ class AN_admin extends CI_Controller {
 				$this->load->view('admin/footer',$data);
 				if ($this->input->post('submit')) {
 					$id_infrastruktur = $this->input->post('id_infrastruktur');
-					$nama_kegiatan = $this->input->post('nama_kegiatan');
-					$nama_pelaksana = $this->input->post('nama_pelaksana');
-					$anggaran = $this->input->post('anggaran');
-					$nilai_kontrak = $this->input->post('nilai_kontrak');
-					$progres = $this->input->post('progres');
-					$ppk = $this->input->post('ppk');
-					$tahun = $this->input->post('tahun');
+					$no_ruas = $this->input->post('no_ruas');
+					$nama_ruas = $this->input->post('nama_ruas');
+					$panjang_ruas = $this->input->post('panjang_ruas');
 					$data = array(
-						"nama_kegiatan"=>$nama_kegiatan,
-						"nama_pelaksana"=>$nama_pelaksana,
-						"anggaran"=>$anggaran,
-						"nilai_kontrak"=>$nilai_kontrak,
-						"progres"=>$progres,
-						"ppk"=>$ppk,
-						"tahun"=>$tahun
+						"no_ruas"=>$no_ruas,
+						"nama_ruas"=>$nama_ruas,
+						"panjang_ruas"=>$panjang_ruas,
 						);
 					$query = $this->infrastruktur->upd_data_infrastruktur($data,$id_infrastruktur);
 					if ($query==true) {
@@ -593,22 +585,14 @@ class AN_admin extends CI_Controller {
 				$this->load->view('admin/footer',$data);
 				if ($this->input->post('submit')) {
 					$id_infrastruktur = rand(00000,99999);
-					$nama_kegiatan = $this->input->post('nama_kegiatan');
-					$nama_pelaksana = $this->input->post('nama_pelaksana');
-					$anggaran = $this->input->post('anggaran');
-					$nilai_kontrak = $this->input->post('nilai_kontrak');
-					$progres = $this->input->post('progres');
-					$ppk = $this->input->post('ppk');
-					$tahun = $this->input->post('tahun');
+					$no_ruas = $this->input->post('no_ruas');
+					$nama_ruas = $this->input->post('nama_ruas');
+					$panjang_ruas = $this->input->post('panjang_ruas');
 					$data = array(
 						"id_infrastruktur"=>$id_infrastruktur,
-						"nama_kegiatan"=>$nama_kegiatan,
-						"nama_pelaksana"=>$nama_pelaksana,
-						"anggaran"=>$anggaran,
-						"nilai_kontrak"=>$nilai_kontrak,
-						"progres"=>$progres,
-						"ppk"=>$ppk,
-						"tahun"=>$tahun
+						"no_ruas"=>$no_ruas,
+						"nama_ruas"=>$nama_ruas,
+						"panjang_ruas"=>$panjang_ruas,
 						);
 					$query = $this->infrastruktur->ins_data_infrastruktur($data);
 					if ($query==true) {

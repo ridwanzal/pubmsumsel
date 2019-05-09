@@ -22,7 +22,6 @@ class Data_infrastruktur extends AN_Apricot
 		$data["informasi"]["og-title"]=$data["informasi"]["title"];
 		$this->load->model('admin/infrastruktur');
 		$data["get_infrastruktur"] = $this->infrastruktur->get_infrastruktur();
-		$data["get_year_infra"] = $this->infrastruktur->get_year_infra();
 		$this->load->view($this->tema."/header",$data);
 		$this->load->view($this->tema."/data_infrastruktur",$data);
 		$this->load->view($this->tema."/footer",$data);
