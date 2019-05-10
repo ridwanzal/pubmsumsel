@@ -1527,7 +1527,7 @@ textarea.form-control {
     letter-spacing: 0.5px;
     font-size: 14px;
     font-weight: lighter;
-    color: #555  !important;
+    color: #fff  !important;
 }
 
 .text-footers {
@@ -1535,7 +1535,7 @@ textarea.form-control {
     margin-top:12px;
     font-size: 14px;
     font-weight: lighter;
-    color: #555 !important;
+    color: #fff !important;
 }
 
 .text-footers:hover{
@@ -1548,7 +1548,7 @@ textarea.form-control {
 
 .link_socials{
     margin-right: 20px;
-    color : #555;
+    color : #fff;
 }
 
 .news_header_text { 

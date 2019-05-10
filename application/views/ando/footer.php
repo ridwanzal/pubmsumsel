@@ -84,7 +84,7 @@ echo "</div>"; //.col-md-4
 }
 
 ?>
-    <div id='footer' style="background-color: #ffc928; color: #888; padding-top: 70px; padding-bottom: 70px;">
+    <div id='footer' style="background-color: #2055a2; color: #888; padding-top: 70px; padding-bottom: 70px;">
         <div class='container'>
             <div class="row">
                 <div class="col-md-3">
@@ -94,7 +94,7 @@ echo "</div>"; //.col-md-4
                         <br/>
                         <p class="text-footers-size">Telp: (0711) 321053</p>
                         <br/>
-                        <div style="display:flex; color : #555;">
+                        <div style="display:flex; color : #fff;">
                             <a class="link_socials"><span class='fa fa-facebook'></span></a>
                             <a class="link_socials"><span class='fa fa-instagram'></span></a>
                             <a class="link_socials"><span class='fa fa-twitter'></span></a>
@@ -102,7 +102,7 @@ echo "</div>"; //.col-md-4
                         </div>
                 </div>
                 <div class="col-md-3">
-                    <p style="font-size:20px;font-weight:bold; letter-spacing:1px; color : #555">Tautan</p>
+                    <p style="font-size:20px;font-weight:bold; letter-spacing:1px; color : #fff">Tautan</p>
                     <br/>
                   <a href="http://sumselprov.go.id" class="text-footers"><p class="text-footers" >Pemerintah Provinsi Sumatera Selatan</p></a>
                   <a href="http://lpse.sumselprov.go.id" class="text-footers"><p class="text-footers" >LPSE Sumatera Selatan</p></a>
@@ -174,11 +174,11 @@ echo "</div>"; //.col-md-4
             </div>
         </div>
     </div>
-    <div class="last-footer" style="background: url(http://pupr.muaraenimkab.go.id/an-theme/ando/assets/img/footer_art.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
+    <!-- <div class="last-footer" style="background: url(http://pupr.muaraenimkab.go.id/an-theme/ando/assets/img/footer_art.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
       &nbsp;
-    </div>
+    </div> -->
   </main>
-<div style="background:#efbb22; color:#fff; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
+<div style="background:#1e4f96; color:#fff; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-xs-12 text-left" style="padding-left:110px;font-size:12px;">
         <span>
