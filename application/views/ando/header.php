@@ -231,7 +231,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 							        <span class="icon-bar"></span>
 							      </button>
 										<a class="navbar-brand pu-brand pu-mar" href="<?= base_url();?>">&nbsp
-											<img width="140" src="<?php echo assets_url('img/logo.svg') ?>" alt="" style="position:relative;top:-3px;" class="img-w img img-responsive">&nbsp
+											<img width="180" src="<?php echo assets_url('img/logo.svg') ?>" alt="" style="position:relative;top:-3px;" class="img-w img img-responsive">&nbsp
 										</a>
 							    </div>
 

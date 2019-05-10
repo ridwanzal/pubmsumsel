@@ -532,31 +532,31 @@ Remove or comment-out the code block below to see how the browser will fall-back
             </div>  
             <hr>
             <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
-                <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+                <div class="col-lg-2 col-md-4 col-xs-12 rows_data">
                     <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;font-size: 10px;">
+                    <p style="text-align:left;font-size: 12px;">
                         Membangun Sumsel berbasis ekonomi kerakyatan, yang didukung sektor pertanian, industri, dan UMKM yang tangguh untuk mengatasi pengangguran dan kemiskinan baik di perkotaan maupun di perdesaan
                     </p>
                 </div>
                 <div class="col-lg-2 col-md-4 col-xs-12 rows_data">
                     <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;font-size: 10px;">
+                    <p style="text-align:left;font-size: 12px;">
                         Membangun Sumsel berbasis ekonomi kerakyatan, yang didukung sektor pertanian, industri, dan UMKM yang tangguh untuk mengatasi pengangguran dan kemiskinan baik di perkotaan maupun di perdesaan
                     </p>
                 </div>
                 <div class="col-lg-2 col-md-4 col-xs-12 rows_data">
                     <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
-                    <p style="text-align:left;font-size: 10px;">
+                    <p style="text-align:left;font-size: 12px;">
                         Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilit yang didukung aparatur pemerintahan yang jujur berintegritas, profesional, dan responsif.
                     </p>
                 </div>
-                <div class="col-lg-2 col-md-4 col-xs-12 rows_data ">
+                <div class="col-lg-4 col-md-4 col-xs-12 rows_data ">
                     <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:0px;" class="img-w img img-responsive">
-                    <p style="text-align:left;font-size: 10px;">
+                    <p style="text-align:left;font-size: 12px;">
                      Membangun dan meningkatkan kualitas dan kuantitas infrastruktur, termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman & perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah.
                  </p>
              </div>
-             <div class="col-lg-3 col-md-4 col-xs-12 rows_data">
+             <div class="col-lg-2 col-md-4 col-xs-12 rows_data">
                 <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:5px;" class="img-w img img-responsive">
                 <p style="text-align:left;font-size: 10px;">
                     Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
@@ -697,12 +697,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <?php $i = 0; ?>
                 <?php foreach ($get_galeri as $galeri): ?>
                     <?php if ($i<8): ?>
-                        <div class="col-lg-3 col-md-3" style="margin-top:10px;margin-bottom:80px;">
+                        <div class="col-lg-3 col-md-3" style="margin-top:10px;margin-bottom:75px;">
                             <div style="width:100%;height:120px;background-color:#77848e;">
-                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:120px;text-align:center'; /></a>";  ?>
+                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; backgournd-size:cover;background-position: 50% 50%;text-align:center'; /></a>";  ?>
                             </div>
                         </div>
-
                     <?php endif; ?>
                     <?php $i++; ?>
                 <?php endforeach; ?>
