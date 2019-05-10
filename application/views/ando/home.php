@@ -245,10 +245,12 @@ img {
 
 .gallery-item {
     position: relative;
-    flex: 1 0 22rem;
-    margin: 1rem;
     color: #fff;
+    margin-bottom: 15px;
+    width : 160px;
+    height : 160px;
     cursor: pointer;
+
 }
 
 .gallery-item:hover .gallery-item-info,
@@ -649,13 +651,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
             </div>
 
             <div class="col-md-4">
-                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">FOLLOW ON INSTAGRAM</a></span>
+                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">Follow on Instagram</a></span><hr/>
                     <div class="announce_cont">
                         <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
-                        <div class="pu_list_berita">
-                            <div class="tab-content">
-                                <div class="tab-pane active text-style" id="tab1">
-
                                     <?php foreach ($ig as $key ) : ?>
                                         <div class="col-md-6" tabindex="0">
                                             <a href="<?= $key['link'] ?>" target="_blank">
@@ -671,10 +669,6 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                             </a>
                                         </div>
                                     <?php endforeach; ?>
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
