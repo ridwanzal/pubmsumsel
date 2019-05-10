@@ -512,7 +512,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </a>
     </div>
     <!-- /carousel -->
-    <div style="background: #fad605; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
+    <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
         <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
         </span>&nbsp;&nbsp;Berita : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><?php print_r($artikel_berita[0]['judul']) ?>,</a>&nbsp;&nbsp;<span><?php echo format_tanggal($artikel_berita[0]['tanggal']) ?></span>
         <a href=""><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
@@ -534,47 +534,63 @@ Remove or comment-out the code block below to see how the browser will fall-back
             </div>  
             <hr>
             <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
-                <div class="col-lg-3 col-md-3 col-xs-12 rows_data">
-                    <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
-                    <!-- <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 50px;">
-                        Pelayanan
+                <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                    <!-- <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                    <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                        Kemajuan Ekonomi
                         <hr/>
-                    </p> -->
+                    </p>
                     <p style="text-align:left;font-size: 13px; ">
                         Membangun Sumsel berbasis ekonomi kerakyatan, yang didukung sektor pertanian, industri, dan UMKM yang tangguh untuk mengatasi pengangguran dan kemiskinan baik di perkotaan maupun di perdesaan
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-12 rows_data">
-                    <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
-                    <!-- <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 50px;">
-                        Keamanan    
+                <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                    <!-- <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                    <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                        Sumber Daya Manusia    
                         <hr/>
-                    </p> -->
+                    </p>
                     <p style="text-align:left;font-size: 13px;">
-                        Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilit yang didukung aparatur pemerintahan yang jujur berintegritas, profesional, dan responsif.
+                        Meningkaatkan kualitas Sumber Daya Manusia (SDM), baik laki-laki maupun perempuan yang sehat, berpendidikan, professional, dan menjunjung tinggi nilai-nilai keimanan, 
+                        ketaqwaan, kejujuran, dan integritas.
                     </p>
                 </div>
-                <div class="col-lg-3 col-md-3 col-xs-12 rows_data " 
-                style=" border: 1px solid #ccc;
+             <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                <!-- <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                    Tata Kelola Pemerintahan
+                    <hr/>
+                </p>
+                <p style="text-align:left;font-size: 13px;">
+                    Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilitas yang didukung aparatur pemerintahan yang jujur, 
+                    berintegritas, profesional dan responsif.   
+                </p>
+             </div>
+            <div class="col-lg-4 col-md-4 col-xs-12  rows_data " 
+                style=" background : #ffc928 !important;
+                        border : 1px solid #ffc928;
                         position: relative;
                         top: -10px;
-                        box-shadow: 0 0 5px #eee;
-                        height: 335px;">
-                    <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
-                    <!-- <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 50px;">
-                        Pembangunan    
+                        height: 470px;">
+                    <!-- <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                    <p style="text-align:left;font-size: 29px; line-height : 30px; font-weight:bold; margin-bottom:5px; height : 50px;">
+                        Pembangunan Infrastruktur
                         <hr/>
-                    </p> -->
-                    <p style="text-align:left;font-size: 13px;">
+                    </p>
+                    <p style="text-align:left;font-size: 18px; color : #111">
                      Membangun dan meningkatkan kualitas dan kuantitas infrastruktur, termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman & perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah.
                  </p>
              </div>
-             <div class="col-lg-3 col-md-3 col-xs-12 rows_data">
-                <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+             <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                <!-- <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                    Keagamaan & Sosial Masyarakat
+                    <hr style="color : #111;"/>
+                </p>
                 <p style="text-align:left;font-size: 13px;">
                     Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
                 </p>
-            </div>
+             </div>
         </div>
         <hr/>
         <div class="row container_bidang">
