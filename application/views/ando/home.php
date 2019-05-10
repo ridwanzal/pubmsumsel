@@ -556,11 +556,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12 rows_data " 
                 style=" border: 1px solid #ccc;
-                        border-radius: 7px;
                         position: relative;
-                        top: -20px;
+                        top: -10px;
                         box-shadow: 0 0 5px #eee;
-                        height: 350px;">
+                        height: 335px;">
                     <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                     <!-- <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 50px;">
                         Pembangunan    
