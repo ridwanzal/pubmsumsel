@@ -1657,8 +1657,6 @@ class AN_admin extends CI_Controller {
 		if($this->input->post()){
 			$user=($this->input->post("username"));
 			$pass=md5($this->input->post("password"));
-			echo "Username : ".$user."<br>";
-			echo "Password : ".$pass."<br>";
 
 			$cari=$this->db->get_where("user",array("name_user"=>$user,"password_user"=>$pass,"status_user"=>"Y","terhapus"=>"N"));
 

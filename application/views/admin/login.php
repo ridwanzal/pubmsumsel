@@ -44,7 +44,7 @@ $path_adm=base_url()."an-theme/admin";
           <?php
         }
         ?>
-        <form action="<?php echo base_url() ?>index.php/admin/proseslogin" method="POST">
+        <form action="<?php echo base_url('admin/proseslogin') ?>" method="POST">
           <div class="form-group has-feedback">
             <input type="text" class="form-control" name='username' placeholder="Username"/>
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
