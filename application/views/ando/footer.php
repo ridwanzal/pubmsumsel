@@ -174,7 +174,7 @@ echo "</div>"; //.col-md-4
             </div>
         </div>
     </div>
-    <div class="last-footer" style="background: url(http://localhost/pubmsumsel/an-theme/ando/assets/img/footer_art2.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
+    <div class="last-footer" style="background: url(http://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/footer_art2.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
       &nbsp;
     </div>
   </main>
