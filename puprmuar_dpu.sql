@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 09, 2019 at 05:57 PM
+-- Generation Time: May 14, 2019 at 08:55 PM
 -- Server version: 10.1.31-MariaDB
 -- PHP Version: 7.2.3
 
@@ -112,7 +112,8 @@ CREATE TABLE `banner_depan` (
 
 INSERT INTO `banner_depan` (`id`, `gambar`, `header`, `caption`, `link_href`, `link_text`) VALUES
 (10, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/pupr6.png', '', 'Indahnya Ramadhan', '', ''),
-(11, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/pupr7.png', '', 'Indahnya Ramadhan', '', '');
+(11, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/pupr7.png', '', 'Indahnya Ramadhan', '', ''),
+(12, 'http://localhost/pubmsumsel/an-component/media/upload-gambar-pendukung/Untitled-1.jpg', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -380,7 +381,29 @@ INSERT INTO `foto_galeri` (`id_foto`, `id_galeri`, `nama_foto`, `token_foto`, `d
 (92, 21, '6.jpeg', '', ''),
 (93, 21, '4.jpeg', '', ''),
 (94, 21, '5.jpeg', '', ''),
-(95, 21, '19.jpeg', '', '');
+(95, 21, '19.jpeg', '', ''),
+(96, 22, 'WhatsApp_Image_2019-05-15_at_00_32_56(1).jpeg', '', ''),
+(97, 23, 'WhatsApp_Image_2019-05-15_at_00_32_56.jpeg', '', ''),
+(98, 24, 'WhatsApp_Image_2019-05-15_at_00_32_59.jpeg', '', ''),
+(99, 25, 'WhatsApp_Image_2019-05-15_at_00_33_00(1).jpeg', '', ''),
+(100, 26, 'WhatsApp_Image_2019-05-15_at_00_33_00(2).jpeg', '', ''),
+(101, 27, 'WhatsApp_Image_2019-05-15_at_00_33_00.jpeg', '', ''),
+(102, 28, 'WhatsApp_Image_2019-05-15_at_00_33_01(1).jpeg', '', ''),
+(103, 29, 'WhatsApp_Image_2019-05-15_at_00_33_01.jpeg', '', ''),
+(104, 30, 'WhatsApp_Image_2019-05-15_at_00_33_02(1).jpeg', '', ''),
+(105, 31, 'WhatsApp_Image_2019-05-15_at_00_33_02(2).jpeg', '', ''),
+(106, 32, 'WhatsApp_Image_2019-05-15_at_00_33_02.jpeg', '', ''),
+(107, 33, 'WhatsApp_Image_2019-05-15_at_00_33_03(1).jpeg', '', ''),
+(108, 34, 'WhatsApp_Image_2019-05-15_at_00_33_03(2).jpeg', '', ''),
+(109, 35, 'WhatsApp_Image_2019-05-15_at_00_33_03(3).jpeg', '', ''),
+(110, 36, 'WhatsApp_Image_2019-05-15_at_00_33_03.jpeg', '', ''),
+(111, 37, 'WhatsApp_Image_2019-05-15_at_00_33_04(1).jpeg', '', ''),
+(112, 38, 'WhatsApp_Image_2019-05-15_at_00_33_04(2).jpeg', '', ''),
+(113, 39, 'WhatsApp_Image_2019-05-15_at_00_33_04(3).jpeg', '', ''),
+(114, 40, 'WhatsApp_Image_2019-05-15_at_00_33_04.jpeg', '', ''),
+(115, 41, 'WhatsApp_Image_2019-05-15_at_00_33_05(1).jpeg', '', ''),
+(116, 42, 'WhatsApp_Image_2019-05-15_at_00_33_05(2).jpeg', '', ''),
+(117, 43, 'WhatsApp_Image_2019-05-15_at_00_33_05.jpeg', '', '');
 
 -- --------------------------------------------------------
 
@@ -465,7 +488,29 @@ INSERT INTO `galeri` (`galeri_id`, `kategori_id`, `galeri_nama`, `galeri_deskrip
 (18, 10, 'Validasi Evaluasi Jabatan Perangkat Daerah Provinsi Sumatera Selatan', '', '', 'validasi-evaluasi-jabatan-perangkat-daerah-provinsi-sumatera-selatan', '', '', '', '', '2019-05-08 22:49:14', '0000-00-00 00:00:00', 6, 0, 'publish'),
 (19, 18, 'Musrenbang RKPD Prov. Sumsel Tahun 2019', '', '', 'musrenbang-rkpd-prov-sumsel-tahun-2019', '', '', '', '', '2019-05-08 22:49:59', '0000-00-00 00:00:00', 6, 0, 'publish'),
 (20, 15, 'Perbaikan ruas jalan oi - lubuk Batang (kab.oku)', '', '', 'perbaikan-ruas-jalan-oi-lubuk-batang-kab-oku', '', '', '', '', '2019-05-08 22:50:30', '0000-00-00 00:00:00', 6, 0, 'publish'),
-(21, 18, 'Pembangunan Jembatan Musi 6', '', '', 'pembangunan-jembatan-musi-6', '', '', '', '', '2019-05-08 23:02:06', '0000-00-00 00:00:00', 6, 0, 'publish');
+(21, 18, 'Pembangunan Jembatan Musi 6', '', '', 'pembangunan-jembatan-musi-6', '', '', '', '', '2019-05-08 23:02:06', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(22, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:54:16', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(23, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:54:26', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(24, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:54:34', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(25, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:54:42', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(26, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:54:49', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(27, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:54:56', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(28, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:55:02', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(29, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:55:30', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(30, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:55:43', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(31, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:55:52', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(32, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:55:59', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(33, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:05', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(34, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:12', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(35, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:18', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(36, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:24', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(37, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:29', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(38, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:40', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(39, 18, '', '', '', '', '', '', '', '', '2019-05-15 00:56:55', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(40, 18, '', '', '', '', '', '', '', '', '2019-05-15 01:04:50', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(41, 18, '', '', '', '', '', '', '', '', '2019-05-15 01:04:58', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(42, 18, '', '', '', '', '', '', '', '', '2019-05-15 01:05:06', '0000-00-00 00:00:00', 6, 0, 'publish'),
+(43, 18, '', '', '', '', '', '', '', '', '2019-05-15 01:05:12', '0000-00-00 00:00:00', 6, 0, 'publish');
 
 -- --------------------------------------------------------
 
@@ -1571,7 +1616,9 @@ INSERT INTO `visitor` (`visitor_id`, `visitor_ip`, `visitor_tanggal`, `visitor_p
 (308, '::1', '2019-05-06', 'Chrome', 1, 1557177300),
 (309, '::1', '2019-05-07', 'Chrome', 1, 1557262585),
 (310, '::1', '2019-05-08', 'Chrome', 1, 1557332848),
-(311, '::1', '2019-05-09', 'Chrome', 1, 1557412393);
+(311, '::1', '2019-05-09', 'Chrome', 1, 1557437584),
+(312, '::1', '2019-05-14', 'Chrome', 1, 1557858015),
+(313, '::1', '2019-05-14', 'Chrome', 1, 1557858015);
 
 --
 -- Indexes for dumped tables
@@ -1830,7 +1877,7 @@ ALTER TABLE `artikel`
 -- AUTO_INCREMENT for table `banner_depan`
 --
 ALTER TABLE `banner_depan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `banner_item`
@@ -1890,7 +1937,7 @@ ALTER TABLE `foto_artikel_temp`
 -- AUTO_INCREMENT for table `foto_galeri`
 --
 ALTER TABLE `foto_galeri`
-  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=96;
+  MODIFY `id_foto` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=118;
 
 --
 -- AUTO_INCREMENT for table `foto_galeri_temp`
@@ -1908,7 +1955,7 @@ ALTER TABLE `foto_user_tmp`
 -- AUTO_INCREMENT for table `galeri`
 --
 ALTER TABLE `galeri`
-  MODIFY `galeri_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `galeri_id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `group_banner`
@@ -2022,7 +2069,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `visitor`
 --
 ALTER TABLE `visitor`
-  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=312;
+  MODIFY `visitor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=314;
 
 --
 -- Constraints for dumped tables
