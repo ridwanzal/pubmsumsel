@@ -174,9 +174,9 @@ echo "</div>"; //.col-md-4
             </div>
         </div>
     </div>
-    <!-- <div class="last-footer" style="background: url(http://pupr.muaraenimkab.go.id/an-theme/ando/assets/img/footer_art.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
+    <div class="last-footer" style="background: url(http://localhost/pubmsumsel/an-theme/ando/assets/img/footer_art2.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
       &nbsp;
-    </div> -->
+    </div>
   </main>
 <div style="background:#1e4f96; color:#fff; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
   <div class="row">
