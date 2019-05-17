@@ -103,7 +103,7 @@ class Galeri
 			AND user.terhapus='N'
 			AND galeri.galeri_user=user.id_user
 			AND galeri.kategori_id=kategori_galeri.id
-			AND foto_galeri.id_foto=(SELECT MAX(id_foto) FROM foto_galeri WHERE foto_galeri.id_galeri=galeri.galeri_id )
+			AND foto_galeri.id_foto=(SELECT MAX(id_foto) FROM foto_galeri WHERE foto_galeri.id_galeri=galeri.galeri_id ) limit 4
 			");
 		return $data->result_array();
 	}

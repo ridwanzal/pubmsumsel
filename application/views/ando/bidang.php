@@ -199,10 +199,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<?php foreach ($get_galeri as $galeri): ?>
 							<?php if ($i<6): ?>
 
-								<div class="col-md-4" style="margin-top:10px;">
+								<div class="col-md-3 col-sm-12" style="margin-top:10px;">
 									<div style="width:100%;height:auto;background-color:#77848e;">
 										<?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'>
-										<img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='max-height:150px;width:100%;'/></a>";  ?>
+										<img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; backgournd-size:cover;background-position: 50% 50%;text-align:center';/></a>";  ?>
 
 									</div>
 								</div>
