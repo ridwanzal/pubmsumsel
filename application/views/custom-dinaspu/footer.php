@@ -276,7 +276,7 @@ echo "</div>"; //.col-md-4
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
 
-<script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script>
+<!-- <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script> -->
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials.min.js"></script>
 
@@ -290,15 +290,15 @@ $(function(){
   var contact_us;
 
 
-  onloadCallback=function(){
+  // onloadCallback=function(){
 
-  contact_us=grecaptcha.render(document.getElementById('recaptcha1'), {
-          'sitekey' : "<?php echo $recaptcha['key'] ?>",
-          'theme' : 'dark'
-        });
+  // contact_us=grecaptcha.render(document.getElementById('recaptcha1'), {
+  //         'sitekey' : "<?php echo $recaptcha['key'] ?>",
+  //         'theme' : 'dark'
+  //       });
 
 
-  }
+  // }
 
 
   $("#kontak-form").on("submit",function(evt){
@@ -420,17 +420,16 @@ $(".grid a").tosrus({
 
 });
 
-$("#share").jsSocials({
-            shares: [ "facebook", "twitter","googleplus", "whatsapp"],
+// $("#share").jsSocials({
+//     shares: [ "facebook", "twitter","googleplus", "whatsapp"],
+//  });
 
- });
 
 
+</script>
 <?php echo $informasi['custom_javascript']; ?>
 
 <?php echo $google_analytics["script"]; ?>
-
-</script>
 
 
 
