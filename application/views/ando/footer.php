@@ -210,31 +210,31 @@ echo "</div>"; //.col-md-4
     <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
     <script type="text/javascript" src="<?php echo assets_url('bootstrap/js/bootstrap.min.js'); ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url(" js/jquery.singlePageNav.min.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("js/jquery.singlePageNav.min.js ") ?>"></script>
 
     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>-->
-    <script type="text/javascript" src="<?php echo assets_url(" fancybox/source/jquery.fancybox.js ") ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url(" fancybox/source/helpers/jquery.fancybox-buttons.js ") ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url(" fancybox/source/helpers/jquery.fancybox-media.js ") ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url(" fancybox/source/helpers/jquery.fancybox-thumbs.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/jquery.fancybox.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-buttons.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-media.js") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-thumbs.js ") ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url(" jQuery.TosRUs/src/js/jquery.tosrus.min.all.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("jQuery.TosRUs/src/js/jquery.tosrus.min.all.js ") ?>"></script>
 
     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>-->
     <script type="text/javascript" src="<?php echo assets_url('owl-carousel/owl.carousel.js'); ?>"></script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url(" js/jquery.slitslider.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("js/jquery.slitslider.js ") ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url(" js/jquery.ba-cond.min.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("js/jquery.ba-cond.min.js ") ?>"></script>
 
     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>-->
     <script type="text/javascript" src="<?php echo assets_url('js/wow.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo assets_url('js/imagesloaded.pkgd.min.js'); ?>"></script>
     <script type="text/javascript" src="<?php echo assets_url('js/masonry.pkgd.min.js'); ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url(" js/main.js ") ?>"></script>
+    <script type="text/javascript" src="<?php echo assets_url("js/main.js ") ?>"></script>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
 
