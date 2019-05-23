@@ -84,7 +84,7 @@ echo "</div>"; //.col-md-4
 }
 
 ?>
-    <div id='footer' style="background-color: #2055a2; color: #888; padding-top: 70px; padding-bottom: 70px;">
+    <div id='footer' style="background : url('http://localhost/pubmsumsel/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 120px; padding-bottom: 120px;">
         <div class='container'>
             <div class="row">
                 <div class="col-md-3">
@@ -174,11 +174,11 @@ echo "</div>"; //.col-md-4
             </div>
         </div>
     </div>
-    <div class="last-footer" style="background: url(http://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/footer_art2.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
+    <!-- <div class="last-footer" style="background: url(http://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/footer_art2.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
       &nbsp;
-    </div>
+    </div> -->
   </main>
-<div style="background:#1e4f96; color:#fff; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
+<div style="background:#ffc928; color:#333; font-weight :  bold; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
   <div class="row">
     <div class="col-lg-12 col-md-12 col-xs-12 text-left" style="padding-left:110px;font-size:12px;">
         <span>
