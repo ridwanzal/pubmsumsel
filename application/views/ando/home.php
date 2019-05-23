@@ -518,7 +518,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         <a href=""><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
         </div>
         <div class="container">
-            <div class="row" style="margin-top:20px;margin-bottom:10px;text-align:center; cursor:text !important;">
+            <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">
                 <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
                     <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
                     <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
@@ -534,8 +534,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
             </div>  
             <hr>
             <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
-                <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                    <!-- <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                    <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                     <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                         Kemajuan Ekonomi
                         <hr/>
@@ -543,20 +543,20 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <p style="text-align:left;font-size: 13px; ">
                         Membangun Sumsel berbasis ekonomi kerakyatan, yang didukung sektor pertanian, industri, dan UMKM yang tangguh untuk mengatasi pengangguran dan kemiskinan baik di perkotaan maupun di perdesaan
                     </p>
-                </div>
-                <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                    <!-- <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
-                    <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
-                        Sumber Daya Manusia    
-                        <hr/>
-                    </p>
-                    <p style="text-align:left;font-size: 13px;">
-                        Meningkaatkan kualitas Sumber Daya Manusia (SDM), baik laki-laki maupun perempuan yang sehat, berpendidikan, professional, dan menjunjung tinggi nilai-nilai keimanan, 
-                        ketaqwaan, kejujuran, dan integritas.
-                    </p>
-                </div>
-             <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                <!-- <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                </div> -->
+            <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                    Sumber Daya Manusia    
+                    <hr/>
+                </p>
+                <p style="text-align:left;font-size: 13px;">
+                    Meningkaatkan kualitas Sumber Daya Manusia (SDM), baik laki-laki maupun perempuan yang sehat, berpendidikan, professional, dan menjunjung tinggi nilai-nilai keimanan, 
+                    ketaqwaan, kejujuran, dan integritas.
+                </p>
+            </div> -->
+             <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                 <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                     Tata Kelola Pemerintahan
                     <hr/>
@@ -565,24 +565,26 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilitas yang didukung aparatur pemerintahan yang jujur, 
                     berintegritas, profesional dan responsif.   
                 </p>
-             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12  rows_data " 
+             </div> -->
+            <div class="col-lg-12 col-md-12 col-xs-12  rows_data " 
                 style=" background : #ffc928 !important;
                         border : 1px solid #ffc928;
                         position: relative;
                         top: -10px;
-                        height: 470px;">
+                        margin-top:10px;
+                        padding: 30px 40px 40px 40px;
+                        height: auto;">
                     <!-- <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
-                    <p style="text-align:left;font-size: 29px; line-height : 30px; font-weight:bold; margin-bottom:5px; height : 50px;">
-                        Pembangunan Infrastruktur
-                        <hr/>
+                    <p style="text-align:left;font-weight:bold; font-size:16px;margin-bottom:10px;">Misi Keempat</h3>
+                    <p style="text-align:left;font-size: 29px; line-height : 30px; font-weight:bold; margin-bottom:10px;">
+                        "Pembangunan Infrastruktur"
                     </p>
-                    <p style="text-align:left;font-size: 18px; color : #111">
+                    <p style="text-align:left;font-size: 14px; color : #111">
                      Membangun dan meningkatkan kualitas dan kuantitas infrastruktur, termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman & perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah.
                  </p>
              </div>
-             <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                <!-- <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+             <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
+                <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                 <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                     Keagamaan & Sosial Masyarakat
                     <hr style="color : #111;"/>
@@ -590,7 +592,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <p style="text-align:left;font-size: 13px;">
                     Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
                 </p>
-             </div>
+             </div> -->
         </div>
         <hr/>
         <div class="row container_bidang">
