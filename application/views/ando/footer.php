@@ -84,7 +84,7 @@ echo "</div>"; //.col-md-4
 }
 
 ?>
-    <div id='footer' style="background : url('http://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 120px; padding-bottom: 120px;">
+    <div id='footer' style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 120px; padding-bottom: 120px;">
         <div class='container'>
             <div class="row">
                 <div class="col-md-3">
