@@ -74,7 +74,6 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 	<link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/custom.css') ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo assets_url('css/custom-dinaspu.css') ?>" />
 	<link href="<?php echo assets_url('datatables/media/css/dataTables.bootstrap.css')?>"  />
-  <link href="<?php echo assets_url('datatables/extensions/Responsive/css/responsive.dataTables.css')?>" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css" type="text/css" />
 	<?php
     if($informasi['current_page'] == 'faq'){

@@ -250,9 +250,6 @@ echo "</div>"; //.col-md-4
 
     <script src="<?php echo assets_url('datatables/media/js/dataTables.bootstrap.min.js')?>" type="text/javascript"></script>
 
-    <script src="<?php echo assets_url('datatables/extensions/Responsive/js/dataTables.responsive.min.js')?>" type="text/javascript"></script>
-
-    <script src="<?php echo assets_url('datatables/extensions/Responsive/js/responsive.bootstrap.js')?>" type="text/javascript"></script>
     <!-- DATATABLES -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
