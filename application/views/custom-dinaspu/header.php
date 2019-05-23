@@ -27,7 +27,6 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 
 	<link rel="icon" type="image/ico" href="<?php echo assets_url('img/pu.png') ?>" />
 	<!-- <link rel='shortcut icon' href='<?php echo $informasi['favicon'] ?>' /> -->
-	<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css' />
 
 	<!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" /> -->
