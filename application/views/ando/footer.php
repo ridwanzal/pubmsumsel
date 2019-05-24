@@ -106,24 +106,24 @@ echo "</div>"; //.col-md-4
                     <br/>
                   <a href="http://sumselprov.go.id" class="text-footers"><p class="text-footers" >Pemerintah Provinsi Sumatera Selatan</p></a>
                   <a href="http://lpse.sumselprov.go.id" class="text-footers"><p class="text-footers" >LPSE Sumatera Selatan</p></a>
-                  <a href="http://dlhp.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Dinas LH dan Pertanahan</p></a>
-                  <a href="https://www.dishutsumsel.go.id/" class="text-footers"><p class="text-footers" >Dinas Kehutanan Sumatera Selatan</p></a>
+                  <a href="https://www.pu.go.id/" class="text-footers"><p class="text-footers" >Kementerian PU</p></a>
+                  <a href="http://binamarga.pu.go.id/bm/new/" class="text-footers"><p class="text-footers" >Direktorat Jenderal Bina Marga</p></a>
                 </div>
                 <div class="col-md-3">
                   <p style="font-size:20px;font-weight:bold; visibility:hidden;">Tautan</p>
                   <br/>
                   <a href="http://bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Sumatera Selatan</p></a>
-                  <a href="http://www.bkpsdm.palembang.go.id/" class="text-footers"><p class="text-footers" >BKPSDM Palembang</p></a>
-                  <a href="http://dinsos.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Dinas Sosial Sumatera Selatan</p></a>
-                  <a href="http://jdih.sumselprov.go.id" class="text-footers"><p class="text-footers" >JDIH Sumatera Selatan</p></a>
+                  <a href="http://sitarung.sumselprov.go.id/html/index.php" class="text-footers"><p class="text-footers" >SITARUNG Sumatera Selatan</p></a>
+                  <a href="http://sipdjd.binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >SPDJD Sumatera Selatan</p></a>
+                  <a href="http://si-ikon.sumselprov.go.id" class="text-footers"><p class="text-footers" >SI-IKON Sumatera Selatan</p></a>
                 </div>
                 <div class="col-md-3">
                   <p style="font-size:20px;font-weight:bold;visibility:hidden;">Tautan</p>
                   <br/>
                   <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Sumatera Selatan</p></a>
                   <a href="http://bkd.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BKD Sumatera Selatan</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >Kominfo Sumatera Selatan</p></a>
-                  <a href="#" class="text-footers"><p class="text-footers" >Dinas PU Pengairan Sumatera Selatan</p></a>
+                  <a href="https://sirup.lkpp.go.id/" class="text-footers"><p class="text-footers" >Sirup LKPP Sumatera Selatan</p></a>
+                  <a href="http://pupengairan.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Dinas PU Pengairan Sumatera Selatan</p></a>
                 </div>
                 <div class="col-md-3" style="display:none;">
                 <?php
