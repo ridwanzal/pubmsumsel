@@ -62,15 +62,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
           </div>
           <p>Peta Jalan Provinsi Sumatera Selatan</p>
-          <img style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;"  src='<?=base_url();?>an-component/media/upload-galeri/peta_jalan_sumsel.jpeg'>
+          <img class="wow fadeIn" style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;"  src='<?=base_url();?>an-component/media/upload-galeri/peta_jalan_sumsel.jpeg'>
           <br/>
           <br/>
           <p>Fungsi Jaringan Jalan</p>
-          <img style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;" src='<?=base_url();?>an-component/media/upload-galeri/fungsi_jaringan_jalan.jpg'>
+          <img class="wow fadeIn" style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;" src='<?=base_url();?>an-component/media/upload-galeri/fungsi_jaringan_jalan.jpg'>
           <br/>
           <br/>
           <p>Prasarana Jalan</p>
-          <img style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;"  src='<?=base_url();?>an-component/media/upload-galeri/prasarana_jalan_A3.jpg'>
+          <img class="wow fadeIn" style="border: 1px solid #f1f1f1;border-radius: 4px;margin-top: 10px;"  src='<?=base_url();?>an-component/media/upload-galeri/prasarana_jalan_A3.jpg'>
         </div>
       </div>
     </div>
