@@ -728,7 +728,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </div>
         <hr/>
         <div id="owl-example" class="owl-carousel wow fadeIn">
-             <?php $i = 0; ?>
+                <?php $i = 0; ?>
                 <?php foreach ($get_galeri as $galeri): ?>
                             <div style="width:97%;height:150px;">
                                 <?php echo  "<a title='Show Image Detail' href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>

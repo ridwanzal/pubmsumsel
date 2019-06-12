@@ -111,6 +111,7 @@ $(document).ready(function () {
         lazyFollow: true,
         transitionStyle: true,
         autoPlay: 2000,
+        smartSpeed: 2500
     });
     /* ========================================================================= */
     /*	Menu item highlighting
