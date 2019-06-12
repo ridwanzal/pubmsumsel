@@ -90,7 +90,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
   <!-- DATATABLES -->
     <script src="<?php path_adm() ?>/plugins/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
-
+  
     <script src="<?php path_adm() ?>/plugins/datatables/media/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
 
   <!-- DATATABLES -->

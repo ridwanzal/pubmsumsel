@@ -230,7 +230,7 @@ echo "</div>"; //.col-md-4
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url("js/jquery.slitslider.js ") ?>"></script>
+    <!-- <script type="text/javascript" src="<?php echo assets_url("js/jquery.slitslider.js ") ?>"></script> -->
 
     <script type="text/javascript" src="<?php echo assets_url("js/jquery.ba-cond.min.js ") ?>"></script>
 
@@ -389,19 +389,19 @@ echo "</div>"; //.col-md-4
                 }
             });
 
-            var $grid = $(".grid").masonry({
-                itemSelector: '.grid-item',
-            });
+            // var $grid = $(".grid").masonry({
+            //     itemSelector: '.grid-item',
+            // });
 
-            $grid.imagesLoaded().progress(function() {
-                $grid.masonry('layout');
-            });
+            // $grid.imagesLoaded().progress(function() {
+            //     $grid.masonry('layout');
+            // });
 
-            $(".grid a").tosrus({
-                caption: {
-                    add: true
-                }
-            });
+            // $(".grid a").tosrus({
+            //     caption: {
+            //         add: true
+            //     }
+            // });
 
         });
 
