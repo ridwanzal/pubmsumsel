@@ -133,7 +133,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 
 
 </head>
-<body id="body" class="blue-one-page  wow fadeIn" >
+<body id="body" class="blue-one-page" >
 
 		<!-- preloader -->
 	<!--	<div id="preloader">
@@ -245,7 +245,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
         ==================================== -->
 
 
-<main class="site-content" role="main">
+<main class="site-content " role="main">
 
 <?php
 
