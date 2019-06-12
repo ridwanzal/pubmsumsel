@@ -526,7 +526,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <span style="display:flex;">
                         <img width="50" height="50" src="<?php echo assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
                         <span style="margin-left: 10px;">
-                            <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Jaya</p>
+                            <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Yahya</p>
                             <p style="font-size:14px; color: #999;">Gubernur & Wakil Gubernur Provinsi Sumatera Selatan</p>
                         </span>
                     </span>
