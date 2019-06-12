@@ -481,7 +481,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     <div class="carousel-inner">
         <?php  $no=0; foreach ($banner_depan as $key => $value) { $no++; ?>
             <!-- <? print_r($banner_depan) ?> -->
-            <div class="item <?php if($no==1){ ?>active <?php } ?>">
+            <div class="item <?php if($no==1){ ?>active <?php } ?> wow fadeIn">
                 <img src="<?= $value['gambar']; ?>" alt="First slide">
                 <!-- Static Header -->
                 <div class="header-text hidden-xs">
