@@ -133,7 +133,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 
 
 </head>
-<body id="body" class="blue-one-page" >
+<body id="body" class="blue-one-page  wow fadeIn" >
 
 		<!-- preloader -->
 	<!--	<div id="preloader">

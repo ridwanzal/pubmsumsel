@@ -84,7 +84,7 @@ echo "</div>"; //.col-md-4
 }
 
 ?>
-    <div id='footer' style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 55px; padding-bottom: 55px;">
+    <div class="wow animated fadeIn delay-1s" id='footer' style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 55px; padding-bottom: 55px;">
         <div class='container'>
             <div class="row">
                 <div class="col-md-3">
