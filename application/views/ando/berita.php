@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<div class='container'>
+<div class='container wow fadeIn'>
 <div class='row'>
 <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
 <nav class="navbar navbar-light bg-light">

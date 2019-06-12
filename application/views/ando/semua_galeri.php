@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					echo '<div class="col-md-4" style="padding: 3px !important;">';
 					echo "<div class='artikel' style='height: 320px !important;'>";
 
-					echo "<img style='width: 100%;max-height:230px' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' />";
+					echo "<img class='wow fadeIn' style='width: 100%;max-height:230px' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' />";
 
 					echo "<div class='konten' style='text-align: center;padding:'>";
 					echo "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><h5>$galeri[nama]</h5></a>";
