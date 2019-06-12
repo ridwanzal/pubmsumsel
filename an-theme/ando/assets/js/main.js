@@ -102,14 +102,15 @@ $(function () {
 
 $(document).ready(function () {
     $("#owl-example").owlCarousel({
-        pagination: true,
-        navigationText: true,
+        items: 7,
+        navigation: true,
         lazyLoad: true,
         navigationText: ["prev", "next"],
         responsive: true,
-        baseClass: "owl-carousel",
-        theme: "owl-theme",
-        autoPlay: true,
+        responsiveRefreshRate: 200,
+        lazyFollow: true,
+        transitionStyle: true,
+        autoPlay: 2000,
     });
     /* ========================================================================= */
     /*	Menu item highlighting

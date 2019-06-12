@@ -579,7 +579,7 @@ main>.section {
 }
 
 .owl-buttons {
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     display: inline-block;
     float: right;
     padding: 1px 8px 5px;
