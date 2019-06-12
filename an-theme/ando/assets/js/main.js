@@ -101,6 +101,16 @@ $(function () {
 
 
 $(document).ready(function () {
+    $("#owl-example").owlCarousel({
+        pagination: true,
+        navigationText: true,
+        lazyLoad: true,
+        navigationText: ["prev", "next"],
+        responsive: true,
+        baseClass: "owl-carousel",
+        theme: "owl-theme",
+        autoPlay: true,
+    });
     /* ========================================================================= */
     /*	Menu item highlighting
     /* ========================================================================= */

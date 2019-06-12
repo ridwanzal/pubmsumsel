@@ -202,14 +202,15 @@ echo "</div>"; //.col-md-4
         </span>
     </div>
     <div class="col-lg-4 col-md-4 col-xs-12 text-left" style="padding-left:90px;font-size:12px;">
-        <span>
-            © 2019 <a href="https://pubmtrsumsel.scafol.id">Dinas PUBMTR Prov. Sumatera Selatan</a>
-        </span>
+            <span>
+                © 2019 <a href="https://pubmtrsumsel.scafol.id">Dinas PUBMTR Prov. Sumatera Selatan</a>
+            </span>
+        </div>
     </div>
-  </div>
 </div>
 
-    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>-->
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="<?php echo assets_url('js/jquery-1.11.1.min.js'); ?>"></script>
 
     <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
@@ -257,7 +258,6 @@ echo "</div>"; //.col-md-4
 
     <!-- DATATABLES -->
 
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
     <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>

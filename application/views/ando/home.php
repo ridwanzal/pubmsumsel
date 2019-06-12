@@ -684,7 +684,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <div class="col-md-6">
                         <div class="row">
                             <div style="width:100%;height:auto;">
-                                <?php echo "<img class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
+                                <?php echo "<img style='object-fit:cover;' class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
                             </div>
                         </div>
                         <div class="row">
@@ -727,16 +727,26 @@ Remove or comment-out the code block below to see how the browser will fall-back
             <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
         </div>
         <hr/>
-        <div class="section section-berita wow fadeIn delay-1s">
+        <div id="owl-example" class="owl-carousel wow fadeIn">
+             <?php $i = 0; ?>
+                <?php foreach ($get_galeri as $galeri): ?>
+                            <div style="width:97%;height:150px;">
+                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>
+                            </div>
+                    <?php $i++; ?>
+                <?php endforeach; ?>
+        </div>
+        <hr/>
+        <!-- <div class="section section-berita wow fadeIn delay-1s">
             <p style="">Galeri Foto</p>
             <div class="row">
-                <!-- <div class="col-md-4">
+                <div class="col-md-4">
                     <div style="width:100%;height:auto;background-color:#77848e;">
                         <a href="<?php echo galeri_url($galeri_rand->id,$galeri_rand->slug) ?>">
                                 <?php echo  "<img class='img-responsive' src='".img_galeri_url($galeri_rand->foto)."' alt='$galeri_rand->nama' />";  ?>
                             </a>
                         </div>
-                    </div> -->
+                    </div>
                 <?php $i = 0; ?>
                 <?php foreach ($get_galeri as $galeri): ?>
                     <?php if ($i<8): ?>
@@ -749,8 +759,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <?php $i++; ?>
                 <?php endforeach; ?>
             </div>
+        </div> -->
 
-        </div>
         <!-- end section galeri -->
 
     <!-- <div class="section" id="about">
