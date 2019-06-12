@@ -514,18 +514,30 @@ Remove or comment-out the code block below to see how the browser will fall-back
     <!-- /carousel -->
     <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
         <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
-        <!-- </span class="">&nbsp;&nbsp;Berita : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><?php print_r($artikel_berita[0]['judul']) ?>,</a>&nbsp;&nbsp;<span><?php echo format_tanggal($artikel_berita[0]['tanggal']) ?></span> -->
+        </span class="">&nbsp;&nbsp;Berita terkini : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><span id="append_newsticker"><? echo $artikel_berita[0]['judul']?></span></a>&nbsp;&nbsp;<span></span>
         <? 
             // print_r($artikel_berita);
             $data = json_encode($artikel_berita);
             // print_r($data);
-            
         ?>
+        <script>
+            let x_data = <? echo $data ?>;
+            localStorage.setItem('data_artikel', JSON.stringify(x_data));
+            let x_json = JSON.parse(localStorage.getItem('data_artikel'));
+
+            setInterval(function () {
+            $('#append_newsticker').fadeOut(300, function () {
+                var $this = $(this);
+                $this.text($this.text() == x_json[0].judul ? x_json[1].judul  : $this.text() == x_json[1].judul  ? x_json[3].judul : x_json[0].judul).addClass('wow fadeInUp');
+                $this.fadeIn(500);
+            });
+        }, 3500);
+        </script>
         <span id="text_headline"></span>
      
-        <a href="animated infinite fadeInDown delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
+        <a href="wow fadeIn delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
         </div>
-        <div class="container wow animated fadeIn delay-1s">
+        <div class="container wow fadeIn delay-1s">
             <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">
                 <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
                     <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
@@ -574,7 +586,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         berintegritas, profesional dan responsif.   
                     </p>
                 </div> -->
-            <div class="col-lg-12 col-md-12 col-xs-12  rows_data container wow animated fadeIn delay-1s" 
+            <div class="col-lg-12 col-md-12 col-xs-12  rows_data container wow fadeIn delay-1s" 
                 style=" background : #ffc928 !important;
                         border : 1px solid #ffc928;
                         position: relative;
@@ -603,7 +615,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </div> -->
         </div>
         <hr/>
-        <div class="row container_bidang wow animated fadeIn delay-1s">
+        <div class="row container_bidang wow fadeIn delay-1s">
             <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
              <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
          </div>
@@ -618,7 +630,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
          </div>
      </div>
      <br/>
-     <div class="row container_bidang wow animated fadeIn delay-1s">
+     <div class="row container_bidang wow fadeIn delay-1s">
         <div class="col-lg-3 col-md-3 col-xs-12">
             <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
         </div>
@@ -633,7 +645,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </div>
     </div>
     <br/>
-    <div class="row container_bidang wow animated fadeIn delay-1s">
+    <div class="row container_bidang wow  fadeIn delay-1s">
         <div class="col-lg-3 col-md-3 col-xs-12">
             <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
         </div>
@@ -648,7 +660,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </div>
     </div>
     <br/>
-    <div class="row container_bidang wow animated fadeIn delay-1s">
+    <div class="row container_bidang wow fadeIn delay-1s">
         <div class="col-lg-3 col-md-3 col-xs-12">
             <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
         </div>
@@ -664,7 +676,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     </div>
     <hr>
     <!-- start section  berita  -->
-    <div class="section section-berita wow animated fadeIn delay-1s">
+    <div class="section section-berita wow fadeIn delay-1s">
         <div class="row">
             <div class="col-md-8">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
@@ -687,7 +699,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <?php endforeach; ?>
             </div>
 
-            <div class="col-md-4 wow wow animated fadeIn delay-1s">
+            <div class="col-md-4 wow fadeIn delay-1s">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">Follow on Instagram</a></span><hr/>
                     <div class="row containers_instagram">
                         <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
@@ -715,7 +727,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
         </div>
         <hr/>
-        <div class="section section-berita wow animated fadeIn delay-1s">
+        <div class="section section-berita wow fadeIn delay-1s">
             <p style="">Galeri Foto</p>
             <div class="row">
                 <!-- <div class="col-md-4">
@@ -783,7 +795,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                             <?php
 
 foreach ($artikel_headline as  $value) {
-    echo "<div class='owl-item wow animated fadeIn'>
+    echo "<div class='owl-item wow fadeIn'>
     <div class='wrap-headline'>
 
     <div class='overlay-effect'>
