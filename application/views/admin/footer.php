@@ -4,7 +4,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 ?>
 
        <!-- Main Footer -->
-      <footer class="main-footer">
+      <footer class="main-footer  wow animated fadeIn delay-1s">
         <!-- To the right -->
         <div class="pull-right hidden-xs">
 
@@ -76,6 +76,8 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 <script src="<?php path_adm() ?>/plugins/jquery-ui-1.11.4/jquery-ui.min.js"></script>
 <script src="<?php path_adm() ?>/plugins/jquery.ui.touch-punch.min.js"></script>
+<script src="<?php path_adm() ?>/plugins/jquery.ui.touch-punch.min.js"></script>
+<script src="<?php path_adm() ?>/wow/dist/wow.min.js"></script>
 
 
 
@@ -88,7 +90,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
   <!-- DATATABLES -->
     <script src="<?php path_adm() ?>/plugins/datatables/media/js/jquery.dataTables.min.js" type="text/javascript"></script>
-
+  
     <script src="<?php path_adm() ?>/plugins/datatables/media/js/dataTables.bootstrap.min.js" type="text/javascript"></script>
 
   <!-- DATATABLES -->

@@ -240,12 +240,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 					  			</div>
 
 					</nav>
-        <!--
-        End Fixed Navigation
-        ==================================== -->
-
-
-<main class="site-content" role="main">
+<main class="site-content " role="main">
 
 <?php
 

@@ -246,11 +246,11 @@ img {
 .gallery-item {
     position: relative;
     color: #fff;
+    left: 11px;
     margin-bottom: 15px;
-    width : 160px;
-    height : 160px;
+    width: 160px;
+    height: 160px;
     cursor: pointer;
-
 }
 
 .gallery-item:hover .gallery-item-info,
@@ -481,7 +481,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     <div class="carousel-inner">
         <?php  $no=0; foreach ($banner_depan as $key => $value) { $no++; ?>
             <!-- <? print_r($banner_depan) ?> -->
-            <div class="item <?php if($no==1){ ?>active <?php } ?>">
+            <div class="item <?php if($no==1){ ?>active <?php } ?> wow fadeIn">
                 <img src="<?= $value['gambar']; ?>" alt="First slide">
                 <!-- Static Header -->
                 <div class="header-text hidden-xs">
@@ -514,10 +514,30 @@ Remove or comment-out the code block below to see how the browser will fall-back
     <!-- /carousel -->
     <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
         <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
-        </span>&nbsp;&nbsp;Berita : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><?php print_r($artikel_berita[0]['judul']) ?>,</a>&nbsp;&nbsp;<span><?php echo format_tanggal($artikel_berita[0]['tanggal']) ?></span>
-        <a href=""><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
+        </span class="">&nbsp;&nbsp;Berita terkini : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><span id="append_newsticker"><? echo $artikel_berita[0]['judul']?></span></a>&nbsp;&nbsp;<span></span>
+        <? 
+            // print_r($artikel_berita);
+            $data = json_encode($artikel_berita);
+            // print_r($data);
+        ?>
+        <script>
+            let x_data = <? echo $data ?>;
+            localStorage.setItem('data_artikel', JSON.stringify(x_data));
+            let x_json = JSON.parse(localStorage.getItem('data_artikel'));
+
+            setInterval(function () {
+            $('#append_newsticker').fadeOut(300, function () {
+                var $this = $(this);
+                $this.text($this.text() == x_json[0].judul ? x_json[1].judul  : $this.text() == x_json[1].judul  ? x_json[3].judul : x_json[0].judul).addClass('wow fadeInUp');
+                $this.fadeIn(500);
+            });
+        }, 3500);
+        </script>
+        <span id="text_headline"></span>
+     
+        <a href="wow fadeIn delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
         </div>
-        <div class="container">
+        <div class="container wow fadeIn delay-1s">
             <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">
                 <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
                     <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
@@ -526,7 +546,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <span style="display:flex;">
                         <img width="50" height="50" src="<?php echo assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
                         <span style="margin-left: 10px;">
-                            <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Jaya</p>
+                            <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Yahya</p>
                             <p style="font-size:14px; color: #999;">Gubernur & Wakil Gubernur Provinsi Sumatera Selatan</p>
                         </span>
                     </span>
@@ -556,17 +576,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </p>
             </div> -->
              <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
-                <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
-                    Tata Kelola Pemerintahan
-                    <hr/>
-                </p>
-                <p style="text-align:left;font-size: 13px;">
-                    Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilitas yang didukung aparatur pemerintahan yang jujur, 
-                    berintegritas, profesional dan responsif.   
-                </p>
-             </div> -->
-            <div class="col-lg-12 col-md-12 col-xs-12  rows_data " 
+                 <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                 <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                     Tata Kelola Pemerintahan
+                     <hr/>
+                    </p>
+                    <p style="text-align:left;font-size: 13px;">
+                        Mewujudkan tata kelola pemerintahan yang bebas Korupsi, Kolusi dan Nepotisme dengan mengedepankan transparansi dan akuntabilitas yang didukung aparatur pemerintahan yang jujur, 
+                        berintegritas, profesional dan responsif.   
+                    </p>
+                </div> -->
+            <div class="col-lg-12 col-md-12 col-xs-12  rows_data container wow fadeIn delay-1s" 
                 style=" background : #ffc928 !important;
                         border : 1px solid #ffc928;
                         position: relative;
@@ -584,18 +604,18 @@ Remove or comment-out the code block below to see how the browser will fall-back
                  </p>
              </div>
              <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
-                <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
-                    Keagamaan & Sosial Masyarakat
-                    <hr style="color : #111;"/>
-                </p>
-                <p style="text-align:left;font-size: 13px;">
-                    Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
-                </p>
-             </div> -->
+                 <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                 <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
+                     Keagamaan & Sosial Masyarakat
+                     <hr style="color : #111;"/>
+                    </p>
+                    <p style="text-align:left;font-size: 13px;">
+                        Meningkatkan kehidupan beragama, seni, dan budaya untuk membangun karakter kehidupan sosial yang agamis & berbudaya, dengan ditopang fisik yang sehat melalui kegiatan olahraga, sedangkan pengembangan pariwisata berorientasi pariwisata religius.
+                    </p>
+                </div> -->
         </div>
         <hr/>
-        <div class="row container_bidang">
+        <div class="row container_bidang wow fadeIn delay-1s">
             <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
              <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
          </div>
@@ -610,7 +630,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
          </div>
      </div>
      <br/>
-     <div class="row container_bidang">
+     <div class="row container_bidang wow fadeIn delay-1s">
         <div class="col-lg-3 col-md-3 col-xs-12">
             <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
         </div>
@@ -625,7 +645,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </div>
     </div>
     <br/>
-    <div class="row container_bidang">
+    <div class="row container_bidang wow  fadeIn delay-1s">
         <div class="col-lg-3 col-md-3 col-xs-12">
             <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
         </div>
@@ -640,7 +660,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </div>
     </div>
     <br/>
-    <div class="row container_bidang">
+    <div class="row container_bidang wow fadeIn delay-1s">
         <div class="col-lg-3 col-md-3 col-xs-12">
             <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
         </div>
@@ -656,7 +676,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     </div>
     <hr>
     <!-- start section  berita  -->
-    <div class="section section-berita">
+    <div class="section section-berita wow fadeIn delay-1s">
         <div class="row">
             <div class="col-md-8">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
@@ -664,7 +684,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <div class="col-md-6">
                         <div class="row">
                             <div style="width:100%;height:auto;">
-                                <?php echo "<img class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
+                                <?php echo "<img style='object-fit:cover;' class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
                             </div>
                         </div>
                         <div class="row">
@@ -679,9 +699,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <?php endforeach; ?>
             </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 wow fadeIn delay-1s">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">Follow on Instagram</a></span><hr/>
-                    <div class="announce_cont">
+                    <div class="row containers_instagram">
                         <!--	<li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
                                     <?php foreach ($ig as $key ) : ?>
                                         <div class="col-md-6" tabindex="0">
@@ -707,16 +727,26 @@ Remove or comment-out the code block below to see how the browser will fall-back
             <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
         </div>
         <hr/>
-        <div class="section section-berita">
+        <div id="owl-example" class="owl-carousel wow fadeIn">
+                <?php $i = 0; ?>
+                <?php foreach ($get_galeri as $galeri): ?>
+                            <div style="width:97%;height:150px;">
+                                <?php echo  "<a title='Show Image Detail' href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>
+                            </div>
+                    <?php $i++; ?>
+                <?php endforeach; ?>
+        </div>
+        <hr/>
+        <!-- <div class="section section-berita wow fadeIn delay-1s">
             <p style="">Galeri Foto</p>
             <div class="row">
-                <!-- <div class="col-md-4">
+                <div class="col-md-4">
                     <div style="width:100%;height:auto;background-color:#77848e;">
                         <a href="<?php echo galeri_url($galeri_rand->id,$galeri_rand->slug) ?>">
-                            <?php echo  "<img class='img-responsive' src='".img_galeri_url($galeri_rand->foto)."' alt='$galeri_rand->nama' />";  ?>
-                        </a>
+                                <?php echo  "<img class='img-responsive' src='".img_galeri_url($galeri_rand->foto)."' alt='$galeri_rand->nama' />";  ?>
+                            </a>
+                        </div>
                     </div>
-                </div> -->
                 <?php $i = 0; ?>
                 <?php foreach ($get_galeri as $galeri): ?>
                     <?php if ($i<8): ?>
@@ -729,177 +759,177 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <?php $i++; ?>
                 <?php endforeach; ?>
             </div>
+        </div> -->
 
-        </div>
         <!-- end section galeri -->
 
     <!-- <div class="section" id="about">
-                <div class="video-background-container">
-                 <video preload="auto" autoplay="" loop="" muted="" class="video-background">
-                    <source type="video/mp4" src="<?php echo assets_url('videos/cloud.mp4') ?>">
-                 </video>
-                </div>
-
-                <div class="parallax-overlay"></div>
-
-            <div class="container">
-              <div class="row">
+        <div class="video-background-container">
+            <video preload="auto" autoplay="" loop="" muted="" class="video-background">
+                <source type="video/mp4" src="<?php echo assets_url('videos/cloud.mp4') ?>">
+            </video>
+        </div>
+        
+        <div class="parallax-overlay"></div>
+        
+        <div class="container">
+            <div class="row">
 
                 <div class="col-md-12 wow bounceInUp">
                     <div class="welcome-block " style="text-align: center">
                         <img src="<?php echo $biodata['foto'] ?>"  alt="Sandro Poluan"/>
                         <h3 style="margin:30px 0 30px 0"><?php echo $biodata['nama']; ?></h3>
                         <div class="message-body">
-
+                            
                             <p><?php echo nl2br($biodata['deskripsi_singkat']) ?></p>
-                                <a href="<?php echo baseURL('tentang-kami'); ?>" class="btn btn-border btn-effect" style="margin-top:30px">Tentang Saya</a>
+                            <a href="<?php echo baseURL('tentang-kami'); ?>" class="btn btn-border btn-effect" style="margin-top:30px">Tentang Saya</a>
                         </div>
                     </div>
                 </div>
-
-              </div>
+                
             </div>
-         </div>
-
-         <div class="section" id="headline-artikel">
+        </div>
+    </div>
+    
+    <div class="section" id="headline-artikel">
 
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-
+                        
                         <div class="sec-title text-center artikel-hot-title wow animated fadeInDown">
-                           <h3>Yang lagi Hot</h3>
+                            <h3>Yang lagi Hot</h3>
                         </div>
+                        
+                        <div id="headline-konten" class="owl-carousel">
+                            <?php
 
-                    <div id="headline-konten" class="owl-carousel">
-                        <?php
+foreach ($artikel_headline as  $value) {
+    echo "<div class='owl-item wow fadeIn'>
+    <div class='wrap-headline'>
 
-                        foreach ($artikel_headline as  $value) {
-                            echo "<div class='owl-item wow animated fadeInLeft'>
-                                    <div class='wrap-headline'>
-
-                                <div class='overlay-effect'>
-                               <h4> $value[judul] </h4>
-                               <P>".potong_text(reversequote($value['isi'],'all'),120)."</P>
+    <div class='overlay-effect'>
+    <h4> $value[judul] </h4>
+    <P>".potong_text(reversequote($value['isi'],'all'),120)."</P>
                                <a class='btn btn-border btn-effect' href='".artikel_url($value['id'],$value['slug'])."'>Baca</a>
                                 </div>
-
-                                     ";
-                            echo "<img class='headImg' src='".img_artikel_url($value['foto'],true)."' alt='$value[judul]' />";
-                            echo     "
-                             <div class='caption-area'>
-                               <a href='".artikel_url($value['id'],$value['slug'])."'><h4> ".potong_text($value['judul'],40)."</h4></a>";
-                           echo "<span class='angka tanggal-artikel'><i class='fa fa-calendar'></i>&nbsp; ".format_tanggal($value['tanggal'])."</span>";
-                           echo"
-                           <span class='author-artikel'>
-                           <i class='fa fa-user'></i>&nbsp; $value[nama_admin]
-                           </span>
-                            </div>
-                                    </div>
-                                 </div>";
-                        }
-
-                         ?>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-         </div>
-     -->
-
-    <!-- <div id="specialist" class="parallax section" style="padding:0;background-image: url(<?php echo $informasi['featured_image'] ?>);">
-            <div class='overlay'>
-            <div class="container-fluid ">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="sec-title text-center wow animated fadeInDown animated" style=" visibility: visible; animation-name: fadeInDown;">
-                           <h3 style="color: #fff;">Mainan Saya</h3>
-                        </div>
-
-                       <div class='language-wrap'><span class='devicons devicons-html5' style='font-size: 100px;'></span>
-                        <div class='language-detail'>HTML5</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-css3' style='font-size: 100px;'></span>
-                       <div class='language-detail'>CSS3</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-jquery' style='font-size: 100px;'></span>
-                        <div class='language-detail'>JQUERY</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-javascript' style='font-size: 100px;'></span>
-                        <div class='language-detail'>JAVASCRIPT</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-php' style='font-size: 100px;'></span>
-                        <div class='language-detail'>PHP</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-codeigniter' style='font-size: 100px;'></span>
-                        <div class='language-detail'>CODEIGNITER</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-angular' style='font-size: 100px;'></span>
-                        <div class='language-detail'>ANGULAR JS</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-mysql' style='font-size: 100px;'></span>
-                        <div class='language-detail'>MYSQL</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-bootstrap' style='font-size: 100px;'></span>
-                        <div class='language-detail'>BOOTSTRAP</div>
-                       </div>
-
-                       <div class='language-wrap'>
-                       <span class='devicons devicons-wordpress' style='font-size: 100px;'></span>
-                        <div class='language-detail'>WORDPRESS</div>
-                       </div>
-
+                                
+                                ";
+                                echo "<img class='headImg' src='".img_artikel_url($value['foto'],true)."' alt='$value[judul]' />";
+                                echo     "
+                                <div class='caption-area'>
+                                <a href='".artikel_url($value['id'],$value['slug'])."'><h4> ".potong_text($value['judul'],40)."</h4></a>";
+                                echo "<span class='angka tanggal-artikel'><i class='fa fa-calendar'></i>&nbsp; ".format_tanggal($value['tanggal'])."</span>";
+                                echo"
+                                <span class='author-artikel'>
+                                <i class='fa fa-user'></i>&nbsp; $value[nama_admin]
+                                </span>
+                                </div>
+                                </div>
+                                </div>";
+                            }
+                            
+                            ?>
                     </div>
                 </div>
             </div>
         </div>
+        
+    </div>
+-->
 
-         </div>
-
-         <div class="section" id="populer">
-
-            <div class="container-fluid ">
-                <div class="row" style="text-align: center">
-
-                        <div class="sec-title artikel-populer-title text-center wow animated fadeInDown">
-                           <h3>Artikel Populer</h3>
+    <!-- <div id="specialist" class="parallax section" style="padding:0;background-image: url(<?php echo $informasi['featured_image'] ?>);">
+            <div class='overlay'>
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="sec-title text-center wow animated fadeInDown animated" style=" visibility: visible; animation-name: fadeInDown;">
+                                <h3 style="color: #fff;">Mainan Saya</h3>
+                            </div>
+                            
+                            <div class='language-wrap'><span class='devicons devicons-html5' style='font-size: 100px;'></span>
+                            <div class='language-detail'>HTML5</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-css3' style='font-size: 100px;'></span>
+                            <div class='language-detail'>CSS3</div>
                         </div>
 
-                    <?php
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-jquery' style='font-size: 100px;'></span>
+                            <div class='language-detail'>JQUERY</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-javascript' style='font-size: 100px;'></span>
+                            <div class='language-detail'>JAVASCRIPT</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-php' style='font-size: 100px;'></span>
+                            <div class='language-detail'>PHP</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-codeigniter' style='font-size: 100px;'></span>
+                            <div class='language-detail'>CODEIGNITER</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-angular' style='font-size: 100px;'></span>
+                            <div class='language-detail'>ANGULAR JS</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-mysql' style='font-size: 100px;'></span>
+                            <div class='language-detail'>MYSQL</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-bootstrap' style='font-size: 100px;'></span>
+                            <div class='language-detail'>BOOTSTRAP</div>
+                        </div>
+                        
+                        <div class='language-wrap'>
+                            <span class='devicons devicons-wordpress' style='font-size: 100px;'></span>
+                            <div class='language-detail'>WORDPRESS</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="section" id="populer">
+        
+        <div class="container-fluid ">
+            <div class="row" style="text-align: center">
+                
+                <div class="sec-title artikel-populer-title text-center wow animated fadeInDown">
+                    <h3>Artikel Populer</h3>
+                </div>
+                
+                <?php
 
-                    foreach ($artikel_populer as  $val) {
-                        echo "<div class='col-sm-3  box-populer wow bounceInUp'>";
-                        echo "<div class='hover_wrap'>
-                              <div class='social_area'>
-                              <i class='fa fa-facebook-square'></i> <i class=''></i> <i class='fa fa-twitter-square'></i> <i class='fa fa-linkedin-square'></i>
-                              </div>
+foreach ($artikel_populer as  $val) {
+    echo "<div class='col-sm-3  box-populer wow bounceInUp'>";
+    echo "<div class='hover_wrap'>
+    <div class='social_area'>
+    <i class='fa fa-facebook-square'></i> <i class=''></i> <i class='fa fa-twitter-square'></i> <i class='fa fa-linkedin-square'></i>
+    </div>
                               <div class='area'>".potong_text($val['isi'],600)."</div>
                          <a href='".artikel_url($val['id'],$val['slug'])."' class='btn btn-effect btn-border baca-btn'>Baca</a>
-                        </div>";
-                        echo "<div class='item-box'>";
-                        echo "<img class='' src='".img_artikel_url($val['foto'],true)."' alt='$val[judul]' />";
-                        echo "<span class='judul'><a href='".artikel_url($val['id'],$val['slug'])."'><h4>$val[judul].</h4></a></span>";
-                        echo "<span class='info'>";
-                        echo "<i class='fa fa-calendar'></i>&nbsp; <span class='jam'>".format_tanggal($val['tanggal'])."</span>";
+                         </div>";
+                         echo "<div class='item-box'>";
+                         echo "<img class='' src='".img_artikel_url($val['foto'],true)."' alt='$val[judul]' />";
+                         echo "<span class='judul'><a href='".artikel_url($val['id'],$val['slug'])."'><h4>$val[judul].</h4></a></span>";
+                         echo "<span class='info'>";
+                         echo "<i class='fa fa-calendar'></i>&nbsp; <span class='jam'>".format_tanggal($val['tanggal'])."</span>";
                         echo "<span class='author'>
-                            <i class='fa fa-user'></i> &nbsp; $val[nama_admin]
+                        <i class='fa fa-user'></i> &nbsp; $val[nama_admin]
                         </span>";
                         echo "</span>";
                         echo "<span class='konten'>";
@@ -908,12 +938,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         echo "</div>";
                         echo "</div>";
                     }
+                    
+                    ?>
 
-                     ?>
+</div>
+</div>
 
-                </div>
-            </div>
-
-        </div> -->
-
+</div> -->
     </div>
