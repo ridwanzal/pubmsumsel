@@ -745,7 +745,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <div class="col-md-12">
                     <div class="form-group">
                         <label>No. KTP</label> 
-                        <input name="ktp" class="form-control" type="text" placeholder="Mohon masukkan Nomor KTP anda">
+                        <input name="ktp" class="form-control" type="text" placeholder="Mohon masukkan Nomor KTP anda" required>
                     </div>
                     </div>
                 </div>
@@ -753,13 +753,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <div class="col-md-6">
                     <div class="form-group">
                         <label>Nama</label> 
-                        <input name="nama" class="form-control" placeholder="Mohon masukkan Nama anda" type="text" >
+                        <input name="nama" class="form-control" placeholder="Mohon masukkan Nama anda" type="text" required>
                     </div>
                     </div>
                     <div class="col-md-6">
                     <div class="form-group">
                         <label>Telepon</label> 
-                        <input name="phone" class="form-control" placeholder="Mohon masukkan Telepon anda" type="text" >
+                        <input name="phone" class="form-control" placeholder="Mohon masukkan Telepon anda" type="text" required>
                     </div>
                     </div>
                 </div>
@@ -767,7 +767,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <div class="col-md-12">
                     <div class="form-group">
                         <label>Pesan</label>
-                        <textarea class="form-control" name="pesan" placeholder="Mohon masukkan isi pesan anda" ></textarea>
+                        <textarea class="form-control" name="pesan" placeholder="Mohon masukkan isi pesan anda" required></textarea>
                     </div>
                     </div>     
                 </div>
