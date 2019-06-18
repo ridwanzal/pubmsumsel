@@ -699,6 +699,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <?php endforeach; ?>
             </div>
 
+            
+
             <div class="col-md-4 wow fadeIn delay-1s">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;"><a href="#tab1" data-toggle="tab">Follow on Instagram</a></span><hr/>
                     <div class="row containers_instagram">
@@ -736,7 +738,48 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <?php $i++; ?>
                 <?php endforeach; ?>
         </div>
-        <hr/>
+        <div class="container_contacts">
+                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Hubungi Kami</p>
+                <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                        <label>No. KTP</label> 
+                        <input name="ktp" class="form-control" type="text" placeholder="Mohon masukkan Nomor KTP anda">
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Nama</label> 
+                        <input name="nama" class="form-control" placeholder="Mohon masukkan Nama anda" type="text" >
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        <label>Telepon</label> 
+                        <input name="phone" class="form-control" placeholder="Mohon masukkan Telepon anda" type="text" >
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                        <label>Pesan</label>
+                        <textarea class="form-control" name="pesan" placeholder="Mohon masukkan isi pesan anda" ></textarea>
+                    </div>
+                    </div>     
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                    <div class="form-group">
+                        <input type="submit" value="Submit" class="btn btn-default" style="width:100%; background:#337ab7;color:#fff; padding : 10px 5px 10px 5px;">
+                    </div>
+                    </div>     
+                </div>
+                </form>
+        </div>
         <!-- <div class="section section-berita wow fadeIn delay-1s">
             <p style="">Galeri Foto</p>
             <div class="row">
@@ -799,11 +842,241 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         
                         <div class="sec-title text-center artikel-hot-title wow animated fadeInDown">
                             <h3>Yang lagi Hot</h3>
-                        </div>
-                        
-                        <div id="headline-konten" class="owl-carousel">
-                            <?php
+div class="row">
+        <div class="col-md-12">
 
+          <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>No. KTP</label> 
+                  <input name="ktp" class="form-control" type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nama</label> 
+                  <input name="nama" class="form-control" type="text" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Telepon</label> 
+                  <input name="phone" class="form-control"  type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Pesan</label>
+                  <textarea class="form-control" name="pesan"></textarea>
+                </div>
+              </div>     
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Submit" class="btn btn-primary col-md-6 col-md-offset-3">
+                </div>
+              </div>     
+            </div>
+
+          </form>
+        </div>
+      </div>
+div class="row">
+        <div class="col-md-12">
+
+          <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>No. KTP</label> 
+                  <input name="ktp" class="form-control" type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nama</label> 
+                  <input name="nama" class="form-control" type="text" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Telepon</label> 
+                  <input name="phone" class="form-control"  type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Pesan</label>
+                  <textarea class="form-control" name="pesan"></textarea>
+                </div>
+              </div>     
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Submit" class="btn btn-primary col-md-6 col-md-offset-3">
+                </div>
+              </div>     
+            </div>
+
+          </form>
+        </div>
+      </div>
+div class="row">
+        <div class="col-md-12">
+
+          <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>No. KTP</label> 
+                  <input name="ktp" class="form-control" type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nama</label> 
+                  <input name="nama" class="form-control" type="text" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Telepon</label> 
+                  <input name="phone" class="form-control"  type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Pesan</label>
+                  <textarea class="form-control" name="pesan"></textarea>
+                </div>
+              </div>     
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Submit" class="btn btn-primary col-md-6 col-md-offset-3">
+                </div>
+              </div>     
+            </div>
+
+          </form>
+        </div>
+      </div>sel">
+div class="row">
+        <div class="col-md-12">
+
+          <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>No. KTP</label> 
+                  <input name="ktp" class="form-control" type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nama</label> 
+                  <input name="nama" class="form-control" type="text" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Telepon</label> 
+                  <input name="phone" class="form-control"  type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Pesan</label>
+                  <textarea class="form-control" name="pesan"></textarea>
+                </div>
+              </div>     
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Submit" class="btn btn-primary col-md-6 col-md-offset-3">
+                </div>
+              </div>     
+            </div>
+
+          </form>
+        </div>
+      </div>
+div class="row">
+        <div class="col-md-12">
+
+          <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>No. KTP</label> 
+                  <input name="ktp" class="form-control" type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nama</label> 
+                  <input name="nama" class="form-control" type="text" >
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Telepon</label> 
+                  <input name="phone" class="form-control"  type="text" >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label>Pesan</label>
+                  <textarea class="form-control" name="pesan"></textarea>
+                </div>
+              </div>     
+            </div>
+            
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input type="submit" value="Submit" class="btn btn-primary col-md-6 col-md-offset-3">
+                </div>
+              </div>     
+            </div>
+
+          </form>
+        </div>
+      </div>
 foreach ($artikel_headline as  $value) {
     echo "<div class='owl-item wow fadeIn'>
     <div class='wrap-headline'>

@@ -33,6 +33,6 @@ $general = array(
 		//pengaturan database
 		"DB_hostname"=>"localhost",
 		"DB_username"=>"root",
-		"DB_password"=>"",
+		"DB_password"=>"12345",
 		"DB_database"=>"puprmuar_dpu"
 	);
