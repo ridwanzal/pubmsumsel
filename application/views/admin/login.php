@@ -6,7 +6,7 @@ $path_adm=base_url()."an-theme/admin";
 
 
 <!DOCTYPE html>
-<html>
+<html>  
   <head>
     <meta charset="UTF-8">
     <title> Dinas PUBMTR Sumatera Selatan | Log in</title>

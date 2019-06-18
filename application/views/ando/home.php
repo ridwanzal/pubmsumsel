@@ -738,7 +738,9 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <?php $i++; ?>
                 <?php endforeach; ?>
         </div>
-        <div class="container_contacts">
+        <br/>
+        <br/>
+        <div class="container_contacts wow fadeIn delay-1s" style="margin-bottom:20px;">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Hubungi Kami</p>
                 <form action="<?= base_url(); ?>AN_admin/input_kontak" method="POST">
                 <div class="row">

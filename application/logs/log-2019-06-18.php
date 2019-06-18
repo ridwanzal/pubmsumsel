@@ -7,3 +7,4 @@ ERROR - 2019-06-18 09:15:22 --> 404 Page Not Found: Wow%20fadeIn%20delay-1s/inde
 ERROR - 2019-06-18 09:15:47 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/pubmsumsel/application/views/ando/home.php 708
 ERROR - 2019-06-18 09:19:25 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/pubmsumsel/application/views/ando/home.php 708
 ERROR - 2019-06-18 09:21:31 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/pubmsumsel/application/views/ando/home.php 708
+ERROR - 2019-06-18 09:27:04 --> Severity: Warning --> Invalid argument supplied for foreach() /opt/lampp/htdocs/pubmsumsel/application/views/ando/home.php 708
