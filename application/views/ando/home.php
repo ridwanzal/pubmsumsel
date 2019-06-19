@@ -681,7 +681,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             <div class="col-md-8">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
                 <?php foreach ($artikel_berita as $aka): ?>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="row">
                             <div style="width:100%;height:auto;">
                                 <?php echo "<img style='object-fit:cover;' class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
@@ -692,6 +692,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                             <p class="posted_text">posted by
                                 <?php echo $aka['nama_admin'] ?>
                                 <?php echo format_tanggal($aka['tanggal']) ?>
+                            </p>
+                            <p style="margin-top:5px;">
+                                <span><?php echo potong_text($aka['isi'], 200) ?></span>
+                                <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><span style='color:blue;'>Read More..</span></a>"; ?>
                             </p>
                             <br>
                         </div>
