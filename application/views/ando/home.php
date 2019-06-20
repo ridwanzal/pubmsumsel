@@ -680,6 +680,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         <div class="row">
             <div class="col-md-8">
                 <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
+                <hr/>
                 <?php foreach ($artikel_berita as $aka): ?>
                     <div class="col-md-12">
                         <div class="row">
