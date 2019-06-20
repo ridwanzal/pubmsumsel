@@ -6,6 +6,7 @@ class Home extends AN_Apricot{
 	public function __construct(){
 		parent::__construct();
 
+		$this->load->model('admin/Kontak_masuk');
 	}
 
 	function index(){
@@ -23,6 +24,7 @@ class Home extends AN_Apricot{
 		$data["informasi"]["uniqueid"]="home-page";
 
 		$data["informasi"]["og-title"]=$data["informasi"]["title"];
+		$data["get_kontak"] = $this->Kontak_masuk->get_data();
 
 
 
@@ -34,6 +36,7 @@ class Home extends AN_Apricot{
 		$data["artikel_agenda"]=$this->artikel->artikel_kategori($kategori_agenda);
 		$data['get_galeri'] = $this->galeri->get_all_galeri();
 		$data['galeri_rand'] = $this->galeri->get_galeri_random();
+		$data['pagename'] = 'Home';
 
 		$access_token = "12097245702.1677ed0.a50372125dee4a0490dd1036e238fd79";
 		$photo_count = 6;

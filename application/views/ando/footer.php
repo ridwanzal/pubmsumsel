@@ -84,54 +84,54 @@ echo "</div>"; //.col-md-4
 }
 
 ?>
-    <div class="wow animated fadeIn delay-1s" id='footer' style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 55px; padding-bottom: 55px;">
-        <div class='container'>
-            <div class="row">
-                <div class="col-md-3">
-                        <p class="text-footers-size">
-                        Dinas PUBMTR Sumatera Selatan<br/>
-                        Jl. Ade Irma Nasution No.10 Kota Palembang</p>
-                        <br/>
-                        <p class="text-footers-size">Telp: (0711) 321053</p>
-                        <br/>
-                        <div style="display:flex; color : #fff;">
-                            <a class="link_socials"><span class='fa fa-facebook'></span></a>
-                            <a class="link_socials"><span class='fa fa-instagram'></span></a>
-                            <a class="link_socials"><span class='fa fa-twitter'></span></a>
-                            <a class="link_socials"><span class='fa fa-youtube'></span></a>
-                        </div>
+<div class="wow animated fadeIn delay-1s" id='footer' style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 55px; padding-bottom: 55px;">
+    <div class='container'>
+        <div class="row">
+            <div class="col-md-3">
+                <p class="text-footers-size">
+                    Dinas PUBMTR Sumatera Selatan<br/>
+                Jl. Ade Irma Nasution No.10 Kota Palembang</p>
+                <br/>
+                <p class="text-footers-size">Telp: (0711) 321053</p>
+                <br/>
+                <div style="display:flex; color : #fff;">
+                    <a class="link_socials"><span class='fa fa-facebook'></span></a>
+                    <a class="link_socials"><span class='fa fa-instagram'></span></a>
+                    <a class="link_socials"><span class='fa fa-twitter'></span></a>
+                    <a class="link_socials"><span class='fa fa-youtube'></span></a>
                 </div>
-                <div class="col-md-3">
-                    <p style="font-size:20px;font-weight:bold; letter-spacing:1px; color : #fff">Tautan</p>
-                    <br/>
-                  <a href="https://www.pu.go.id/" class="text-footers"><p class="text-footers" >Kementerian PU</p></a>
-                  <a href="http://binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >Direktorat Jenderal Bina Marga</p></a>
-                  <a href="http://sda.pu.go.id/bbwssumatera8/" class="text-footers"><p class="text-footers" >Balai BWS Sumatera VIII</p></a>
-                  <a href="http://sipdjd.binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >SIPDJD Sumatera Selatan</p></a>
-                </div>
-                <div class="col-md-3">
-                  <p style="font-size:20px;font-weight:bold; visibility:hidden;">Tautan</p>
-                  <br/>
-                  <a href="http://www.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Pemerintah Provinsi Sumatera Selatan</p></a>
-                  <a href="http://www.bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Sumatera Selatan</p></a>
-                  <a href="http://sitarung.sumselprov.go.id/" class="text-footers"><p class="text-footers" >SITARUNG Sumatera Selatan</p></a>
-                  <a href="http://lpse.sumselprov.go.id/eproc4" class="text-footers"><p class="text-footers" >LPSE Sumatera Selatan</p></a>
-                </div>
-                <div class="col-md-3">
-                  <p style="font-size:20px;font-weight:bold;visibility:hidden;">Tautan</p>
-                  <br/>
-                  <a href="http://si-ikon.sumselprov.go.id" class="text-footers"><p class="text-footers" >SI-IKON</p></a>
-                  <a href="https://sirup.lkpp.go.id/" class="text-footers"><p class="text-footers" >Sirup LKPP</p></a>
-                  <a href="http://bkd.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BKD Sumatera Selatan</p></a>
-                  <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Sumatera Selatan</p></a>
-                </div>
-                <div class="col-md-3" style="display:none;">
-                <?php
-                $user_ip=$_SERVER['REMOTE_ADDR'];       
+            </div>
+            <div class="col-md-3">
+                <p style="font-size:20px;font-weight:bold; letter-spacing:1px; color : #fff">Tautan</p>
+                <br/>
+                <a href="https://www.pu.go.id/" class="text-footers"><p class="text-footers" >Kementerian PU</p></a>
+                <a href="http://binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >Direktorat Jenderal Bina Marga</p></a>
+                <a href="http://sda.pu.go.id/bbwssumatera8/" class="text-footers"><p class="text-footers" >Balai BWS Sumatera VIII</p></a>
+                <a href="http://sipdjd.binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >SIPDJD Sumatera Selatan</p></a>
+            </div>
+            <div class="col-md-3">
+              <p style="font-size:20px;font-weight:bold; visibility:hidden;">Tautan</p>
+              <br/>
+              <a href="http://www.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Pemerintah Provinsi Sumatera Selatan</p></a>
+              <a href="http://www.bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Sumatera Selatan</p></a>
+              <a href="http://sitarung.sumselprov.go.id/" class="text-footers"><p class="text-footers" >SITARUNG Sumatera Selatan</p></a>
+              <a href="http://lpse.sumselprov.go.id/eproc4" class="text-footers"><p class="text-footers" >LPSE Sumatera Selatan</p></a>
+          </div>
+          <div class="col-md-3">
+              <p style="font-size:20px;font-weight:bold;visibility:hidden;">Tautan</p>
+              <br/>
+              <a href="http://si-ikon.sumselprov.go.id" class="text-footers"><p class="text-footers" >SI-IKON</p></a>
+              <a href="https://sirup.lkpp.go.id/" class="text-footers"><p class="text-footers" >Sirup LKPP</p></a>
+              <a href="http://bkd.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BKD Sumatera Selatan</p></a>
+              <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Sumatera Selatan</p></a>
+          </div>
+          <div class="col-md-3" style="display:none;">
+            <?php
+            $user_ip=$_SERVER['REMOTE_ADDR'];       
 
-                $tanggal = date("Ymd");
-                $mnth = date("m"); 
-                $year = date("Y"); 
+            $tanggal = date("Ymd");
+            $mnth = date("m"); 
+            $year = date("Y"); 
                 $waktu   = time(); //
 
                 $pengunjung = $this->visitor->get_group('visitor_ip','visitor_tanggal','visitor')->row_array();
@@ -144,40 +144,40 @@ echo "</div>"; //.col-md-4
 
                 $whpo = [
                     'visitor_online >' => $bataswaktu
-                    ];
-                    $where = [
+                ];
+                $where = [
                     'visitor_ip' => $user_ip,
                     'visitor_tanggal' => $tanggal
-                    ];
+                ];
                 $pengunjungonline = $this->visitor->CekDataRows('visitor',$where)->num_rows();
                 ?>
 
-                        <div class="pu-box-footer">
-                            <h5>Jumlah Pengunjung</h5>
-                            <p>Online :
-                                <?= $pengunjungonline;?>
-                            </p>
-                            <p>Hari ini :
-                                <?= $hrini['chrini'];?>
-                            </p>
-                            <p>Bulan ini :
-                                <?= $blnini['month']; ?>
-                            </p>
-                            <p>Tahun ini :
-                                <?= $yearini['year']; ?>
-                            </p>
-                            <p>Total Pengunjung :
-                                <?= $totalpengunjung['counthits'];?>
-                            </p>
-                        </div>
+                <div class="pu-box-footer">
+                    <h5>Jumlah Pengunjung</h5>
+                    <p>Online :
+                        <?= $pengunjungonline;?>
+                    </p>
+                    <p>Hari ini :
+                        <?= $hrini['chrini'];?>
+                    </p>
+                    <p>Bulan ini :
+                        <?= $blnini['month']; ?>
+                    </p>
+                    <p>Tahun ini :
+                        <?= $yearini['year']; ?>
+                    </p>
+                    <p>Total Pengunjung :
+                        <?= $totalpengunjung['counthits'];?>
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+</div>
     <!-- <div class="last-footer" style="background: url(http://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/footer_art2.png);background-repeat: no-repeat; background-size: cover; top:-1px; position:relative;">
       &nbsp;
-    </div> -->
-  </main>
+  </div> -->
+</main>
 <div style="background:#ffc928; color:#333; font-weight :  bold; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
   <div class="row">
     <div class="col-lg-8 col-md-8 col-xs-12 text-left" style="padding-left:110px;font-size:12px;">
@@ -202,82 +202,102 @@ echo "</div>"; //.col-md-4
         </span>
     </div>
     <div class="col-lg-4 col-md-4 col-xs-12 text-left" style="padding-left:90px;font-size:12px;">
-            <span>
-                © 2019 <a href="https://pubmtrsumsel.scafol.id">Dinas PUBMTR Prov. Sumatera Selatan</a>
-            </span>
-        </div>
+        <span>
+            © 2019 <a href="https://pubmtrsumsel.scafol.id">Dinas PUBMTR Prov. Sumatera Selatan</a>
+        </span>
     </div>
+</div>
 </div>
 
 <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.2.min.js"></script>-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript" src="<?php echo assets_url('js/jquery-1.11.1.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url('js/jquery-1.11.1.min.js'); ?>"></script>
 
-    <!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-    <script type="text/javascript" src="<?php echo assets_url('bootstrap/js/bootstrap.min.js'); ?>"></script>
+<!--<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+<script type="text/javascript" src="<?php echo assets_url('bootstrap/js/bootstrap.min.js'); ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url("js/jquery.singlePageNav.min.js ") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("js/jquery.singlePageNav.min.js ") ?>"></script>
 
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>-->
-    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/jquery.fancybox.js ") ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-buttons.js ") ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-media.js") ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-thumbs.js ") ?>"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>-->
+<script type="text/javascript" src="<?php echo assets_url("fancybox/source/jquery.fancybox.js ") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-buttons.js ") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-media.js") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("fancybox/source/helpers/jquery.fancybox-thumbs.js ") ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url("jQuery.TosRUs/src/js/jquery.tosrus.min.all.js ") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("jQuery.TosRUs/src/js/jquery.tosrus.min.all.js ") ?>"></script>
 
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>-->
-    <script type="text/javascript" src="<?php echo assets_url('owl-carousel/owl.carousel.js'); ?>"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>-->
+<script type="text/javascript" src="<?php echo assets_url('owl-carousel/owl.carousel.js'); ?>"></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- <script type="text/javascript" src="<?php echo assets_url("js/jquery.slitslider.js ") ?>"></script> -->
+<!-- <script type="text/javascript" src="<?php echo assets_url("js/jquery.slitslider.js ") ?>"></script> -->
 
-    <script type="text/javascript" src="<?php echo assets_url("js/jquery.ba-cond.min.js ") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("js/jquery.ba-cond.min.js ") ?>"></script>
 
-    <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>-->
-    <script type="text/javascript" src="<?php echo assets_url('js/wow.min.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url('js/imagesloaded.pkgd.min.js'); ?>"></script>
-    <script type="text/javascript" src="<?php echo assets_url('js/masonry.pkgd.min.js'); ?>"></script>
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>-->
+<script type="text/javascript" src="<?php echo assets_url('js/wow.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url('js/imagesloaded.pkgd.min.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url('js/masonry.pkgd.min.js'); ?>"></script>
 
-    <script type="text/javascript" src="<?php echo assets_url("js/main.js ") ?>"></script>
+<script type="text/javascript" src="<?php echo assets_url("js/main.js ") ?>"></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-noty/2.3.8/packaged/jquery.noty.packaged.min.js"></script>
 
-    <!-- <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script> -->
+<!-- <script src='https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit' async defer></script> -->
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.jssocials/1.1.0/jssocials.min.js"></script>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/components/prism-php.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/components/prism-php-extras.min.js"></script>
-    <!-- DATATABLES -->
-    <script src="<?php echo assets_url('datatables/media/js/jquery.dataTables.min.js')?>" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/prism.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/components/prism-php.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.4.1/components/prism-php-extras.min.js"></script>
+<!-- DATATABLES -->
+<script src="<?php echo assets_url('datatables/media/js/jquery.dataTables.min.js')?>" type="text/javascript"></script>
 
-    <script src="<?php echo assets_url('datatables/media/js/dataTables.bootstrap.min.js')?>" type="text/javascript"></script>
+<script src="<?php echo assets_url('datatables/media/js/dataTables.bootstrap.min.js')?>" type="text/javascript"></script>
 
-    <!-- DATATABLES -->
+<!-- DATATABLES -->
 
-    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
-    <script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.print.min.js"></script>
 
-    <script type="text/javascript">
-        $(function() {
+<script type="text/javascript">
 
-            var contact_us;
 
-            $(".slug-table").DataTable({
-                dom: 'Bfrtip',
-                buttons: [
-                    'csv', 'excel', 'pdf', 'print'
-                ]
-            });
+    $(document).ready(function(){       
+        var scroll_start = 0;
+        var startchange = $('#startchange');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() { 
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                  $(".navbar-default").css('background-color', '#2055a2');
+              } else {
+                  $('.navbar-default').css('background-color', 'transparent');
+              }
+          });
+        }
+    });
+
+
+    
+    $(function() {
+
+        var contact_us;
+
+        $(".slug-table").DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+            'csv', 'excel', 'pdf', 'print'
+            ]
+        });
 
             // onloadCallback = function() {
 
@@ -410,10 +430,10 @@ echo "</div>"; //.col-md-4
         // });
     </script>
 
-        <?php echo $informasi['custom_javascript']; ?>
+    <?php echo $informasi['custom_javascript']; ?>
 
-        <?php echo $google_analytics["script"]; ?>
+    <?php echo $google_analytics["script"]; ?>
 
-    </body>
+</body>
 
-    </html>
+</html>
