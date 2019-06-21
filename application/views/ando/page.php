@@ -18,7 +18,7 @@ if(isset($heading)) :
 				</div>
 			</div>
 		</div>
-		<svg style="pointer-events: none" class="wave" width="100%" height="100px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+		<svg style="pointer-events: none" class="wave" width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
 			<defs>
 				<style>
 					.a {
@@ -41,7 +41,7 @@ if(isset($heading)) :
 					}
 				</style>
 				<clipPath id="a">
-					<rect class="a" width="1920" height="100" />
+					<rect class="a" width="1920" height="50" />
 				</clipPath>
 			</defs>
 			<title>wave</title>
