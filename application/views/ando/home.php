@@ -7,7 +7,6 @@
     
     .carousel-inner img {
         width: 100%;
-        height: 100%;
     }
     
     .carousel-control {
@@ -470,7 +469,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     }
 </style>
 <div id="startchange"></div>
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" width="100%;" height="500px">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" width="100%;">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <?php  $no=0; foreach ($banner_depan as $key => $value) { $no++; ?>
@@ -487,10 +486,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <div class="header-text hidden-xs">
                     <div class="col-md-12 text-center">
                         <h2>
-                         <span><?= $value['header']; ?></span>
-                     </h2>
-                     <br>
-                     <div class="col-lg-8 col-md-8">
+                           <span><?= $value['header']; ?></span>
+                       </h2>
+                       <br>
+                       <div class="col-lg-8 col-md-8">
                         <p style="bottom:0px ; font-size: 39px; letter-spacing: 0.5px; text-align:left; line-height:40px; left: -29px !important; float:left; color : #fff; position: relative; top:235px; font-weight:bold;">
                             <?= $value['caption']; ?>
                         </p>
@@ -514,14 +513,14 @@ Remove or comment-out the code block below to see how the browser will fall-back
     <!-- /carousel -->
     <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
         <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
-        </span class="">&nbsp;&nbsp;Berita terkini : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><span id="append_newsticker"><? echo $artikel_berita[0]['judul']?></span></a>&nbsp;&nbsp;<span></span>
-        <? 
+        </span class="">&nbsp;&nbsp;Berita terkini : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><span id="append_newsticker"><?= $artikel_berita[0]['judul']?></span></a>&nbsp;&nbsp;<span></span>
+        <?php 
             // print_r($artikel_berita);
         $data = json_encode($artikel_berita);
             // print_r($data);
         ?>
         <script>
-            let x_data = <? echo $data ?>;
+            let x_data = <?= $data ?>;
             localStorage.setItem('data_artikel', JSON.stringify(x_data));
             let x_json = JSON.parse(localStorage.getItem('data_artikel'));
 
@@ -535,27 +534,51 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </script>
         <span id="text_headline"></span>
 
-        <a href="wow fadeIn delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
-        </div>
-        <div class="container wow fadeIn delay-1s">
-            <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">
-                <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
-                    <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
-                    <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
-                    <br/>
-                    <span style="display:flex;">
-                        <img width="50" height="50" src="<?php echo assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
-                        <span style="margin-left: 10px;">
-                            <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Yahya</p>
-                            <p style="font-size:14px; color: #999;">Gubernur & Wakil Gubernur Provinsi Sumatera Selatan</p>
-                        </span>
+        <style type="text/css">
+            .cloud {
+              animation-name: cloud-animation;
+              animation-fill-mode: forwards;
+              animation-duration: 1s;
+          }
+
+          #cloud-2 {
+              animation-delay: 0.2s;
+          }
+
+          #cloud-3 {
+              animation-delay: 0.4s;
+          }
+
+          @keyframes cloud-animation {
+              from {
+                transform: translateY(100vw);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <a href="wow cloud delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
+    </div>
+    <div class="container wow cloud delay-1s">
+        <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">
+            <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
+                <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
+                <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
+                <br/>
+                <span style="display:flex;">
+                    <img width="50" height="50" src="<?= assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
+                    <span style="margin-left: 10px;">
+                        <p style="font-weight:600;font-size:18px;">H. Herman Deru & H. Mawardi Yahya</p>
+                        <p style="font-size:14px; color: #999;">Gubernur & Wakil Gubernur Provinsi Sumatera Selatan</p>
                     </span>
-                </div>
-            </div>  
-            <hr>
-            <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
+                </span>
+            </div>
+        </div>  
+        <hr>
+        <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center;">
                 <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                    <img width="240" src="<?php echo assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                    <img width="240" src="<?= assets_url('img/visi_three.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                     <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                         Kemajuan Ekonomi
                         <hr/>
@@ -565,7 +588,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     </p>
                 </div> -->
             <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                <img width="240" src="<?php echo assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                <img width="240" src="<?= assets_url('img/visi_four.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                 <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                     Sumber Daya Manusia    
                     <hr/>
@@ -576,7 +599,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </p>
             </div> -->
              <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                 <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                 <img width="240" src="<?= assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                  <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                      Tata Kelola Pemerintahan
                      <hr/>
@@ -586,7 +609,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         berintegritas, profesional dan responsif.   
                     </p>
                 </div> -->
-                <div class="col-lg-12 col-md-12 col-xs-12  rows_data container wow fadeIn delay-1s" 
+                <div class="col-lg-12 col-md-12 col-xs-12  rows_data container wow cloud delay-1s" 
                 style=" background : #ffc928 !important;
                 border : 1px solid #ffc928;
                 position: relative;
@@ -594,17 +617,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 margin-top:10px;
                 padding: 30px 40px 40px 40px;
                 height: auto;">
-                <!-- <img width="240" src="<?php echo assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
+                <!-- <img width="240" src="<?= assets_url('img/visi_one.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive"> -->
                 <p style="text-align:left;font-weight:bold; font-size:16px;margin-bottom:10px;">Misi Keempat</h3>
                     <p style="text-align:left;font-size: 29px; line-height : 30px; font-weight:bold; margin-bottom:10px;">
                         "Pembangunan Infrastruktur"
                     </p>
                     <p style="text-align:left;font-size: 14px; color : #111">
-                       Membangun dan meningkatkan kualitas dan kuantitas infrastruktur, termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman & perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah.
-                   </p>
-               </div>
+                        Membangun dan meningkatkan kualitas dan kuantitas infrastruktur, termasuk infrastruktur dasar guna percepatan pembangunan wilayah pedalaman & perbatasan, untuk memperlancar arus barang dan mobilitas penduduk, serta mewujudkan daya saing daerah dengan mempertimbangkan pemerataan dan keseimbangan daerah.
+                    </p>
+                </div>
              <!-- <div class="col-lg-2 col-md-2 col-xs-12 rows_data">
-                 <img width="240" src="<?php echo assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
+                 <img width="240" src="<?= assets_url('img/visi_two.svg') ?>" alt="" style="position:relative;top:-3px;margin-top:5px;margin-bottom:10px;" class="img-w img img-responsive">
                  <p style="text-align:left;font-size: 18px;margin-bottom:5px; height : 45px;">
                      Keagamaan & Sosial Masyarakat
                      <hr style="color : #111;"/>
@@ -615,113 +638,178 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 </div> -->
             </div>
             <hr/>
-            <div class="row container_bidang wow fadeIn delay-1s">
+            <div class="row container_bidang wow cloud delay-1s">
                 <div id="heads_unit" class="col-lg-3 col-md-3 col-xs-12">
-                   <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
-               </div>
-               <div class="col-lg-3 col-md-3 col-xs-12">
-                   <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-xs-12">
-                   <a href="<?php echo baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
-               </div>
-               <div class="col-lg-3 col-md-3 col-xs-12">
-                   <a href="<?php echo baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
-               </div>
-           </div>
-           <br/>
-           <div class="row container_bidang wow fadeIn delay-1s">
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
+                    <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
+            <br/>
+            <div class="row container_bidang wow cloud delay-1s">
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>Bidang Penataan Ruang</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>Bidang Penataan Ruang</p></a>
+            <br/>
+            <div class="row container_bidang wow  cloud delay-1s">
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
+                </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
+            <br/>
+            <div class="row container_bidang wow cloud delay-1s">
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-xs-12">
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
+                </div>
             </div>
-        </div>
-        <br/>
-        <div class="row container_bidang wow  fadeIn delay-1s">
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
-            </div>
-        </div>
-        <br/>
-        <div class="row container_bidang wow fadeIn delay-1s">
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-xs-12">
-                <a href="<?php echo baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
-            </div>
-        </div>
-        <hr>
-        <!-- start section  berita  -->
-        <div class="section section-berita wow fadeIn delay-1s">
+            <hr>
+
             <div class="row">
                 <div class="col-md-8">
-                    <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">Berita Terbaru</p>
-                    <hr/>
-                    <?php foreach ($artikel_berita as $aka): ?>
-                        <div class="col-md-12">
+                    <div class="section section-berita wow cloud delay-1s">
+                        <div class="row">
+                            <h3  style="margin-top: -35px"><br>Berita</h3>
+                        </div>
+                        <div class="row">
+                            <div id="owl-example1" class="owl-carousel wow cloud">
+                                <?php foreach ($artikel_berita as $aka): ?>
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="panel" style="min-height: 500px; border:1px grey; box-shadow: 10px 14px 10px -5px rgba(0,0,0,0.75);">
+                                            <div class="panel-header">
+                                                <div style="width:100%;height:auto;">
+                                                    <?= "<img style='object-fit:cover;' class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <?= "<a href='".artikel_url($aka['id'],$aka['slug'])."'><p class='news_header_text'> ".potong_text($aka['judul'],36)."</p></a>"; ?>
+                                                <p class="posted_text">posted by
+                                                    <?= $aka['nama_admin'] ?>
+                                                    <?= format_tanggal($aka['tanggal']) ?>
+                                                </p>
+                                                <p style="margin-top:5px;">
+                                                    <span><?= potong_text($aka['isi'], 100) ?></span>
+                                                    <?= "<a href='".artikel_url($aka['id'],$aka['slug'])."'><span style='color:blue;'>Read More..</span></a>"; ?>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                            <a href="<?= baseURL('index.php/berita'); ?>">
+                                <span>Lihat Semua Berita</span>&nbsp;
+                                <span class="fa fa-caret-right"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1 wow cloud delay-1s" style="width: 10px;
+                float: left;
+                border-left: 2px solid grey;margin-left: 20px;margin-top:50px;height: 540px">
+            </div>
+            <div class="col-md-3 wow cloud delay-1s">
+                <section>
+                    <div class="row">
+                        <h3  style="margin-top: -15px"><br>Kolom Pertanyaan</h3>
+                    </div>
+                    <div class="panel-body" style="height: 500px;background: white; overflow: scroll;overflow-x: hidden;">
+                        <?php foreach($get_kontak as $i) :?>
                             <div class="row">
-                                <div style="width:100%;height:auto;">
-                                    <?php echo "<img style='object-fit:cover;' class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
+                                <div class="col-md-7">
+                                    <p style="font-size: 10pt;color:black;font-weight: bold;font-family: Calibri;"><?= $i['nama']; ?></p>
+                                </div>
+                                <div class="col-md-5">
+                                    <p class="pull-right text-right" style="font-size:8pt;font-family: Calibri;"><?= date("d-m-Y",strtotime($i['tanggal'])); ?></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><p class='news_header_text'> ".potong_text($aka['judul'],36)."</p></a>"; ?>
-                                <p class="posted_text">posted by
-                                    <?php echo $aka['nama_admin'] ?>
-                                    <?php echo format_tanggal($aka['tanggal']) ?>
-                                </p>
-                                <p style="margin-top:5px;">
-                                    <span><?php echo potong_text($aka['isi'], 200) ?></span>
-                                    <?php echo "<a href='".artikel_url($aka['id'],$aka['slug'])."'><span style='color:blue;'>Read More..</span></a>"; ?>
-                                </p>
-                                <br>
+                                <div class="col-md-12">
+                                    <div class="col-md-11 col-md-offset-1">
+                                        <p style="font-size:10pt;color:rgba(180,180,180,1);font-family: Calibri;">
+                                            <?= $i['pesan']; ?>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    <?php endforeach; ?>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <?php  
+                                    $pesan=$this->db->get_where("reply",array("kontak_id"=>$i['id']))->row_array();
+
+                                    ?>
+                                    <p style="font-size:8pt;color:black;font-family: Calibri;">
+                                        <b>Jawaban :</b> <br>
+                                    </p>
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <p style="font-size:10pt;color:rgba(180,180,180,1);font-family: Calibri;">
+                                            <?= strip_tags($pesan['reply_isi']); ?>   
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        <?php endforeach; ?>
+                    </div> 
+                </section>
+                <div class="row">
+                    <div class="col-md-12" style="margin-top: 15px">
+                        <a href="<?= baseURL('kontak'); ?>">
+                            <span>Kirin Pertanyaan</span>&nbsp;
+                            <span class="fa fa-caret-right"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
-
-            <!-- end section berita -->
-            <!-- srat section galeri -->
-            <a href="<?php echo baseURL('index.php/berita'); ?>"><span>Lihat Semua Berita</span>&nbsp;<span class="fa fa-caret-right"></span></a>
         </div>
         <hr/>
-        <div id="owl-example" class="owl-carousel wow fadeIn">
+        <div id="owl-example" class="owl-carousel wow cloud">
             <?php $i = 0; ?>
             <?php foreach ($get_galeri as $galeri): ?>
                 <div style="width:97%;height:150px;">
-                    <?php echo  "<a title='Show Image Detail' href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>
+                    <?=  "<a title='Show Image Detail' href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>
                 </div>
                 <?php $i++; ?>
             <?php endforeach; ?>
         </div>
         <br/>
         <br/>
-        <div class="container_contacts wow fadeIn delay-1s" style="margin-bottom:20px;">
+        <div class="container_contacts wow cloud delay-1s" style="margin-bottom:20px;">
             <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">
                 Follow on Instagram
             </p>
@@ -751,8 +839,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
             <div class="row">
                 <div class="col-md-4">
                     <div style="width:100%;height:auto;background-color:#77848e;">
-                        <a href="<?php echo galeri_url($galeri_rand->id,$galeri_rand->slug) ?>">
-                                <?php echo  "<img class='img-responsive' src='".img_galeri_url($galeri_rand->foto)."' alt='$galeri_rand->nama' />";  ?>
+                        <a href="<?= galeri_url($galeri_rand->id,$galeri_rand->slug) ?>">
+                                <?=  "<img class='img-responsive' src='".img_galeri_url($galeri_rand->foto)."' alt='$galeri_rand->nama' />";  ?>
                             </a>
                         </div>
                     </div>
@@ -761,7 +849,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <?php if ($i<8): ?>
                         <div class="col-lg-3 col-md-3" style="margin-top:10px;margin-bottom:75px;">
                             <div style="width:100%;height:120px;background-color:#77848e;">
-                                <?php echo  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; backgournd-size:cover;background-position: 50% 50%;text-align:center'; /></a>";  ?>
+                                <?=  "<a href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; backgournd-size:cover;background-position: 50% 50%;text-align:center'; /></a>";  ?>
                             </div>
                         </div>
                     <?php endif; ?>
@@ -775,7 +863,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     <!-- <div class="section" id="about">
         <div class="video-background-container">
             <video preload="auto" autoplay="" loop="" muted="" class="video-background">
-                <source type="video/mp4" src="<?php echo assets_url('videos/cloud.mp4') ?>">
+                <source type="video/mp4" src="<?= assets_url('videos/cloud.mp4') ?>">
             </video>
         </div>
         
@@ -786,12 +874,12 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
                 <div class="col-md-12 wow bounceInUp">
                     <div class="welcome-block " style="text-align: center">
-                        <img src="<?php echo $biodata['foto'] ?>"  alt="Sandro Poluan"/>
-                        <h3 style="margin:30px 0 30px 0"><?php echo $biodata['nama']; ?></h3>
+                        <img src="<?= $biodata['foto'] ?>"  alt="Sandro Poluan"/>
+                        <h3 style="margin:30px 0 30px 0"><?= $biodata['nama']; ?></h3>
                         <div class="message-body">
                             
-                            <p><?php echo nl2br($biodata['deskripsi_singkat']) ?></p>
-                            <a href="<?php echo baseURL('tentang-kami'); ?>" class="btn btn-border btn-effect" style="margin-top:30px">Tentang Saya</a>
+                            <p><?= nl2br($biodata['deskripsi_singkat']) ?></p>
+                            <a href="<?= baseURL('tentang-kami'); ?>" class="btn btn-border btn-effect" style="margin-top:30px">Tentang Saya</a>
                         </div>
                     </div>
                 </div>
@@ -1077,7 +1165,7 @@ foreach ($artikel_headline as  $value) {
     </div>
 -->
 
-    <!-- <div id="specialist" class="parallax section" style="padding:0;background-image: url(<?php echo $informasi['featured_image'] ?>);">
+    <!-- <div id="specialist" class="parallax section" style="padding:0;background-image: url(<?= $informasi['featured_image'] ?>);">
             <div class='overlay'>
                 <div class="container-fluid ">
                     <div class="row">

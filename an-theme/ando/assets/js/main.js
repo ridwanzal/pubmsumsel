@@ -101,10 +101,10 @@ $(function () {
 
 
 $(document).ready(function () {
+
     $("#owl-example").owlCarousel({
         items: 7,
         navigation: true,
-        lazyLoad: true,
         navigationText: ["prev", "next"],
         responsive: true,
         responsiveRefreshRate: 200,
@@ -112,6 +112,28 @@ $(document).ready(function () {
         transitionStyle: true,
         autoPlay: 2000,
         smartSpeed: 2500
+    });
+
+
+    $("#owl-example1").owlCarousel({
+        items: 3,
+        navigation: true,
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        responsive: true,
+        responsiveRefreshRate: 200,
+        lazyLoad: true,
+        lazyFollow: true,
+        autoPlay: false,
+        slideSpeed: 2000,
+        pagination: true,
+        autoPlay: 2000,
+        smartSpeed: 2500,
+        transitionStyle : "fade", 
+        /* [This code for animation ] */
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
     });
     /* ========================================================================= */
     /*	Menu item highlighting
@@ -131,7 +153,7 @@ $(document).ready(function () {
     		console.log('done scrolling');
     	}
     });
-     */
+    */
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400) {
             $(".navbar-brand a").css("color", "#fff");
@@ -153,7 +175,7 @@ $(document).ready(function () {
 
     $(window).resize(function () {
         'use strict',
-            $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height', slideHeight);
+        $('#home-slider, #slider, .sl-slider, .sl-content-wrapper').css('height', slideHeight);
     });
 
 

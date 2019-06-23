@@ -128,7 +128,7 @@ public function get_all_limit(){
 
 public function artikel_berita($id_kategori)
 {
-	$max = 6;
+	$max = 8;
 	$data=$this->CI->db->query("SELECT artikel.artikel_id AS id,
 	 artikel.artikel_judul AS judul,
 	 artikel.artikel_isi AS isi,

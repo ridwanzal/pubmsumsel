@@ -61,32 +61,109 @@ if(isset($heading)) :
 	</header>
 <?php endif; endif; ?>
 
-<div class='container'>
-	<div class='row'>
-		<div class='col-md-12' id="header-page">
-			<h1><span><?php echo $heading; ?></span></h1>
-		</div>
 
-
-
-		<div class='col-md-12 left-side'>
-
-			<div class="artikel">
-
-				<?php if($page["foto"]!=""){
-					echo "<img class='img-responsive' alt='$page[judul]' src='$page[foto]' />";
-				} 
-				?>
-
-				<div class='konten'>
-					<div class="isi">
-						<div class="col-md-12" style="text-align: center">
-							<img src="<?= base_url('an-component/media/upload-gambar-pendukung/visimisi.png')?>" style="background-size: cover;z-index: 1;position: absolute;color: #888; padding-top: 780px;width: 900px;margin-left: -355px">
+<?php
+if($heading != 'Visi dan Misi') {
+	?>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row" style="margin-top: -25px;margin-bottom: 30px">
+					<?php if($heading != 'Visi dan Misi'){ ?>
+						<h1>
+							<span  style="border-bottom:2px solid #588bd8"><?php echo $heading; ?></span>
+						</h1>
+					<?php } else{echo "<br>";} ?>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="row">
+							<div class="panel panel-default">
+								<div class="panel-heading"><b style="font-size: 15pt;color: #2155a2">Profil Instansi</b></div>
+								<ul class="list-group">
+									<li class="list-group-item"><a href="<?= base_url('page/1-visi-dan-misi'); ?>"  style="color:black">Visi Misi</a></li>
+									<li class="list-group-item"><a href="<?= base_url('page/6-dasar-hukum'); ?>"  style="color:black">Dasar Hukum</a></li>
+									<li class="list-group-item"><a href="<?= base_url('page/2-tugas-dan-fungsi'); ?>"  style="color:black">Tugas dan Fungsi</a></li>
+									<li class="list-group-item"><a href="<?= base_url('page/struktur-organisasi'); ?>"  style="color:black">Struktur Organisasi</a></li>
+								</ul>
+							</div>
 						</div>
-						<?php echo reversequote($page['isi'],'all'); ?>
+
+						<div class="row">
+							<div class="panel panel-default">
+								<div class="panel-heading"><b style="font-size: 15pt;color: #2155a2">Berita</b></div>
+								<ul class="list-group">
+									<?php foreach ($artikel_berita as $aka): ?>
+										<li class="list-group-item">
+											<?= "<a href='".artikel_url($aka['id'],$aka['slug'])."' style='color:black'><p class='news_header_text'> ".$aka['judul']."</p></a>"; ?>
+										</li>
+									<?php endforeach; ?>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-8">
+
+						<div class="artikel">
+							<?php if($page["foto"]!=""){
+								echo "<img class='img-responsive' alt='$page[judul]' src='$page[foto]' />";
+							} 
+							?>
+							<div class='konten'>
+								<div class="isi">
+									<?php if($heading == 'Visi dan Misi'): ?>
+
+										<div class="col-md-12" style="text-align: center">
+											<img src="<?= base_url('an-component/media/upload-gambar-pendukung/visimisi.png')?>" style="background-size: cover;z-index: 1;position: absolute;color: #888; padding-top: 780px;width: 900px;margin-left: -355px">
+										</div>
+									<?php endif; ?>
+									<?php echo reversequote($page['isi'],'all'); ?>
+								</div>
+
+							</div>
+						</div>
 					</div>
 
 				</div>
 			</div>
-
 		</div>
+	<?php } else {?>
+
+
+
+
+		<div class='container'>
+			<div class='row'>
+
+				<?php	if($heading != 'Visi dan Misi'){ ?>
+					<div class='col-md-12' id="header-page">
+						<h1><span><?php echo $heading; ?></span></h1>
+					</div>
+				<?php } else {echo "<br>";} ?>
+
+
+				<div class='col-md-12 left-side'>
+
+					<div class="artikel">
+						<?php if($page["foto"]!=""){
+							echo "<img class='img-responsive' alt='$page[judul]' src='$page[foto]' />";
+						} 
+						?>
+						<div class='konten'>
+							<div class="isi">
+								<?php if($heading == 'Visi dan Misi'): ?>
+
+									<div class="col-md-12" style="text-align: center">
+										<img src="<?= base_url('an-component/media/upload-gambar-pendukung/visimisi.png')?>" style="background-size: cover;z-index: 1;position: absolute;color: #888; padding-top: 780px;width: 900px;margin-left: -355px">
+									</div>
+								<?php endif; ?>
+								<?php echo reversequote($page['isi'],'all'); ?>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+				<?php } ?>

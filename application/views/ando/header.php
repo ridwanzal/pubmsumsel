@@ -149,15 +149,6 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 			background-color: #fff;
 			margin: 0 auto;
 		}
-		#carousel-example-generic{
-			height:100vh;
-			width:100%;
-		}
-		.carousel,.item,.active{height:100%;}
-		.carousel-inner{height:100%;}
-		.carousel-inner>.item>img {
-			height:100%;
-		}
 	</style>
 </head>
 

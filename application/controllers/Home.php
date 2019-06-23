@@ -24,7 +24,7 @@ class Home extends AN_Apricot{
 		$data["informasi"]["uniqueid"]="home-page";
 
 		$data["informasi"]["og-title"]=$data["informasi"]["title"];
-		$data["get_kontak"] = $this->Kontak_masuk->get_data();
+		$data["get_kontak"] = $this->Kontak_masuk->get_data_limit(8);
 
 
 
@@ -68,41 +68,41 @@ class Home extends AN_Apricot{
 		}
 
 		$tanggal = date("Ymd"); 
-$waktu   = time(); //
+		$waktu   = time();
 
 
-$this->load->model('visitor');
+		$this->load->model('visitor');
 
-$where=[
-	'visitor_ip' => $user_ip,
-	'visitor_tanggal' => $tanggal,
-];
+		$where=[
+			'visitor_ip' => $user_ip,
+			'visitor_tanggal' => $tanggal,
+		];
 
-$cek = $this->visitor->CekDataRows('visitor',$where)->num_rows();
+		$cek = $this->visitor->CekDataRows('visitor',$where)->num_rows();
 
-if($cek ==0){
-	$data=[
-		'visitor_ip'=>$user_ip,
-		'visitor_tanggal'=>$tanggal,
-		'visitor_hits'=>'1',
-		'visitor_online'=>$waktu,
-		'visitor_perangkat' =>$agent,
-	];
-	$rd=$this->visitor->InsertData('visitor',$data);
-}else {
+		if($cek ==0){
+			$data=[
+				'visitor_ip'=>$user_ip,
+				'visitor_tanggal'=>$tanggal,
+				'visitor_hits'=>'1',
+				'visitor_online'=>$waktu,
+				'visitor_perangkat' =>$agent,
+			];
+			$rd=$this->visitor->InsertData('visitor',$data);
+		}else {
 
-	$data=[
-		'visitor_hits '=>'+1',
-		'visitor_online'=>$waktu,
-	]; 
-	$where = [
-		'visitor_ip' => $user_ip,
-		'visitor_tanggal' => $tanggal
-	];
-	$UpdateData=$this->visitor->UpdateData('visitor',$data,$where);
+			$data=[
+				'visitor_hits '=>'+1',
+				'visitor_online'=>$waktu,
+			]; 
+			$where = [
+				'visitor_ip' => $user_ip,
+				'visitor_tanggal' => $tanggal
+			];
+			$UpdateData=$this->visitor->UpdateData('visitor',$data,$where);
 
-}
+		}
 
 
-}
+	}
 }

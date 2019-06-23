@@ -26,6 +26,7 @@ class Struktur_organisasi extends AN_Apricot
 		$data["informasi"]["og-title"]=$data["informasi"]["title"];
 		
 		$data["so"] = $this->Struktur_o->get_data();
+		$data["artikel_berita"]=$this->artikel->artikel_berita(6);
 		//$data["get_kontak"] = $this->Kontak_masuk->get_data();
 		$this->load->view($this->tema."/header",$data);
 		$this->load->view($this->tema."/struktur_organisasi",$data);
