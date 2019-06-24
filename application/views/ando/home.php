@@ -741,47 +741,41 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 float: left;
                 border-left: 1 px solid #eee;margin-left: 20px;margin-top:50px;height: 540px">
             </div> -->
-            <div class="col-md-4 wow cloud delay-1s">
+            <div class="col-md-4 wow cloud delay-1s" style="padding:0px; 10px 0px 10px;">
                 <section>
                     <div class="row">
-                        <h3  style="margin-top: -15px"><br>Kolom Pertanyaan</h3>
+                        <h3  style="margin-top: -15px;margin-left:15px;"><br>Kolom Pertanyaan</h3>
                     </div>
                     <div class="panel-body" style="height: 500px;background: white; overflow: scroll;overflow-x: hidden;">
                         <?php foreach($get_kontak as $i) :?>
                             <div class="row">
                                 <div class="col-md-7">
-                                    <p style="font-size: 10pt;color:black;font-weight: bold;font-family: Calibri;"><?= $i['nama']; ?></p>
+                                    <p style="font-size: 16px;color:black;font-weight: bold;font-family: 'Lato', sans-serif;margin-bottom:10px;"><?= $i['nama']; ?></p>
                                 </div>
                                 <div class="col-md-5">
-                                    <p class="pull-right text-right" style="font-size:8pt;font-family: Calibri;"><?= date("d-m-Y",strtotime($i['tanggal'])); ?></p>
+                                    <span class="fa fa-calendar" style="position:relative; left:27px; top:2px;"></span><p class="pull-right text-right" style="font-size:14px;font-family: 'Lato', sans-serif;"><?= date("d-m-Y",strtotime($i['tanggal'])); ?></p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-12">
-                                    <div class="col-md-11 col-md-offset-1">
-                                        <p style="font-size:10pt;color:rgba(180,180,180,1);font-family: Calibri;">
+                                    <div class="col-md-12">
+                                        <p style="font-size:14px;color:#444;font-family: Calibri;">
                                             <?= $i['pesan']; ?>
                                         </p>
                                     </div>
-                                </div>
                             </div>
 
                             <div class="row">
-                                <div class="col-md-12">
                                     <?php  
                                     $pesan=$this->db->get_where("reply",array("kontak_id"=>$i['id']))->row_array();
-
                                     ?>
-                                    <p style="font-size:8pt;color:black;font-family: Calibri;">
-                                        <b>Jawaban :</b> <br>
-                                    </p>
-                                    <div class="col-md-10 col-md-offset-1">
-                                        <p style="font-size:10pt;color:rgba(180,180,180,1);font-family: Calibri;">
+                                    <div class="col-md-12">
+                                        <p style="font-size:14px;color:#888;font-family: 'Lato', sans-serif;">
+                                            <b>Jawaban :</b> <br>
+                                        </p>
+                                        <p style="font-size:14px;color:#444;font-family: 'Lato', sans-serif;">
                                             <?= strip_tags($pesan['reply_isi']); ?>   
                                         </p>
-
                                     </div>
-                                </div>
                             </div>
                             <hr>
                         <?php endforeach; ?>
@@ -798,7 +792,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             </div>
         </div>
         <hr/>
-        <div id="owl-example" class="owl-carousel wow cloud">
+        <div class="" id="owl-example" class="owl-carousel wow cloud">
             <?php $i = 0; ?>
             <?php foreach ($get_galeri as $galeri): ?>
                 <div style="width:97%;height:150px;">
