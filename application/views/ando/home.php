@@ -21,6 +21,12 @@
         background-repeat: no-repeat;
         text-shadow: none;
     }
+    .navbar-default .navbar-nav>li>a {
+      color : #fff !important;
+      box shadow : 1px 1px 1px #555;    
+      font-size:18px;
+    }
+    
     /*
 .carousel-control.left span {
 	padding: 15px;
