@@ -709,7 +709,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                             <div id="owl-example1" class="owl-carousel wow cloud">
                                 <?php foreach ($artikel_berita as $aka): ?>
                                     <div class="col-md-12 col-sm-12">
-                                        <div class="panel" style="min-height: 500px; border:1px grey; box-shadow: 10px 14px 10px -5px rgba(0,0,0,0.75);">
+                                        <div class="panel" style="min-height: 500px; border:1px grey; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
                                             <div class="panel-header">
                                                 <div style="width:100%;height:auto;">
                                                     <?= "<img style='object-fit:cover;' class='new_img_size' src='".img_artikel_url($aka['foto'],true)."' />"; ?>
@@ -737,11 +737,11 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 wow cloud delay-1s" style="width: 10px;
+            <!-- <div class="col-md-1 wow cloud delay-1s" style="width: 10px;
                 float: left;
-                border-left: 2px solid grey;margin-left: 20px;margin-top:50px;height: 540px">
-            </div>
-            <div class="col-md-3 wow cloud delay-1s">
+                border-left: 1 px solid #eee;margin-left: 20px;margin-top:50px;height: 540px">
+            </div> -->
+            <div class="col-md-4 wow cloud delay-1s">
                 <section>
                     <div class="row">
                         <h3  style="margin-top: -15px"><br>Kolom Pertanyaan</h3>
