@@ -121,7 +121,7 @@ background-size: cover;">
 
 								<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 profile">
 									<div class="img-box">
-										<img src="<?= base_url('uploads/struktur_organisasi/sekertaris.png')?>" class="img-responsive">
+										<img src="<?= base_url('uploads/struktur_organisasi/man.png')?>" class="img-responsive">
 										<ul class="text-center">
 											<a href="#"><li><i class="fa fa-facebook"></i></li></a>
 											<a href="#"><li><i class="fa fa-twitter"></i></li></a>
