@@ -763,8 +763,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 </div>
                             </div>
                             <div class="row">
-                                    <div class="col-md-12">
-                                        <p style="font-size:14px;color:#444;font-family: Calibri;">
+                                    <div class="col-md-11 col-md-offset-1">
+                                        <p style="font-size:14px;color:#444;font-family: Lato, sans-serif;">
                                             <?= $i['pesan']; ?>
                                         </p>
                                     </div>
@@ -774,10 +774,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                     <?php  
                                     $pesan=$this->db->get_where("reply",array("kontak_id"=>$i['id']))->row_array();
                                     ?>
-                                    <div class="col-md-12">
-                                        <p style="font-size:14px;color:#888;font-family: 'Lato', sans-serif;">
-                                            <b>Jawaban :</b> <br>
-                                        </p>
+                                    <p style="font-size: 16px;margin-left:15px;color:black;font-weight: bold;font-family: 'Lato', sans-serif;margin-bottom:10px;">
+                                        <b>Jawaban :</b> <br>
+                                    </p>
+                                    <div class="col-md-11 col-md-offset-1">
                                         <p style="font-size:14px;color:#444;font-family: 'Lato', sans-serif;">
                                             <?= strip_tags($pesan['reply_isi']); ?>   
                                         </p>
