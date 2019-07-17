@@ -955,8 +955,8 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                     <div class="panel-body" style="height:76px;">
                                         <h4><a href="#" title="Nature Portfolio">Like this page</a></h4>
                                         <div class="pull-right" style="display:flex;top:-26px;position:relative;">
-                                            <i id="like1" class="glyphicon glyphicon-thumbs-up"></i>&nbsp;<div style="position:relative;top:-3px;" id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i>&nbsp;<div style="position:relative;top:-3px;" id="dislike1-bs3"></div>
+                                            <i id="like1" class="glyphicon glyphicon-thumbs-up"></i>&nbsp;<div style="position:relative;top:-3px;cursor:pointer;" id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i>&nbsp;<div style="position:relative;top:-3px;cursor:pointer;" id="dislike1-bs3"></div>
                                         </div>
                                     </div>
                                     <script>
