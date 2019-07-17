@@ -857,7 +857,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         <div class="row">
                             <h3  style="margin-top: -15px;margin-left:15px;"><br>Kolom Pertanyaan</h3>
                         </div>
-                        <div class="panel-body" style="height: 500px;background: white; overflow: scroll;overflow-x: hidden;">
+                        <div class="panel-body" style="height: 200px;background: white; overflow: scroll;overflow-x: hidden;border-radius:2px;border:1px grey; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
                             <?php foreach($get_kontak as $i) :?>
                                 <div class="row">
                                     <div class="col-md-7">
@@ -891,18 +891,64 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 <hr>
                             <?php endforeach; ?>
                         </div> 
-                    </section>
-                    <div class="row">
-                        <div class="col-md-12" style="margin-top: 15px">
-                            <a href="<?= baseURL('kontak'); ?>">
-                                <span>Kirim Pertanyaan</span>&nbsp;
-                                <span class="fa fa-caret-right"></span>
-                            </a>
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top:5px">
+                                <a href="<?= baseURL('kontak'); ?>">
+                                    <span>Kirim Pertanyaan</span>&nbsp;
+                                    <span class="fa fa-caret-right"></span>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                        <br/>
+                        <div  class="panel-body" style="height: 70px;background: white; text-align:center;border-radius:2px;border:1px #777; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
+                          <div class="row">
+                             <div class="col-md-12 col-lg-12">
+                                <label id="watch" style="font-size:35px;margin-top:5px;"></label>
+                             </div>
+                          </div>
+                          <script>
+                                function date_time(id){
+                                    let date = new Date();
+                                    let h = date.getHours();
+                                    if(h<10)
+                                    {
+                                            h = "0"+h;
+                                    }
+                                    let m = date.getMinutes();
+                                    if(m<10)
+                                    {
+                                            m = "0"+m;
+                                    }
+                                    let s = date.getSeconds();
+                                    if(s<10)
+                                    {
+                                            s = "0"+s;
+                                    }
+                                    let result = '<p>'+h+' : '+m+' : '+s+'</p>'
+                                    $('#watch').empty();
+                                    $('#watch').append(result);
+                                    setTimeout('date_time("'+id+'");','1000');
+                                    return true;
+                                }
+                          </script>
+                          <script type="text/javascript">window.onload = date_time('date_time');</script>
+                        </div>
+                        <br/>
+                          <div class="row">
+                             <div class="col-md-12 col-lg-12">
+                             <ul class="list-group">
+                                <li class="list-group-item">Online : <?= $pengunjungonline;?></li>
+                                <li class="list-group-item"> Hari ini : <?= $hrini['chrini'];?></li>
+                                <li class="list-group-item">Bulan ini : <?= $blnini['month'];?></li>
+                                <li class="list-group-item">Tahun ini : <?= $yearini['year'];?></li>
+                                <li class="list-group-item">Total Pengunjung : <?= $totalpengunjung['counthits'];?></li>
+                             </ul>
+                             </div>
+                          </div>
+                    </section>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12 text-left" style="font-size:14px;">
                     <span>
                         Online : <?= $pengunjungonline;?>
@@ -924,7 +970,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         Total Pengunjung : <?= $totalpengunjung['counthits'];?>
                     </span>
                 </div>            
-            </div>
+            </div> -->
             <hr/>
             <div class="" id="owl-example" class="owl-carousel wow cloud">
                 <?php $i = 0; ?>

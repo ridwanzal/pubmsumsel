@@ -108,6 +108,7 @@ echo "</div>"; //.col-md-4
                 <a href="http://binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >Direktorat Jenderal Bina Marga</p></a>
                 <a href="http://sda.pu.go.id/bbwssumatera8/" class="text-footers"><p class="text-footers" >Balai BWS Sumatera VIII</p></a>
                 <a href="http://sipdjd.binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >SIPDJD Sumatera Selatan</p></a>
+                <a href="http://www.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPPD Sumatera Selatan</p></a>
             </div>
             <div class="col-md-3">
               <p style="font-size:20px;font-weight:bold; visibility:hidden;">Tautan</p>
