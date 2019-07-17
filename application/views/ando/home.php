@@ -854,10 +854,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
                 <div class="col-md-3 wow cloud delay-1s" style="padding:0px; 10px 0px 10px;">
                     <section>
-                        <div class="row">
+                        <!-- <div class="row">
                             <h3  style="margin-top: -15px;margin-left:15px;"><br>Kolom Pertanyaan</h3>
-                        </div>
-                        <div class="panel-body" style="height: 200px;background: white; overflow: scroll;overflow-x: hidden;border-radius:2px;border:1px grey; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
+                        </div> -->
+                        <!-- <div class="panel-body" style="height: 200px;background: white; overflow: scroll;overflow-x: hidden;border-radius:2px;border:1px grey; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
                             <?php foreach($get_kontak as $i) :?>
                                 <div class="row">
                                     <div class="col-md-7">
@@ -890,15 +890,15 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 </div>
                                 <hr>
                             <?php endforeach; ?>
-                        </div> 
-                        <div class="row">
+                        </div>  -->
+                        <!-- <div class="row">
                             <div class="col-md-12" style="margin-top:5px">
                                 <a href="<?= baseURL('kontak'); ?>">
                                     <span>Kirim Pertanyaan</span>&nbsp;
                                     <span class="fa fa-caret-right"></span>
                                 </a>
                             </div>
-                        </div>
+                        </div> -->
                         <br/>
                         <div  class="panel-body" style="height: 70px;background: white; text-align:center;border-radius:2px;border:1px #777; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
                           <div class="row">
@@ -944,6 +944,23 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 <li class="list-group-item">Total Pengunjung : <?= $totalpengunjung['counthits'];?></li>
                              </ul>
                              </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="panel panel-default">
+                                    <!-- <div class="panel-body">
+                                           <img width="auto" height="240" src="<?= assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
+                                        </a> 
+                                    </div> -->
+                                    <div class="panel-footer">
+                                        <h4><a href="#" title="Nature Portfolio">Like this page</a></h4>
+                                        <div class="pull-right" style="display:flex;top:-26px;position:relative;">
+                                            <i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;
+                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike1-bs3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                           </div>
                     </section>
                 </div>
