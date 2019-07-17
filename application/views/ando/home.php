@@ -952,13 +952,30 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                            <img width="auto" height="240" src="<?= assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
                                         </a> 
                                     </div> -->
-                                    <div class="panel-footer">
+                                    <div class="panel-body" style="height:76px;">
                                         <h4><a href="#" title="Nature Portfolio">Like this page</a></h4>
                                         <div class="pull-right" style="display:flex;top:-26px;position:relative;">
-                                            <i id="like1" class="glyphicon glyphicon-thumbs-up"></i> <div id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;
-                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i> <div id="dislike1-bs3"></div>
+                                            <i id="like1" class="glyphicon glyphicon-thumbs-up"></i>&nbsp;<div style="position:relative;top:-3px;" id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down"></i>&nbsp;<div style="position:relative;top:-3px;" id="dislike1-bs3"></div>
                                         </div>
                                     </div>
+                                    <script>
+                                    $(document).ready(function() {              
+                                        $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
+                                            var $this = $(this),
+                                            c = $this.data('count');    
+                                            if (!c) c = 0;
+                                            c++;
+                                            $this.data('count',c);
+                                            $('#'+this.id+'-bs3').html(c);
+                                        });      
+                                        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+                                            event.preventDefault();
+                                            $(this).ekkoLightbox();
+                                        });                                        
+                                    }); 
+
+                                    </script>
                                 </div>
                             </div>
                           </div>
