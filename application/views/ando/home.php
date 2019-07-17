@@ -565,7 +565,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </span class="">
          <!-- <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>">
          </a> -->
-        <marquee behavior="slide" direction="left"onmouseover="this.stop();" onmouseout="this.start();"><span stlyle="display:block; width:" id="append_newsticker" class="example1">
+        <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();"><span stlyle="display:block;" id="append_newsticker" class="example1">
         
         </span></marquee>
          
