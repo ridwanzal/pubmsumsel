@@ -23,10 +23,9 @@
     }
     .navbar-default .navbar-nav>li>a {
       color : #fff !important;
-      box shadow : 1px 1px 1px #555;    
       font-size:18px;
-    }
-    
+  }
+
     /*
 .carousel-control.left span {
 	padding: 15px;
@@ -801,34 +800,35 @@ Remove or comment-out the code block below to see how the browser will fall-back
                         </div>
                     </div>
                 </div>
-            <!-- <div class="col-md-1 wow cloud delay-1s" style="width: 10px;
-                float: left;
-                border-left: 1 px solid #eee;margin-left: 20px;margin-top:50px;height: 540px">
-            </div> -->
-            <div class="col-md-4 wow cloud delay-1s" style="padding:0px; 10px 0px 10px;">
-                <section>
-                    <div class="row">
-                        <h3  style="margin-top: -15px;margin-left:15px;"><br>Kolom Pertanyaan</h3>
-                    </div>
-                    <div class="panel-body" style="height: 500px;background: white; overflow: scroll;overflow-x: hidden;">
-                        <?php foreach($get_kontak as $i) :?>
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <p style="font-size: 16px;color:black;font-weight: bold;font-family: 'Lato', sans-serif;margin-bottom:10px;"><?= $i['nama']; ?></p>
+
+                <div class="col-md-1 wow cloud delay-1s" id="deline" style="">
+                </div>
+
+
+                <div class="col-md-3 wow cloud delay-1s" style="padding:0px; 10px 0px 10px;">
+                    <section>
+                        <div class="row">
+                            <h3  style="margin-top: -15px;margin-left:15px;"><br>Kolom Pertanyaan</h3>
+                        </div>
+                        <div class="panel-body" style="height: 500px;background: white; overflow: scroll;overflow-x: hidden;">
+                            <?php foreach($get_kontak as $i) :?>
+                                <div class="row">
+                                    <div class="col-md-7">
+                                        <p style="font-size: 16px;color:black;font-weight: bold;font-family: 'Lato', sans-serif;margin-bottom:10px;"><?= $i['nama']; ?></p>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <span class="fa fa-calendar" style="position:relative; left:27px; top:2px;"></span><p class="pull-right text-right" style="font-size:14px;font-family: 'Lato', sans-serif;"><?= date("d-m-Y",strtotime($i['tanggal'])); ?></p>
+                                    </div>
                                 </div>
-                                <div class="col-md-5">
-                                    <span class="fa fa-calendar" style="position:relative; left:27px; top:2px;"></span><p class="pull-right text-right" style="font-size:14px;font-family: 'Lato', sans-serif;"><?= date("d-m-Y",strtotime($i['tanggal'])); ?></p>
-                                </div>
-                            </div>
-                            <div class="row">
+                                <div class="row">
                                     <div class="col-md-11 col-md-offset-1">
                                         <p style="font-size:14px;color:#444;font-family: Lato, sans-serif;">
                                             <?= $i['pesan']; ?>
                                         </p>
                                     </div>
-                            </div>
+                                </div>
 
-                            <div class="row">
+                                <div class="row">
                                     <?php  
                                     $pesan=$this->db->get_where("reply",array("kontak_id"=>$i['id']))->row_array();
                                     ?>
@@ -840,58 +840,58 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                             <?= strip_tags($pesan['reply_isi']); ?>   
                                         </p>
                                     </div>
-                            </div>
-                            <hr>
-                        <?php endforeach; ?>
-                    </div> 
-                </section>
-                <div class="row">
-                    <div class="col-md-12" style="margin-top: 15px">
-                        <a href="<?= baseURL('kontak'); ?>">
-                            <span>Kirin Pertanyaan</span>&nbsp;
-                            <span class="fa fa-caret-right"></span>
-                        </a>
+                                </div>
+                                <hr>
+                            <?php endforeach; ?>
+                        </div> 
+                    </section>
+                    <div class="row">
+                        <div class="col-md-12" style="margin-top: 15px">
+                            <a href="<?= baseURL('kontak'); ?>">
+                                <span>Kirin Pertanyaan</span>&nbsp;
+                                <span class="fa fa-caret-right"></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <hr/>
-        <div class="" id="owl-example" class="owl-carousel wow cloud">
-            <?php $i = 0; ?>
-            <?php foreach ($get_galeri as $galeri): ?>
-                <div style="width:97%;height:150px;">
-                    <?=  "<a title='Show Image Detail' href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>
-                </div>
-                <?php $i++; ?>
-            <?php endforeach; ?>
-        </div>
-        <br/>
-        <br/>
-        <div class="container_contacts wow cloud delay-1s" style="margin-bottom:20px;">
-            <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">
-                Follow on Instagram
-            </p>
             <hr/>
-            <div class="row containers_instagram">
-                <!--    <li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
-                <?php foreach ($ig as $key ) : ?>
-                    <div class="col-md-2" tabindex="0">
-                        <a href="<?= $key['link'] ?>" target="_blank">
-                            <div class="gallery-item" tabindex="0">
-                                <img src="<?= $key['images']['standard_resolution']['url'] ?>" class="gallery-image" alt="">
-                                <div class="gallery-item-info">
-                                    <ul>
-                                        <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> <?= $key['likes']['count'] ?></li><br>
-                                        <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> <?= $key['comments']['count'] ?></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
+            <div class="" id="owl-example" class="owl-carousel wow cloud">
+                <?php $i = 0; ?>
+                <?php foreach ($get_galeri as $galeri): ?>
+                    <div style="width:97%;height:150px;">
+                        <?=  "<a title='Show Image Detail' href='".galeri_url($galeri['id'],$galeri['slug'])."'><img class='img-responsive img' src='".img_galeri_url($galeri['foto'])."' alt='$galeri[nama]' style='width:100%;max-height:170px; height: 170px; object-fit:cover; margin-right: 5px; text-align:center'; /></a>";  ?>
                     </div>
+                    <?php $i++; ?>
                 <?php endforeach; ?>
             </div>
+            <br/>
+            <br/>
+            <div class="container_contacts wow cloud delay-1s" style="margin-bottom:20px;">
+                <p style="font-size:20px;font-weight:normal;margin-bottom:10px;">
+                    Follow on Instagram
+                </p>
+                <hr/>
+                <div class="row containers_instagram">
+                    <!--    <li style="background-color:#2055a2;color:white;" class=""><a href="#tab2" data-toggle="tab">Agenda</a></li>-->
+                    <?php foreach ($ig as $key ) : ?>
+                        <div class="col-md-2" tabindex="0">
+                            <a href="<?= $key['link'] ?>" target="_blank">
+                                <div class="gallery-item" tabindex="0">
+                                    <img src="<?= $key['images']['standard_resolution']['url'] ?>" class="gallery-image" alt="">
+                                    <div class="gallery-item-info">
+                                        <ul>
+                                            <li class="gallery-item-likes"><span class="visually-hidden">Likes:</span><i class="fa fa-heart" aria-hidden="true"></i> <?= $key['likes']['count'] ?></li><br>
+                                            <li class="gallery-item-comments"><span class="visually-hidden">Comments:</span><i class="fa fa-comment" aria-hidden="true"></i> <?= $key['comments']['count'] ?></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    <?php endforeach; ?>
+                </div>
+            </div>
         </div>
-    </div>
         <!-- <div class="section section-berita wow fadeIn delay-1s">
             <p style="">Galeri Foto</p>
             <div class="row">
@@ -1331,3 +1331,19 @@ foreach ($artikel_populer as  $val) {
 
 </div> -->
 </div>
+
+<script>
+    function myFunction(x) {
+        var element = document.getElementById("deline");
+
+        if (x.matches) {
+            element.setAttribute("style","");
+        } else {
+            element.setAttribute("style", "width: 10px;float: left;border-left:2px solid #eee;margin-left: 20px;margin-top:50px;height: 540px");
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 960px)")
+    myFunction(x)
+    x.addListener(myFunction)
+</script>

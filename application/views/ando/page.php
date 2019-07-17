@@ -152,12 +152,6 @@ if($heading != 'Visi dan Misi') {
 						?>
 						<div class='konten'>
 							<div class="isi">
-								<?php if($heading == 'Visi dan Misi'): ?>
-
-									<div class="col-md-12" style="text-align: center">
-										<img src="<?= base_url('an-component/media/upload-gambar-pendukung/visimisi.png')?>" style="background-size: cover;z-index: 1;position: absolute;color: #888; padding-top: 780px;width: 900px;margin-left: -355px">
-									</div>
-								<?php endif; ?>
 								<?php echo reversequote($page['isi'],'all'); ?>
 							</div>
 
