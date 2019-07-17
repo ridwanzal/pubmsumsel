@@ -395,6 +395,50 @@ img {
     .profile-stat-count {
         display: block;
     }
+    .example1 {
+    height: 50px;	
+    overflow: hidden;
+    position: relative;
+    }
+    .example1 p {
+    font-size: 3em;
+    color: limegreen;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 50px;
+    text-align: center;
+    /* Starting position */
+    -moz-transform:translateX(100%);
+    -webkit-transform:translateX(100%);	
+    transform:translateX(100%);
+    /* Apply animation to this element */	
+    -moz-animation: example1 15s linear infinite;
+    -webkit-animation: example1 15s linear infinite;
+    animation: example1 15s linear infinite;
+    }
+    /* Move it (define the animation) */
+    @-moz-keyframes example1 {
+    0%   { -moz-transform: translateX(100%); }
+    100% { -moz-transform: translateX(-100%); }
+    }
+    @-webkit-keyframes example1 {
+    0%   { -webkit-transform: translateX(100%); }
+    100% { -webkit-transform: translateX(-100%); }
+    }
+    @keyframes example1 {
+    0%   { 
+    -moz-transform: translateX(100%); /* Firefox bug fix */
+    -webkit-transform: translateX(100%); /* Firefox bug fix */
+    transform: translateX(100%); 		
+    }
+    100% { 
+    -moz-transform: translateX(-100%); /* Firefox bug fix */
+    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+    transform: translateX(-100%); 
+    }
+    }
 }
 
 /* Spinner Animation */
@@ -517,9 +561,16 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </a>
     </div>
     <!-- /carousel -->
-    <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto; padding : 10px;">
-        <span style="color:#2055a2;font-weight:600; margin-left:16px;"><span class="fa fa-exclamation-circle">
-        </span class="">&nbsp;&nbsp;Berita terkini : <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>"><span id="append_newsticker"><?= $artikel_berita[0]['judul']?></span></a>&nbsp;&nbsp;<span></span>
+    <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto;">
+        <span style="color:#2055a2;font-weight:600; margin-left:16px;">
+        </span class="">
+         <!-- <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>">
+         </a> -->
+        <marquee><span stlyle="display:block; width:" id="append_newsticker" class="example1">
+        
+        </span></marquee>
+         
+         &nbsp;&nbsp;<span></span>
         <?php 
             // print_r($artikel_berita);
         $data = json_encode($artikel_berita);
@@ -529,14 +580,21 @@ Remove or comment-out the code block below to see how the browser will fall-back
             let x_data = <?= $data ?>;
             localStorage.setItem('data_artikel', JSON.stringify(x_data));
             let x_json = JSON.parse(localStorage.getItem('data_artikel'));
-
-            setInterval(function () {
-                $('#append_newsticker').fadeOut(300, function () {
-                    var $this = $(this);
-                    $this.text($this.text() == x_json[0].judul ? x_json[1].judul  : $this.text() == x_json[1].judul  ? x_json[3].judul : x_json[0].judul).addClass('wow fadeInUp');
-                    $this.fadeIn(500);
-                });
-            }, 3500);
+            let i = 0;
+            // setInterval(function () {
+            //     $('#append_newsticker').fadeOut(300, function () {
+            //         var $this = $(this);
+            //         $this.text($this.text() == x_json[0].judul ? x_json[1].judul  : $this.text() == x_json[1].judul  ? x_json[3].judul : x_json[0].judul).addClass('wow fadeInUp');
+            //         $this.fadeIn(500);
+            //     });
+            // }, 3500);
+            setTimeout(function(){
+                let i = 0;
+                for(i; i < x_json.length; i++){
+                    let elem = "<a href='artikel/"+x_json[i].id+"-"+x_json[i].slug+"'><span>"+x_json[i].judul+"</span></a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;";
+                    $('#append_newsticker').append(elem);
+                }
+            },10);
         </script>
         <span id="text_headline"></span>
 
@@ -564,7 +622,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             }
         }
     </style>
-    <a href="wow cloud delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span>
+    <!-- <a href="wow cloud delay-1s"><span class="fa fa-caret-right pull-right" style="margin-right:25px; margin-top:5px;"></span></span> -->
     </div>
     <div class="container wow cloud delay-1s">
         <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">

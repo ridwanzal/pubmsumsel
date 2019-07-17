@@ -42,6 +42,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 	<link rel="stylesheet" type="text/css" href="<?= assets_url('css/custom-dinaspu.css') ?>" />
 	<link href="<?= assets_url('datatables/media/css/dataTables.bootstrap.css')?>"  />
 	<link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.dataTables.min.css" type="text/css" />
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 	<?php
 	if($informasi['current_page'] == 'faq'){
 
