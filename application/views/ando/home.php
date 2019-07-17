@@ -590,7 +590,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             setTimeout(function(){
                 let i = 0;
                 for(i; i < x_json.length; i++){
-                    let elem = "<a href='artikel/"+x_json[i].id+"-"+x_json[i].slug+"'><span>"+x_json[i].judul+"</span></a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;";
+                    let elem = "<a href='artikel/"+x_json[i].id+"-"+x_json[i].slug+"' style='font-weight:bold;' title='"+x_json[i].judul+"'><span>"+x_json[i].judul+"</span></a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;";
                     $('#append_newsticker').append(elem);
                 }
             },10);
