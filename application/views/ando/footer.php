@@ -180,7 +180,7 @@ echo "</div>"; //.col-md-4
 </main>
 <div style="background:#ffc928; color:#333; font-weight :  bold; overflow-x:hidden; padding:10px; top : -1px; position:relative;">
   <div class="row">
-    <div class="col-lg-8 col-md-8 col-xs-12 text-left" style="padding-left:110px;font-size:12px;">
+    <!-- <div class="col-lg-8 col-md-8 col-xs-12 text-left" style="padding-left:110px;font-size:12px;">
         <span>
             Online : <?= $pengunjungonline;?>
         </span>
@@ -200,7 +200,7 @@ echo "</div>"; //.col-md-4
         <span>
             Total Pengunjung : <?= $totalpengunjung['counthits'];?>
         </span>
-    </div>
+    </div> -->
     <div class="col-lg-4 col-md-4 col-xs-12 text-left" style="padding-left:90px;font-size:12px;">
         <span>
             © 2019 <a href="https://pubmtrsumsel.scafol.id">Dinas PUBMTR Prov. Sumatera Selatan</a>

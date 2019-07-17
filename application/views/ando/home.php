@@ -565,7 +565,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </span class="">
          <!-- <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>">
          </a> -->
-        <marquee><span stlyle="display:block; width:" id="append_newsticker" class="example1">
+        <marquee behavior="slide" direction="left"onmouseover="this.stop();" onmouseout="this.start();"><span stlyle="display:block; width:" id="append_newsticker" class="example1">
         
         </span></marquee>
          
@@ -794,8 +794,55 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 <?php endforeach; ?>
                             </div>
                             <a href="<?= baseURL('index.php/berita'); ?>">
-                                <span>Lihat Semua Berita</span>&nbsp;
+                                <span style="padding-left:15px;">Lihat Semua Berita</span>&nbsp;
                                 <span class="fa fa-caret-right"></span>
+                                
+                                    <div class="col-md-3" style="display:none;">
+                                        <?php
+                                        $user_ip=$_SERVER['REMOTE_ADDR'];       
+
+                                        $tanggal = date("Ymd");
+                                        $mnth = date("m"); 
+                                        $year = date("Y"); 
+                                            $waktu   = time(); //
+
+                                            $pengunjung = $this->visitor->get_group('visitor_ip','visitor_tanggal','visitor')->row_array();
+
+                                            $totalpengunjung  = $this->db->query("SELECT COUNT(visitor_hits) as counthits FROM visitor")->row_array(); 
+                                            $hrini  = $this->db->query("SELECT COUNT(visitor_hits) as chrini FROM visitor where visitor_tanggal = $tanggal")->row_array(); 
+                                            $blnini  = $this->db->query("SELECT COUNT(visitor_hits) as month FROM visitor where month(visitor_tanggal) = $mnth")->row_array(); 
+                                            $yearini  = $this->db->query("SELECT COUNT(visitor_hits) as year FROM visitor where year(visitor_tanggal) = $year")->row_array(); 
+                                            $bataswaktu       = time() - 300;
+
+                                            $whpo = [
+                                                'visitor_online >' => $bataswaktu
+                                            ];
+                                            $where = [
+                                                'visitor_ip' => $user_ip,
+                                                'visitor_tanggal' => $tanggal
+                                            ];
+                                            $pengunjungonline = $this->visitor->CekDataRows('visitor',$where)->num_rows();
+                                            ?>
+
+                                            <div class="pu-box-footer">
+                                                <h5>Jumlah Pengunjung</h5>
+                                                <p>Online :
+                                                    <?= $pengunjungonline;?>
+                                                </p>
+                                                <p>Hari ini :
+                                                    <?= $hrini['chrini'];?>
+                                                </p>
+                                                <p>Bulan ini :
+                                                    <?= $blnini['month']; ?>
+                                                </p>
+                                                <p>Tahun ini :
+                                                    <?= $yearini['year']; ?>
+                                                </p>
+                                                <p>Total Pengunjung :
+                                                    <?= $totalpengunjung['counthits'];?>
+                                                </p>
+                                            </div>
+                                        </div>
                             </a>
                         </div>
                     </div>
@@ -848,12 +895,35 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <div class="row">
                         <div class="col-md-12" style="margin-top: 15px">
                             <a href="<?= baseURL('kontak'); ?>">
-                                <span>Kirin Pertanyaan</span>&nbsp;
+                                <span>Kirim Pertanyaan</span>&nbsp;
                                 <span class="fa fa-caret-right"></span>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-xs-12 text-left" style="font-size:14px;">
+                    <span>
+                        Online : <?= $pengunjungonline;?>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        Hari ini : <?= $hrini['chrini'];?>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        Bulan ini : <?= $blnini['month'];?>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        Tahun ini : <?= $yearini['year'];?>
+                    </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <span>
+                        Total Pengunjung : <?= $totalpengunjung['counthits'];?>
+                    </span>
+                </div>            
             </div>
             <hr/>
             <div class="" id="owl-example" class="owl-carousel wow cloud">
