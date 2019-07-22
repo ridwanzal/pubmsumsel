@@ -90,7 +90,10 @@ echo "</div>"; //.col-md-4
             <div class="col-md-3">
                 <p class="text-footers-size">
                     Dinas PUBMTR Sumatera Selatan<br/>
-                Jl. Ade Irma Nasution No.10 Kota Palembang</p>
+                    Jl. Ade Irma Nasution No.10<br>
+                    Kel. Sungai Pangeran, Kec. Ilir Timur I <br>
+                    Kota Palembang 30125
+                </p>
                 <br/>
                 <p class="text-footers-size">Telp: (0711) 321053</p>
                 <br/>

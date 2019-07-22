@@ -18,7 +18,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <p style="text-align: center;"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d996.1096795933119!2d104.74998893714395!3d-2.9756712704679074!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b75dfda995445%3A0xe1ffdb86cc1f2d16!2sDinas+Pekerjaan+Umum+Bina+Marga+dan+Tata+Ruang!5e0!3m2!1sid!2sid!4v1557165410210!5m2!1sid!2sid" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></p>
 
           <p><strong>Dinas Pekerjaan Umum, Bina Marga dan Tata Ruang Provinsi Sumatera Selatan</strong></p>
-          <p>Jl. Ade Irma Nasution No.10 Sungai Pangeran Ilir Tim. I Kota Palembang Sumatera Selatan 30127</p>
+          <p>Jl. Ade Irma Nasution No.10 <br>Kel. Sungai Pangeran, Kec. Ilir Timur I<br>
+           Kota Palembang 30125</p>
           <p>Telp: (0711) 321053</p>
           
           <hr>

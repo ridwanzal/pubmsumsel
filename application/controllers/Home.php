@@ -105,4 +105,33 @@ class Home extends AN_Apricot{
 
 
 	}
+
+	public function ajax_get(){
+		$ajx = $this->db->query("SELECT
+			sum(pl_like = 'yes') AS clike,
+			sum(pl_like = 'no') AS cdislike
+			FROM page_like")->result();
+
+		echo json_encode($ajx);
+	}
+
+	public function ajax_cek(){
+		$user_ip=$_SERVER['REMOTE_ADDR'];
+		$tipe = $this->input->post('tipe');
+		$x = 0;
+		$ajxc = $this->db->query("SELECT
+			sum(pl_like = '$tipe') AS vlike
+			FROM page_like")->result();
+		$ajx = $this->db->query("SELECT * from page_like where pl_ip='$user_ip'")->result();
+		if(count($ajx) == 1){
+			$x = $ajxc;
+		} else {
+			$ajxd = $this->db->query("INSERT INTO page_like (pl_id,pl_ip,pl_like) values (null,'$user_ip','$tipe')")->result();
+		}
+		$x = $ajxc;
+
+		
+		echo json_encode($x);
+	}
+
 }

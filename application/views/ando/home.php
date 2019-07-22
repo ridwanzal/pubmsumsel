@@ -395,48 +395,48 @@ img {
         display: block;
     }
     .example1 {
-    height: 50px;	
-    overflow: hidden;
-    position: relative;
+        height: 50px;	
+        overflow: hidden;
+        position: relative;
     }
     .example1 p {
-    font-size: 3em;
-    color: limegreen;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    line-height: 50px;
-    text-align: center;
-    /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);	
-    transform:translateX(100%);
-    /* Apply animation to this element */	
-    -moz-animation: example1 15s linear infinite;
-    -webkit-animation: example1 15s linear infinite;
-    animation: example1 15s linear infinite;
+        font-size: 3em;
+        color: limegreen;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        /* Starting position */
+        -moz-transform:translateX(100%);
+        -webkit-transform:translateX(100%);	
+        transform:translateX(100%);
+        /* Apply animation to this element */	
+        -moz-animation: example1 15s linear infinite;
+        -webkit-animation: example1 15s linear infinite;
+        animation: example1 15s linear infinite;
     }
     /* Move it (define the animation) */
     @-moz-keyframes example1 {
-    0%   { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
+        0%   { -moz-transform: translateX(100%); }
+        100% { -moz-transform: translateX(-100%); }
     }
     @-webkit-keyframes example1 {
-    0%   { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
+        0%   { -webkit-transform: translateX(100%); }
+        100% { -webkit-transform: translateX(-100%); }
     }
     @keyframes example1 {
-    0%   { 
-    -moz-transform: translateX(100%); /* Firefox bug fix */
-    -webkit-transform: translateX(100%); /* Firefox bug fix */
-    transform: translateX(100%); 		
-    }
-    100% { 
-    -moz-transform: translateX(-100%); /* Firefox bug fix */
-    -webkit-transform: translateX(-100%); /* Firefox bug fix */
-    transform: translateX(-100%); 
-    }
+        0%   { 
+            -moz-transform: translateX(100%); /* Firefox bug fix */
+            -webkit-transform: translateX(100%); /* Firefox bug fix */
+            transform: translateX(100%); 		
+        }
+        100% { 
+            -moz-transform: translateX(-100%); /* Firefox bug fix */
+            -webkit-transform: translateX(-100%); /* Firefox bug fix */
+            transform: translateX(-100%); 
+        }
     }
 }
 
@@ -516,6 +516,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             }
         }
     }
+
 </style>
 <div id="startchange"></div>
 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" width="100%;">
@@ -535,10 +536,10 @@ Remove or comment-out the code block below to see how the browser will fall-back
                 <div class="header-text hidden-xs">
                     <div class="col-md-12 text-center">
                         <h2>
-                           <span><?= $value['header']; ?></span>
-                       </h2>
-                       <br>
-                       <div class="col-lg-8 col-md-8">
+                         <span><?= $value['header']; ?></span>
+                     </h2>
+                     <br>
+                     <div class="col-lg-8 col-md-8">
                         <p style="bottom:0px ; font-size: 39px; letter-spacing: 0.5px; text-align:left; line-height:40px; left: -29px !important; float:left; color : #fff; position: relative; top:235px; font-weight:bold;">
                             <?= $value['caption']; ?>
                         </p>
@@ -565,17 +566,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
         </span class="">
          <!-- <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>">
          </a> -->
-        <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();"><span stlyle="display:block;" id="append_newsticker" class="example1">
-        
-        </span></marquee>
+         <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();"><span stlyle="display:block;" id="append_newsticker" class="example1">
+
+         </span></marquee>
          
          &nbsp;&nbsp;<span></span>
-        <?php 
+         <?php 
             // print_r($artikel_berita);
-        $data = json_encode($artikel_berita);
+         $data = json_encode($artikel_berita);
             // print_r($data);
-        ?>
-        <script>
+         ?>
+         <script>
             let x_data = <?= $data ?>;
             localStorage.setItem('data_artikel', JSON.stringify(x_data));
             let x_json = JSON.parse(localStorage.getItem('data_artikel'));
@@ -590,7 +591,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
             setTimeout(function(){
                 let i = 0;
                 for(i; i < x_json.length; i++){
-                    let elem = "<a href='artikel/"+x_json[i].id+"-"+x_json[i].slug+"' style='font-weight:bold;' title='"+x_json[i].judul+"'><span>"+x_json[i].judul+"</span></a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;";
+                    let elem = "<a href='artikel/"+x_json[i].id+"-"+x_json[i].slug+"' style='font-weight:bold;' title='"+x_json[i].judul+"' class='link'><span>"+x_json[i].judul+"</span></a>&nbsp;&nbsp;&#124;&nbsp;&nbsp;";
                     $('#append_newsticker').append(elem);
                 }
             },10);
@@ -706,58 +707,58 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <p>Unit Dinas&nbsp;&nbsp;&nbsp;<span class="fa fa-caret-right"></span></p>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>"><p>Sekretariat</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>" class="link"><p>Sekretariat</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>"><p>Bidang Pengembangan Jaringan Jalan</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>" class="link"><p>Bidang Pengembangan Jaringan Jalan</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>"><p>Bidang Jalan</p></a>
+                    <a href="<?= baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>" class="link"><p>Bidang Jalan</p></a>
                 </div>
             </div>
             <br/>
             <div class="row container_bidang wow cloud delay-1s">
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>"><p>Bidang Jembatan</p></a>
+                    <a href="<?= baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>" class="link"><p>Bidang Jembatan</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
+                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>" class="link"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>Bidang Penataan Ruang</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>" class="link"><p>Bidang Penataan Ruang</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>" class="link"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
                 </div>
             </div>
             <br/>
             <div class="row container_bidang wow  cloud delay-1s">
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
+                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>" class="link"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
                 </div>
             </div>
             <br/>
             <div class="row container_bidang wow cloud delay-1s">
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
+                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>" class="link"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
                 </div>
             </div>
             <hr>
@@ -797,13 +798,13 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                 <span style="padding-left:15px;">Lihat Semua Berita</span>&nbsp;
                                 <span class="fa fa-caret-right"></span>
                                 
-                                    <div class="col-md-3" style="display:none;">
-                                        <?php
-                                        $user_ip=$_SERVER['REMOTE_ADDR'];       
+                                <div class="col-md-3" style="display:none;">
+                                    <?php
+                                    $user_ip=$_SERVER['REMOTE_ADDR'];       
 
-                                        $tanggal = date("Ymd");
-                                        $mnth = date("m"); 
-                                        $year = date("Y"); 
+                                    $tanggal = date("Ymd");
+                                    $mnth = date("m"); 
+                                    $year = date("Y"); 
                                             $waktu   = time(); //
 
                                             $pengunjung = $this->visitor->get_group('visitor_ip','visitor_tanggal','visitor')->row_array();
@@ -843,17 +844,17 @@ Remove or comment-out the code block below to see how the browser will fall-back
                                                 </p>
                                             </div>
                                         </div>
-                            </a>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
 
-                <div class="col-md-1 wow cloud delay-1s" id="deline" style="">
-                </div>
+                        <div class="col-md-1 wow cloud delay-1s" id="deline" style="">
+                        </div>
 
 
-                <div class="col-md-3 wow cloud delay-1s" style="padding:0px; 10px 0px 10px;">
-                    <section>
+                        <div class="col-md-3 wow cloud delay-1s" style="padding:0px; 10px 0px 10px;">
+                            <section>
                         <!-- <div class="row">
                             <h3  style="margin-top: -15px;margin-left:15px;"><br>Kolom Pertanyaan</h3>
                         </div> -->
@@ -900,88 +901,139 @@ Remove or comment-out the code block below to see how the browser will fall-back
                             </div>
                         </div> -->
                         <br/>
-                        <div  class="panel-body" style="height: 70px;background: white; text-align:center;border-radius:2px;border:1px #777; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
+                        <div  class="panel-body" style="height: 70px;background: white; text-align:center;border-radius:2px;border:1px solid #7B68EE; box-shadow: 4px 4px 4px -5px rgba(0,0,0,0.15);">
                           <div class="row">
-                             <div class="col-md-12 col-lg-12">
+                            <div class="col-md-12 col-lg-12">
                                 <label id="watch" style="font-size:35px;margin-top:5px;"></label>
-                             </div>
-                          </div>
-                          <script>
-                                function date_time(id){
-                                    let date = new Date();
-                                    let h = date.getHours();
-                                    if(h<10)
-                                    {
-                                            h = "0"+h;
-                                    }
-                                    let m = date.getMinutes();
-                                    if(m<10)
-                                    {
-                                            m = "0"+m;
-                                    }
-                                    let s = date.getSeconds();
-                                    if(s<10)
-                                    {
-                                            s = "0"+s;
-                                    }
-                                    let result = '<p>'+h+' : '+m+' : '+s+'</p>'
-                                    $('#watch').empty();
-                                    $('#watch').append(result);
-                                    setTimeout('date_time("'+id+'");','1000');
-                                    return true;
-                                }
-                          </script>
-                          <script type="text/javascript">window.onload = date_time('date_time');</script>
+                            </div>
                         </div>
-                        <br/>
-                          <div class="row">
-                             <div class="col-md-12 col-lg-12">
-                             <ul class="list-group">
+                        <script>
+                            function date_time(id){
+                                let date = new Date();
+                                let h = date.getHours();
+                                if(h<10)
+                                {
+                                    h = "0"+h;
+                                }
+                                let m = date.getMinutes();
+                                if(m<10)
+                                {
+                                    m = "0"+m;
+                                }
+                                let s = date.getSeconds();
+                                if(s<10)
+                                {
+                                    s = "0"+s;
+                                }
+                                let result = '<p>'+h+' : '+m+' : '+s+'</p>'
+                                $('#watch').empty();
+                                $('#watch').append(result);
+                                setTimeout('date_time("'+id+'");','1000');
+                                return true;
+                            }
+                        </script>
+                        <script type="text/javascript">window.onload = date_time('date_time');</script>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <ul class="list-group">
                                 <li class="list-group-item">Online : <?= $pengunjungonline;?></li>
                                 <li class="list-group-item"> Hari ini : <?= $hrini['chrini'];?></li>
                                 <li class="list-group-item">Bulan ini : <?= $blnini['month'];?></li>
                                 <li class="list-group-item">Tahun ini : <?= $yearini['year'];?></li>
                                 <li class="list-group-item">Total Pengunjung : <?= $totalpengunjung['counthits'];?></li>
-                             </ul>
-                             </div>
-                          </div>
-                          <div class="row">
-                            <div class="col-lg-12 col-md-12">
-                                <div class="panel panel-default">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="panel panel-default">
                                     <!-- <div class="panel-body">
                                            <img width="auto" height="240" src="<?= assets_url('img/gubwagub.svg') ?>" alt="" style="border-radius:6px;" class="">&nbsp;&nbsp;
                                         </a> 
                                     </div> -->
                                     <div class="panel-body" style="height:76px;">
-                                        <h4><a href="#" title="Nature Portfolio">Like this page</a></h4>
+                                        <h4><a href="#">Like this page</a></h4>
                                         <div class="pull-right" style="display:flex;top:-26px;position:relative;">
-                                            <i id="like1" class="glyphicon glyphicon-thumbs-up" style="cursor:pointer;"></i>&nbsp;<div style="position:relative;top:-3px;cursor:pointer;" id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down" style="cursor:pointer;"></i>&nbsp;<div style="position:relative;top:-3px;cursor:pointer;" id="dislike1-bs3"></div>
+                                            <i id="like1" class="glyphicon glyphicon-thumbs-up" style="cursor:pointer;color:blue"></i>&nbsp;<div style="position:relative;top:-3px;cursor:pointer;" id="like1-bs3"></div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            <i id="dislike1" class="glyphicon glyphicon-thumbs-down" style="cursor:pointer;color:red"></i>&nbsp;<div style="position:relative;top:-3px;cursor:pointer;" id="dislike1-bs3"></div>
                                         </div>
                                     </div>
-                                    <script>
-                                    $(document).ready(function() {              
-                                        $('i.glyphicon-thumbs-up, i.glyphicon-thumbs-down').click(function(){    
-                                            var $this = $(this),
-                                            c = $this.data('count');    
-                                            if (!c) c = 0;
-                                            c++;
-                                            $this.data('count',c);
-                                            $('#'+this.id+'-bs3').html(c);
-                                        });      
-                                        $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
-                                            event.preventDefault();
-                                            $(this).ekkoLightbox();
-                                        });                                        
-                                    }); 
 
-                                    </script>
+                                    <script>
+                                        $(document).ready(function() {  
+                                            $.ajax({
+                                                type:"GET",
+                                                url:"<?= base_url('home/ajax_get'); ?>",
+                                                dataType : "JSON",
+                                                success: function(data){
+                                                    $('#like1-bs3').html(data[0].clike);
+                                                    $('#dislike1-bs3').html(data[0].cdislike);
+                                                }
+                                            });
+
+                                            $('i.glyphicon-thumbs-up').click(function(){
+                                                $.ajax({
+                                                    type:"POST",
+                                                    data:{tipe:'yes'},
+                                                    url:"<?= base_url('home/ajax_cek'); ?>",
+                                                    dataType : "JSON",
+                                                    success: function(ev){
+                                                        $('#like1-bs3').html(ev[0].vlike);
+                                                    }
+                                                });
+
+                                            });  
+
+
+                                            $('i.glyphicon-thumbs-down').click(function(){
+                                                $.ajax({
+                                                    type:"POST",
+                                                    data:{tipe:'no'},
+                                                    url:"<?= base_url('home/ajax_cek'); ?>",
+                                                    dataType : "JSON",
+                                                    success: function(ev){
+                                                        $('#dislike1-bs3').html(ev[0].vlike);
+                                                    }
+                                                });
+
+                                            });  
+
+
+                                               /* var $this = $(this),
+                                                c = $this.data('count');    
+                                                if (!c) c = 0;
+                                                c++;
+                                                $this.data('count',c);
+                                                
+                                                $('#'+this.id+'-bs3').html(c);*/
+
+
+
+                                                $(document).delegate('*[data-toggle="lightbox"]', 'click', function(event) {
+                                                    event.preventDefault();
+                                                    $(this).ekkoLightbox();
+                                                });                                        
+                                            }); 
+
+                                        </script>
+                                    </div>
                                 </div>
                             </div>
-                          </div>
-                    </section>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="panel panel-default">
+                                        <div class="panel-body text-center">
+                                            <a href="http://kominfo.sumselprov.go.id/index.php?m=pg&id=1" target="_blank" class="link"><p>Lapor Sumsel </p></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
                 </div>
-            </div>
             <!-- <div class="row">
                 <div class="col-lg-12 col-md-12 col-xs-12 text-left" style="font-size:14px;">
                     <span>
