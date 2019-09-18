@@ -212,8 +212,9 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
             <?php } ?>
 
 
-            <li class='<?php if($npage==21){ echo'active';} ?>'><a href="<?php echo base_url('admin/data_infastruktur'); ?>"><i class='fa fa-plus'></i><span>Data Infrastruktur</span></a></li>
-            <li class='<?php if($npage==21){ echo'active';} ?>'><a href="<?php echo base_url('admin/produk_hukum'); ?>"><i class='fa fa-plus'></i><span>Produk Hukum</span></a></li>
+            <li class='<?php if($npage==105){ echo'active';} ?>'><a href="<?php echo base_url('admin/struktur_organisasi'); ?>"><i class='fa fa-asterisk'></i><span>Struktur Organisasi</span></a></li>
+            <li class='<?php if($npage==21){ echo'active';} ?>'><a href="<?php echo base_url('admin/data_infastruktur'); ?>"><i class='fa fa-road'></i><span>Data Infrastruktur</span></a></li>
+            <li class='<?php if($npage==21){ echo'active';} ?>'><a href="<?php echo base_url('admin/produk_hukum'); ?>"><i class='fa fa-gavel'></i><span>Produk Hukum</span></a></li>
 
             <?php if($user_level=='1'){ ?> 
               <li class='treeview <?php if($npage==99 || $npage=='allbidang'){ echo'active';} ?>'>
