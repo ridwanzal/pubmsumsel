@@ -65,7 +65,7 @@ class AN_admin extends CI_Controller {
 				'npage'=>1,
 				'burl'=>base_url()."admin",
 				'data'=>$this->main->get()
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/main',$data);
 			$this->load->view('admin/footer',$data);
@@ -95,7 +95,7 @@ class AN_admin extends CI_Controller {
 				'npage'=>2,
 				'burl'=>base_url()."admin",
 				'list'=>$this->list_kategori->kategori()
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/kategori',$data);
 			$this->load->view('admin/footer',$data);
@@ -120,7 +120,7 @@ class AN_admin extends CI_Controller {
 					'user_level'=>$this->level_user,
 					'npage'=>3,
 					'burl'=>base_url()."admin",
-					);
+				);
 
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/user',$data);
@@ -150,7 +150,7 @@ class AN_admin extends CI_Controller {
 					'npage'=>4,
 					'burl'=>base_url()."admin",
 					'table'=>$this->daftar_user->hasil
-					);
+				);
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/all_user',$data);
 				$this->load->view('admin/footer',$data);
@@ -176,7 +176,7 @@ class AN_admin extends CI_Controller {
 				'user_level'=>$this->level_user,
 				'npage'=>5,
 				'burl'=>base_url()."admin"
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/profil_user',$data);
 			$this->load->view('admin/footer',$data);
@@ -213,7 +213,7 @@ class AN_admin extends CI_Controller {
 						'tag_kategori'=>$this->modul->list_tag,
 						'data'=>$hasil,
 						'modul'=>"edit"
-						);
+					);
 
 					$data=array_merge($_data,$hasil);
 				}
@@ -252,7 +252,7 @@ class AN_admin extends CI_Controller {
 					"artikel_status"=>false,
 					"artikel_aktif"=>false,
 					"artikel_photos"=>false
-					);
+				);
 			}
 
 			$this->load->view('admin/header',$data);
@@ -284,7 +284,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'artikels'=>$this->articles->get_artikel()
-				);
+			);
 
 
 			$this->load->view('admin/header',$data);
@@ -316,7 +316,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'hasil'=>$hasil
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/tags',$data);
 			$this->load->view('admin/footer',$data);
@@ -345,7 +345,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'hasil'=>$hasil
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/komentar',$data);
 			$this->load->view('admin/footer',$data);
@@ -376,7 +376,7 @@ class AN_admin extends CI_Controller {
 				'id_user'=>$this->id_user,
 				'hasil'=>$this->show_media->all_media(),
 				'daftar_foto'=>$this->show_media->foto_pendukung()
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/media',$data);
 			$this->load->view('admin/footer',$data);
@@ -407,7 +407,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'data'=>$this->info->get_informasi()
-				);
+			);
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/informasi',$data);
 			$this->load->view('admin/footer',$data);
@@ -431,7 +431,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'data'=>$this->bio->get_biodata()
-				);
+			);
 
 			$this->load->view('admin/header',$data);
 			$this->load->view('admin/biodata',$data);
@@ -464,7 +464,7 @@ class AN_admin extends CI_Controller {
 						'burl'=>base_url()."admin",
 						'id_user'=>$this->id_user,
 						'data'=>$this->halaman->hasil
-						);
+					);
 					$this->load->view('admin/header',$data);
 					$this->load->view('admin/page',$data);
 					$this->load->view('admin/footer',$data);
@@ -497,7 +497,7 @@ class AN_admin extends CI_Controller {
 					'burl'=>base_url()."admin",
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman->hasil,
-					);
+				);
 
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/all_page',$data);
@@ -516,7 +516,8 @@ class AN_admin extends CI_Controller {
 			redirect('admin/data_infastruktur');
 		}
 	}
-	function edit_data_infrastruktur($id_infrastruktur)
+	
+	public function edit_data_infrastruktur($id_infrastruktur)
 	{
 		if(!$this->login){
 			redirect("admin/login");
@@ -535,7 +536,7 @@ class AN_admin extends CI_Controller {
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman->hasil,
 					'data'=>$this->infrastruktur->get_infrastruktur_by_id($id_infrastruktur)
-					);
+				);
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/edit_data_infastruktur',$data);
 				$this->load->view('admin/footer',$data);
@@ -548,7 +549,7 @@ class AN_admin extends CI_Controller {
 						"no_ruas"=>$no_ruas,
 						"nama_ruas"=>$nama_ruas,
 						"panjang_ruas"=>$panjang_ruas,
-						);
+					);
 					$query = $this->infrastruktur->upd_data_infrastruktur($data,$id_infrastruktur);
 					if ($query==true) {
 						redirect('admin/data_infastruktur');
@@ -559,7 +560,8 @@ class AN_admin extends CI_Controller {
 			}
 		}
 	}
-	function data_infastruktur()
+
+	public function data_infastruktur()
 	{
 		if(!$this->login){
 			redirect("admin/login");
@@ -579,7 +581,7 @@ class AN_admin extends CI_Controller {
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman->hasil,
 					'get_infrastruktur'=>$this->infrastruktur->get_infrastruktur()
-					);
+				);
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/data_infastruktur',$data);
 				$this->load->view('admin/footer',$data);
@@ -593,7 +595,7 @@ class AN_admin extends CI_Controller {
 						"no_ruas"=>$no_ruas,
 						"nama_ruas"=>$nama_ruas,
 						"panjang_ruas"=>$panjang_ruas,
-						);
+					);
 					$query = $this->infrastruktur->ins_data_infrastruktur($data);
 					if ($query==true) {
 						redirect('admin/data_infastruktur');
@@ -604,6 +606,97 @@ class AN_admin extends CI_Controller {
 			}
 		}
 	}
+
+	public function edit_struktur_organisasi(){
+		$soid = $this->input->post('soid');
+		$nama = $this->input->post('nama');
+		$nip = $this->input->post('nip');
+		$jabatan = $this->input->post('jabatan');
+		$oldfoto = $this->input->post('oldfoto');
+
+		if(!empty($_FILES['filefoto']['name'])){
+			$config['upload_path'] = 'uploads\struktur_organisasi';
+			$config['allowed_types'] = 'jpg|jpeg|png';
+			$config['file_name'] = $_FILES['filefoto']['name'];
+			$config['width'] = 700;
+			$config['height'] = 700;
+
+			$this->load->library('upload',$config);
+			$this->upload->initialize($config);
+
+			if($this->upload->do_upload('filefoto')){
+				$uploadData = $this->upload->data();
+				$so_foto = $uploadData['file_name'];
+			}else{
+				$so_foto=$oldfoto;
+			}
+		}else{
+			$so_foto=$oldfoto;
+		}
+		$data =[ 
+			'so_nama'=>$nama,
+			'so_nip'=>$nip,
+			'so_foto' => $so_foto,
+			'jabatan_id' => $jabatan
+		];
+		$update=$this->db->update('struktur_organisasi',$data, ['so_id' => $soid] );
+		if($update){
+			$this->session->set_flashdata('success', 'Berhasil menambah data ');
+			redirect('admin/struktur_organisasi');		
+		}else{
+			$this->session->set_flashdata('error', 'Gagal menambah data ');
+			redirect('admin/struktur_organisasi');		
+		}
+	}
+
+
+	public function struktur_organisasi()
+	{
+		if(!$this->login){
+			redirect("admin/login");
+		} else {
+			if($this->level_user==1){
+				$this->load->model("admin/all_page","all_halaman");
+				$this->load->model("admin/struktur_o");
+				$data=array(
+					'avatar'=>$this->avatar_user,
+					'path_avatar'=>base_url()."an-component/media/upload-user-avatar/".$this->avatar_user,
+					'title'=>"Semua Page",
+					'user'=>$this->name_user,
+					'user_level'=>$this->level_user,
+					'npage'=>105,
+					'burl'=>base_url()."admin",
+					'id_user'=>$this->id_user,
+					'hasil'=>$this->all_halaman->hasil,
+					'get_struktur_organisasi'=>$this->struktur_o->get_data(),
+					'get_jabatan'=>$this->struktur_o->get_jabatan(),
+				);
+				$this->load->view('admin/header',$data);
+				$this->load->view('admin/struktur_organisasi',$data);
+				$this->load->view('admin/footer',$data);
+			/*	if ($this->input->post('submit')) {
+					$id_struktur_organisasi = rand(00000,99999);
+					$no_ruas = $this->input->post('no_ruas');
+					$nama_ruas = $this->input->post('nama_ruas');
+					$panjang_ruas = $this->input->post('panjang_ruas');
+					$data = array(
+						"id_struktur_organisasi"=>$id_struktur_organisasi,
+						"no_ruas"=>$no_ruas,
+						"nama_ruas"=>$nama_ruas,
+						"panjang_ruas"=>$panjang_ruas,
+					);
+					$query = $this->struktur_o->ins_data_struktur_organisasi($data);
+					if ($query==true) {
+						redirect('admin/data_infastruktur');
+					}
+				}*/
+			} else {
+				show_404();
+			}
+		}
+	}
+
+
 	function edit_data_produk_hukum($id_produk_hukum)
 	{
 		if(!$this->login){
@@ -624,7 +717,7 @@ class AN_admin extends CI_Controller {
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman->hasil,
 					'data'=>$this->produk_hukum->get_produk_hukum_by_id($id_produk_hukum)
-					);
+				);
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/edit_produk_hukum',$data);
 				$this->load->view('admin/footer',$data);
@@ -642,7 +735,7 @@ class AN_admin extends CI_Controller {
 						if ( ! $this->upload->do_upload('userfile'))
 						{
 							echo $this->upload->display_errors();
-						
+
 						}
 						else
 						{
@@ -653,7 +746,7 @@ class AN_admin extends CI_Controller {
 						$this->produk_hukum->upd_file_produk_hukum($dataFile,$id_produk_hukum);
 						// end edit images		
 					}		
-				
+
 
 					$nama_file = $this->input->post('nama_file');
 					$tahun = $this->input->post('tahun');
@@ -664,7 +757,7 @@ class AN_admin extends CI_Controller {
 						"tahun"=>$tahun,
 						"keterangan"=>$keterangan,
 						"date"=>$date
-						);
+					);
 					$query = $this->produk_hukum->upd_data_produk_hukum($data,$id_produk_hukum);
 					if ($query==true) {
 						redirect('admin/produk_hukum');
@@ -697,7 +790,7 @@ class AN_admin extends CI_Controller {
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman->hasil,
 					'get_produk_hukum'=>$this->produk_hukum->get_produk_hukum()
-					);
+				);
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/produk_hukum',$data);
 				$this->load->view('admin/footer',$data);
@@ -742,7 +835,7 @@ class AN_admin extends CI_Controller {
 						"file"=>$file,
 						"keterangan"=>$keterangan,
 						"date"=>$date
-						);
+					);
 					$query = $this->produk_hukum->ins_data_produk_hukum($data);
 					if ($query==true) {
 						redirect('admin/produk_hukum');
@@ -885,7 +978,7 @@ class AN_admin extends CI_Controller {
 						'id_user'=>$this->id_user,
 						'data'=>$this->halaman_bidang->hasil,
 						'list_kategori'=>$this->modul->list_kategori,
-						);
+					);
 					$this->load->view('admin/header',$data);
 					$this->load->view('admin/bidang',$data);
 					$this->load->view('admin/footer',$data);
@@ -922,7 +1015,7 @@ class AN_admin extends CI_Controller {
 					'id_user'=>$this->id_user,
 					'data'=>$this->halaman_bidang->get_bidang_by_id($bidang_id),
 					'list_kategori'=>$this->modul->list_kategori,
-					);
+				);
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/edit_bidang',$data);
 				$this->load->view('admin/footer',$data);
@@ -950,7 +1043,7 @@ class AN_admin extends CI_Controller {
 					'burl'=>base_url()."admin",
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->all_halaman_bidang->hasil,
-					);
+				);
 
 				$this->load->view('admin/header',$data);
 				$this->load->view('admin/all_bidang',$data);
@@ -985,7 +1078,7 @@ class AN_admin extends CI_Controller {
 					'data'=>$this->galeri_foto->hasil,
 					'foto'=>($cek_gambar==true)?$this->galeri_foto->photos:false,
 					'kategori'=>$this->galeri_foto->ambil_kategori()
-					);
+				);
 
 				$this->load->view("admin/header",$data);
 				$this->load->view("admin/galeri",$data);
@@ -1017,7 +1110,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'galeri'=>$this->semua_galeri->hasil
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/all_galeri",$data);
@@ -1050,7 +1143,7 @@ class AN_admin extends CI_Controller {
 				'hasil'=>$this->set_menu->hasil,
 				'id'=>$id,
 				'nama_menu'=>$this->set_menu->namaMenu,
-				);
+			);
 
 
 			$this->load->view("admin/header",$data);
@@ -1079,7 +1172,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'hasil'=>$this->semua_menu->hasil
-				);
+			);
 
 
 			$this->load->view("admin/header",$data);
@@ -1108,7 +1201,7 @@ class AN_admin extends CI_Controller {
 					'burl'=>base_url()."admin",
 					'id_user'=>$this->id_user,
 					'hasil'=>$this->kat->get()
-					);
+				);
 
 
 				$this->load->view("admin/header",$data);
@@ -1140,7 +1233,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'hasil'=>$this->kategori->hasil
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/kategori_produk",$data);
@@ -1168,7 +1261,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'hasil'=>$this->banner->get_banner()
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/banner_depan",$data);
@@ -1194,7 +1287,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'hasil'=>$this->newsTicker->get_news()
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/news_ticker",$data);
@@ -1220,7 +1313,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'pihakketiga'=>$this->pihakketiga->get_data()
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/pihak_ketiga",$data);
@@ -1247,7 +1340,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'kontakmasuk'=>$this->inbox->get_data()
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/kontak_masuk",$data);
@@ -1272,7 +1365,7 @@ class AN_admin extends CI_Controller {
 				'npage'=>26,
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
-				);
+			);
 
 			$agenda=$this->db->where('id',$id)->get("agenda");
 			if($agenda->num_rows()>0 || $id=='0' ){
@@ -1323,7 +1416,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'agendas'=>$this->db->order_by("id","desc")->get("agenda")->result_array()
-				);
+			);
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/semua_agenda",$data);
 			$this->load->view("admin/footer",$data);
@@ -1344,7 +1437,7 @@ class AN_admin extends CI_Controller {
 			'burl'=>base_url()."admin",
 			'id_user'=>$this->id_user,
 			'download'=>$this->db->order_by("id","desc")->get("download")->result_array()
-			);
+		);
 
 		$this->load->view("admin/header",$data);
 		$this->load->view("admin/semua_download",$data);
@@ -1366,7 +1459,7 @@ class AN_admin extends CI_Controller {
 				'npage'=>29,
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
-				);
+			);
 
 			$download=$this->db->where("id",$id)->get("download");
 			if($download->num_rows()>0 || $id=="0"){
@@ -1415,7 +1508,7 @@ class AN_admin extends CI_Controller {
 					'burl'=>base_url()."admin",
 					'id_user'=>$this->id_user,
 					'pesan'=>$pesan->row_array(),
-					);
+				);
 
 				$this->load->view("admin/header",$data);
 				$this->load->view("admin/reply",$data);
@@ -1441,7 +1534,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'faq'=>$faq->result_array(),
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/semua_faq",$data);
@@ -1456,7 +1549,7 @@ class AN_admin extends CI_Controller {
 				'id'=>0,
 				'pertanyaan'=>'',
 				'jawaban'=>'',
-				);
+			);
 
 			$faq=$this->db->get_where('faq',array('id'=>$id));
 			if($id > 0 && !($faq->num_rows()>0)){
@@ -1478,7 +1571,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'faq'=>$datas,
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/faq",$data);
@@ -1502,7 +1595,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'groups'=>$groups->result_array(),
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/group_banner",$data);
@@ -1517,7 +1610,7 @@ class AN_admin extends CI_Controller {
 			$banner=array(
 				"id_group"=>0,
 				"nama"=>""
-				);
+			);
 
 			$item_banner=array();
 
@@ -1541,7 +1634,7 @@ class AN_admin extends CI_Controller {
 				'id_user'=>$this->id_user,
 				'banner'=>$banner,
 				'item_banner'=>$item_banner,
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/banner",$data);
@@ -1565,7 +1658,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'temas'=>$this->distribusi->get_tema()
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/distribusi_tema",$data);
@@ -1588,7 +1681,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'tema_terinstal'=>$this->pengatuan_tem->get_tema()
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/pengaturan_tema",$data);
@@ -1623,7 +1716,7 @@ class AN_admin extends CI_Controller {
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
 				'smtp'=>$smtp->row_array(),
-				);
+			);
 
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/smtp_email",$data);
@@ -1700,34 +1793,34 @@ class AN_admin extends CI_Controller {
 		redirect("admin");
 	}
 
-function reply_kontak(){
-    $kontak_id = $this->input->post('kontak_id');
-    $reply_isi = $this->input->post('reply_isi');
-    
-    	$data = [
-    	    'kontak_id' => $kontak_id,
-    	    'reply_isi' => $reply_isi
-    	    ];
+	function reply_kontak(){
+		$kontak_id = $this->input->post('kontak_id');
+		$reply_isi = $this->input->post('reply_isi');
+
+		$data = [
+			'kontak_id' => $kontak_id,
+			'reply_isi' => $reply_isi
+		];
 		$this->db->insert('reply',$data);
-			redirect("admin/kontak_masuk");
-}
+		redirect("admin/kontak_masuk");
+	}
 
 
-function input_kontak(){
-    $ktp = $this->input->post('ktp');
-    $nama = $this->input->post('nama');
-    $phone = $this->input->post('phone');
-    $pesan = $this->input->post('pesan');
-    
-    	$data = [
-    	    'ktp' => $ktp,
-    	    'nama' => $nama,
-    	    'phone' => $phone,
-    	    'pesan' => $pesan
-    	    ];
+	function input_kontak(){
+		$ktp = $this->input->post('ktp');
+		$nama = $this->input->post('nama');
+		$phone = $this->input->post('phone');
+		$pesan = $this->input->post('pesan');
+
+		$data = [
+			'ktp' => $ktp,
+			'nama' => $nama,
+			'phone' => $phone,
+			'pesan' => $pesan
+		];
 		$this->db->insert('kontak_masuk',$data);
-			redirect("kontak");
-}
+		redirect("kontak");
+	}
 
 }
 
