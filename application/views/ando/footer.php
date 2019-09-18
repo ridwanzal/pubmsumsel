@@ -84,7 +84,7 @@ echo "</div>"; //.col-md-4
 }
 
 ?>
-<div class="wow animated fadeIn delay-1s" id='footer' style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 55px; padding-bottom: 55px;">
+<div class="wow animated fadeIn delay-1s" id='footer' style="background : url('<?= base_url()?>an-theme/ando/assets/img/musi.png'); background-size:cover; color: #888; padding-top: 55px; padding-bottom: 55px;">
     <div class='container'>
         <div class="row">
             <div class="col-md-3">
@@ -110,25 +110,25 @@ echo "</div>"; //.col-md-4
                 <a href="https://www.pu.go.id/" class="text-footers"><p class="text-footers" >Kementerian PU</p></a>
                 <a href="http://binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >Direktorat Jenderal Bina Marga</p></a>
                 <a href="http://sda.pu.go.id/bbwssumatera8/" class="text-footers"><p class="text-footers" >Balai BWS Sumatera VIII</p></a>
-                <a href="http://sipdjd.binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >SIPDJD Sumatera Selatan</p></a>
-                <a href="http://www.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPPD Sumatera Selatan</p></a>
+                <a href="http://sipdjd.binamarga.pu.go.id/" class="text-footers"><p class="text-footers" >SIPDJD Provinsi Sumatera Selatan</p></a>
+                <a href="http://www.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPPD Sumatera Provinsi Selatan</p></a>
             </div>
             <div class="col-md-3">
               <p style="font-size:20px;font-weight:bold; visibility:hidden;">Tautan</p>
               <br/>
               <a href="http://www.sumselprov.go.id/" class="text-footers"><p class="text-footers" >Pemerintah Provinsi Sumatera Selatan</p></a>
-              <a href="http://www.bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Sumatera Selatan</p></a>
-              <a href="http://sitarung.sumselprov.go.id/" class="text-footers"><p class="text-footers" >SITARUNG Sumatera Selatan</p></a>
-              <a href="http://lpse.sumselprov.go.id/eproc4" class="text-footers"><p class="text-footers" >LPSE Sumatera Selatan</p></a>
-              <a href="http://sumsel.atrbpn.go.id/" class="text-footers"><p class="text-footers" >Pertanahan Sumatera Selatan</p></a>
+              <a href="http://www.bappeda.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BAPPEDA Provinsi Sumatera Selatan</p></a>
+              <a href="http://sitarung.sumselprov.go.id/" class="text-footers"><p class="text-footers" >SITARUNG Provinsi Sumatera Selatan</p></a>
+              <a href="http://lpse.sumselprov.go.id/eproc4" class="text-footers"><p class="text-footers" >LPSE Provinsi Sumatera Selatan</p></a>
+              <a href="http://sumsel.atrbpn.go.id/" class="text-footers"><p class="text-footers" >KANWIL / ATR Provinsi Sumatera Selatan</p></a>
           </div>
           <div class="col-md-3">
               <p style="font-size:20px;font-weight:bold;visibility:hidden;">Tautan</p>
               <br/>
               <a href="http://si-ikon.sumselprov.go.id" class="text-footers"><p class="text-footers" >SI-IKON</p></a>
               <a href="https://sirup.lkpp.go.id/" class="text-footers"><p class="text-footers" >Sirup LKPP</p></a>
-              <a href="http://bkd.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BKD Sumatera Selatan</p></a>
-              <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Sumatera Selatan</p></a>
+              <a href="http://bkd.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BKD Provinsi Sumatera Selatan</p></a>
+              <a href="http://bpkad.sumselprov.go.id/" class="text-footers"><p class="text-footers" >BPKAD Provinsi Sumatera Selatan</p></a>
           </div>
           <div class="col-md-3" style="display:none;">
             <?php
