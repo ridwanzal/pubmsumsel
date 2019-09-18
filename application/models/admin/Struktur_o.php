@@ -11,10 +11,14 @@ class Struktur_o extends CI_Model {
 	
 	function get_data()
 	{
-	    $this->db->select('*');
-        $this->db->from('struktur_organisasi');
-        $this->db->join('jabatan', 'struktur_organisasi.jabatan_id = jabatan.jabatan_id');
-        return $this->db->get()->result_array();
+		$this->db->select('*');
+		$this->db->from('struktur_organisasi');
+		$this->db->join('jabatan', 'struktur_organisasi.jabatan_id = jabatan.jabatan_id');
+		return $this->db->get()->result_array();
+	}
+
+	function get_jabatan(){
+		return $this->db->get('jabatan')->result();
 	}
 
 }
