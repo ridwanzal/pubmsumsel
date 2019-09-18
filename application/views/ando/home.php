@@ -23,7 +23,7 @@
     }
     .navbar-default .navbar-nav>li>a {
       color : #fff !important;
-      font-size:18px;
+      font-size:15px;
   }
 
     /*
@@ -626,7 +626,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     </div>
     <div class="container wow cloud delay-1s">
         <div class="row" style="margin-top:20px;margin-bottom:20px;text-align:center; cursor:text !important;">
-            <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('https://pubmtrsumsel.scafol.id/an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
+            <div class="col-lg-12 col-md-12 col-xs-12" style="background : url('<?= base_url()?>an-theme/ando/assets/img/palembang_ampera.svg'); padding: 20px 40px 40px 40px; border : 1px solid #eee; box-shadow : 1px 2px 5px #eee; text-align:left;">
                 <h3 style="color: #999; font-weight:bold; font-size:16px;margin-bottom:20px;">Visi Sumsel 2018 - 2023</h3>
                 <p style="font-weight:600; font-size:35px;">"Sumsel Maju Untuk Semua"</p>
                 <br/>
@@ -710,55 +710,55 @@ Remove or comment-out the code block below to see how the browser will fall-back
                     <a href="<?= baseURL('index.php/bidang/2783-'); ?>" class="link"><p>Sekretariat</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2783-'); ?>" class="link"><p>Bidang Pengembangan Jaringan Jalan</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Pengembangan-Jaringan'); ?>" class="link"><p>Bidang Pengembangan Jaringan Jalan</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3899-Bidang-Pembangunan-Jalan-Dan'); ?>" class="link"><p>Bidang Jalan</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7822-Bidang'); ?>" class="link"><p>Bidang Jalan</p></a>
                 </div>
             </div>
             <br/>
             <div class="row container_bidang wow cloud delay-1s">
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/4454-Bidang-Preservasi-Jalan-Dan'); ?>" class="link"><p>Bidang Jembatan</p></a>
+                    <a href="<?= baseURL('index.php/bidang/7549-Bidang'); ?>" class="link"><p>Bidang Jembatan</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>" class="link"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
+                    <a href="<?= baseURL('index.php/bidang/4454-Bidang-Pengujian-Peralatan-dan'); ?>" class="link"><p>Bidang Pengujian Peralatan dan Barang Milik Daerah</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>" class="link"><p>Bidang Penataan Ruang</p></a>
+                    <a href="<?= baseURL('index.php/bidang/3899-Bidang-Penataan'); ?>" class="link"><p>Bidang Penataan Ruang</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>" class="link"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
+                    <a href="<?= baseURL('index.php/bidang/3187-UPTD-PJ3-Kabupaten'); ?>" class="link"><p>UPTD Jalan dan Jembatan  Kabupaten Lahat</p></a>
                 </div>
             </div>
             <br/>
             <div class="row container_bidang wow  cloud delay-1s">
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
+                    <a href="<?= baseURL('index.php/bidang/194-UPTD-PJ3-Kabupaten-Ogan-Komering'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ulu</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>" class="link"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
+                    <a href="<?= baseURL('index.php/bidang/1691-UPTD-PJ3-Kabupaten-Musi'); ?>" class="link"><p>UPTD Jalan dan Jembatan  Kabupaten Musi Banyuasin</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
+                    <a href="<?= baseURL('index.php/bidang/1796-UPTD-PJ3-Kota'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kota Palembang</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2586-UPTD-PJ3-Kabupaten-Ogan-Komering'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Ogan Komering Ilir</p></a>
                 </div>
             </div>
             <br/>
             <div class="row container_bidang wow cloud delay-1s">
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7822-Bidang-Tata'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
+                    <a href="<?= baseURL('index.php/bidang/6358-UPTD-PJ3-Kabupaten-Musi'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Musi Rawas</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/3187-Bidang-Tata-Bangunan-dan-Jas'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2094-UPTD-PJ3-Kabupaten-Muara'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Muara Enim</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/2750-Bidang-Air-Minum-dan-Penyehatan-Lingkungan'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
+                    <a href="<?= baseURL('index.php/bidang/2941-UPTD-Jalan-dan-Jembatan-Kab-Oku'); ?>" class="link"><p>UPTD Jalan dan Jembatan Kabupaten Oku Timur</p></a>
                 </div>
                 <div class="col-lg-3 col-md-3 col-xs-12">
-                    <a href="<?= baseURL('index.php/bidang/7549-Bidang-Sumber-Daya-Air'); ?>" class="link"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
+                    <a href="<?= baseURL('index.php/bidang/5041-UPTD-Laboratorium-Bahan'); ?>" class="link"><p>UPTD Jalan dan Jembatan Laboratorium Bahan Konstruksi</p></a>
                 </div>
             </div>
             <hr>
