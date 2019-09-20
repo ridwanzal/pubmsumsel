@@ -562,7 +562,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
     </div>
     <!-- /carousel -->
     <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto;">
-        <span style="color:#2055a2;font-weight:600; margin-left:16px;">
+        <span style="color:#2055a2;font-weight:600; margin-left:0px;">
         </span class="">
          <!-- <a href="<?= artikel_url($artikel_berita[0]['id'],$artikel_berita[0]['slug']); ?>">
          </a> -->
