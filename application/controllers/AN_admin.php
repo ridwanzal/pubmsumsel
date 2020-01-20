@@ -615,7 +615,8 @@ class AN_admin extends CI_Controller {
 		$oldfoto = $this->input->post('oldfoto');
 
 		if(!empty($_FILES['filefoto']['name'])){
-			$config['upload_path'] = 'uploads\struktur_organisasi';
+
+			$config['upload_path'] = 'uploads/struktur_organisasi';
 			$config['allowed_types'] = 'jpg|jpeg|png';
 			$config['file_name'] = $_FILES['filefoto']['name'];
 			$config['width'] = 700;
@@ -693,6 +694,66 @@ class AN_admin extends CI_Controller {
 			} else {
 				show_404();
 			}
+		}
+	}
+
+
+
+	public function bidang_jabatan()
+	{
+		if(!$this->login){
+			redirect("admin/login");
+		} else {
+			if($this->level_user==1){
+				$this->load->model("admin/all_page","all_halaman");
+				$this->load->model("admin/struktur_o");
+				$data=array(
+					'avatar'=>$this->avatar_user,
+					'path_avatar'=>base_url()."an-component/media/upload-user-avatar/".$this->avatar_user,
+					'title'=>"Semua Page",
+					'user'=>$this->name_user,
+					'user_level'=>$this->level_user,
+					'npage'=>106,
+					'burl'=>base_url()."admin",
+					'id_user'=>$this->id_user,
+					'hasil'=>$this->all_halaman->hasil,
+					'get_struktur_organisasi'=>$this->struktur_o->get_data(),
+					'get_jabatan'=>$this->struktur_o->get_jabatan(),
+				);
+				$this->load->view('admin/header',$data);
+				$this->load->view('admin/bidang_jabatan',$data);
+				$this->load->view('admin/footer',$data);
+			/*	if ($this->input->post('submit')) {
+					$id_struktur_organisasi = rand(00000,99999);
+					$no_ruas = $this->input->post('no_ruas');
+					$nama_ruas = $this->input->post('nama_ruas');
+					$panjang_ruas = $this->input->post('panjang_ruas');
+					$data = array(
+						"id_struktur_organisasi"=>$id_struktur_organisasi,
+						"no_ruas"=>$no_ruas,
+						"nama_ruas"=>$nama_ruas,
+						"panjang_ruas"=>$panjang_ruas,
+					);
+					$query = $this->struktur_o->ins_data_struktur_organisasi($data);
+					if ($query==true) {
+						redirect('admin/data_infastruktur');
+					}
+				}*/
+			} else {
+				show_404();
+			}
+		}
+	}
+
+	function edit_jabatan() {
+		$id = $this->input->post('id');
+		$nama = $this->input->post('nama');
+		$data = [
+			'jabatan_nama' => $nama,
+		];
+		$update=$this->db->update('jabatan',$data, ['jabatan_id' => $id] );
+		if ($update) {
+			redirect('admin/bidang_jabatan');
 		}
 	}
 

@@ -59,113 +59,113 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
     .navbar-default .navbar-nav>li>a {
       color ;#fff !important;
     }
-    </style> -->
-    </head>
+  </style> -->
+</head>
 
-    <body class="skin-yellow sidebar-mini">
+<body class="skin-yellow sidebar-mini">
 
 
-     <div class="wrapper">
+ <div class="wrapper">
 
-      <!-- Main Header -->
-      <header class="main-header">
+  <!-- Main Header -->
+  <header class="main-header">
 
-        <!-- Logo -->
-        <a href="<?php echo base_url() ?>" target="_blank" class="logo">
-          <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini">A<span style='color:#00c0ef'><b>CMS</b></span></span>
-          <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg">Dinas <span style='color:#00c0ef'><b>PU</b></span></span>
-        </a>
+    <!-- Logo -->
+    <a href="<?php echo base_url() ?>" target="_blank" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">A<span style='color:#00c0ef'><b>CMS</b></span></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">Dinas <span style='color:#00c0ef'><b>PU</b></span></span>
+    </a>
 
-        <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
-          <!-- Sidebar toggle button-->
-          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
-            <span class="sr-only">Toggle navigation</span>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top" role="navigation">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+         <!-- <li class='status_koneksi'><a href='#' class='koneksi_stat'></a></li>-->
+
+
+         <!-------------------------------------------------------------------------------------------------->
+
+
+         <!-------------------------------------------------------------------------------------------------->
+
+         <!-- User Account Menu -->
+         <li class="dropdown user user-menu">
+          <!-- Menu Toggle Button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <!-- The user image in the navbar-->
+            <img src="<?php echo $path_avatar; ?>" class="user-image" alt="User Image"/>
+            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+            <span class="hidden-xs"><?php echo $user; ?></span>
           </a>
-          <!-- Navbar Right Menu -->
-          <div class="navbar-custom-menu">
-            <ul class="nav navbar-nav">
-             <!-- <li class='status_koneksi'><a href='#' class='koneksi_stat'></a></li>-->
-
-
-             <!-------------------------------------------------------------------------------------------------->
-
-
-             <!-------------------------------------------------------------------------------------------------->
-
-             <!-- User Account Menu -->
-             <li class="dropdown user user-menu">
-              <!-- Menu Toggle Button -->
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <!-- The user image in the navbar-->
-                <img src="<?php echo $path_avatar; ?>" class="user-image" alt="User Image"/>
-                <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                <span class="hidden-xs"><?php echo $user; ?></span>
-              </a>
-              <ul class="dropdown-menu">
-                <!-- The user image in the menu -->
-                <li class="user-header">
-                  <img src="<?php echo $path_avatar; ?>" class="img-circle" alt="User Image" />
-                  <p>
-                    <?php echo $name ?> <br> <?php echo $levela ?>
-                    <small></small>
-                  </p>
-                </li>
-                <!-- Menu Body -->
-                <li class="user-body">
-                  <div class="col-xs-4 text-center">
-                    <a href="#"> </a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#"> </a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#"> </a>
-                  </div>
-                </li>
-                <!-- Menu Footer-->
-                <li class="user-footer">
-                  <div class="pull-left">
-                    <a href="<?php echo base_url() ?>admin/profil_user" class="btn btn-default btn-flat">Profile</a>
-                  </div>
-                  <div class="pull-right">
-                    <a href="<?php echo base_url() ?>admin/logout" class="btn btn-default btn-flat">Sign out</a>
-                  </div>
-                </li>
-              </ul>
+          <ul class="dropdown-menu">
+            <!-- The user image in the menu -->
+            <li class="user-header">
+              <img src="<?php echo $path_avatar; ?>" class="img-circle" alt="User Image" />
+              <p>
+                <?php echo $name ?> <br> <?php echo $levela ?>
+                <small></small>
+              </p>
             </li>
-
-            <!-------------------------------------------------------------------------------------------------->
-
-
-
-            <!-------------------------------------------------------------------------------------------------->
-
+            <!-- Menu Body -->
+            <li class="user-body">
+              <div class="col-xs-4 text-center">
+                <a href="#"> </a>
+              </div>
+              <div class="col-xs-4 text-center">
+                <a href="#"> </a>
+              </div>
+              <div class="col-xs-4 text-center">
+                <a href="#"> </a>
+              </div>
+            </li>
+            <!-- Menu Footer-->
+            <li class="user-footer">
+              <div class="pull-left">
+                <a href="<?php echo base_url() ?>admin/profil_user" class="btn btn-default btn-flat">Profile</a>
+              </div>
+              <div class="pull-right">
+                <a href="<?php echo base_url() ?>admin/logout" class="btn btn-default btn-flat">Sign out</a>
+              </div>
+            </li>
           </ul>
-        </div> <!--End .navbar-custom-menu -->
-      </nav>
-    </header>
-    <!-- Left side column. contains the logo and sidebar -->
-    <aside class="main-sidebar">
+        </li>
 
-      <!-- sidebar: style can be found in sidebar.less -->
-      <section class="sidebar">
-
-        <!-------------------------------------------------------------------------------------------------->        <!-- Sidebar user panel (optional) -->
-        <div class="user-panel">
-          <div class="pull-left image">
-            <img src="<?php echo $path_avatar; ?>" class="img-circle" alt="User Image" />
-          </div>
-          <div class="pull-left info">
-            <p><?php echo $user; ?></p>
-            <!-- Status -->
-            <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
-          </div>
-        </div>
         <!-------------------------------------------------------------------------------------------------->
-        <!-- search form (Optional) -->
+
+
+
+        <!-------------------------------------------------------------------------------------------------->
+
+      </ul>
+    </div> <!--End .navbar-custom-menu -->
+  </nav>
+</header>
+<!-- Left side column. contains the logo and sidebar -->
+<aside class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-------------------------------------------------------------------------------------------------->        <!-- Sidebar user panel (optional) -->
+    <div class="user-panel">
+      <div class="pull-left image">
+        <img src="<?php echo $path_avatar; ?>" class="img-circle" alt="User Image" />
+      </div>
+      <div class="pull-left info">
+        <p><?php echo $user; ?></p>
+        <!-- Status -->
+        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+      </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------->
+    <!-- search form (Optional) -->
         <!--  <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
               <input type="text" name="q" class="form-control" placeholder="Search..."/>
@@ -212,7 +212,15 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
             <?php } ?>
 
 
-            <li class='<?php if($npage==105){ echo'active';} ?>'><a href="<?php echo base_url('admin/struktur_organisasi'); ?>"><i class='fa fa-asterisk'></i><span>Struktur Organisasi</span></a></li>
+            <li class='treeview <?php if($npage==105 || $npage==106){ echo'active';} ?>'>
+              <a href='#'><i class='fa fa-asterisk'></i><span>Struktur Organisasi</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class='treeview-menu'>
+                <li class="<?php if($npage==106){ echo'active';} ?>"><a href="<?php echo $burl; ?>/bidang_jabatan"><i class='fa fa-circle-o'></i><span>Jabatan</span></a></li>
+                <li class="<?php if($npage==105){ echo'active';} ?>"><a href="<?php echo $burl; ?>/struktur_organisasi"><i class='fa fa-circle-o'></i><span>Data Pegawai</span></a></li>
+              </ul>
+            </li>
+
+            <!--     <li class='<?php if($npage==105){ echo'active';} ?>'><a href="<?php echo base_url('admin/struktur_organisasi'); ?>"><i class='fa fa-asterisk'></i><span>Struktur Organisasi</span></a></li> -->
             <li class='<?php if($npage==131){ echo'active';} ?>'><a href="<?php echo base_url('admin/data_infastruktur'); ?>"><i class='fa fa-road'></i><span>Data Infrastruktur</span></a></li>
             <li class='<?php if($npage==133){ echo'active';} ?>'><a href="<?php echo base_url('admin/produk_hukum'); ?>"><i class='fa fa-gavel'></i><span>Produk Hukum</span></a></li>
 
@@ -335,7 +343,7 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
 
            </ul>
          </li>
- -->
+       -->
 
        <!--   <li class="header">Informasi</li>
 

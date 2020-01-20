@@ -38,14 +38,14 @@ class Home extends AN_Apricot{
 		$data['galeri_rand'] = $this->galeri->get_galeri_random();
 		$data['pagename'] = 'Home';
 
-		$access_token = "12097245702.1677ed0.a50372125dee4a0490dd1036e238fd79";
+/*		$access_token = "12097245702.1677ed0.a50372125dee4a0490dd1036e238fd79";
 		$photo_count = 6;
 		$json_link = "https://api.instagram.com/v1/users/self/media/recent/?";
 		$json_link .="access_token={$access_token}&count={$photo_count}";
 		$json = file_get_contents($json_link);
 		$obj = json_decode(preg_replace('/("\w+"):(\d+)/', '\\1:"\\2"', $json), true);
 
-		$data['ig'] =  $obj['data'];
+		$data['ig'] =  $obj['data'];*/
 
 	/*	echo '<pre>';
 		var_dump($data['ig']);

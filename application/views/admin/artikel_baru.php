@@ -66,7 +66,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 						</div>
 
 						<div class="form-group">
-							<label>Struktur Organisasi</label> 
+							<label>Cover Images</label> 
 							<div class="dropzone well well-sm foto_gallery_artikel">
 							</div>
 						</div>
