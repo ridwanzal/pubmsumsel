@@ -1124,7 +1124,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
     <!-- /carousel -->
 
-    <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:auto;">
+    <div style="background: #ffc928; color:#2055a2; opacity : 0.8; height:65px">
 
         <span style="color:#2055a2;font-weight:600; margin-left:0px;">
 
@@ -1134,7 +1134,7 @@ Remove or comment-out the code block below to see how the browser will fall-back
 
          </a> -->
 
-         <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();"><span stlyle="display:block;" id="append_newsticker" class="example1">
+         <marquee direction="left" onmouseover="this.stop();" onmouseout="this.start();" style="margin-top: 20px;"><span stlyle="display:block;" id="append_newsticker" class="example1">
 
 
 

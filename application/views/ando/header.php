@@ -130,6 +130,32 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 		.content-block-one .container {
 			max-width: 100%;
 		}
+
+		.set_quote{
+			position: absolute;
+			color:white;
+			font-size: 12px;
+			padding-right: 40px;
+			right: 0;
+			margin-top: 45px;
+			/*
+			position: relative;
+			color:white;
+			font-size: 12px;
+			padding-right: 40px;*/
+		}
+
+		@media only screen and (max-width: 1400px) {
+			.set_quote {
+				position: absolute;
+				color:white;
+				font-size: 12px;
+				padding-right: 40px;
+				right: 0;
+				margin-top: 99px;
+			}
+		}
+
 		@media screen and (min-width: 768px) {
 			.content-block-one {
 				padding-top: 48px;
@@ -276,7 +302,7 @@ defined('BASEPATH') OR exit('Eiits! Jangan coba coba Mblo!!!!');
 				<div class="collapse navbar-collapse menu-pu2" id="bs-example-navbar-collapse-1">
 					<?= $menuPertama->menu;  ?>
 				</div>
-				<div style="position: relative;color:white;font-size: 12px;padding-right: 40px;" class="pull-right">
+				<div  class="set_quote pull-right">
 					Bekerja Keras, Bergerak Cepat, Bertindak Tepat
 				</div>
 			</nav>
