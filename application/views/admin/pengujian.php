@@ -47,7 +47,9 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
             <td>
               <a href='" . base_url('/assets/uploads/surat/' . $value['surat']) . "'>Lihat berkas</a>
             </td> 
-            <td>-</td>    
+            <td>
+              <a href='" . base_url('an_admin/download_file/' . $value['id']) . "'>Download</a>
+            </td>    
             <td> 
             <i style='color:green;cursor:pointer' class='fa lihat-pesan fa-eye' data-id='$value[id]' ></i>  &nbsp;
             <i class='fa hapus-pesan fa-close hapus-icon' data-id='$value[id]' ></i> 

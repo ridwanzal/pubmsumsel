@@ -1383,6 +1383,27 @@ class AN_admin extends AN_Apricot {
 		}
 	}
 
+	public function download_file($id)
+	{
+		$this->load->model('admin/pengujian_model', 'pengujian');
+		$user = $this->db->get_where('pengujian', ['id' => $id])->result();
+		
+		$zip = new ZipArchive();
+		$file = base_url('/assets/uploads/surat/' . $user[0]->surat);
+		
+		$tmp_file = tempnam('.','');
+		$zip->open($tmp_file, ZipArchive::CREATE);
+
+		$download_file = file_get_contents($file);
+		$zip->addFromString(basename($file),$download_file);
+
+		$zip->close();
+
+		header('Content-disposition: attachment; filename=Dokumen_pengujian_' . $user[0]->id . '_' . $user[0]->nama . '.zip');
+    header('Content-type: application/zip');
+		readfile($tmp_file);
+	}
+
 	public function pengujian()
 	{
 		if (!$this->login) {
