@@ -90,7 +90,7 @@ $autoload['drivers'] = array('cache');
 | Jangan meload helper URL
 */
 
-$autoload['helper'] = array('date', 'url');
+$autoload['helper'] = array('date', 'url', 'form');
 
 
 /*

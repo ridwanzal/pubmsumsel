@@ -1,7 +1,7 @@
 <?php
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class AN_admin extends CI_Controller {
+class AN_admin extends AN_Apricot {
 	protected $login=false;
 	//user data
 	protected $id_user;
@@ -1383,6 +1383,88 @@ class AN_admin extends CI_Controller {
 		}
 	}
 
+	public function pengujian()
+	{
+		if (!$this->login) {
+			redirect("admin/login");
+		} else {
+			$this->load->model('admin/pengujian_model', 'pengujian');
+
+			$data=array(
+				'avatar'=>$this->avatar_user,
+				'path_avatar'=>base_url()."an-component/media/upload-user-avatar/".$this->avatar_user,
+				'title'=>"Pengujian",
+				'user'=>$this->name_user,
+				'user_level'=>$this->level_user,
+				'npage'=>30,
+				'burl'=>base_url()."admin",
+				'id_user'=>$this->id_user,
+				'pengujian'=>$this->pengujian->get_data()
+			);
+
+			$this->load->view("admin/header",$data);
+			$this->load->view("admin/pengujian",$data);
+			$this->load->view("admin/footer",$data);
+		}
+	}
+
+	public function submit_pengujian()
+	{
+		$nama 	= $_POST['nama'];
+		$alamat	= $_POST['alamat'];
+		$no_ktp	= $_POST['no_ktp'];
+		$email	= $_POST['email'];
+		$no_hp	= $_POST['no_hp'];
+		$jenis	= $_POST['jenis_pengujian'];
+		$surat  = $_FILES['surat'];
+
+		// file uploading process
+
+		if (!is_dir('assets/uploads/surat')) {
+			mkdir('./assets/uploads/surat', 0777, TRUE);
+		}
+
+		$config['upload_path']          = 'assets/uploads/surat';
+		$config['allowed_types']        = 'gif|jpg|png|jfif';
+		$config['file_name']						= $_FILES['surat']['name'];
+		
+		$this->load->library('upload',$config);
+		$this->upload->initialize($config);
+
+		if ( ! $this->upload->do_upload('surat'))
+		{
+			$this->flashmsg($this->upload->display_errors(), 'danger');
+			redirect('pengujian');
+		}
+		else
+		{
+			$uploadData = $this->upload->data();
+			$filename = $uploadData['file_name'];
+		}
+
+		$data = [
+			'nama'	=> $nama,
+			'alamat'	=> $alamat,
+			'no_ktp'	=> $no_hp,
+			'email'	=> $email,
+			'no_hp'	=> $no_hp,
+			'jenis_pengujian' => $jenis,
+			'created_at'	=> date("Y-m-d H:i:s"),
+			'surat'	=> $filename
+		];
+
+		$this->db->trans_start();
+		$this->db->insert('pengujian', $data);
+		$this->db->trans_complete();
+
+		if ($this->db->trans_status() === FALSE) {
+			$this->flashmsg('Data gagal ditambahkan', 'danger');
+			redirect('pengujian');
+		} else {
+			$this->flashmsg('Data berhasil ditambahkan', 'success');
+			redirect('pengujian');
+		}
+	}
 
 	function kontak_masuk(){
 		if(!$this->login){

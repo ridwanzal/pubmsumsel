@@ -283,6 +283,7 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
             
             <!--  <li class='<?php if($npage==112){ echo'active';} ?>'><a href="<?php echo $burl; ?>/komentar"><i class='fa fa-comment'></i> <span>Komentar</span></a> </li> -->
             <li class='<?php if($npage==23){ echo'active';} ?>'><a href="<?php echo $burl; ?>/kontak_masuk"><i class='fa fa-paper-plane-o'></i> <span>Kotak Masuk</span></a> </li>
+            <li class='<?php if($npage==30){ echo'active';} ?>'><a href="<?php echo $burl; ?>/pengujian"><i class='fa fa-flask'></i> <span>Pengujian</span></a> </li>
             <li class='header'>Pengaturan</li>
 
             <?php if($user_level=='1'){    ?>

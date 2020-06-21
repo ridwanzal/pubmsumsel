@@ -108,11 +108,8 @@ class AN_Apricot extends CI_Controller{
 	 //$this->output->enable_profiler(TRUE);
 	}
 
-
-
-
-
-
-
-
+	protected function flashmsg($msg, $type = 'success',$name='msg')
+	{
+		return $this->session->set_flashdata($name, '<div class="alert alert-'.$type.' alert-dismissable"> <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>'.$msg.'</div>');
+	}
 }

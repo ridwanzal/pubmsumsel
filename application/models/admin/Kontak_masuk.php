@@ -12,9 +12,9 @@ class Kontak_masuk extends CI_Model
 
 		$this->db->order_by('id', 'DESC');
 		$data=$this->db->get("kontak_masuk");
-
 		return $data->result_array();
 	}
+
 	function get_data_limit($limit){
 		$this->db->limit($limit);
 		$this->db->order_by('id', 'DESC');
