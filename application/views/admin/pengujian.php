@@ -48,11 +48,11 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
               <a href='" . base_url('/assets/uploads/surat/' . $value['surat']) . "'>Lihat berkas</a>
             </td> 
             <td>
-              <a href='" . base_url('an_admin/download_file/' . $value['id']) . "'>Download</a>
+              <a href='" . base_url('AN_admin/download_file/' . $value['id']) . "'>Download</a> |
+              <a href='" . base_url('PDF/cetak_pdf/' . $value['id']) . "' target='_blank'>Berkas</a>
             </td>    
             <td> 
-            <i style='color:green;cursor:pointer' class='fa lihat-pesan fa-eye' data-id='$value[id]' ></i>  &nbsp;
-            <i class='fa hapus-pesan fa-close hapus-icon' data-id='$value[id]' ></i> 
+            <a href='" . base_url('/assets/uploads/surat/' . $value['surat']) . "'><i style='color:green;cursor:pointer' class='fa lihat-pesan fa-eye' data-id='$value[id]' ></i></a>
             </td>      
           </tr>
           ";

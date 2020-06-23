@@ -75,3 +75,10 @@ ERROR - 2020-06-21 19:19:38 --> Severity: Warning --> Cannot modify header infor
 ERROR - 2020-06-21 19:19:50 --> 404 Page Not Found: An-theme/admin
 ERROR - 2020-06-21 19:19:50 --> 404 Page Not Found: An-theme/admin
 ERROR - 2020-06-21 19:19:51 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-21 19:24:59 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-21 19:24:59 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-21 19:24:59 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-21 19:35:02 --> Severity: error --> Exception: syntax error, unexpected '<' C:\xampp\htdocs\pubmsumsel\application\controllers\AN_admin.php 1391
+ERROR - 2020-06-21 19:35:58 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-21 19:35:58 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-21 19:35:58 --> 404 Page Not Found: An-theme/admin
