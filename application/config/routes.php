@@ -141,6 +141,7 @@ $route["produk-hukum"]="produk_hukum";
 $route["kontak"]="kontak";
 $route["tentang-kami"]="about_us";
 $route["contactus"]="contactus";
+$route['tambah-pengaduan']   = 'pengaduan/insert';
 
 $route["syarat-dan-ketentuan"]="syarat_ketentuan";
 $route["terms-and-conditions"]="syarat_ketentuan";

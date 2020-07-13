@@ -275,164 +275,164 @@ echo "</div>"; //.col-md-4
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84bgLwDPpg&callback=initMap&language=id">
 </script>
 <script type="text/javascript">
+    var map, marker;
 
+    function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 10,
+            center: {
+                lat: -3.095654,
+                lng: 103.081790
+            },
+            mapTypeId: 'terrain'
+        });
 
-  var map, marker;
-
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 10,
-        center: { lat: -3.095654, lng: 103.081790 },
-        mapTypeId: 'terrain'
-    });
-    console.log(document.getElementById('map'))
-
-    marker = new google.maps.Marker({
-        position: this.map.center,
-        map: map,
-        draggable: true,
-    })
-
-    var geocoder = new google.maps.Geocoder;
-
-    function geocode(params, geocoder) {
-        geocoder.geocode({ 'latLng': params.latLng }, (results, status) => {
-            if (status == google.maps.GeocoderStatus.OK) {
-                if (results[0]) {
-                    $('#address').html(`<p style="font-weight: bold;">Lokasi saat ini: ${ results[0].formatted_address }</p>`)
-                    var infoWindow = new google.maps.InfoWindow({
-                        content: results[0].formatted_address
-                    })
-                    infoWindow.setOptions({
-                        ixelOffset: new google.maps.Size(300, 10)
-                    });
-                    infoWindow.setPosition(results[0].geometry.location)
-                    infoWindow.open(map)
-                    return results;
-                } else {
-                    alert('Tidak ada tempat yang ditemukan');
-                }
-            } else {
-                alert('Geocoder gagal dimuat karena ' + status)
-            }
+        marker = new google.maps.Marker({
+            position: this.map.center,
+            map: map,
+            draggable: true,
         })
-    }
 
-    google.maps.event.addListener(marker, 'click', (evt) => {
-        geocode(evt, geocoder)
-    })
+        var geocoder = new google.maps.Geocoder;
 
-    google.maps.event.addListener(marker, 'dragend', (evt) => {
-        $('#address').html("")
-        marker.title = `Lat: ${evt.latLng.lat().toFixed(3)}, Lng: ${evt.latLng.lng().toFixed(3)}`
-        $('#latitude').val(evt.latLng.lat().toFixed(8));
-        $('#longitude').val(evt.latLng.lng().toFixed(8));
-    })
+        function geocode(params, geocoder) {
+            geocoder.geocode({
+                'latLng': params.latLng
+            }, (results, status) => {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    if (results[0]) {
+                        $('#address').html(
+                            `<p style="font-weight: bold;">Lokasi saat ini: ${ results[0].formatted_address }</p>`)
+                        var infoWindow = new google.maps.InfoWindow({
+                            content: results[0].formatted_address
+                        })
+                        infoWindow.setOptions({
+                            ixelOffset: new google.maps.Size(300, 10)
+                        });
+                        infoWindow.setPosition(results[0].geometry.location)
+                        infoWindow.open(map)
+                        return results;
+                    } else {
+                        alert('Tidak ada tempat yang ditemukan');
+                    }
+                } else {
+                    alert('Geocoder gagal dimuat karena ' + status)
+                }
+            })
+        }
 
+        google.maps.event.addListener(marker, 'click', (evt) => {
+            geocode(evt, geocoder)
+        })
+
+        google.maps.event.addListener(marker, 'dragend', (evt) => {
+            $('#address').html("")
+            marker.title = `Lat: ${evt.latLng.lat().toFixed(3)}, Lng: ${evt.latLng.lng().toFixed(3)}`
+            $('#latitude').val(evt.latLng.lat().toFixed(8));
+            $('#longitude').val(evt.latLng.lng().toFixed(8));
+        })
+
+    // load geojson desa
     var desa = new google.maps.Data();
-    desa.loadGeoJson(
-      '<?= base_url('assets/geojson/Desa.geojson')?>'
-      )
+    desa.loadGeoJson('<?= base_url('assets/geojson/Desa.geojson')?>')
     desa.setStyle({
-      fillColor: 'black',
-      strokeWeight: 1
-  })
-    desa.addListener('click', (event) => {
-      let nama_ruas = event.feature.j.Nm_Ruas
-      var infoWindow = new google.maps.InfoWindow({
-        content: `Ruas ${nama_ruas}`
+        fillColor: 'black',
+        strokeWeight: 1
     })
-      infoWindow.setPosition(event.latLng)
-      infoWindow.open(map)
-      setTimeout(() => {
-        infoWindow.close()
-    }, 3000);
-  })
+    desa.addListener('click', (event) => {
+        let nama_ruas = event.feature.j.Nm_Ruas
+        var infoWindow = new google.maps.InfoWindow({
+            content: `Ruas ${nama_ruas}`
+        })
+        infoWindow.setPosition(event.latLng)
+        infoWindow.open(map)
+        setTimeout(() => {
+            infoWindow.close()
+        }, 3000);
+    })
     desa.setStyle({
-      strokeColor: 'purple',
-      strokeWeight: 1
-  });
+        strokeColor: 'purple',
+        strokeWeight: 1
+    });
     desa.setMap(map);
 
+    // load geojson kabupaten
     var kabupaten = new google.maps.Data();
-    kabupaten.loadGeoJson(
-      '<?= base_url('assets/geojson/Kabupaten.geojson')?>'
-      )
+    kabupaten.loadGeoJson('<?= base_url('assets/geojson/Kabupaten.geojson')?>')
     kabupaten.addListener('click', (event) => {
-      let nama_ruas = event.feature.j.Nm_Ruas
-      var infoWindow = new google.maps.InfoWindow({
-        content: `Ruas Kabupaten ${nama_ruas}`
+        let nama_ruas = event.feature.j.Nm_Ruas
+        var infoWindow = new google.maps.InfoWindow({
+            content: `Ruas Kabupaten ${nama_ruas}`
+        })
+        infoWindow.setPosition(event.latLng)
+        infoWindow.open(map)
+        setTimeout(() => {
+            infoWindow.close()
+        }, 3000);
     })
-      infoWindow.setPosition(event.latLng)
-      infoWindow.open(map)
-      setTimeout(() => {
-        infoWindow.close()
-    }, 3000);
-  })
     kabupaten.setStyle({
-      strokeColor: 'red',
-      strokeWeight: 1
-  });
+        strokeColor: 'red',
+        strokeWeight: 1
+    });
     kabupaten.setMap(map);
 
+    // load geojson provinsi
     var provinsi = new google.maps.Data();
-    provinsi.loadGeoJson(
-      '<?= base_url('assets/geojson/Provinsi.geojson')?>'
-      )
+    provinsi.loadGeoJson('<?= base_url('assets/geojson/Provinsi.geojson')?>')
     provinsi.addListener('click', (event) => {
-      let nama_ruas = event.feature.j.Nm_Ruas
-      var infoWindow = new google.maps.InfoWindow({
-        content: `Ruas Provinsi ${nama_ruas}`
+        let nama_ruas = event.feature.j.Nm_Ruas
+        var infoWindow = new google.maps.InfoWindow({
+            content: `Ruas Provinsi ${nama_ruas}`
+        })
+        infoWindow.setPosition(event.latLng)
+        infoWindow.open(map)
+        setTimeout(() => {
+            infoWindow.close()
+        }, 3000);
     })
-      infoWindow.setPosition(event.latLng)
-      infoWindow.open(map)
-      setTimeout(() => {
-        infoWindow.close()
-    }, 3000);
-  })
     provinsi.setStyle({
-      strokeColor: 'blue',
-      strokeWeight: 1
-  });
+        strokeColor: 'blue',
+        strokeWeight: 1
+    });
     provinsi.setMap(map);
 
+    // load geojson nasional
     var nasional = new google.maps.Data();
-    nasional.loadGeoJson(
-      '<?= base_url('assets/geojson/Nasional.geojson')?>'
-      )
+    nasional.loadGeoJson('<?= base_url('assets/geojson/Nasional.geojson')?>')
     nasional.addListener('click', (event) => {
-      let nama_ruas = event.feature.j.Nm_Ruas
-      var infoWindow = new google.maps.InfoWindow({
-        content: `Ruas Nasional ${nama_ruas}`
+        let nama_ruas = event.feature.j.Nm_Ruas
+        var infoWindow = new google.maps.InfoWindow({
+            content: `Ruas Nasional ${nama_ruas}`
+        })
+        infoWindow.setPosition(event.latLng)
+        infoWindow.open(map)
+        setTimeout(() => {
+            infoWindow.close()
+        }, 3000);
     })
-      infoWindow.setPosition(event.latLng)
-      infoWindow.open(map)
-      setTimeout(() => {
-        infoWindow.close()
-    }, 3000);
-  })
     nasional.setStyle({
-      strokeColor: 'green',
-      strokeWeight: 1
-  });
+        strokeColor: 'green',
+        strokeWeight: 1
+    });
     nasional.setMap(map);
 
+    // enable searching with coordinate
     $('#btn_search').on('click', (e) => {
-      e.preventDefault();
-      var lat = $('#latitude').val();
-      var long = $('#longitude').val();
+        e.preventDefault();
+        var lat = $('#latitude').val();
+        var long = $('#longitude').val();
 
-      var latLng = new google.maps.LatLng(lat, long);
-      map.panTo(latLng);
-      marker.setPosition(latLng)
-      $('#address').html("")
-  })
+        var latLng = new google.maps.LatLng(lat, long);
+        map.panTo(latLng);
+        marker.setPosition(latLng)
+        $('#address').html("")
+    })
 }
 
 
 
 $(document).ready(function(){   
-    
+
     var scroll_start = 0;
     var startchange = $('#startchange');
     var offset = startchange.offset();

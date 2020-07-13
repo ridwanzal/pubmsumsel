@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 <style type="text/css">
-  
+
   .square {
     width: 100%;
     height: 3rem;
@@ -15,49 +15,89 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <div class='row'>
     <div class="text-danger"><?php echo $this->session->flashdata('msg');?></div>
     <div class='col-md-12' id="header-page">
-      <h1><span>Tambah Data Laboratorium</span></h1>
+      <h1><span>Form Pengaduan</span></h1>
     </div>
   </div>
+  
   <div class="row">
-    <div class="col-md-12">
-      <div class="row">
-        <div class="col-md-8">
-          <div id="map" style="height: 500px;width: auto"></div>
-        </div>
-        <div class="col-md-4">
-          <form>
-            <div class="form-group">
-              <label for="latitude">Latitude</label>
-              <input type="text" class="form-control" id="latitude" aria-describedby="latitude"
-              placeholder="Titik koordinat">
-            </div>
-            <div class="form-group">
-              <label for="longitude">Longitude</label>
-              <input type="text" class="form-control" id="longitude" placeholder="Titik koordinat">
-            </div>
-            <div class="form-group">
-              <div id="address"></div>
-            </div>
-            <div class="form-group">
-              <input type="button" id="btn_search" class="btn btn-primary" value="Cari">
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="row mt-5">
-        <div class="col-lg-12">
-          <p>Keterangan:</p>
-          <div class="row">
-            <div class="col-lg-2">
-              <div class="square"></div>
-            </div>
-            <div class="col-lg-10">
-              <p>Jika lokasi pengaduan berada pada jalur ini, maka sudah selesai dengan kewenangan dinas PU BINA MARGA Kabupaten Musi Rawas. Silahkan tetap mengirimkan laporan yang tidak berada pada jalur tersebut sehingga menjadi basis data kami untuk bisa didata.</p>
+    <div class="col-lg-12">
+      <div class="text-danger"><?php echo $this->session->flashdata('msg');?></div>
+      <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="ibox ">
+              <div class="ibox-title">
+                <h2>Lokasi Pengaduan</h2>
+              </div>
+              <div class="ibox-content">
+                <div id="map" style="height: 500px"></div>
+                <hr>
+              </div>
             </div>
           </div>
         </div>
       </div>
+
+      <form id="form" action="<?= base_url('tambah-pengaduan')?>" method="post" enctype="multipart/form-data" class="wizard-big">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2>Informasi Umum</h2>
+            <div class="form-group">
+              <label>Judul saran atau pengaduan</label>
+              <input id="judul_pengaduan" name="judul_pengaduan" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label>Isi saran atau pengaduan</label>
+              <textarea name="isi_pengaduan" class="form-control summernote"
+              placeholder="Write your news"></textarea>
+            </div>
+            <div class="form-group row">
+              <label class="col-sm-2 col-form-label">Tipe saran atau pengaduan<br />
+                <small class="text-navy">Silahkan pilih salah satu</small>
+              </label>
+
+              <div class="col-sm-10">
+                <div>
+                  <label> 
+                    <input type="radio" value="Terbuka" id="optionsRadios1" name="tipe_pengaduan">
+                    Terbuka
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="radio" value="Rahasia" id="optionsRadios2" name="tipe_pengaduan">
+                    Rahasia
+                  </label>
+                </div>
+                <div>
+                  <label>
+                    <input type="radio" value="Anonim" id="optionsRadios3" name="tipe_pengaduan">
+                    Anonim
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="form-group col-lg-6">
+                <label>Latitude</label>
+                <input id="latitude" name="latitude" type="text" readonly class="form-control" required>
+              </div>
+              <div class="form-group col-lg-6">
+                <label>Longitude</label>
+                <input id="longitude" name="longitude" type="text" readonly class="form-control" required>
+              </div>
+            </div>
+            <small class="text-danger">Geser lokasi pada peta di atas untuk mengisi latitude longitude</small>
+          </div>
+          <div class="col-lg-4">
+            <h2>Bukti</h2>
+            <div class="form-group">
+              <label>Masukan Foto Bukti</label>
+              <input name="foto_bukti" class="form-control" type="file" accept="image/*" />
+            </div>
+          </div>
+        </div>
+      </form>
     </div>
   </div>
 </div>
