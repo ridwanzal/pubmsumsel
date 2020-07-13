@@ -1400,7 +1400,7 @@ class AN_admin extends AN_Apricot {
 		$zip->close();
 
 		header('Content-disposition: attachment; filename=Dokumen_pengujian_' . $user[0]->id . '_' . $user[0]->nama . '.zip');
-    header('Content-type: application/zip');
+		header('Content-type: application/zip');
 		readfile($tmp_file);
 	}
 
@@ -1428,6 +1428,66 @@ class AN_admin extends AN_Apricot {
 			$this->load->view("admin/footer",$data);
 		}
 	}
+
+	public function pengaduan()
+	{
+		if (!$this->login) {
+			redirect("admin/login");
+		} else {
+			$this->load->model('admin/pengaduan_model', 'pengaduan');
+
+			$data=array(
+				'avatar'=>$this->avatar_user,
+				'path_avatar'=>base_url()."an-component/media/upload-user-avatar/".$this->avatar_user,
+				'title'=>"Pengaduan",
+				'user'=>$this->name_user,
+				'user_level'=>$this->level_user,
+				'npage'=>301,
+				'burl'=>base_url()."admin",
+				'id_user'=>$this->id_user,
+				'pengaduan'=>$this->pengaduan->get_data()
+			);
+
+			$this->load->view("admin/header",$data);
+			$this->load->view("admin/pengaduan",$data);
+			$this->load->view("admin/footer",$data);
+		}
+	}
+
+	public function tindak_lanjut()
+	{
+		$id = $this->input->post('id');
+		if ($_POST) {
+			if ($_POST['btn'] === 'Selesaikan') {
+				$data = [
+					'status' => 'Sudah ditanggapi'
+				];
+			} else {
+				$data = [
+					'status'    => 'Sedang ditanggapi'
+				];
+			}
+
+			$this->db->trans_start();
+			$this->db->where('id_pengaduan', $id)->update('pengaduan', $data);
+			$this->db->trans_complete();
+
+			if ($this->db->trans_status() === FALSE) {
+				$this->flashmsg('Gagal selesaikan pengaduan', 'danger');
+				redirect('admin/pengaduan', $data);
+			} else {
+				$this->flashmsg('Sukses selesaikan pengaduan', 'success');
+				redirect('admin/pengaduan', $data);
+			}
+		} else {
+			$this->data['pengaduan']= $this->db->get_where('pengaduan', ['id_pengaduan' => $id])->result();
+			$this->data['title']    = 'Tindak Lanjut';
+			$this->load->view("admin/header",$this->data);
+			$this->load->view("admin/pengaduan",$this->data);
+			$this->load->view("admin/footer",$this->data);
+		}
+	}
+
 
 	public function submit_pengujian()
 	{

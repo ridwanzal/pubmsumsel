@@ -142,6 +142,7 @@ $route["kontak"]="kontak";
 $route["tentang-kami"]="about_us";
 $route["contactus"]="contactus";
 $route['tambah-pengaduan']   = 'pengaduan/insert';
+$route['save_pengaduan']   = 'AN_admin/tindak_lanjut';
 
 $route["syarat-dan-ketentuan"]="syarat_ketentuan";
 $route["terms-and-conditions"]="syarat_ketentuan";

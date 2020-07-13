@@ -13,7 +13,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class='container'>
   <div class='row'>
-    <div class="text-danger"><?php echo $this->session->flashdata('msg');?></div>
     <div class='col-md-12' id="header-page">
       <h1><span>Form Pengaduan</span></h1>
     </div>
@@ -43,6 +42,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           <div class="col-lg-8">
             <h2>Informasi Umum</h2>
             <div class="form-group">
+              <label>Nama</label>
+              <input id="nama" name="nama" type="text" class="form-control">
+            </div>
+            <div class="form-group">
               <label>Judul saran atau pengaduan</label>
               <input id="judul_pengaduan" name="judul_pengaduan" type="text" class="form-control">
             </div>
@@ -52,11 +55,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               placeholder="Write your news"></textarea>
             </div>
             <div class="form-group row">
-              <label class="col-sm-2 col-form-label">Tipe saran atau pengaduan<br />
+              <label class="col-sm-4 col-form-label">Tipe saran atau pengaduan<br />
                 <small class="text-navy">Silahkan pilih salah satu</small>
               </label>
 
-              <div class="col-sm-10">
+              <div class="col-sm-8">
                 <div>
                   <label> 
                     <input type="radio" value="Terbuka" id="optionsRadios1" name="tipe_pengaduan">
@@ -77,7 +80,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
               </div>
             </div>
-            <div class="row mt-5">
+            <!-- <div class="row mt-5">
               <div class="form-group col-lg-6">
                 <label>Latitude</label>
                 <input id="latitude" name="latitude" type="text" readonly class="form-control" required>
@@ -87,13 +90,27 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <input id="longitude" name="longitude" type="text" readonly class="form-control" required>
               </div>
             </div>
-            <small class="text-danger">Geser lokasi pada peta di atas untuk mengisi latitude longitude</small>
+            <small class="text-danger">Geser lokasi pada peta di atas untuk mengisi latitude longitude</small> -->
           </div>
           <div class="col-lg-4">
-            <h2>Bukti</h2>
+            <h2>&nbsp;</h2>
             <div class="form-group">
               <label>Masukan Foto Bukti</label>
               <input name="foto_bukti" class="form-control" type="file" accept="image/*" />
+            </div>
+            <div class="form-group">
+              <label>Latitude</label>
+              <input id="latitude" name="latitude" type="text" value="-3.09839657" readonly class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label>Longitude</label>
+              <input id="longitude" name="longitude" type="text" value="103.08728316" readonly class="form-control" required>
+            </div>
+            <div class="form-group">
+              <small class="text-danger">Geser lokasi pada peta di atas untuk mengisi latitude longitude</small>
+            </div>
+            <div class="form-group text-rigt pull-right">
+              <input type="submit" name="" class="btn btn-primary">
             </div>
           </div>
         </div>

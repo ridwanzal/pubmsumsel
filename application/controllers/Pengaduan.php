@@ -10,7 +10,7 @@ class Pengaduan extends AN_Apricot
 		parent::__construct();
 		$this->load->model('admin/Pengaduan_model', 'pengaduan');
 	}
-	
+
 	function index(){
 		$data=$this->public_data;
 
@@ -26,21 +26,22 @@ class Pengaduan extends AN_Apricot
 		$this->load->view($this->tema."/footer",$data);
 	}
 
-	
+
 	public function insert()
 	{
-		$judul  = $this->POST('judul_pengaduan');
-		$isi    = $this->POST('isi_pengaduan');
-		$tipe   = $this->POST('tipe_pengaduan');
-		$lat    = $this->POST('latitude');
-		$long   = $this->POST('longitude');
+		$judul  = $this->input->post('judul_pengaduan');
+		$isi    = $this->input->post('isi_pengaduan');
+		$tipe   = $this->input->post('tipe_pengaduan');
+		$lat    = $this->input->post('latitude');
+		$long   = $this->input->post('longitude');
+		$nama   = $this->input->post('nama');
 		$gambar = $_FILES['foto_bukti'];
 
 		$data = [
 			'judul_pengaduan' => $judul,
 			'isi_pengaduan'   => $isi,
 			'tipe_pengaduan'  => $tipe,
-			'pengadu'         => $this->session->userdata('token')['nama'],
+			'pengadu'         => $nama,
 			'waktu_pengaduan' => date('Y-m-d H:i:s'),
 			'status'          => 'Belum ditanggapi',
 			'bidang_id'       => 4,
@@ -59,7 +60,7 @@ class Pengaduan extends AN_Apricot
 			if (!is_dir('assets/uploads/pengaduan/' . $id) . '/') {
 				mkdir('./assets/uploads/pengaduan/' . $id . '/', 0777, TRUE);
 			}
-			
+
 			$config['upload_path']          = './assets/uploads/pengaduan/' . $id;
 			$config['allowed_types']        = 'gif|jpg|png|jpeg';
 			$config['max_size']             = 190000;
@@ -94,38 +95,4 @@ class Pengaduan extends AN_Apricot
 		}
 	}
 
-	public function tindak_lanjut($id)
-	{
-		$bidang = $this->POST('bidang_pengaduan');
-		if ($_POST) {
-			if ($_POST['btn'] === 'Selesaikan') {
-				$data = [
-					'status' => 'Sudah ditanggapi'
-				];
-			} else {
-				$data = [
-					'bidang_id' => $bidang,
-					'status'    => 'Sedang ditanggapi'
-				];
-			}
-
-			$this->db->trans_start();
-			$this->db->where('id_pengaduan', $id)->update('pengaduan', $data);
-			$this->db->trans_complete();
-
-			if ($this->db->trans_status() === FALSE) {
-				$this->flashmsg('Gagal selesaikan pengaduan', 'danger');
-				redirect('dashboard', $data);
-			} else {
-				$this->flashmsg('Sukses selesaikan pengaduan', 'success');
-				redirect('dashboard', $data);
-			}
-		} else {
-			$this->data['pengaduan']= $this->db->get_where('pengaduan', ['id_pengaduan' => $id])->result();
-			$this->data['title']    = 'Tindak Lanjut';
-			$this->data['bidang']   = $this->db->get('bidang')->result();
-			$this->data['content']  = 'tindak_lanjut_pengaduan';
-			$this->admin_template($this->data, $this->module);
-		}
-	}
 }
