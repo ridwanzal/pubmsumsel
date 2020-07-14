@@ -332,72 +332,70 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84
             $('#longitude').val(evt.latLng.lng().toFixed(8));
         })
 
-  
-    // load geojson provinsi
-    var provinsi = new google.maps.Data();
-    provinsi.loadGeoJson('<?= base_url('assets/geojson/Provinsi.geojson')?>')
-    provinsi.addListener('click', (event) => {
-        let nama_ruas = event.feature.j.Nm_Ruas
-        var infoWindow = new google.maps.InfoWindow({
-            content: `Ruas Provinsi ${nama_ruas}`
+        
+        var provinsi = new google.maps.Data();
+        provinsi.loadGeoJson('<?= base_url('assets/geojson/Provinsi.geojson')?>')
+        provinsi.addListener('click', (event) => {
+            let nama_ruas = event.feature.j.Nm_Ruas
+            var infoWindow = new google.maps.InfoWindow({
+                content: `Ruas Provinsi ${nama_ruas}`
+            })
+            infoWindow.setPosition(event.latLng)
+            infoWindow.open(map)
+            setTimeout(() => {
+                infoWindow.close()
+            }, 3000);
         })
-        infoWindow.setPosition(event.latLng)
-        infoWindow.open(map)
-        setTimeout(() => {
-            infoWindow.close()
-        }, 3000);
-    })
-    provinsi.setStyle({
-        strokeColor: 'blue',
-        strokeWeight: 1
-    });
-    provinsi.setMap(map);
-
-
-    // enable searching with coordinate
-    $('#btn_search').on('click', (e) => {
-        e.preventDefault();
-        var lat = $('#latitude').val();
-        var long = $('#longitude').val();
-
-        var latLng = new google.maps.LatLng(lat, long);
-        map.panTo(latLng);
-        marker.setPosition(latLng)
-        $('#address').html("")
-    })
-}
-
-
-
-$(document).ready(function(){   
-
-    var scroll_start = 0;
-    var startchange = $('#startchange');
-    var offset = startchange.offset();
-    if (startchange.length){
-        $(document).scroll(function() { 
-            scroll_start = $(this).scrollTop();
-            if(scroll_start > offset.top) {
-                $(".navbar-default").css('background-color', '#2055a2');
-            } else {
-                $('.navbar-default').css('background-color', 'transparent');
-            }
+        provinsi.setStyle({
+            strokeColor: 'blue',
+            strokeWeight: 1
         });
+        provinsi.setMap(map);
+
+
+        $('#btn_search').on('click', (e) => {
+            e.preventDefault();
+            var lat = $('#latitude').val();
+            var long = $('#longitude').val();
+
+            var latLng = new google.maps.LatLng(lat, long);
+            map.panTo(latLng);
+            marker.setPosition(latLng)
+            $('#address').html("")
+        })
     }
-});
 
 
 
-$(function() {
+    $(document).ready(function(){   
 
-    var contact_us;
-
-    $(".slug-table").DataTable({
-        dom: 'Bfrtip',
-        buttons: [
-        'csv', 'excel', 'pdf', 'print'
-        ]
+        var scroll_start = 0;
+        var startchange = $('#startchange');
+        var offset = startchange.offset();
+        if (startchange.length){
+            $(document).scroll(function() { 
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $(".navbar-default").css('background-color', '#2055a2');
+                } else {
+                    $('.navbar-default').css('background-color', 'transparent');
+                }
+            });
+        }
     });
+
+
+
+    $(function() {
+
+        var contact_us;
+
+        $(".slug-table").DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+            'csv', 'excel', 'pdf', 'print'
+            ]
+        });
 
             // onloadCallback = function() {
 

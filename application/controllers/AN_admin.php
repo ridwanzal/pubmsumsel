@@ -190,7 +190,7 @@ class AN_admin extends AN_Apricot {
 		}
 
 		else {
-			$this->load->model("admin/artikel","modul");
+			$this->load->model('admin/all_artikel','modul');
 			$this->modul->get_kategori();
 			$this->modul->get_tags();
 
@@ -1022,7 +1022,7 @@ class AN_admin extends AN_Apricot {
 		else {
 			if($this->level_user==1){
 				$this->load->model("admin/bidang","halaman_bidang");
-				$this->load->model("admin/artikel","modul");
+				$this->load->model("admin/all_artikel","modul");
 				$this->modul->get_kategori();
 				if(!$this->halaman_bidang->get_bidang($id)){
 					show_404();
@@ -1122,10 +1122,10 @@ class AN_admin extends AN_Apricot {
 		if(!$this->login){
 			redirect("admin/login");
 		} else {
-			$this->load->model("admin/galeri","galeri_foto");
+			$this->load->model("admin/all_galeri","galeri_foto");
 
 
-			if($this->galeri_foto->get_galeri($id)){
+			if($this->galeri_foto->get_galeris($id)){
 				$cek_gambar=$this->galeri_foto->ambil_gambar();
 				$data=array(
 					'avatar'=>$this->avatar_user,
@@ -1185,7 +1185,7 @@ class AN_admin extends AN_Apricot {
 			redirect("admin/login");
 		} else {
 
-			$this->load->model("admin/menu","set_menu");
+			$this->load->model("admin/all_menu","set_menu");
 
 			if(!$this->set_menu->get_menu($id)){
 				show_404();
@@ -1281,8 +1281,8 @@ class AN_admin extends AN_Apricot {
 			redirect("admin/login");
 		} else {
 
-			$this->load->model("admin/kategori_produk","kategori");
-			$this->kategori->get_kategori();
+			$this->load->model("admin/kategori_produk","kategoris");
+			$this->kategoris->get_kategori();
 
 			$data=array(
 				'avatar'=>$this->avatar_user,
@@ -1293,7 +1293,7 @@ class AN_admin extends AN_Apricot {
 				'npage'=>19,
 				'burl'=>base_url()."admin",
 				'id_user'=>$this->id_user,
-				'hasil'=>$this->kategori->hasil
+				'hasil'=>$this->kategoris->hasil
 			);
 
 			$this->load->view("admin/header",$data);
