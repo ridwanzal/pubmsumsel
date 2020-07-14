@@ -44,7 +44,6 @@ class Pengaduan extends AN_Apricot
 			'pengadu'         => $nama,
 			'waktu_pengaduan' => date('Y-m-d H:i:s'),
 			'status'          => 'Belum ditanggapi',
-			'bidang_id'       => 4,
 			'latitude'        => $lat,
 			'longitude'       => $long
 		];

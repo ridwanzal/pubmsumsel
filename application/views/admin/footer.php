@@ -173,10 +173,10 @@ echo '<script src="'.rpath_adm().'/dist/tinymce/tinymce.min.js" type="text/javas
         $('#dumpbtn').html('<button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>');
       } else if(status == 'Sedang ditanggapi') {
         $('#status').addClass('label-warning');
-        $('#dumpbtn').html('<button type="submit" name="btn" value="Selesaikan" class="btn btn-primary">Selesaikan aduan</button>  <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>');
+        $('#dumpbtn').html('<button type="submit" name="btn" value="Selesaikan" class="btn btn-primary">Selesaikan Aduan</button>  <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>');
       } else {
         $('#status').addClass('label-danger');
-        $('#dumpbtn').html('<button type="submit" name="btn" value="Proses" class="btn btn-primary">Simpan</button>  <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>');
+        $('#dumpbtn').html('<button type="submit" name="btn" value="Proses" class="btn btn-primary">Tanggapi Aduan</button>  <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>');
       }
 
       if(gambar != ''){

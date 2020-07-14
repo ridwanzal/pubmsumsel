@@ -279,10 +279,10 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84
 
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 10,
+            zoom: 8,
             center: {
-                lat: -3.095654,
-                lng: 103.081790
+                lat: -3.31329343,
+                lng: 103.89620829
             },
             mapTypeId: 'terrain'
         });
@@ -332,50 +332,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84
             $('#longitude').val(evt.latLng.lng().toFixed(8));
         })
 
-    // load geojson desa
-    var desa = new google.maps.Data();
-    desa.loadGeoJson('<?= base_url('assets/geojson/Desa.geojson')?>')
-    desa.setStyle({
-        fillColor: 'black',
-        strokeWeight: 1
-    })
-    desa.addListener('click', (event) => {
-        let nama_ruas = event.feature.j.Nm_Ruas
-        var infoWindow = new google.maps.InfoWindow({
-            content: `Ruas ${nama_ruas}`
-        })
-        infoWindow.setPosition(event.latLng)
-        infoWindow.open(map)
-        setTimeout(() => {
-            infoWindow.close()
-        }, 3000);
-    })
-    desa.setStyle({
-        strokeColor: 'purple',
-        strokeWeight: 1
-    });
-    desa.setMap(map);
-
-    // load geojson kabupaten
-    var kabupaten = new google.maps.Data();
-    kabupaten.loadGeoJson('<?= base_url('assets/geojson/Kabupaten.geojson')?>')
-    kabupaten.addListener('click', (event) => {
-        let nama_ruas = event.feature.j.Nm_Ruas
-        var infoWindow = new google.maps.InfoWindow({
-            content: `Ruas Kabupaten ${nama_ruas}`
-        })
-        infoWindow.setPosition(event.latLng)
-        infoWindow.open(map)
-        setTimeout(() => {
-            infoWindow.close()
-        }, 3000);
-    })
-    kabupaten.setStyle({
-        strokeColor: 'red',
-        strokeWeight: 1
-    });
-    kabupaten.setMap(map);
-
+  
     // load geojson provinsi
     var provinsi = new google.maps.Data();
     provinsi.loadGeoJson('<?= base_url('assets/geojson/Provinsi.geojson')?>')
@@ -396,25 +353,6 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84
     });
     provinsi.setMap(map);
 
-    // load geojson nasional
-    var nasional = new google.maps.Data();
-    nasional.loadGeoJson('<?= base_url('assets/geojson/Nasional.geojson')?>')
-    nasional.addListener('click', (event) => {
-        let nama_ruas = event.feature.j.Nm_Ruas
-        var infoWindow = new google.maps.InfoWindow({
-            content: `Ruas Nasional ${nama_ruas}`
-        })
-        infoWindow.setPosition(event.latLng)
-        infoWindow.open(map)
-        setTimeout(() => {
-            infoWindow.close()
-        }, 3000);
-    })
-    nasional.setStyle({
-        strokeColor: 'green',
-        strokeWeight: 1
-    });
-    nasional.setMap(map);
 
     // enable searching with coordinate
     $('#btn_search').on('click', (e) => {
