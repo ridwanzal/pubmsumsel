@@ -35,7 +35,8 @@ class Pengaduan extends AN_Apricot
 		$lat    = $this->input->post('latitude');
 		$long   = $this->input->post('longitude');
 		$nama   = $this->input->post('nama');
-		$gambar = $_FILES['foto_bukti'];
+		$gambar = $_FILES['foto_bukti']["name"];
+
 
 		$data = [
 			'judul_pengaduan' => $judul,
@@ -48,41 +49,41 @@ class Pengaduan extends AN_Apricot
 			'longitude'       => $long
 		];
 
-		$fileExt = pathinfo($gambar['name'], PATHINFO_EXTENSION);
-
 		$this->db->trans_start();
 		$pengaduan = $this->db->insert('pengaduan', $data);
 		$id = $this->db->insert_id($pengaduan);
 		$this->db->trans_complete();
 
-		if ($gambar) {
-			if (!is_dir('assets/uploads/pengaduan/' . $id) . '/') {
-				mkdir('./assets/uploads/pengaduan/' . $id . '/', 0777, TRUE);
+		if ($gambar == '') {
+			$uploaddir = "assets/uploads/pengaduan/".$id."/";
+			if (!is_dir($uploaddir)) {
+				mkdir($uploaddir, 0777, TRUE);
 			}
 
-			$config['upload_path']          = './assets/uploads/pengaduan/' . $id;
-			$config['allowed_types']        = 'gif|jpg|png|jpeg';
-			$config['max_size']             = 190000;
-			$config['file_name']            = 'Pengaduan' . '_' . $id . '_'  . date('d-m-Y') . '.' . $fileExt;
 
-			$this->load->library('upload', $config);
-			$this->upload->initialize($config);
+			$xdump = [];
+			for($i=0;$i<count($gambar);$i++) {
+				$temp = explode(".", $gambar[$i]);
 
+				$randx = rand(0,999); 
+				$newrand = round(microtime(true)) . $randx;
+				$newx = 'LAMP'.$randx.$newrand.$id.date('s');
 
-			if ($this->upload->do_upload('foto_bukti')) {
-				$upload_data = $this->upload->data();
-				$file        = $config['file_name'];
+				$newfilename = $newx . '.' . end($temp);
+				$uploadfile = $uploaddir . basename($newfilename);
 
-				$this->db->trans_start();
-				$update_pengaduan = ['gambar_pengaduan'  => $file];
-				$this->db->where('id_pengaduan', $id)->update('pengaduan', $update_pengaduan);
-				$this->db->trans_complete();
-			} else {
-				$error =  ['error' => $this->upload->display_errors()];
-				$this->dump($error); exit;
-				$this->flashmsg($error['error'], 'danger');
-				redirect('pengaduan');
+				if(move_uploaded_file($_FILES['foto_bukti']['tmp_name'][$i],$uploadfile)) {
+					$xdump[]  = $newfilename;
+				} else {
+					$this->flashmsg($error['error'], 'danger');
+					redirect('pengaduan');
+				}
 			}
+
+			$this->db->trans_start();
+			$update_pengaduan = ['gambar_pengaduan'  => implode(",", $xdump)];
+			$this->db->where('id_pengaduan', $id)->update('pengaduan', $update_pengaduan);
+			$this->db->trans_complete();
 		}
 
 		if ($this->db->trans_status() === FALSE) {

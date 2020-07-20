@@ -49,9 +49,18 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
                 </td>    
                 <td><?= date('d-m-Y H:i:s',strtotime($value['waktu_pengaduan'])); ?></td> 
                 <td>
-                  <a href="<?= base_url('/assets/uploads/pengaduan/' . $value['id_pengaduan'] . '/' . $value['gambar_pengaduan']) ?>" target="_blank">
-                    Lihat berkas
-                  </a>
+                  <?php
+                  if ($value['gambar_pengaduan'] != '') {
+
+                    $ex = explode(',', $value['gambar_pengaduan']);
+                    for ($i=0; $i < count($ex); $i++) { ?>
+                      <a href="<?= base_url('/assets/uploads/pengaduan/' . $value['id_pengaduan'] . '/' . $ex[$i]) ?>" target="_blank" title="Berkas-<?= $i+1; ?>">
+                        <i class="fa fa-image"></i>
+                      </a>
+                    <?php } 
+                    
+                  }
+                  ?>
                 </td>     
                 <td class="text-center"> 
                   <a href="<?= base_url('/admin/pengaduan/' . $value['id_pengaduan']) ?>"  data-toggle="modal" data-target="#pesanModal" onclick="set_modal('<?= $value['pengadu']?>','<?= $value['judul_pengaduan']?>','<?= $value['isi_pengaduan']?>','<?= $value['tipe_pengaduan']?>','<?= $value['gambar_pengaduan']?>','<?= date('d-m-Y H:i:s',strtotime($value['waktu_pengaduan']))?>','<?= $value['status']?>','<?= $value['latitude']?>','<?= $value['longitude']?>','<?= $value['id_pengaduan']?>')">

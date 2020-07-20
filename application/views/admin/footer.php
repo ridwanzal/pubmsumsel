@@ -180,7 +180,12 @@ echo '<script src="'.rpath_adm().'/dist/tinymce/tinymce.min.js" type="text/javas
       }
 
       if(gambar != ''){
-        $('#gambar').html('<a href="<?= base_url()?>'+'assets/uploads/pengaduan/'+id+'/'+gambar+'" target="_blank"><i class="fa fa-paperclip"></i> Lampiran Gambar</a>');
+        var res = gambar.split(",");
+        var ximg = '';
+        for(var i=0;i<res.length;i++){
+         ximg += `<a href="<?= base_url()?>`+`assets/uploads/pengaduan/`+id+`/`+res[i]+`" target="_blank"><i class="fa fa-paperclip"></i> Lampiran Gambar `+(i+1)+`</a><br>`;
+        }
+         $('#gambar').html(ximg);
       }
 
       $('#pengaduan_id').val(id);

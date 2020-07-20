@@ -336,7 +336,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84
         var provinsi = new google.maps.Data();
         provinsi.loadGeoJson('<?= base_url('assets/geojson/Provinsi.geojson')?>')
         provinsi.addListener('click', (event) => {
-            let nama_ruas = event.feature.j.Nm_Ruas
+            let nama_ruas = event.feature.j.Nama_Ruas
             var infoWindow = new google.maps.InfoWindow({
                 content: `Ruas Provinsi ${nama_ruas}`
             })
@@ -348,7 +348,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAogXD-AHrsmnWinZIyhRORJ84
         })
         provinsi.setStyle({
             strokeColor: 'blue',
-            strokeWeight: 1
+            strokeWeight: 4
         });
         provinsi.setMap(map);
 

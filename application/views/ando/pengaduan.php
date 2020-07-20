@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h2>&nbsp;</h2>
             <div class="form-group">
               <label>Masukan Foto Bukti</label>
-              <input name="foto_bukti" class="form-control" type="file" accept="image/*" />
+              <input name="foto_bukti[]" class="form-control" type="file" multiple="" accept="image/*" />
             </div>
             <div class="form-group">
               <label>Latitude</label>

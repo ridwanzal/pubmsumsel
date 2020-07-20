@@ -1448,6 +1448,7 @@ class AN_admin extends AN_Apricot {
 				'pengaduan'=>$this->pengaduan->get_data()
 			);
 
+
 			$this->load->view("admin/header",$data);
 			$this->load->view("admin/pengaduan",$data);
 			$this->load->view("admin/footer",$data);
