@@ -322,9 +322,9 @@ class AN_admin extends AN_Apricot {
 			$this->load->view('admin/footer',$data);
 		}
 	}
-	
-	
-	
+
+
+
 	function komentar(){
 		if(!$this->login){
 			redirect("admin/login");
@@ -516,7 +516,7 @@ class AN_admin extends AN_Apricot {
 			redirect('admin/data_infastruktur');
 		}
 	}
-	
+
 	public function edit_data_infrastruktur($id_infrastruktur)
 	{
 		if(!$this->login){
@@ -634,7 +634,7 @@ class AN_admin extends AN_Apricot {
 		}else{
 			$so_foto=$oldfoto;
 		}
-		$data =[ 
+		$data =[
 			'so_nama'=>$nama,
 			'so_nip'=>$nip,
 			'so_foto' => $so_foto,
@@ -643,10 +643,10 @@ class AN_admin extends AN_Apricot {
 		$update=$this->db->update('struktur_organisasi',$data, ['so_id' => $soid] );
 		if($update){
 			$this->session->set_flashdata('success', 'Berhasil menambah data ');
-			redirect('admin/struktur_organisasi');		
+			redirect('admin/struktur_organisasi');
 		}else{
 			$this->session->set_flashdata('error', 'Gagal menambah data ');
-			redirect('admin/struktur_organisasi');		
+			redirect('admin/struktur_organisasi');
 		}
 	}
 
@@ -805,8 +805,8 @@ class AN_admin extends AN_Apricot {
 						}
 						$dataFile['file'] = $result;
 						$this->produk_hukum->upd_file_produk_hukum($dataFile,$id_produk_hukum);
-						// end edit images		
-					}		
+						// end edit images
+					}
 
 
 					$nama_file = $this->input->post('nama_file');
@@ -1387,10 +1387,10 @@ class AN_admin extends AN_Apricot {
 	{
 		$this->load->model('admin/pengujian_model', 'pengujian');
 		$user = $this->db->get_where('pengujian', ['id' => $id])->result();
-		
+
 		$zip = new ZipArchive();
 		$file = base_url('/assets/uploads/surat/' . $user[0]->surat);
-		
+
 		$tmp_file = tempnam('.','');
 		$zip->open($tmp_file, ZipArchive::CREATE);
 
@@ -1446,9 +1446,9 @@ class AN_admin extends AN_Apricot {
 		}
 
 		$config['upload_path']          = 'assets/uploads/surat';
-		$config['allowed_types']        = 'gif|jpg|png|jfif';
+		$config['allowed_types']        = 'gif|jpg|png|jfif|pdf';
 		$config['file_name']						= $_FILES['surat']['name'];
-		
+
 		$this->load->library('upload',$config);
 		$this->upload->initialize($config);
 
@@ -1925,6 +1925,7 @@ class AN_admin extends AN_Apricot {
 				// echo "Password : ".$pass."<br>";
 			} else {
 				$row=$cari->row();
+				// var_dump($row); exit;
 
 				 // if(password_verify($pass,$row->password_user)){
 
@@ -1933,7 +1934,7 @@ class AN_admin extends AN_Apricot {
 					'name_user'=>$row->name_user,
 					'password_user'=>$row->password_user,
 					'level_user'=>$row->level_user);
-				$this->session->set_userdata($data_sessi);
+					$this->session->set_userdata($data_sessi);
 				redirect("admin");
 
 				 // } else {

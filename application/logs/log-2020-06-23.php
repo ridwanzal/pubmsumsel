@@ -212,3 +212,9 @@ ERROR - 2020-06-23 08:39:57 --> Severity: Notice --> Trying to get property 'no_
 ERROR - 2020-06-23 08:39:57 --> Severity: Notice --> Trying to get property 'jenis_pengujian' of non-object C:\xampp\htdocs\pubmsumsel\application\controllers\PDF.php 43
 ERROR - 2020-06-23 08:39:57 --> Severity: Notice --> Trying to get property 'created_at' of non-object C:\xampp\htdocs\pubmsumsel\application\controllers\PDF.php 44
 ERROR - 2020-06-23 08:39:57 --> Severity: error --> Exception: FPDF error: Some data has already been output, can't send PDF file C:\xampp\htdocs\pubmsumsel\application\third_party\fpdf\fpdf.php 271
+ERROR - 2020-06-23 09:12:14 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-23 09:12:14 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-23 09:12:14 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-23 09:13:00 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-23 09:13:00 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-06-23 09:13:01 --> 404 Page Not Found: An-theme/admin
