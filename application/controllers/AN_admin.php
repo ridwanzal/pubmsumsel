@@ -1423,10 +1423,10 @@ class AN_admin extends AN_Apricot {
 		$user = $this->db->get_where('pengujian', ['id' => $id])->result();
 
 		$zip = new ZipArchive();
-		$pdf->Output(FCPATH . '/assets/uploads/pengujian/data_' . $user[0]->nama . '_' . $id . '.pdf', 'F');
+		$pdf->Output(FCPATH . 'assets/uploads/pengujian/data_' . $user[0]->nama . '_' . $id . '.pdf', 'F');
 
-		$this->zip->read_file(FCPATH . '/assets/uploads/surat/' . $user[0]->surat);
-		$this->zip->read_file(FCPATH . '/assets/uploads/pengujian/data_' . $user[0]->nama . '_' . $id . '.pdf');
+		$this->zip->read_file(FCPATH . 'assets/uploads/surat/' . $user[0]->surat);
+		$this->zip->read_file(FCPATH . 'assets/uploads/pengujian/data_' . $user[0]->nama . '_' . $id . '.pdf');
 
 		$this->zip->download('Data pengujian ' . $user[0]->nama . '.zip');
 	}

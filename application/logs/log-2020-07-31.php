@@ -126,3 +126,8 @@ ERROR - 2020-07-31 21:28:39 --> 404 Page Not Found: An-theme/admin
 ERROR - 2020-07-31 21:28:51 --> 404 Page Not Found: An-theme/admin
 ERROR - 2020-07-31 21:28:51 --> 404 Page Not Found: An-theme/admin
 ERROR - 2020-07-31 21:28:52 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-07-31 21:36:31 --> 404 Page Not Found: Img/pu.png
+ERROR - 2020-07-31 21:36:38 --> 404 Page Not Found: Img/pu.png
+ERROR - 2020-07-31 21:38:14 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-07-31 21:38:14 --> 404 Page Not Found: An-theme/admin
+ERROR - 2020-07-31 21:38:15 --> 404 Page Not Found: An-theme/admin
