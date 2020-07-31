@@ -28,8 +28,8 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
               <th>No. Hp</th>
               <th>Jenis Pengujian</th>
               <th>Tanggal diajukan</th>
-              <th>Download Surat</th>
-              <th>Aksi</th>
+              <th>Download</th>
+              <th>Lihat Dokumen</th>
             </tr>
           </thead>
           <tbody>
@@ -46,7 +46,7 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
             <td>$value[jenis_pengujian]</td>
             <td>$value[created_at]</td>
             <td>
-              <a href='" . base_url('AN_admin/download_file/' . $value['id']) . "'>Download</a>
+              <i style='color:blue;cursor:pointer' class='fa fa-download' ></i><a href='" . base_url('AN_admin/download_file/' . $value['id']) . "'></a>
             </td>
             <td>
             <a href='" . base_url('/assets/uploads/surat/' . $value['surat']) . "'><i style='color:green;cursor:pointer' class='fa lihat-pesan fa-eye' data-id='$value[id]' ></i></a>
