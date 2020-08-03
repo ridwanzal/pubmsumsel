@@ -1429,6 +1429,150 @@ class AN_admin extends AN_Apricot {
 		}
 	}
 
+	public function pergub()
+	{
+		if (!$this->login) {
+			redirect("admin/login");
+		} else {
+			$this->load->model('admin/pergub_model', 'pergub');
+
+			$data=array(
+				'avatar'=>$this->avatar_user,
+				'path_avatar'=>base_url()."an-component/media/upload-user-avatar/".$this->avatar_user,
+				'title'=>"Data Pergub",
+				'user'=>$this->name_user,
+				'user_level'=>$this->level_user,
+				'npage'=>3011,
+				'burl'=>base_url()."admin",
+				'id_user'=>$this->id_user,
+				'pergub'=>$this->pergub->get_data()
+			);
+
+			$this->load->view("admin/header",$data);
+			$this->load->view("admin/pergub",$data);
+			$this->load->view("admin/footer",$data);
+		}
+	}
+
+	public function add_pergub()
+	{
+		$judul 	= $_POST['judul'];
+		$tahun	= $_POST['tahun'];
+
+		if (!is_dir('assets/uploads/pergub')) {
+			mkdir('./assets/uploads/pergub', 0777, TRUE);
+		}
+
+		$config['upload_path']          = 'assets/uploads/pergub';
+		$config['allowed_types']        = 'pdf';
+		$config['encrypt_name'] = TRUE;
+		$config['file_name']						= $_FILES['filepergub']['name'];
+		
+		$this->load->library('upload',$config);
+		$this->upload->initialize($config);
+
+		if ( ! $this->upload->do_upload('filepergub'))
+		{
+			$this->flashmsg($this->upload->display_errors(), 'danger');
+			redirect('admin/pergub');
+		}
+		else
+		{
+			$uploadData = $this->upload->data();
+			$filename = $uploadData['file_name'];
+		}
+
+		$data = [
+			'pergub_judul'	=> $judul,
+			'pergub_tahun'	=> $tahun,
+			'pergub_isi'	=> $filename,
+		];
+		$this->db->trans_start();
+		$this->db->insert('pergub', $data);
+		$this->db->trans_complete();
+
+		if ($this->db->trans_status() === FALSE) {
+			$this->flashmsg('Data gagal ditambahkan', 'danger');
+			redirect('admin/pergub');
+		} else {
+			$this->flashmsg('Data berhasil ditambahkan', 'success');
+			redirect('admin/pergub');
+		}
+	}
+
+	public function edit_pergub()
+	{
+		$judul 	= $_POST['judul'];
+		$tahun	= $_POST['tahun'];
+		$id	= $_POST['id'];
+		$isi	= $_POST['isi'];
+
+
+		if($_FILES['filepergub']['name'] != ''){
+			if (!is_dir('assets/uploads/pergub')) {
+				mkdir('./assets/uploads/pergub', 0777, TRUE);
+			}
+
+			$config['upload_path']          = 'assets/uploads/pergub';
+			$config['allowed_types']        = 'pdf';
+			$config['encrypt_name'] = TRUE;
+			$config['file_name']						= $_FILES['filepergub']['name'];
+
+			$this->load->library('upload',$config);
+			$this->upload->initialize($config);
+
+			if ( ! $this->upload->do_upload('filepergub'))
+			{
+				$this->flashmsg($this->upload->display_errors(), 'danger');
+				redirect('admin/pergub');
+			}
+			else
+			{
+				$uploadData = $this->upload->data();
+				$filename = $uploadData['file_name'];
+			}
+		} else {
+			$filename = $isi;
+		}
+
+		$data = [
+			'pergub_judul'	=> $judul,
+			'pergub_tahun'	=> $tahun,
+			'pergub_isi'	=> $filename,
+		];
+		$this->db->trans_start();
+		$this->db->where('id_pergub', $id);
+		$this->db->update('pergub', $data);
+		$this->db->trans_complete();
+
+		if ($this->db->trans_status() === FALSE) {
+			$this->flashmsg('Data gagal dirubah', 'danger');
+			redirect('admin/pergub');
+		} else {
+			$this->flashmsg('Data berhasil dirubah', 'success');
+			redirect('admin/pergub');
+		}
+	}
+	public function delete_pergub()
+	{
+		$id	= $_POST['id'];
+
+		$this->db->trans_start();
+		$this->db->where('id_pergub', $id);
+		$this->db->delete('pergub');
+		$this->db->trans_complete();
+
+		if ($this->db->trans_status() === FALSE) {
+			$this->flashmsg('Data gagal menghapus', 'danger');
+			redirect('admin/pergub');
+		} else {
+			$this->flashmsg('Data berhasil menghapus', 'success');
+			redirect('admin/pergub');
+		}
+	}
+
+
+
 	public function pengaduan()
 	{
 		if (!$this->login) {

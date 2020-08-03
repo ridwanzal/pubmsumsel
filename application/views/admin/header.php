@@ -73,7 +73,7 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
     <!-- Logo -->
     <a href="<?php echo base_url() ?>" target="_blank" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini">A<span style='color:#00c0ef'><b>CMS</b></span></span>
+      <span class="logo-mini">D<span style='color:#00c0ef'><b>PU</b></span></span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg">Dinas <span style='color:#00c0ef'><b>PU</b></span></span>
     </a>
@@ -284,7 +284,8 @@ $levela=($user_level=='1')?"Super Admin":"Admin";
             <!--  <li class='<?php if($npage==112){ echo'active';} ?>'><a href="<?php echo $burl; ?>/komentar"><i class='fa fa-comment'></i> <span>Komentar</span></a> </li> -->
             <li class='<?php if($npage==23){ echo'active';} ?>'><a href="<?php echo $burl; ?>/kontak_masuk"><i class='fa fa-paper-plane-o'></i> <span>Kotak Masuk</span></a> </li>
             <li class='<?php if($npage==30){ echo'active';} ?>'><a href="<?php echo $burl; ?>/pengujian"><i class='fa fa-flask'></i> <span>Pengujian</span></a> </li>
-            <li class='<?php if($npage==30){ echo'active';} ?>'><a href="<?php echo $burl; ?>/pengaduan"><i class='fa fa-info-circle'></i> <span>Pengaduan</span></a> </li>
+            <li class='<?php if($npage==301){ echo'active';} ?>'><a href="<?php echo $burl; ?>/pengaduan"><i class='fa fa-info-circle'></i> <span>Pengaduan</span></a> </li>
+            <li class='<?php if($npage==3011){ echo'active';} ?>'><a href="<?php echo $burl; ?>/pergub"><i class='fa fa-upload'></i> <span>Upload Pergub</span></a> </li>
             <li class='header'>Pengaturan</li>
 
             <?php if($user_level=='1'){    ?>

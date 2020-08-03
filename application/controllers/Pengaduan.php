@@ -86,6 +86,26 @@ class Pengaduan extends AN_Apricot
 			$this->db->trans_complete();
 		}
 
+		$config = Array(
+			'protocol' => 'smtp',
+			'smtp_host' => 'ssl://smtp.googlemail.com',
+			'smtp_port' => 465, 
+			'smtp_user' => 'pepdinaspubmtrprovsumsel@gmail.com',
+			'smtp_pass' => 'pep221188',
+			'mailtype'  => 'html',
+			'charset'   => 'iso-8859-1'
+		);
+		$this->load->library('email', $config);
+		$this->email->set_newline("\r\n");
+		$this->email->from('no-reply@dpubmtrsumsel.com', 'PEP DINAS PUBMTR PROV SUMSEL ');
+		$this->email->to('adityads@ymail.com'); 
+		$this->email->subject($judul);
+		$this->email->message($isi);
+		if (!$this->email->send())
+		{
+			echo $this->email->print_debugger();
+		}
+
 		if ($this->db->trans_status() === FALSE) {
 			$this->flashmsg('Gagal membuat pengaduan', 'danger');
 			redirect('pengaduan', $data);
