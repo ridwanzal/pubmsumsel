@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="form-group">
           <div class="custom-file">
             <label class="custom-file-label" for="surat">Pilih berkas surat</label>
-            <input type="file" class="custom-file-input form-control" id="surat" name="surat" accept="image/*">
+            <input type="file" class="custom-file-input form-control" id="surat" name="surat" accept="image/*, application/pdf">
           </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

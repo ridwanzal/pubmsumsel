@@ -1,5 +1,5 @@
 <?php
-if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 ?>
 
 <div class="content-wrapper">
@@ -28,37 +28,32 @@ if ( ! defined('BASEPATH')) exit('No direct script access allowed');
               <th>No. Hp</th>
               <th>Jenis Pengujian</th>
               <th>Tanggal diajukan</th>
-              <th>Download Surat</th>
-              <th>Aksi</th>
+              <th>Download</th>
+              <th>Lihat Dokumen</th>
             </tr>
           </thead>
           <tbody>
-            <?php 
+            <?php
   $no=1;
   foreach ($pengujian AS $value) {
     echo "
     <tr data-id='$value[id]'>
-            <td>$no</td>  
+            <td>$no</td>
             <td>$value[no_ktp]</td>
-            <td>$value[nama]</td>      
-            <td>$value[alamat]</td>        
-            <td>$value[no_ktp]</td>    
-            <td>$value[jenis_pengujian]</td> 
+            <td>$value[nama]</td>
+            <td>$value[alamat]</td>
+            <td>$value[no_ktp]</td>
+            <td>$value[jenis_pengujian]</td>
+            <td>$value[created_at]</td>
             <td>
-              <a href='" . base_url('/assets/uploads/surat/' . $value['surat']) . "'>Lihat berkas</a>
-            </td> 
+              <a href='" . base_url('AN_admin/download_file/' . $value['id']) . "'><i style='color:blue;cursor:pointer' class='fa fa-download' ></i></a>
+            </td>
             <td>
-              <a href='" . base_url('AN_admin/download_file/' . $value['id']) . "'>Download</a> |
-              <a href='" . base_url('PDF/cetak_pdf/' . $value['id']) . "' target='_blank'>Berkas</a>
-            </td>    
-            <td> 
             <a href='" . base_url('/assets/uploads/surat/' . $value['surat']) . "'><i style='color:green;cursor:pointer' class='fa lihat-pesan fa-eye' data-id='$value[id]' ></i></a>
-            </td>      
+            </td>
           </tr>
           ";
-      $no++;
-  }
- ?>
+      $no++;}?>
           </tbody>
         </table>
       </div>
